@@ -2,13 +2,26 @@
 <html>
 <head>
   <title>Saryan</title>
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body class ="ink-drawer">
+  <%= render 'layouts/navigation' %>
+  <div id="content" class="content-drawer">
+    <section class="ink">
+      <div class="ink-grid">
+        <header>
+          <h1>
+            Saryan
+          </h1>
+        </header>
+      <%= yield %>
+    </section>
+  </div>
 </body>
 </html>

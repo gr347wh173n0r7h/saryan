@@ -10,3 +10,2446 @@ Started GET "/" for 127.0.0.1 at 2015-10-03 16:52:52 -0700
 Processing by Rails::WelcomeController#index as HTML
   Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
 Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-07 01:06:54 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 15:25:35 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:02:21 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1962ms (Views: 1956.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/saryan.self-6a529fff4bb01c6f1a02ac839498e74173af331711e138d3f7ec0c88e1cdc1a9.css?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/assets/Roboto/roboto-bold-webfont-9f3a9089070601cc8bf55d85e933933a1fe19d7e9e585e320d66aff56cd086d3.woff" for 127.0.0.1 at 2015-10-11 16:02:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 180ms (Views: 174.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/saryan.self-6a529fff4bb01c6f1a02ac839498e74173af331711e138d3f7ec0c88e1cdc1a9.css?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:06:46 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/saryan.self-6a529fff4bb01c6f1a02ac839498e74173af331711e138d3f7ec0c88e1cdc1a9.css?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:06:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 463ms (Views: 457.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:01 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:04 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:05 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.0ms)
+Completed 200 OK in 72ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:17:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:20:10 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 210ms (Views: 195.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Roboto/roboto-regular-webfont-61d40b0df809637f0103c6a1ca9d4b1791d6d22e5e2535a97ddeb80b6eed23cb.woff" for 127.0.0.1 at 2015-10-11 16:20:10 -0700
+
+
+Started GET "/assets/Roboto/roboto-light-webfont-7a9a6cc8a1727b98f396b2f4582763eb71fdf91e2e3c976509db368a0d236b9e.woff" for 127.0.0.1 at 2015-10-11 16:20:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:20:19 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 120ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:21:06 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 191ms (Views: 176.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:21:41 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:21:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:22:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:23:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:25:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:26:59 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 204ms (Views: 198.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:27:02 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 113ms (Views: 112.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:28:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:32:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:33:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:37:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 106ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/saryan.self-f5024d75fb61feef3e06735ed120df0c9d612a6289cca55e8d3d0a4328209c9c.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 16:42:50 -0700
+
+
+Started GET "/assets/fontawesome-webfont-66db52b456efe7e29cec11fa09421d03cb09e37ed1b567307ec0444fd605ce31.woff" for 127.0.0.1 at 2015-10-11 16:44:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 330ms (Views: 329.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+
+Started GET "/assets/imgages/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:06:46 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 73ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+
+Started GET "/assets/imgages/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:06:52 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.7ms)
+
+
+Started GET "/assets/imgages/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:06:55 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (5.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+
+Started GET "/assets/images/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:07:16 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+
+Started GET "/assets/images/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:07:18 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+
+Started GET "/assets/images/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:07:19 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.0ms)
+
+
+Started GET "/assets/images/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:07:21 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+
+Started GET "/app/assets/images/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:08:14 -0700
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+
+Started GET "/app/assets/images/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:08:15 -0700
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.5ms)
+
+
+Started GET "/app/assets/images/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:08:17 -0700
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 113ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+
+Started GET "/public/img/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:10:59 -0700
+
+ActionController::RoutingError (No route matches [GET] "/public/img/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.0ms)
+
+
+Started GET "/public/img/bg1080.jpg" for 127.0.0.1 at 2015-10-11 17:11:00 -0700
+
+ActionController::RoutingError (No route matches [GET] "/public/img/bg1080.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (14.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:13:18 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:14:11 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 68ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+Processing by SaryanController#index as HTML
+  Rendered saryan/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-11 17:16:45 -0700

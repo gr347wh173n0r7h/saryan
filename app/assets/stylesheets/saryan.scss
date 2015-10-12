@@ -1,0 +1,115 @@
+// Place all the styles related to the saryan controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#topbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: #1a1a1a;
+  -webkit-transform: scale3d(1,1,1);
+  top: 0;
+  .ink-navigation ul.black li {
+    font-size: 14px;
+  }
+  .ink-navigation ul.black li a {
+    padding: .7em 1em;
+    color: #bbb;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .ink-navigation ul.black li a:hover {
+    color: #fff;
+  }
+  .ink-navigation ul.black li a.logoPlaceholder:hover {
+    background: 0 0;
+  }
+  .ink-navigation ul.black li a.logoPlaceholder {
+    margin-right: .5em;
+    padding: .4em 0;
+    font-weight: 700;
+    font-size: 1.4em;
+  }
+  .ink-navigation ul.black li button.fa-bars {
+    background: 0 0;
+    font-size: 1.2em;
+    color: #bbb;
+    border: 0;
+    padding: .8em .8em .8em 0;
+    float: left;
+  }
+}
+
+#topbar .ink-navigation ul.black li button.fa-bars:active,
+#topbar .ink-navigation ul.black li button.fa-bars:focus,
+#topbar .ink-navigation ul.black li button.fa-bars:hover {
+  color: #fff;
+  outline: 0;
+}
+
+body.ink-drawer .left-drawer, body.ink-drawer .right-drawer {
+  background: #1e1e1e;
+}
+
+body.ink-drawer .left-drawer li, body.ink-drawer .right-drawer li {
+  display: block;
+  margin: 0;
+  font-weight: 300;
+}
+
+body.ink-drawer .left-drawer ul, body.ink-drawer .right-drawer ul {
+  margin: 59px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body.ink-drawer .left-drawer li>a:hover, body.ink-drawer .right-drawer li>a:hover {
+  background: #333;
+  color: #FFF;
+}
+
+body.ink-drawer .left-drawer li>a, body.ink-drawer .right-drawer li>a {
+  display: block;
+  padding: 6px 15px;
+  color: #bbb;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .875em;
+}
+
+figure.ink-image {
+  position: relative;
+  border: 1px solid #555;
+}
+figure.ink-image > img {
+  width: 100%;
+}
+figure.ink-image > figcaption {
+  padding: 1em;
+  background: #fff;
+  line-height: 1.3;
+}
+figure.ink-image > figcaption.over-top, figure.ink-image > figcaption.over-bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border: none;
+}
+figure.ink-image > figcaption.over-top.dark, figure.ink-image > figcaption.over-bottom.dark {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+figure.ink-image > figcaption.over-top {
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+figure.ink-image > figcaption.over-bottom {
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+figure.ink-image > figcaption.dark {
+  color: #fff;
+  background: #222;
+}
+

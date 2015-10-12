@@ -1,0 +1,2 @@
+class SaryanController < ApplicationController
+end
