@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Saryan</title>
+  <title> SARYAN <%# full_title(yield(:title)) %> </title>
   <meta name="description" content="">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -11,16 +11,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body class ="ink-drawer">
-  <%= render 'layouts/navigation' %>
+<header>
+   <%= render 'layouts/navigation' %> 
+</header> 
+  </br></br>
+
   <div id="content" class="content-drawer">
     <section class="ink">
       <div class="ink-grid">
-        <header>
-          <h1>
-            Saryan
-          </h1>
-        </header>
-      <%= yield %>
+        <%= yield %>
     </section>
   </div>
 </body>
