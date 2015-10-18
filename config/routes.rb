@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   #get 'users/new'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,8 +9,15 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+  #SARYAN
   root 'saryan#index'
+  #Users
   get 'register' => 'users#new'
+  #Login
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
+  #Resources
   resources :users
 
   # Example of regular route:

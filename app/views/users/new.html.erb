@@ -1,6 +1,6 @@
 <% provide(:title, 'Register') %>
-<div class="column-group horizontal-gutters">
-	<div class="all-80 order-r1">
+<div class="column-group push-center push-middle">
+	<div class="all-80">
 		<center><h1>Register</h1></center>
 		<!-- <form class="ink-form"> -->
 		<%= form_for(@user, :html => {:class => "ink-form"}) do |f| %>
@@ -24,7 +24,7 @@
 		        <div class="control all-80">
 		            <%= f.password_field :password_confirmation %>
 		        </div>
-		        <div class="control all-80">
+		        <div class="control all-100">
 			        <fieldset>
 			        	<legend>Status</legend>
 		        		<div class="control all-100">

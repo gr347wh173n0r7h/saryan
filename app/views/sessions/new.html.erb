@@ -1,0 +1,40 @@
+<% provide(:title, 'Login') %>
+<div class="column-group push-center push-middle">
+	<div class="all-80">
+		<center><h1>Login</h1></center>
+		<!-- <form class="ink-form"> -->
+		<%= form_for(:session, url: login_path, :html => {:class => "ink-form"}) do |f| %>
+
+			<%# render 'shared/error_messages' %>
+		    <div class="control-group column-group gutters">	        
+		        <%= f.label :email, :class => "all-20 align-right" %>
+		        <div class="control all-80">
+		            <%= f.email_field :email%>
+		        </div>
+		         <%= f.label :password, :class => "all-20 align-right" %>
+		        <div class="control all-80">
+		            <%= f.password_field :password%>
+		        </div>
+		        <div class="column-group push-center push-middle">
+			        <fieldset>
+		        		<div class="control all-100">
+		        			<!-- <p class="label">I am a...</p> -->
+		        			<%= f.label :remember_me, class: "all-20" do %>
+		        			<ul class="control unstyled">		        			
+		        				<li><%= f.check_box :remember_me %> &nbsp;&nbsp;Remember me on this Computer</li>
+		        			</ul>
+		        			<% end %>
+		        		</div>
+			        </fieldset>
+		        </div>	
+		        <div class="control all-100">
+		    		<%= f.submit "Login", class: "ink-button black"%>
+	    		</div>
+	    		<div class="column-group push-center push-middle">
+    				<h5>New to SARYAN? <%= link_to "Sign up now!", register_path %></h5>
+	    		</div>
+		    </div>
+		
+		<% end %>
+	</div>
+</div>
