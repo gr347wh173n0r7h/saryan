@@ -15,3 +15,18 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+    background: url(bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div.clearfix_10{padding-top: 10px}
+div.clearfix_25{padding-top: 25px}
+div.clearfix_50{padding-top: 50px}
+div.clearfix_100{padding-top: 100px}
+div.clearfix_150{padding-top: 150px}
+div.clearfix_200{padding-top: 200px}

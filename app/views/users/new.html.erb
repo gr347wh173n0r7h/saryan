@@ -1,27 +1,29 @@
 <% provide(:title, 'Register') %>
+<div class="clearfix_100"></div>
 <div class="column-group push-center push-middle">
-	<div class="all-80">
+	<div class="all-80 push-center push-middle" style="background:rgba(255, 255, 255, 0.7)">
+        <div class="clearfix_10"></div>
 		<center><h1>Register</h1></center>
 		<!-- <form class="ink-form"> -->
 		<%= form_for(@user, :html => {:class => "ink-form"}) do |f| %>
 
 			<%# render 'shared/error_messages' %>
-		    <div class="control-group column-group gutters">
+		    <div class="control-group all-80 push-center push-middle gutters">
 		        <%= f.label :name, :class => "all-20 align-right" %>
-		        <div class="control all-80">
+		        <div class="control all-100">
 		            <%= f.text_field :name%>
 		        </div>
 
 		         <%= f.label :email, :class => "all-20 align-right" %>
-		        <div class="control all-80">
+		        <div class="control all-100">
 		            <%= f.email_field :email%>
 		        </div>
 		         <%= f.label :password, :class => "all-20 align-right" %>
-		        <div class="control all-80">
+		        <div class="control all-100">
 		            <%= f.password_field :password%>
 		        </div>
 		         <%= f.label :password_confirmation, :class => "all-20 align-right" %>
-		        <div class="control all-80">
+		        <div class="control all-100">
 		            <%= f.password_field :password_confirmation %>
 		        </div>
 		        <div class="control all-100">
@@ -37,11 +39,12 @@
 			        </fieldset>
 		        </div>	
 
-		        <div class="control all-100">
+		        <div class="control all-100 push-center push-middle">
 		    		<%= f.submit "Register", class: "ink-button black"%>
 	    		</div>
 		    </div>
 		
 		<% end %>
+      <div class="clearfix_10"></div>
 	</div>
 </div>

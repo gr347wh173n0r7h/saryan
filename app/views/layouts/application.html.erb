@@ -10,30 +10,29 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="ink-drawer">
-  <header>
-   <%= render 'layouts/navigation' %> 
-  </header> 
-  </br></br>
+<body class="ink-drawer" >
+    <header>
+            <%= render 'layouts/navigation' %>
+    </header>
+    <br><br>
 
- <div class="column-group push-center">
-  <% flash.each do |message_type, message| %>
-    
-    <div class="all-80">
-      <div class="ink-alert basic <%= message_type %>" role="alert">
-        <button class="ink-dismiss">&times;</button>
-        <p><%= message %></p>
-      </div>
+    <div class="column-group push-center">
+          <% flash.each do |message_type, message| %>
+            <div class="all-80">
+              <div class="ink-alert basic <%= message_type %>" role="alert">
+                <button class="ink-dismiss">&times;</button>
+                <p><%= message %></p>
+              </div>
+            </div>
+          <% end %>
+     </div>
+  
+    <div id="content" class="content-drawer">
+        <section class="ink">
+          <div class="ink-grid">
+            <%= yield %>
+          </div>
+        </section>
     </div>
-  
-  <% end %>
-  </div>
-  
-  <div id="content" class="content-drawer">
-    <section class="ink">
-      <div class="ink-grid">
-        <%= yield %>
-    </section>
-  </div>
 </body>
 </html>
