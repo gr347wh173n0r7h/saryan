@@ -5,7 +5,7 @@
         <button class="fa fa-bars left-drawer-trigger"></button>
       </li>
     <li class="logoPlaceholder">
-      <%= link_to("Saryan", "#", class: "logoPlaceholder") %>
+      <%= link_to("Saryan", root_path , class: "logoPlaceholder") %>
     </li>
     </ul>
     <ul class="menu horizontal black push-right hide-small hide-tiny hide-medium">
@@ -20,4 +20,17 @@
 
     </ul>
   </nav>
+</div>
+
+<div class="left-drawer">
+  <ul>
+    <li class="heading"><%= link_to("Home", root_path) %></li>
+
+    <% if logged_in? %>
+        <li class="heading"><%= link_to("Profile", current_user) %></li>
+        <li class="heading"><%= link_to("Logout", logout_path, method: "delete") %></li>
+    <% else %>
+        <li class="heading"><%= link_to("Login", login_path) %></li>
+    <% end %>
+  </ul>
 </div>

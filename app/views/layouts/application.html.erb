@@ -11,9 +11,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="ink-drawer" >
-    <header>
+    <div class="bg"></div>
+    <header></header>
             <%= render 'layouts/navigation' %>
-    </header>
+
     <br><br>
 
     <div class="column-group push-center">
@@ -34,5 +35,11 @@
           </div>
         </section>
     </div>
+
+    <script>
+        Ink.requireModules(['Ink.UI.Drawer_1'], function(Drawer) {
+            var inkDrawer = new Drawer({ sides: 'left', mode: 'push' });
+        });
+    </script>
 </body>
 </html>
