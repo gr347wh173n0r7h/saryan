@@ -43937,3 +43937,1257 @@ Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a
 
 
 Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 15:04:57 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_navigation.html.erb (17.2ms)
+Completed 200 OK in 213ms (Views: 206.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:35:37 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:37:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 969ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__481554869294656220_70332643640940'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.0ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:39:29 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_navigation.html.erb (12.5ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:39:51 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__481554869294656220_70332643858200'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.0ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:40:15 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    10:   <%= javascript_include_tag 'application'%>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__481554869294656220_70332422936380'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.4ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:40:17 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    10:   <%= javascript_include_tag 'application'%>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__481554869294656220_70332422936380'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.3ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:40:18 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    10:   <%= javascript_include_tag 'application'%>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__481554869294656220_70332422936380'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (27.9ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:40:22 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    10:   <%= javascript_include_tag 'application'%>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__481554869294656220_70332422936380'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.6ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:40:23 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    10:   <%= javascript_include_tag 'application'%>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__481554869294656220_70332422936380'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.6ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:40:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    10:   <%= javascript_include_tag 'application'%>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__109770830898672100_70098251991940'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.6ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:41:01 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    10:   <%= javascript_include_tag 'application'%>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__109770830898672100_70098251991940'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.2ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:42:05 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__109770830898672100_70097976033800'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.0ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:42:06 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__109770830898672100_70097976033800'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.3ms)
+
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_navigation.html.erb (15.9ms)
+Completed 200 OK in 260ms (Views: 252.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:42:32 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:45:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3763787773069309256_70200267329120'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.1ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:48:27 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3763787773069309256_70200267329120'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.7ms)
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_navigation.html.erb (11.0ms)
+Completed 200 OK in 450ms (Views: 449.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/Roboto/roboto-regular-webfont-61d40b0df809637f0103c6a1ca9d4b1791d6d22e5e2535a97ddeb80b6eed23cb.woff" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/Roboto/roboto-bold-webfont-9f3a9089070601cc8bf55d85e933933a1fe19d7e9e585e320d66aff56cd086d3.woff" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/assets/Roboto/roboto-light-webfont-7a9a6cc8a1727b98f396b2f4582763eb71fdf91e2e3c976509db368a0d236b9e.woff" for 127.0.0.1 at 2015-10-24 16:49:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-24 16:50:56 -0700
+Processing by SaryanController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered saryan/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3763787773069309256_70200267329120'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-24 16:51:01 -0700
+Processing by SaryanController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered saryan/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3763787773069309256_70200267329120'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-24 16:51:03 -0700
+Processing by SaryanController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered saryan/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'):
+     7:   <meta name="MobileOptimized" content="320">
+     8:   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     9:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+    10:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body class="ink-drawer" >
+  app/assets/javascripts/application.js:15
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3763787773069309256_70200267329120'
+
+
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.5ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.9ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/n0r7h/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+Processing by SaryanController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered saryan/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:51:15 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:51:17 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 80ms (Views: 79.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:51:17 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:52:50 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 124ms (Views: 123.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:52:50 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:52:50 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:52:51 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 114ms (Views: 114.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:53:24 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:54:03 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:54:31 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:54:57 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 84ms (Views: 84.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:39 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:55:40 -0700
+
+
+Started GET "/planner" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+Processing by PlannerController#new as HTML
+  Rendered planner/new.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 88ms (Views: 87.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/ink-flex.self-c31f40f1f69d5539353199aa10dd1c9020224c2560e3b179f0bb1d0c7f8e4a8d.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/font-awesome.self-ce643943fd76eb6767ad3eced5dbae9af82fd6d6e9f90a0f15879bd0e95bd65c.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/planner.self-4b86d36ead7f460e2bba6f2efd198ce78db82c472e03dd796513d7a0efff5ee3.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/custom.self-3594c97da30c776a669a592f092e293a66093bd1a2fbc9fedff3492dfc132e6f.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/saryan.self-05c27ff09eeb86d018e5438c5e45ec8b8f5d6f5b3178296ccc7e5ac4787920c6.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/application.self-459c6b44f17a4bcca33f230b9813ac6dcc3cab8d35e9618a2fc7620bba6fdee2.css?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/ink-all.self-fcafa23d6a0380f7aac1e63d67d285d085483b4a959973ccee5e14aebd582512.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/autoload.self-0d914fe2da1ac5e9d18659f1bf1e67618b75ee522ed3158fe0001992d1ec9484.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/planner.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/saryan.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/application.self-10ad0916cf31256fe71785e8dc9cc297a96b1cdf7b74aeb61711199b9a3d003f.js?body=1" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
+
+
+Started GET "/assets/bgfilter2.jpg" for 127.0.0.1 at 2015-10-24 16:55:41 -0700
