@@ -12,10 +12,12 @@
       <li class="heading"><%= link_to("Home", root_path) %></li>
 
       <% if logged_in? %>
-       <li class="heading"><%= link_to("Profile", current_user) %></li>
-       <li class="heading"><%= link_to("Logout", logout_path, method: "delete") %></li>
+          <li class="heading"><%= link_to("Planner", planner_path) %></li>
+          <li class="heading"><%= link_to("Account", current_user) %></li>
+          <li class="heading"><%= link_to("Logout", logout_path, method: "delete") %></li>
       <% else %>
-      <li class="heading"><%= link_to("Login", login_path) %></li>
+          <li class="heading"><%= link_to("Login", login_path) %></li>
+          <li class="heading"><%= link_to("Register", register_path) %></li>
       <% end %>
 
     </ul>
@@ -27,10 +29,12 @@
     <li class="heading"><%= link_to("Home", root_path) %></li>
 
     <% if logged_in? %>
+        <li class="heading"><%= link_to("Planner", planner_path) %></li>
         <li class="heading"><%= link_to("Profile", current_user) %></li>
         <li class="heading"><%= link_to("Logout", logout_path, method: "delete") %></li>
     <% else %>
         <li class="heading"><%= link_to("Login", login_path) %></li>
+        <li class="heading"><%= link_to("Register", register_path) %></li>
     <% end %>
   </ul>
 </div>

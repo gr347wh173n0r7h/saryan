@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'planner/new'
+
   get 'sessions/new'
 
   #get 'users/new'
@@ -17,6 +19,8 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+  #Planner
+  get 'planner' => 'planner#new'
   #Resources
   resources :users
 

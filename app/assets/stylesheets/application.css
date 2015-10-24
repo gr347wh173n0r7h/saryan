@@ -17,7 +17,7 @@
  */
 
 html {
-    background: url(bg.jpg) no-repeat center center fixed;
+    background: url(bgfilter2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,7 +37,7 @@ html {
     /*-o-background-size: cover;*/
     /*background-size: cover;*/
 /*}*/
-
+div.clearfix_5{padding-top: 5px}
 div.clearfix_10{padding-top: 10px}
 div.clearfix_25{padding-top: 25px}
 div.clearfix_50{padding-top: 50px}
