@@ -1,4 +1,36 @@
-<div class="clearfix_50"></div>
-<div class="column-group push-center push-middle" style="background: white">
-   <h1><%= @user.name %>, <%= @user.email %>, <%= @user.status %></h1>
+<% provide(:title, 'Account') %>
+<div class="clearfix_100"></div>
+<div class="column-group push-center push-middle">
+  <div class="all-80 push-center push-middle" style="background:rgba(255, 255, 255, 0.7)">
+    <div class="clearfix_10"></div>
+    <div class="align-center"><h1>Account</h1></div>
+    <!-- <form class="ink-form"> -->
+    <%= form_for(@user, :html => {:class => "ink-form"}) do |f| %>
+
+        <%# render 'shared/error_messages' %>
+        <div class="control-group all-80 push-center push-middle gutters">
+
+          <%= f.label :name, :class => "all-20 align-right" %>
+          <div class="control all-100">
+            <%= f.text_field :name, readonly: true %>
+          </div>
+          <%= f.label :email, :class => "all-20 align-right" %>
+          <div class="control all-100">
+            <%= f.email_field :email, readonly: true %>
+          </div>
+          <%= f.label :status, :class => "all-20 align-right" %>
+          <div class="control all-100">
+            <%= f.text_field :status, readonly: true %>
+          </div>
+
+          <div class="control all-100 push-center push-middle">
+            <%= f.submit "Edit", class: "ink-button black"%>
+          </div>
+        </div>
+
+    <% end %>
+    <div class="clearfix_10"></div>
+  </div>
 </div>
+
+
