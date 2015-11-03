@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b68a8e99-ed1f-4f39-9783-9352ba5046ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/BPi23RHF3tmYYHH6eQsxVVUvQcsFQsgITgwwFnbCuJA.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/BPi23RHF3tmYYHH6eQsxVVUvQcsFQsgITgwwFnbCuJA.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/planner/new.html.erb" afterPath="$PROJECT_DIR$/app/views/planner/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/planner.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/planner.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b68a8e99-ed1f-4f39-9783-9352ba5046ff" name="Default" comment="" />
     <ignored path="saryan.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/components/" />
