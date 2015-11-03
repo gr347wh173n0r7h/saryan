@@ -1,45 +1,79 @@
 <% provide(:title, 'PLanner') %>
 <div class="clearfix_10 all-100"></div>
-  <div class="column-group horizontal-gutters">
+  <div class="column-group push-center horizontal-gutters">
         <!--Planner-->
-        <div class="Planner xlarge-70 large-70 medium-60 small-50 tiny-100 order-1 order-r1" style="background:rgba(255, 255, 255, 0.7)">
+        <div class="Planner xlarge-60 large-60 medium-50 small-40 tiny-100 horizontal-gutters order-1 order-r1" style="background:rgba(255, 255, 255, 0.7)">
 
             <div class="clearfix_10"></div>
-            <div class="column-group all-100 push-center order-r1"><h3>Planner</h3></div>
+            <div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>
 
             <!--SEMESTER-->
-            <div class="column-group all-100 push-center bottom-space order-r2">
-                <div class="column-group all-10 push-left right-space order-1">
-                    <div class="all-100 align-left push-middle"><h5>Fall&nbsp2015</h5></div>
-                </div>
-                <div class="column-group all-80 push-right order-2" style="border: 1px solid black;">
-                     <div class="column-group all-100 push-center push-middle">
-                        <ul class="droppable-2 all-95">
+            <!--<div class="column-group all-100 push-center bottom-space order-r2">-->
+                <!--<div class="column-group all-10 push-left right-space order-1">-->
+                    <!--<div class="all-100 push-center push-middle"><h4>Fall&nbsp2015</h4></div>-->
+                <!--</div>-->
+                <!--<div class="column-group all-80 push-right order-2" style="border: 1px solid black;">-->
+                     <!--<div class="column-group all-100 push-center push-middle">-->
+                        <!--<ul class="droppable-2 all-95">-->
 
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
+          <!-- SEMESTER-->
+          <div class="Semester column-group all-95 push-middle order-r2">
+              <div class="all-100 push-right" style="padding-top: 7px">
+                <p class="tip">Fall 2015</p>
+                <ul class="droppable-2 all-100">
+
+                </ul>
+              </div>
+          </div>
+        <!--END SEMESTER-->
         </div>
         <!-- Pot -->
         <div class="Pot xlarge-30 large-30 medium-40 small-50 tiny-100 order-2 order-r1">
 
               <div class="column" style="background:rgba(255, 255, 255, 0.7)">
                 <div class="clearfix_10"></div>
-                    <div class="column-group all-90 push-center order-r1">
+                    <div class="column-group all-90 push-center push-middle order-r1">
                         <div class="column-group all-100 order-r1"><h3> Courses </h3></div>
+                          <!-- SEARCH-->
+                          <form class="search ink-form">
+                            <div class="clearfix_15"></div>
+                            <div class="control-group column-group horizontal-gutters">
+                              <label for="seach" class="all-20 align-left">Search:</label>
+                              <div class="control all-70">
+                                <input type="text" name="search" id="search">
+                              </div>
+                            </div>
+                          </form>
+                      <!--POTS -->
                           <ul class="droppable-1 all-auto">
-                            <li class="ink-label align-center blue">
-                              Title1 Name Units
+                            <li id="Course" class="class ink-tooltip ink-label align-center blue"
+                                data-tip-html="<p>Title: SE 195a</p><p>Name: Senior Project</p><p>Units: 3</p>"
+                                data-tip-where="down"
+                                data-tip-color="blue">
+                              <div class="all-10 push-right"><button id="delete" class="delete ink-button" onclick="removeClass()">X</button></div>
+                              SE 195a
                             </li>
-                            <li class="ink-label align-center blue">
-                              Title2 Name Units
+                            <li id="Course" class="class ink-tooltip ink-label align-center blue"
+                                data-tip-html="<p>Title: SE 157a</p><p>Name: Database</p><p>Units: 3</p>"
+                                data-tip-where="down"
+                                data-tip-color="blue">
+                              <div class="all-10 push-right"><button id="delete" class="delete ink-button" onclick="removeClass()">X</button></div>
+                              SE 157a
                             </li>
-                            <li class="ink-label align-center blue">
-                              Title3 Name Units
+                            <li id="Course" class="class ink-tooltip ink-label align-center blue"
+                                data-tip-html="<p>Title: SE 165</p><p>Name: Process Management</p><p>Units: 3</p>"
+                                data-tip-where="down"
+                                data-tip-color="blue">
+                              <div class="all-10 push-right"><button id="delete" class="delete ink-button" onclick="removeClass()">X</button></div>
+                              SE 165a
                             </li>
                           </ul>
+                      <!-- END POTS-->
                     </div>
                 <div class="clearfix_25"></div>
               </div>
@@ -54,5 +88,26 @@
             Droppable.add('.droppable-1', {onDrop: 'move', onDropOut: 'revert'});
             Droppable.add('.droppable-2', {onDrop: 'move', onDropOut: 'revert'});
         })
+
+
+
+        function removeClass(){
+            var elem = document.getElementById('Course');
+            elem.parentNode.removeChild(elem);
+            return false;
+        }
+        function pageInit() {
+            var button = document.getElementbyID('delete');
+            if(button.addEventListener) {
+                button.addEventListener('click',removeClass,false);
+            }
+            else if (button.attackEvent) {
+                button.attachEvent('onclick', removeClass);
+            }
+            else{
+                button.onclick = removeClass;
+            }
+        }
+
     </script>
   </div>

@@ -24,21 +24,11 @@ html {
     background-size: cover;
 }
 
-/*div.bg {*/
-    /*position: fixed;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*z-index: 1;*/
-    /*display: block;*/
-    /*background-image: url('bg.jpg');*/
-    /*filter: blur(10px);*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
-/*}*/
+ul.menu {background: rgba(0,0,0,.5);}
+
 div.clearfix_5{padding-top: 5px}
 div.clearfix_10{padding-top: 10px}
+div.clearfix_15{padding-top: 15px}
 div.clearfix_25{padding-top: 25px}
 div.clearfix_50{padding-top: 50px}
 div.clearfix_100{padding-top: 100px}

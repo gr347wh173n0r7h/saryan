@@ -7,10 +7,7 @@ div.box{
   border-style: solid;
   border-width: 1px;
   background-color: lightgray;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 1px;
-  padding-right: 1px;
+  padding: 1px;
 }
 
 div.Course{
@@ -19,8 +16,9 @@ div.Course{
   border-width: 1px;
 }
 
-div.Sem{
-
+div.Semester{
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgray;
 }
 
 div.Planner{}
@@ -45,6 +43,41 @@ div.Pot{}
   min-height: 2em;
   padding: 0.5em 1em;}
 
+.droppable-1 li{padding-top: 1em; padding-bottom: 1em;}
+
  .droppable-2 li {
   float: left;
   padding: 0.5em;}
+
+.ink-label{margin-left: 0.2em;}
+
+.ink-tooltip.blue {
+  background: #0f75da none repeat scroll 0 0;
+  //display: inline-block;
+  position: relative;
+  box-shadow: 5px 5px 5px grey;
+  border: 1px solid #dad3c6;
+  padding: 1em;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 0.938em;
+  font-weight: 300;}
+
+.delete{
+  background: 0,0,0,0;
+  padding: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.search{
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgray;
+}
+// Show/Hide delete button.
+.delete {display: none;  }
+.delete:hover{background: 0,0,0,0;
+  color: red;
+  border-color: rgb(255,0,0);}
+.class:hover .delete{display: block}
