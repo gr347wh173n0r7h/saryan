@@ -14,30 +14,30 @@
                 <div class="control-group required">
                     <%= f.label :name, :class => "all-20 align-right" %>
                     <div class="control all-100">
-                        <%= f.text_field :name, :class => 'form-control'%>
+                        <%= f.text_field :name, :class => 'form-control', :placeholder => 'Please enter your name'%>
                     </div>
-                    <p class="tip">Enter your name</p>
+                    <!--<p class="tip">Enter your name</p>-->
                 </div>
                 <div class="control-group required">
                      <%= f.label :email, :class => "all-20 align-right" %>
                     <div class="control all-100">
-                        <%= f.email_field :email, :class => 'form-control'%>
+                        <%= f.email_field :email, :class => 'form-control', :placeholder => 'Please enter your email'%>
                     </div>
-                    <p class="tip">Enter your student email email</p>
+                    <p class="tip">Must be valid University email</p>
                 </div>
                 <div class="control-group required">
                     <%= f.label :password, :class => "all-20 align-right" %>
                     <div class="control all-100">
-                        <%= f.password_field :password, :class => 'form-control'%>
+                        <%= f.password_field :password, :class => 'form-control', :placeholder => 'Please enter a password'%>
                     </div>
-                    <p class="tip">Enter a password with a minimum of 6 characters</p>
+                    <p class="tip">Must be a minimum of 6 characters</p>
                 </div>
                 <div class="control-group required">
                      <%= f.label :password_confirmation, :class => "all-20 align-right" %>
                     <div class="control all-100 required">
-                        <%= f.password_field :password_confirmation, :class => 'form-control'%>
+                        <%= f.password_field :password_confirmation, :class => 'form-control', :placeholder => 'Please confirm your password'%>
                     </div>
-                  <p class="tip">Please confirm your password</p>
+                  <!--<p class="tip">Please confirm your password</p>-->
                 </div>
                 <div class="control-group all-100 required">
                     <legend>Status</legend>
@@ -45,8 +45,8 @@
                         <!-- <p class="label">I am a...</p> -->
                       <p class="tip">I am a...</p>
                         <ul class="control unstyled">
-                            <li><%= f.radio_button :status, "S", :checked => "S"%>&nbsp;Student</li>
-                            <li> <%= f.radio_button :status, "A", :checked => "A"%> &nbsp;Advisor</li>
+                            <li><%= f.radio_button :status, "S", :checked => true %>&nbsp;Student</li>
+                            <li> <%= f.radio_button :status, "A"%> &nbsp;Advisor</li>
                         </ul>
                     </div>
                 </div>

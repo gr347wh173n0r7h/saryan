@@ -4,10 +4,17 @@
 	<div class="all-60 push-center push-middle" style="background:rgba(255, 255, 255, 0.7)">
         <div class="clearfix_10"></div>
 		<center><h1>Login</h1></center>
-		<!-- <form class="ink-form"> -->
-		<%= form_for(:session, url: login_path, :html => {:class => "ink-form "}) do |f| %>
 
-			<%# render 'shared/error_messages' %>
+          <% if flash[:danger] %>
+            <div class="column-group all-100 push-center push-middle">
+                <div class="ink-alert basic error all-80">
+                  <button class="ink-dismiss">&times;</button>
+                      <p><%= flash[:danger] %></p>
+                </div>
+            </div>
+          <% end %>
+
+		<%= form_for(:session, url: login_path, :html => {:class => "ink-form "}) do |f| %>
 
             <div class="control-group all-80 push-center push-middle gutters ">
                 <%= f.label :email, :class => "all-20 align-right" %>
@@ -21,7 +28,6 @@
                 <div class="column-group ">
                     <fieldset>
                         <div class="control all-100">
-                            <!-- <p class="label">I am a...</p> -->
                             <%= f.label :remember_me, class: "all-20" do %>
                             <ul class="control unstyled">
                                 <li><%= f.check_box :remember_me %> &nbsp;&nbsp;Remember me on this Computer</li>
