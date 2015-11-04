@@ -16,17 +16,6 @@
             <%= render 'layouts/navigation' %>
 
     <br><br>
-
-    <div class="column-group push-center">
-          <% flash.each do |message_type, message| %>
-            <div class="all-80">
-              <div class="ink-alert basic <%= message_type %>" role="alert">
-                <button class="ink-dismiss">&times;</button>
-                <p><%= message %></p>
-              </div>
-            </div>
-          <% end %>
-     </div>
   
     <div id="content" class="content-drawer">
         <section class="ink">

@@ -1,50 +1,61 @@
 <% provide(:title, 'Register') %>
-<div class="clearfix_100"></div>
-<div class="column-group push-center push-middle">
+<div class="clearfix_50"></div>
+<div class="column-group push-center push-middle bottom-space">
 	<div class="all-80 push-center push-middle" style="background:rgba(255, 255, 255, 0.7)">
         <div class="clearfix_10"></div>
 		<div class="align-center"><h1>Register</h1></div>
 		<!-- <form class="ink-form"> -->
 		<%= form_for(@user, :html => {:class => "ink-form"}) do |f| %>
-
-			<%# render 'shared/error_messages' %>
-		    <div class="control-group all-80 push-center push-middle gutters">
-		        <%= f.label :name, :class => "all-20 align-right" %>
-		        <div class="control all-100">
-		            <%= f.text_field :name%>
-		        </div>
-
-		         <%= f.label :email, :class => "all-20 align-right" %>
-		        <div class="control all-100">
-		            <%= f.email_field :email%>
-		        </div>
-		         <%= f.label :password, :class => "all-20 align-right" %>
-		        <div class="control all-100">
-		            <%= f.password_field :password%>
-		        </div>
-		         <%= f.label :password_confirmation, :class => "all-20 align-right" %>
-		        <div class="control all-100">
-		            <%= f.password_field :password_confirmation %>
-		        </div>
-		        <div class="control all-100">
-			        <fieldset>
-			        	<legend>Status</legend>
-		        		<div class="control all-100">
-		        			<!-- <p class="label">I am a...</p> -->
-		        			<ul class="control unstyled">
-		        				<li><%= f.radio_button :status, "S", :checked => "S"%>&nbsp;Student</li>
-		        				<li> <%= f.radio_button :status, "A", :checked => "A"%> &nbsp;Advisor</li>
-		        			</ul>
-		        		</div>
-			        </fieldset>
-		        </div>	
-
-		        <div class="control all-100 push-center push-middle">
-		    		<%= f.submit "Register", class: "ink-button black"%>
-	    		</div>
-		    </div>
-		
+          <div class="all-80 push-center push-middle gutters">
+                <%= render 'shared/error_message' %>
+          </div>
+          <div class="all-80 push-center push-middle gutters">
+            <fieldset>
+                <div class="control-group required">
+                    <%= f.label :name, :class => "all-20 align-right" %>
+                    <div class="control all-100">
+                        <%= f.text_field :name, :class => 'form-control'%>
+                    </div>
+                    <p class="tip">Enter your name</p>
+                </div>
+                <div class="control-group required">
+                     <%= f.label :email, :class => "all-20 align-right" %>
+                    <div class="control all-100">
+                        <%= f.email_field :email, :class => 'form-control'%>
+                    </div>
+                    <p class="tip">Enter your student email email</p>
+                </div>
+                <div class="control-group required">
+                    <%= f.label :password, :class => "all-20 align-right" %>
+                    <div class="control all-100">
+                        <%= f.password_field :password, :class => 'form-control'%>
+                    </div>
+                    <p class="tip">Enter a password with a minimum of 6 characters</p>
+                </div>
+                <div class="control-group required">
+                     <%= f.label :password_confirmation, :class => "all-20 align-right" %>
+                    <div class="control all-100 required">
+                        <%= f.password_field :password_confirmation, :class => 'form-control'%>
+                    </div>
+                  <p class="tip">Please confirm your password</p>
+                </div>
+                <div class="control-group all-100 required">
+                    <legend>Status</legend>
+                    <div class="all-100" >
+                        <!-- <p class="label">I am a...</p> -->
+                      <p class="tip">I am a...</p>
+                        <ul class="control unstyled">
+                            <li><%= f.radio_button :status, "S", :checked => "S"%>&nbsp;Student</li>
+                            <li> <%= f.radio_button :status, "A", :checked => "A"%> &nbsp;Advisor</li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="all-100 push-middle bottom-space">
+              <%= f.submit "Register", class: "ink-button all-100 black"%>
+            </div>
+          </div>
 		<% end %>
-      <div class="clearfix_10"></div>
-	</div>
+
+    </div>
 </div>
