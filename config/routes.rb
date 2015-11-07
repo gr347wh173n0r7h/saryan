@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   get 'planner' => 'planner#new'
   #Resources
   resources :users
-
+  resources :prereqs
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
