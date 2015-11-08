@@ -10,55 +10,123 @@ div.box{
   padding: 1px;
 }
 
-div.Course{
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
+#Course{
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+
+  width: 70px;
+  height: 70px;
+
+  text-align: center;
+  font-size: small;
 }
 
 div.Semester{
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgray;
+
 }
 
-div.Planner{}
-
-div.Pot{}
-//
-//ul.droppable-1{list-style-type:none}
-//ul.droppable-2{
-//  list-style-type:none;
-//  min-height: 2em;}
-
-.droppable-1::after, .droppable-2::after {
-  clear: both;
-  content: "";
-  display: table;
+div.Planner{
+  border-radius: 5px;
+  background:rgba(255, 255, 255, 0.7)
 }
-.droppable-1 , .droppable-2 {
-  background: #e4dfd6 none repeat scroll 0 0;
+
+div.Pot{
+  border-radius: 5px;
+  background:rgba(255, 255, 255, 0.7)
+}
+.right-drawer{
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  background:rgba(255, 255, 255, 0.7);
+  //max-height: 60%;
+}
+.tab-nav{
   border: 1px solid #dad3c6;
-  border-radius: 2px;
-  list-style-type: none;
-  min-height: 2em;
-  padding: 0.5em 1em;}
+  background: rgba(228, 228, 228, .7);
+}
+.tabs-tab{
+  border: 1px solid #dad3c6;
+  background: rgba(228, 228, 228, .7);
+}
+.PlanCourseB{
+  font-size: 0.5em;
+  height: 60px;
+  width: 60px;
+  float: inherit;
 
-.droppable-1 li{padding-top: 1em; padding-bottom: 1em;}
+  position: relative;
+  box-shadow: 0px 0px 2.5px #fff;
+  border: 1px solid #dad3c6;
+  padding: 1em;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.938em;
+  font-weight: 300;
+  //padding-top: 5em;
+  //padding-bottom: .5em;
+}
 
- .droppable-2 li {
-  float: left;
-  padding: 0.5em;}
+#GE button{
+  background: #c91111 none repeat scroll 0 0;
+}
+#Maj button{
+  background: #ff9c00 none repeat scroll 0 0;
+}
+#Cons button{
+  background: #0f75da none repeat scroll 0 0;
+}
+.ink-toggle{
+  border-radius: 5px;
+  background-color: rgba(150,150,150,.8);
+  box-shadow: 0px 0px 5px black;
+  border: 1px solid #dad3c6;
+}
+.PlanTog{
+  border-radius: 5px;
+  background-color: rgba(150,150,150,.8);
+  background: #282828 none repeat scroll 0 0;
+  box-shadow: 0px 0px 5px black;
+  color: #fff;
+}
+.Category{
+  display: none;
+  border-radius: 5px;
+  background-color: rgba(100,100,100,.75);
+  background: #282828 none repeat scroll 0 0;
+  box-shadow: 0px 0px 5px black;
+  border: 1px solid #dad3c6;
+  color: #fff;
+}
+.Category h5{color: #fff;}
 
 .ink-label{margin-left: 0.2em;}
 
-.ink-tooltip.blue {
-  background: #0f75da none repeat scroll 0 0;
+.ink-label.blue, .ink-label.orange, .ink-label.red {
+  //background: #0f75da none repeat scroll 0 0;
   //display: inline-block;
   position: relative;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 0px 0px 5px black;
   border: 1px solid #dad3c6;
   padding: 1em;
-  border-radius: 2px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.938em;
+  font-weight: 300;}
+
+.ink-tooltip.black {
+  background: #282828 none repeat scroll 0 0;
+  //display: inline-block;
+  position: relative;
+  box-shadow: 0px 0px 7px black;
+  border: 1px solid #dad3c6;
+  padding: 1em;
+  border-radius: 5px;
   color: #fff;
   font-size: 0.938em;
   font-weight: 300;}
@@ -79,8 +147,11 @@ div.Pot{}
 // Show/Hide delete button.
 .delete {display: none;  }
 
-.delete:hover{background: 0,0,0,0;
+.delete:hover{
+  background: 0,0,0,0;
   color: red;
   border-color: rgb(255,0,0);  }
 
-#Course:hover .delete{display: block}
+#Course:hover .delete{
+  display: block
+}
