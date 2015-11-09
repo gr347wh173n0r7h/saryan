@@ -45,11 +45,12 @@
                 <li id="PT"><a class="tabs-tab" href="#P">Plans</a></li>
                 <li id="CT"><a class="tabs-tab" href="#C">Courses</a></li>
               </ul>
+
               <!-- PLANS-->
               <div id="P" class="tabs-content">
-
                 <div class="column-group all-100 push-center">
 
+                    <!--COURSE FROM PLAN ADD-->
                     <div class="column all-95 order-r1 half-top-space condensed">
                       <button id="GETog" class="PlanTog ink-button all-100 "
                               onclick="showCat('GE')">General Education</button>
@@ -58,8 +59,8 @@
                             <div class="all-100"><h5>Area A:</h5></div>
                             <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
                               <button id="A1-B" class="PlanCourseB ink-button align-center order-1"  onclick="showCard('A1-CC')">A1</button>
-                              <!--<button id="A2-B" class="PlanCourseB ink-button align-center order-2">A2</button>-->
-                              <!--<button id="A3-B" class="PlanCourseB ink-button align-center order-3">A3</button>-->
+                              <button id="A2-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('A2-CC')">A2</button>
+                              <button id="A3-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('A3-CC')">A3</button>
                             </div>
                         </div>
                       </div>
@@ -73,9 +74,9 @@
                           <div class="all-100 "><h5>Business Pool</h5></div>
                           <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
                             <button id="Math71-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('Math71-CC')">Math<br>71</button>
-                            <!--<button id="Engl2-B" class="PlanCourseB ink-button align-center order-2">Engl<br>2</button>-->
-                            <!--<button id="Bus1_20-B" class="PlanCourseB ink-button align-center order-3">Bus1<br>20</button>-->
-                            <!--<button id="Bus2_90-B" class="PlanCourseB ink-button align-center order-4">Bus2<br>90</button>-->
+                            <button id="Engl2-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('Engl2-CC')">Engl<br>2</button>
+                            <button id="Bus1_20-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('Bus1_20-CC')">Bus1<br>20</button>
+                            <button id="Bus2_90-B" class="PlanCourseB ink-button align-center order-4" onclick="showCard('Bus2_90-CC')">Bus2<br>90</button>
                           </div>
                         </div>
                       </div>
@@ -88,8 +89,8 @@
                           <div class="all-100"><h5>Management Information Systems Core</h5></div>
                           <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
                             <button id="Bus4_92-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('Bus4_92-CC')">Bus4<br>92</button>
-                            <!--<button id="Bus4_110A-B" class="PlanCourseB ink-button align-center order-2">Bus4<br>110A</button>-->
-                            <!--<button id="Bus4_110B-B" class="PlanCourseB ink-button align-center order-3">Bus4<br>110B</button>-->
+                            <button id="Bus4_110A-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('Bus4_110A-CC')">Bus4<br>110A</button>
+                            <button id="Bus4_110B-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('Bus4_110B-CC')">Bus4<br>110B</button>
                           </div>
                         </div>
                       </div>
@@ -99,6 +100,7 @@
                 <div class="clearfix_25"></div>
               </div>
               <!-- END PLANS-->
+
               <!-- COURSES-->
               <div id="C" class="tabs-content">
                 <div class="column-group all-95 push-center order-r1">
@@ -116,11 +118,13 @@
                   <!-- CLASS CARDs-->
                   <div class="ClassCards ink-flex all-100">
                       <div class="column-group all-100">
+
+                        <!--COURSE FROM PLAN ADD RED-->
                         <!-- CC-->
                         <div id="A1-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
                           <div class="all-70 push-right half-top-space">
                             <div class="all-50 push-left align-left large order-r2">
-                              <p>Business</p>
+                              <p>A1</p>
                             </div>
                             <div class="all-40 push-left align-right large order-r3">
                               <p>Units: 3</p>
@@ -140,7 +144,59 @@
                             </ul>
                           </div>
                         </div>
-                        <!-- CC -->
+                        <!--END CC -->
+                        <!-- CC-->
+                        <div id="A2-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                          <div class="all-70 push-right half-top-space">
+                            <div class="all-50 push-left align-left large order-r2">
+                              <p>A2</p>
+                            </div>
+                            <div class="all-40 push-left align-right large order-r3">
+                              <p>Units: 3</p>
+                            </div>
+                            <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                          </div>
+                          <div class="all-30 push-left order-r1">
+                            <ul id="A2-CCD" class="droppable-CC all-100 half-left-space red">
+                              <li id="Course" class="ink-tooltip ink-label push-middle align-center red"
+                                  data-tip-html="<p>Title: A2</p><p>Name: GE</p><p>Units: 3</p>"
+                                  data-tip-where="down"
+                                  data-tip-color="black">
+                                A2
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!--END CC -->
+                        <!-- CC-->
+                        <div id="A3-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                          <div class="all-70 push-right half-top-space">
+                            <div class="all-50 push-left align-left large order-r2">
+                              <p>A3</p>
+                            </div>
+                            <div class="all-40 push-left align-right large order-r3">
+                              <p>Units: 3</p>
+                            </div>
+                            <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                          </div>
+                          <div class="all-30 push-left order-r1">
+                            <ul id="A3-CCD" class="droppable-CC all-100 half-left-space red">
+                              <li id="Course" class="ink-tooltip ink-label push-middle align-center red"
+                                  data-tip-html="<p>Title: A3</p><p>Name: GE</p><p>Units: 3</p>"
+                                  data-tip-where="down"
+                                  data-tip-color="black">
+                                A3
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!--END CC -->
+
+                        <!--COURSE FROM PLAN ADD ORANGE-->
                         <!-- CC-->
                         <div id="Math71-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
                           <div class="all-70 push-right half-top-space">
@@ -165,7 +221,84 @@
                               </ul>
                           </div>
                         </div>
-                        <!-- CC -->
+                        <!-- END CC -->
+                        <!-- CC-->
+                        <div id="Engl2-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                          <div class="all-70 push-right half-top-space">
+                            <div class="all-50 push-left align-left large order-r2">
+                              <p>English</p>
+                            </div>
+                            <div class="all-40 push-left align-right large order-r3">
+                              <p>Units: 3</p>
+                            </div>
+                            <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                          </div>
+                          <div class="all-30 push-left order-r1">
+                            <ul id="Engl2-CCD" class="droppable-CC all-100 half-left-space orange">
+                              <li id="Course" class="ink-tooltip ink-label push-middle align-center orange"
+                                  data-tip-html="<p>Title: Engl 2</p><p>Name: Calculus</p><p>Units: 3</p>"
+                                  data-tip-where="down"
+                                  data-tip-color="black">
+                                Engl<br>2
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- END CC -->
+                        <!-- CC-->
+                        <div id="Bus1_20-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                          <div class="all-70 push-right half-top-space">
+                            <div class="all-50 push-left align-left large order-r2">
+                              <p>Business</p>
+                            </div>
+                            <div class="all-40 push-left align-right large order-r3">
+                              <p>Units: 3</p>
+                            </div>
+                            <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                          </div>
+                          <div class="all-30 push-left order-r1">
+                            <ul id="Bus1_20-CCD" class="droppable-CC all-100 half-left-space orange">
+                              <li id="Course" class="ink-tooltip ink-label push-middle align-center orange"
+                                  data-tip-html="<p>Title: Bus1 20</p><p>Name: Calculus</p><p>Units: 3</p>"
+                                  data-tip-where="down"
+                                  data-tip-color="black">
+                                Bus1<br>20
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- END CC -->
+                        <!-- CC-->
+                        <div id="Bus2_90-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                          <div class="all-70 push-right half-top-space">
+                            <div class="all-50 push-left align-left large order-r2">
+                              <p>Business</p>
+                            </div>
+                            <div class="all-40 push-left align-right large order-r3">
+                              <p>Units: 3</p>
+                            </div>
+                            <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                          </div>
+                          <div class="all-30 push-left order-r1">
+                            <ul id="Bus2_90-CCD" class="droppable-CC all-100 half-left-space orange">
+                              <li id="Course" class="ink-tooltip ink-label push-middle align-center orange"
+                                  data-tip-html="<p>Title: Bus2 90</p><p>Name: Calculus</p><p>Units: 3</p>"
+                                  data-tip-where="down"
+                                  data-tip-color="black">
+                                Bus2<br>90
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- END CC -->
+
+                        <!--COURSE FROM PLAN ADD BLUE-->
                         <!-- CC-->
                         <div id="Bus4_92-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
                           <div class="all-70 push-right half-top-space">
@@ -190,7 +323,58 @@
                             </ul>
                           </div>
                         </div>
-                        <!-- CC -->
+                        <!-- END CC -->
+                        <!-- CC-->
+                        <div id="Bus4_110A-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                          <div class="all-70 push-right half-top-space">
+                            <div class="all-50 push-left align-left large order-r2">
+                              <p>Business</p>
+                            </div>
+                            <div class="all-40 push-left align-right large order-r3">
+                              <p>Units: 3</p>
+                            </div>
+                            <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                          </div>
+                          <div class="all-30 push-left order-r1">
+                            <ul id="Bus4_110A-CCD" class="droppable-CC all-100 half-left-space blue">
+                              <li id="Course" class="ink-tooltip ink-label push-middle align-center blue"
+                                  data-tip-html="<p>Title: Bus4 110A</p><p>Name: Business</p><p>Units: 3</p>"
+                                  data-tip-where="down"
+                                  data-tip-color="black">
+                                Bus4<br>110A
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- END CC -->
+                        <!-- CC-->
+                        <div id="Bus4_110B-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                          <div class="all-70 push-right half-top-space">
+                            <div class="all-50 push-left align-left large order-r2">
+                              <p>Business</p>
+                            </div>
+                            <div class="all-40 push-left align-right large order-r3">
+                              <p>Units: 3</p>
+                            </div>
+                            <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                          </div>
+                          <div class="all-30 push-left order-r1">
+                            <ul id="Bus4_110B-CCD" class="droppable-CC all-100 half-left-space blue">
+                              <li id="Course" class="ink-tooltip ink-label push-middle align-center blue"
+                                  data-tip-html="<p>Title: Bus4 110B</p><p>Name: Business</p><p>Units: 3</p>"
+                                  data-tip-where="down"
+                                  data-tip-color="black">
+                                Bus4<br>110B
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- END CC -->
+
                       </div>
                   </div>
                   <style>
@@ -263,12 +447,31 @@
 <!-- <button id="delete" class="delete ink-button small" onclick="removeClass()">X</button>-->
     <script>
         Ink.requireModules(['Ink.UI.Draggable_1', 'Ink.UI.Droppable_1', 'Ink.UI.Toggle_1'], function (Draggable, Droppable, Toggle) {
+
+//          COURSE FROM PLAN ADD
             new Draggable('#A1-CCD li', {})
             Droppable.add('#A1-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#A2-CCD li', {})
+            Droppable.add('#A2-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#A3-CCD li', {})
+            Droppable.add('#A3-CCD', {onDrop: 'move', onDropOut: 'revert'});
+
             new Draggable('#Math71-CCD li', {})
             Droppable.add('#Math71-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#Engl2-CCD li', {})
+            Droppable.add('#Engl2-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#Bus1_20-CCD li', {})
+            Droppable.add('#Bus1_20-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#Bus2_90-CCD li', {})
+            Droppable.add('#Bus2_90-CCD', {onDrop: 'move', onDropOut: 'revert'});
+
             new Draggable('#Bus4_92-CCD li', {})
-            Droppable.add('#Bus4_92-CCD', {onDrop: 'move', onDropOut: 'revert'});;
+            Droppable.add('#Bus4_92-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#Bus4_110A-CCD li', {})
+            Droppable.add('#Bus4_110A-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#Bus4_110B-CCD li', {})
+            Droppable.add('#Bus4_110B-CCD', {onDrop: 'move', onDropOut: 'revert'});
+
             Droppable.add('.droppable-2', {onDrop: 'move'});
             Droppable.add('.droppable-3', {onDrop: 'move'});
             Droppable.add('.droppable-4', {onDrop: 'move'});
@@ -286,9 +489,21 @@
                 tabsObj.changeTab('#C');
             }
             function addEvents() {
+
+//              COURSE FROM PLAN ADD
                 InkEvent.on(Ink.s('#A1-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#A2-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#A3-B') ,'click',changeTab);
+
                 InkEvent.on(Ink.s('#Math71-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#Engl2-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#Bus1_20-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#Bus2_90-B') ,'click',changeTab);
+
                 InkEvent.on(Ink.s('#Bus4_92-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#Bus4_110A-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#Bus4_110B-B') ,'click',changeTab);
+
             }
             function initProject(){
                 addEvents();
