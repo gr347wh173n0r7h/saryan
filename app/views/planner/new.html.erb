@@ -40,10 +40,10 @@
         <!-- Pot -->
         <div class="Pot xlarge-30 large-40 medium-40 small-100 tiny-100 push-center horizontal-gutters  order-2 order-r1 half-top-space">
           <!-- TABS-->
-          <div id="Tabs" class="ink-tabs top all-95" data-prevent-url-change="true" data-active="#C">
+          <div id="Tabs" class="ink-tabs top all-95" data-prevent-url-change="true" data-active="#P">
               <ul class="tabs-nav" style="background-color: inherit;">
-                <li><a class="tabs-tab" href="#P">Plans</a></li>
-                <li><a class="tabs-tab" href="#C">Courses</a></li>
+                <li id="PT"><a class="tabs-tab" href="#P">Plans</a></li>
+                <li id="CT"><a class="tabs-tab" href="#C">Courses</a></li>
               </ul>
               <!-- PLANS-->
               <div id="P" class="tabs-content">
@@ -57,9 +57,9 @@
                         <div class="column-group all-95  push-center push-middle half-top-space">
                             <div class="all-100"><h5>Area A:</h5></div>
                             <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                              <button id="A1-B" class="PlanCourseB ink-button align-center order-1">A1</button>
-                              <button id="A2-B" class="PlanCourseB ink-button align-center order-2">A2</button>
-                              <button id="A3-B" class="PlanCourseB ink-button align-center order-3">A3</button>
+                              <button id="A1-B" class="PlanCourseB ink-button align-center order-1"  onclick="showCard('A1-CC')">A1</button>
+                              <!--<button id="A2-B" class="PlanCourseB ink-button align-center order-2">A2</button>-->
+                              <!--<button id="A3-B" class="PlanCourseB ink-button align-center order-3">A3</button>-->
                             </div>
                         </div>
                       </div>
@@ -72,10 +72,10 @@
                         <div class="column-group all-95 push-center push-middle half-top-space">
                           <div class="all-100 "><h5>Business Pool</h5></div>
                           <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                            <button id="Math71-B" class="PlanCourseB ink-button align-center order-1">Math<br>71</button>
-                            <button id="Engl2-B" class="PlanCourseB ink-button align-center order-2">Engl<br>2</button>
-                            <button id="Bus1_20-B" class="PlanCourseB ink-button align-center order-3">Bus1<br>20</button>
-                            <button id="Bus2_90-B" class="PlanCourseB ink-button align-center order-4">Bus2<br>90</button>
+                            <button id="Math71-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('Math71-CC')">Math<br>71</button>
+                            <!--<button id="Engl2-B" class="PlanCourseB ink-button align-center order-2">Engl<br>2</button>-->
+                            <!--<button id="Bus1_20-B" class="PlanCourseB ink-button align-center order-3">Bus1<br>20</button>-->
+                            <!--<button id="Bus2_90-B" class="PlanCourseB ink-button align-center order-4">Bus2<br>90</button>-->
                           </div>
                         </div>
                       </div>
@@ -87,9 +87,9 @@
                         <div class="column-group all-95  push-center push-middle half-top-space">
                           <div class="all-100"><h5>Management Information Systems Core</h5></div>
                           <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                            <button id="Bus4_92-B" class="PlanCourseB ink-button align-center order-1">Bus4<br>92</button>
-                            <button id="Bus4_110A-B" class="PlanCourseB ink-button align-center order-2">Bus4<br>110A</button>
-                            <button id="Bus4_110B-B" class="PlanCourseB ink-button align-center order-3">Bus4<br>110B</button>
+                            <button id="Bus4_92-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('Bus4_92-CC')">Bus4<br>92</button>
+                            <!--<button id="Bus4_110A-B" class="PlanCourseB ink-button align-center order-2">Bus4<br>110A</button>-->
+                            <!--<button id="Bus4_110B-B" class="PlanCourseB ink-button align-center order-3">Bus4<br>110B</button>-->
                           </div>
                         </div>
                       </div>
@@ -155,8 +155,8 @@
                             </div>
                           </div>
                           <div class="all-30 push-left order-r1">
-                              <ul id="Math71-CCD" class="droppable-CC all-100 half-left-space blue">
-                                <li id="Course" class="ink-tooltip ink-label push-middle align-center blue"
+                              <ul id="Math71-CCD" class="droppable-CC all-100 half-left-space orange">
+                                <li id="Course" class="ink-tooltip ink-label push-middle align-center orange"
                                     data-tip-html="<p>Title: Math 71</p><p>Name: Calculus</p><p>Units: 3</p>"
                                     data-tip-where="down"
                                     data-tip-color="black">
@@ -167,7 +167,7 @@
                         </div>
                         <!-- CC -->
                         <!-- CC-->
-                        <div id="Engl2-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                        <div id="Bus4_92-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
                           <div class="all-70 push-right half-top-space">
                             <div class="all-50 push-left align-left large order-r2">
                               <p>Business</p>
@@ -180,8 +180,8 @@
                             </div>
                           </div>
                           <div class="all-30 push-left order-r1">
-                            <ul id="Bus4_92-CCD" class="droppable-CC all-100 half-left-space orange">
-                              <li id="Course" class="ink-tooltip ink-label push-middle align-center orange"
+                            <ul id="Bus4_92-CCD" class="droppable-CC all-100 half-left-space blue">
+                              <li id="Course" class="ink-tooltip ink-label push-middle align-center blue"
                                   data-tip-html="<p>Title: Bus4 92</p><p>Name: Business</p><p>Units: 3</p>"
                                   data-tip-where="down"
                                   data-tip-color="black">
@@ -195,7 +195,7 @@
                   </div>
                   <style>
                     .ClassCard{
-
+                        display: none;
                         background: #282828 none repeat scroll 0 0;
                         box-shadow: 0px 0px 5px black;
                         border: 1px solid #dad3c6;
@@ -263,27 +263,45 @@
 <!-- <button id="delete" class="delete ink-button small" onclick="removeClass()">X</button>-->
     <script>
         Ink.requireModules(['Ink.UI.Draggable_1', 'Ink.UI.Droppable_1', 'Ink.UI.Toggle_1'], function (Draggable, Droppable, Toggle) {
-//            draggableLiElements = Ink.ss('.droppable-1 li');
-//            new Draggable(draggableLiElements[0], {})
-//            new Draggable(draggableLiElements[1], {})
-//            new Draggable(draggableLiElements[2], {})
-//            draggable = Ink.ss('#Math71-CC li');
-//            new Draggable(draggable[0], {})
-//            draggable2 = Ink.ss('#Engl2-CC li');
-//            new Draggable(draggable2[0], {})
             new Draggable('#A1-CCD li', {})
-            new Draggable('#Math71-CCD li', {})
-            new Draggable('#Bus4_92-CCD li', {})
             Droppable.add('#A1-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#Math71-CCD li', {})
             Droppable.add('#Math71-CCD', {onDrop: 'move', onDropOut: 'revert'});
+            new Draggable('#Bus4_92-CCD li', {})
             Droppable.add('#Bus4_92-CCD', {onDrop: 'move', onDropOut: 'revert'});;
             Droppable.add('.droppable-2', {onDrop: 'move'});
             Droppable.add('.droppable-3', {onDrop: 'move'});
             Droppable.add('.droppable-4', {onDrop: 'move'});
-        })
-        Ink.requireModules( ['Ink.Dom.Selector_1','Ink.UI.Tabs_1'], function( Selector, Tabs ){
+        });
+        Ink.requireModules( [
+                            'Ink.Dom.Loaded_1',
+                            'Ink.Dom.Event_1',
+                            'Ink.Dom.Selector_1',
+                            'Ink.UI.Tabs_1'],
+                            function(Loaded, InkEvent, Selector, Tabs ){
             var tabsObj = new Tabs('#Tabs');
-        })
+
+
+            function changeTab(id){
+                tabsObj.changeTab('#C');
+            }
+            function addEvents() {
+                InkEvent.on(Ink.s('#A1-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#Math71-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#Bus4_92-B') ,'click',changeTab);
+            }
+            function initProject(){
+                addEvents();
+            }
+            Loaded.run(function() {
+                initProject();
+            });
+
+        });
+        function showCard(id){
+            $("#"+id).siblings().hide();
+            document.getElementById(id).style.display = 'block';
+        }
 //        Ink.requireModules([], function (Toggle) {
 //            new Toggle('#GETog');
 //            new Toggle('#MajTog');
@@ -302,6 +320,7 @@
             else
                 e.style.display = 'block';
         }
+
         function removeClass(){
             var elem = document.getElementById('Course');
             elem.parentNode.removeChild(elem);
