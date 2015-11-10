@@ -9,31 +9,20 @@
             <div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>
 
               <!-- SEMESTER-->
-              <div class="Semester column-group all-95 push-middle order-r2">
-                  <div class="all-100 push-right" style="padding-top: 7px">
-                    <p class="tip">Fall 2015</p>
-                    <ul class="droppable-2 all-100">
-
-                    </ul>
+              <div id="Semesters">
+                  <div  class="Semester column-group all-95 push-middle order-r2">
+                      <div class="all-100 push-right" style="padding-top: 7px">
+                        <p class="tip">Fall 2015</p>
+                        <ul id="Fall2015" class="droppable-2 all-100">
+                        </ul>
+                      </div>
                   </div>
               </div>
-              <div class="Semester column-group all-95 push-middle order-r3">
-                <div class="all-100 push-right" style="padding-top: 7px">
-                  <p class="tip">Winter 2015</p>
-                  <ul class="droppable-3 all-100">
 
-                  </ul>
-                </div>
-              </div>
-              <div class="Semester column-group all-95 push-middle order-r4">
-                <div class="all-100 push-right" style="padding-top: 7px">
-                  <p class="tip">Spring 2016</p>
-                  <ul class="droppable-4 all-100">
-
-                  </ul>
-                </div>
-              </div>
             <!--END SEMESTER-->
+            <div class="column all-95 align-right half-top-space half-bottom-space condensed">
+              <button id="SemAdd" class="ink-button align-center order-3 ">+</button>
+            </div>
         </div>
         <!--END PLANNER -->
 
@@ -446,7 +435,14 @@
 
 <!-- <button id="delete" class="delete ink-button small" onclick="removeClass()">X</button>-->
     <script>
-        Ink.requireModules(['Ink.UI.Draggable_1', 'Ink.UI.Droppable_1', 'Ink.UI.Toggle_1'], function (Draggable, Droppable, Toggle) {
+        Ink.requireModules([
+            'Ink.UI.Draggable_1',
+            'Ink.UI.Droppable_1',
+            'Ink.UI.Toggle_1',
+            'Ink.Dom.Loaded_1',
+            'Ink.Dom.Event_1',
+            'Ink.Dom.Selector_1',
+            'Ink.UI.Tabs_1'], function (Draggable, Droppable, Toggle, Loaded, InkEvent, Selector, Tabs ) {
 
 //          COURSE FROM PLAN ADD
             new Draggable('#A1-CCD li', {})
@@ -472,18 +468,37 @@
             new Draggable('#Bus4_110B-CCD li', {})
             Droppable.add('#Bus4_110B-CCD', {onDrop: 'move', onDropOut: 'revert'});
 
-            Droppable.add('.droppable-2', {onDrop: 'move'});
-            Droppable.add('.droppable-3', {onDrop: 'move'});
-            Droppable.add('.droppable-4', {onDrop: 'move'});
-        });
-        Ink.requireModules( [
-                            'Ink.Dom.Loaded_1',
-                            'Ink.Dom.Event_1',
-                            'Ink.Dom.Selector_1',
-                            'Ink.UI.Tabs_1'],
-                            function(Loaded, InkEvent, Selector, Tabs ){
+            Droppable.add('#Fall2015', {onDrop: 'move'});
+
+
             var tabsObj = new Tabs('#Tabs');
 
+
+            var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
+            var date = new Date();
+            var i = 1;
+
+            function addSemester(){
+                var year = date.getFullYear();
+                var newID = semester[i]+year;
+                var newDiv =
+                        '<div class="Semester column-group all-95 push-middle order-r4">' +
+                        '<div class="all-100 push-right" style="padding-top: 7px">' +
+                        '<p class="tip">'+ semester[i] + ' ' + year +'</p>' +
+                        '<ul id="'+newID+'" class="droppable-2 all-100">' +
+                        '</ul>' +
+                        '</div>' +
+                        '</div>';
+                newID = '#' + newID;
+                $("#Semesters").append(newDiv);
+                Droppable.add(newID, {onDrop: 'move'});
+                i++;
+                if(i == 4){
+                    i = 0;}
+                else if(i == 2){
+                    date.setYear(year + 1);}
+
+            }
 
             function changeTab(id){
                 tabsObj.changeTab('#C');
@@ -503,6 +518,7 @@
                 InkEvent.on(Ink.s('#Bus4_92-B') ,'click',changeTab);
                 InkEvent.on(Ink.s('#Bus4_110A-B') ,'click',changeTab);
                 InkEvent.on(Ink.s('#Bus4_110B-B') ,'click',changeTab);
+                InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
 
             }
             function initProject(){
@@ -513,10 +529,12 @@
             });
 
         });
+//
         function showCard(id){
             $("#"+id).siblings().hide();
             document.getElementById(id).style.display = 'block';
         }
+
 //        Ink.requireModules([], function (Toggle) {
 //            new Toggle('#GETog');
 //            new Toggle('#MajTog');
@@ -541,28 +559,16 @@
             elem.parentNode.removeChild(elem);
             return false;
         }
-//        function pageInit() {
-//            var button = document.getElementbyID('delete');
-//            if(button.addEventListener) {
-//                button.addEventListener('click',removeClass,false);
-//            }
-//            else if (button.attackEvent) {
-//                button.attachEvent('onclick', removeClass);
-//            }
-//            else{
-//                button.onclick = removeClass;
-//            }
-//        }
 
     </script>
     <style>
 
-        .droppable-1::after, .droppable-2::after, .droppable-3::after, .droppable-4::after {
+         .droppable-2::after {
             clear: both;
             content: "";
             display: table;
         }
-        .droppable-1, .droppable-2, .droppable-3, .droppable-4 {
+        .droppable-2 {
             background: #e4dfd6 none repeat scroll 0 0;
             border: 1px solid #dad3c6;
             border-radius: 2px;
@@ -576,7 +582,7 @@
             float: left;
         }
 
-        .droppable-2 li, .droppable-3 li, .droppable-4 li {
+        .droppable-2 li {
             float: left;
             padding: 0.5em;}
 

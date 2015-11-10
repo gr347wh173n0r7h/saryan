@@ -94,6 +94,19 @@ div.Pot{
   box-shadow: 0px 0px 5px black;
   color: #fff;
 }
+#SemAdd{
+  border-radius: 5px;
+  background-color: rgba(255,255,255, 0);
+  box-shadow: 0px 0px 1px black;
+  color: dimgrey;
+  border: 1px solid #dad3c6;
+  padding: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+#SemAdd:hover{
+  background-color: rgba(150,150,150,.3);
+}
 .Category{
   display: none;
   border-radius: 5px;
