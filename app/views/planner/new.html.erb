@@ -1,9 +1,9 @@
 <% provide(:title, 'PLanner') %>
 <div class="clearfix_10 all-100" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html"></div>
-  <div class="column-group push-center horizontal-gutters">
+  <div class="column-group xlarge-60 large-60 medium-50 small-100 tiny-100 horizontal-gutters push-left ">
         <!--Planner-->
-        <div class="Planner xlarge-65 large-55 medium-55 small-100 tiny-100 push-center horizontal-gutters order-1 order-r1 half-top-space" >
+        <div class="Planner all-100 push-right horizontal-gutters left-space half-top-space" >
 
             <div class="clearfix_10"></div>
             <div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>
@@ -25,9 +25,10 @@
             </div>
         </div>
         <!--END PLANNER -->
-
+    </div>
+    <div class="column-group xlarge-40 large-40 medium-50 small-100 tiny-100 horizontal-gutters push-right">
         <!-- Pot -->
-        <div class="Pot xlarge-30 large-40 medium-40 small-100 tiny-100 push-center horizontal-gutters order-2 order-r1 half-top-space">
+        <div class="Pot all-100 push-center horizontal-gutters half-top-space">
           <!-- TABS-->
           <div id="Tabs" class="ink-tabs top all-95" data-prevent-url-change="true" data-active="#P">
               <ul class="tabs-nav" style="background-color: inherit;">
@@ -111,7 +112,7 @@
                         <!--COURSE FROM PLAN ADD RED-->
                         <!-- CC-->
                         <div id="A1-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                          <div class="all-70 push-right half-top-space">
+                          <div class="all-60 push-right half-top-space">
                             <div class="all-50 push-left align-left large order-r2">
                               <p>A1</p>
                             </div>
@@ -122,7 +123,7 @@
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                           </div>
-                          <div class="all-30 push-left order-r1">
+                          <div class="all-40 push-left order-r1">
                             <ul id="A1-CCD" class="droppable-CC all-100 half-left-space red">
                               <li id="Course" class="ink-tooltip ink-label push-middle align-center red"
                                   data-tip-html="<p>Title: A1</p><p>Name: GE</p><p>Units: 3</p>"
@@ -371,216 +372,139 @@
                 <div class="clearfix_25"></div>
               </div>
               <!-- END COURSES-->
+
           </div>
           <!-- END TABS-->
-
         </div>
         <!-- END POTS-->
 
 <!-- <button id="delete" class="delete ink-button small" onclick="removeClass()">X</button>-->
-    <script>
-        Ink.requireModules([
-            'Ink.UI.Draggable_1',
-            'Ink.UI.Droppable_1',
-            'Ink.UI.Toggle_1',
-            'Ink.Dom.Loaded_1',
-            'Ink.Dom.Event_1',
-            'Ink.Dom.Selector_1',
-            'Ink.UI.Tabs_1'], function (Draggable, Droppable, Toggle, Loaded, InkEvent, Selector, Tabs ) {
+  </div>
+
+<script>
+    Ink.requireModules([
+        'Ink.UI.Draggable_1',
+        'Ink.UI.Droppable_1',
+        'Ink.UI.Toggle_1',
+        'Ink.Dom.Loaded_1',
+        'Ink.Dom.Event_1',
+        'Ink.Dom.Selector_1',
+        'Ink.UI.Tabs_1'], function (Draggable, Droppable, Toggle, Loaded, InkEvent, Selector, Tabs ) {
 
 //          COURSE FROM PLAN ADD
-            new Draggable('#A1-CCD li', {})
-            Droppable.add('#A1-CCD', {onDrop: 'move', onDropOut: 'revert'});
-            new Draggable('#A2-CCD li', {})
-            Droppable.add('#A2-CCD', {onDrop: 'move', onDropOut: 'revert'});
-            new Draggable('#A3-CCD li', {})
-            Droppable.add('#A3-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#A1-CCD li', {})
+        Droppable.add('#A1-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#A2-CCD li', {})
+        Droppable.add('#A2-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#A3-CCD li', {})
+        Droppable.add('#A3-CCD', {onDrop: 'move', onDropOut: 'revert'});
 
-            new Draggable('#Math71-CCD li', {})
-            Droppable.add('#Math71-CCD', {onDrop: 'move', onDropOut: 'revert'});
-            new Draggable('#Engl2-CCD li', {})
-            Droppable.add('#Engl2-CCD', {onDrop: 'move', onDropOut: 'revert'});
-            new Draggable('#Bus1_20-CCD li', {})
-            Droppable.add('#Bus1_20-CCD', {onDrop: 'move', onDropOut: 'revert'});
-            new Draggable('#Bus2_90-CCD li', {})
-            Droppable.add('#Bus2_90-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#Math71-CCD li', {})
+        Droppable.add('#Math71-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#Engl2-CCD li', {})
+        Droppable.add('#Engl2-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#Bus1_20-CCD li', {})
+        Droppable.add('#Bus1_20-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#Bus2_90-CCD li', {})
+        Droppable.add('#Bus2_90-CCD', {onDrop: 'move', onDropOut: 'revert'});
 
-            new Draggable('#Bus4_92-CCD li', {})
-            Droppable.add('#Bus4_92-CCD', {onDrop: 'move', onDropOut: 'revert'});
-            new Draggable('#Bus4_110A-CCD li', {})
-            Droppable.add('#Bus4_110A-CCD', {onDrop: 'move', onDropOut: 'revert'});
-            new Draggable('#Bus4_110B-CCD li', {})
-            Droppable.add('#Bus4_110B-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#Bus4_92-CCD li', {})
+        Droppable.add('#Bus4_92-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#Bus4_110A-CCD li', {})
+        Droppable.add('#Bus4_110A-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        new Draggable('#Bus4_110B-CCD li', {})
+        Droppable.add('#Bus4_110B-CCD', {onDrop: 'move', onDropOut: 'revert'});
 
-            Droppable.add('#Fall2015', {onDrop: 'move'});
-
-
-            var tabsObj = new Tabs('#Tabs');
+        Droppable.add('#Fall2015', {onDrop: 'move'});
 
 
-            var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
-            var date = new Date();
-            var i = 1;
+        var tabsObj = new Tabs('#Tabs');
 
-            function addSemester(){
-                var year = date.getFullYear();
-                var newID = semester[i]+year;
-                var newDiv =
-                        '<div class="Semester column-group all-95 push-middle order-r4">' +
-                        '<div class="all-100 push-right" style="padding-top: 7px">' +
-                        '<p class="tip">'+ semester[i] + ' ' + year +'</p>' +
-                        '<ul id="'+newID+'" class="droppable-2 all-100">' +
-                        '</ul>' +
-                        '</div>' +
-                        '</div>';
-                newID = '#' + newID;
-                $("#Semesters").append(newDiv);
-                Droppable.add(newID, {onDrop: 'move'});
-                i++;
-                if(i == 4){
-                    i = 0;}
-                else if(i == 2){
-                    date.setYear(year + 1);}
 
-            }
+        var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
+        var date = new Date();
+        var i = 1;
 
-            function changeTab(id){
-                tabsObj.changeTab('#C');
-            }
-            function addEvents() {
+        function addSemester(){
+            var year = date.getFullYear();
+            var newID = semester[i]+year;
+            var newDiv =
+                    '<div class="Semester column-group all-95 push-middle order-r4">' +
+                    '<div class="all-100 push-right" style="padding-top: 7px">' +
+                    '<p class="tip">'+ semester[i] + ' ' + year +'</p>' +
+                    '<ul id="'+newID+'" class="droppable-2 all-100">' +
+                    '</ul>' +
+                    '</div>' +
+                    '</div>';
+            newID = '#' + newID;
+            $("#Semesters").append(newDiv);
+            Droppable.add(newID, {onDrop: 'move'});
+            i++;
+            if(i == 4){
+                i = 0;}
+            else if(i == 2){
+                date.setYear(year + 1);}
+
+        }
+
+        function changeTab(id){
+            tabsObj.changeTab('#C');
+        }
+        function addEvents() {
 
 //              COURSE FROM PLAN ADD
-                InkEvent.on(Ink.s('#A1-B') ,'click',changeTab);
-                InkEvent.on(Ink.s('#A2-B') ,'click',changeTab);
-                InkEvent.on(Ink.s('#A3-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#A1-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#A2-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#A3-B') ,'click',changeTab);
 
-                InkEvent.on(Ink.s('#Math71-B') ,'click',changeTab);
-                InkEvent.on(Ink.s('#Engl2-B') ,'click',changeTab);
-                InkEvent.on(Ink.s('#Bus1_20-B') ,'click',changeTab);
-                InkEvent.on(Ink.s('#Bus2_90-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#Math71-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#Engl2-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#Bus1_20-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#Bus2_90-B') ,'click',changeTab);
 
-                InkEvent.on(Ink.s('#Bus4_92-B') ,'click',changeTab);
-                InkEvent.on(Ink.s('#Bus4_110A-B') ,'click',changeTab);
-                InkEvent.on(Ink.s('#Bus4_110B-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#Bus4_92-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#Bus4_110A-B') ,'click',changeTab);
+            InkEvent.on(Ink.s('#Bus4_110B-B') ,'click',changeTab);
 
-                InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
-            }
-            function initProject(){
-                addEvents();
-            }
-            Loaded.run(function() {
-                initProject();
-            });
-
+            InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
+        }
+        function initProject(){
+            addEvents();
+        }
+        Loaded.run(function() {
+            initProject();
         });
-//
-        function showCard(id){
-            $("#"+id).siblings().hide();
-            document.getElementById(id).style.display = 'block';
-        }
 
-//        Ink.requireModules([], function (Toggle) {
-//            new Toggle('#GETog');
-//            new Toggle('#MajTog');
-//            new Toggle('#ConsTog');
-//        })
-        function showCat(id){
-            if(id.localeCompare('GE') != 0)
-                document.getElementById('GE').style.display = 'none';
-            if(id.localeCompare('Maj') != 0)
-                document.getElementById('Maj').style.display = 'none';
-            if(id.localeCompare('Cons') != 0)
-                document.getElementById('Cons').style.display = 'none';
-            var e = document.getElementById(id);
-            if(e.style.display == 'block')
-                e.style.display = 'none';
-            else
-                e.style.display = 'block';
-        }
+    });
+    //
+    function showCard(id){
+        $("#"+id).siblings().hide();
+        document.getElementById(id).style.display = 'block';
+    }
 
-        function removeClass(){
-            var elem = document.getElementById('Course');
-            elem.parentNode.removeChild(elem);
-            return false;
-        }
+    //        Ink.requireModules([], function (Toggle) {
+    //            new Toggle('#GETog');
+    //            new Toggle('#MajTog');
+    //            new Toggle('#ConsTog');
+    //        })
+    function showCat(id){
+        if(id.localeCompare('GE') != 0)
+            document.getElementById('GE').style.display = 'none';
+        if(id.localeCompare('Maj') != 0)
+            document.getElementById('Maj').style.display = 'none';
+        if(id.localeCompare('Cons') != 0)
+            document.getElementById('Cons').style.display = 'none';
+        var e = document.getElementById(id);
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+    }
 
-    </script>
-    <style>
-        .ClassCard{
-            display: none;
-            background: #282828 none repeat scroll 0 0;
-            box-shadow: 0px 0px 5px black;
-            border: 1px solid #dad3c6;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 0.938em;
-            font-weight: 300;
+    function removeClass(){
+        var elem = document.getElementById('Course');
+        elem.parentNode.removeChild(elem);
+        return false;
+    }
 
-        }
-        .ClassCard p{
-            padding-top: .3em;
-            padding-bottom: .3em;
-            margin-bottom: 0em;
-        }
-        .CCDescription p{
-            margin-right: 5px;
-            margin-bottom:5px;
-        }
-        .droppable-CC.red {
-            border: 2px dashed #c91111;
-        }
-        .droppable-CC.blue {
-            border: 2px dashed #0f75da;
-        }
-        .droppable-CC.orange {
-            border: 2px dashed #ff9c00;
-        }
-        .droppable-CC{
-            background: #282828 none repeat scroll 0 0;
-
-            list-style-type: none;
-            padding: 0em 0.0em;
-            /*padding: 0.5em 1em*/
-            border-radius: 5px;
-            height: 75px;
-            width: 75px;
-        }
-        .droppable-CC ::after{
-            clear: both;
-            content: "";
-            display: table;
-        }
-        .droppable-CC li{
-            height: 80px;
-            width: 80px;
-            /*padding-top: .5em;*/
-            /*padding-bottom: .5em;*/
-            margin: .025em .025em;
-            float: left;
-        }
-
-         .droppable-2::after {
-            clear: both;
-            content: "";
-            display: table;
-        }
-        .droppable-2 {
-            background: #e4dfd6 none repeat scroll 0 0;
-            border: 1px solid #dad3c6;
-            border-radius: 2px;
-            list-style-type: none;
-            min-height: 3.5em;
-            padding: 0.5em 1em;}
-
-        .droppable-1 li{
-            padding-top: .5em;
-            padding-bottom: .5em;
-            float: left;
-        }
-
-        .droppable-2 li {
-            float: left;
-            padding: 0.5em;}
-
-    </style>
-  </div>
+</script>
