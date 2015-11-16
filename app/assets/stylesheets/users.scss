@@ -1,3 +1,33 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.Title {
+  //  background-color: #4587F0;
+  background-color: black;
+}
+
+div.Info {
+  background-color: #9D9D9D;
+  // display: inline-block;
+}
+
+span.Space {
+  word-spacing: 32px;
+}
+
+.form-field {
+  margin: 0 auto;
+  //  padding: 5px;
+  //  border-color: #9D9D9D;
+  //  border: 2px gray solid;
+  // border-color: #9D9D9D;
+  width: 75%;
+  // height: 80%;
+  text-align: center;
+}
+
+#wrapper { //this wrapper not in use yet
+  border: 2px solid #9d9d9d;
+  display: inline-block;
+}
