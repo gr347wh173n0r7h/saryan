@@ -143,12 +143,14 @@ div.Pot{
   border: 1px solid #dad3c6;
   border-radius: 5px;
   color: #fff;
-  font-size: 0.938em;
+  //font-size: 0.938em;
+  //font-weight: 300;
+  font-size: 0.9em;
   font-weight: 300;
 
 }
 .ClassCard p{
-  padding-top: .3em;
+  padding-top: .1em;
   padding-bottom: .3em;
   margin-bottom: 0em;
 }
@@ -172,8 +174,8 @@ div.Pot{
   padding: 0em 0.0em;
   /*padding: 0.5em 1em*/
   border-radius: 5px;
-  height: 90px;
-  width: 90px;
+  height: 74px;
+  width: 74px;
 }
 .droppable-CC ::after{
   clear: both;
@@ -181,18 +183,24 @@ div.Pot{
   display: table;
 }
 .droppable-CC li{
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   /*padding-top: .5em;*/
   /*padding-bottom: .5em;*/
-  margin: .025em .025em;
+  //margin: .05em .05em;
+  margin: 0em;
   padding: 0em;
   float: left;
 }
+.Semester p{
+  padding-bottom: 0em;
+  padding-top: 5px;
+  margin: 0em;
+}
 #Course{
-  height: 85px;
-  width: 85px;
-  font-size: 1.2em;
+  height: 70px;
+  width: 70px;
+  //font-size: 1.2em;
 }
 
 .droppable-2::after {
@@ -205,15 +213,20 @@ div.Pot{
   border: 1px solid #dad3c6;
   border-radius: 2px;
   list-style-type: none;
-  min-height: 6em;
-  padding: 0.25em .5em;}
+  min-height: 4em;
+  margin-top: 0em;
+  margin-bottom: 5px;
+  //padding: 0.25em .5em;
+}
 
 
 .droppable-2 li {
   float: left;
   padding: 0.5em;}
 
-.ink-label{margin-left: 0.2em;}
+.ink-label{
+  margin-left: 0.2em;
+}
 
 .ink-label.blue, .ink-label.orange, .ink-label.red {
   //background: #0f75da none repeat scroll 0 0;
@@ -237,7 +250,9 @@ div.Pot{
   border-radius: 5px;
   color: #fff;
   font-size: 0.938em;
-  font-weight: 300;}
+  font-weight: 300;
+  min-width: 20em;
+}
 
 .delete{
   background: 0,0,0,0;
