@@ -1,107 +1,34 @@
-<% provide(:title, 'Account Settings') %>
+<% provide(:title, 'Account') %>
 <div class="clearfix_100"></div>
 <div class="column-group push-center push-middle">
   <div class="all-80 push-center push-middle" style="background:rgba(255, 255, 255, 0.7)">
     <div class="clearfix_10"></div>
-    <!--<div class="align-center"><h1>Account Settings</h1></div>-->
+    <div class="align-center"><h1>Account</h1></div>
+    <!-- <form class="ink-form"> -->
+    <%= form_for(@user, :html => {:class => "ink-form"}) do |f| %>
 
-    <div class="ink-grid">
+        <%# render 'shared/error_messages' %>
+        <div class="control-group all-80 push-center push-middle gutters">
 
-      <div class="control all-60 push-center">
+          <%= f.label :name, :class => "all-20 align-right" %>
+          <div class="control all-100">
+            <%= f.text_field :name, readonly: true %>
+          </div>
+          <%= f.label :email, :class => "all-20 align-right" %>
+          <div class="control all-100">
+            <%= f.email_field :email, readonly: true %>
+          </div>
+          <%= f.label :status, :class => "all-20 align-right" %>
+          <div class="control all-100">
+            <%= f.text_field :status, readonly: true %>
+          </div>
 
-        <div class="Title ink-label control">
-          <p class="large fw-bold extralarge half-bottom-space">Account Settings</p>
-        </div>
-
-        <div class="control all-90 push-center">
-
-          <!-- <form class="ink-form"> -->
-          <%= form_for(@user, :html => {:class => "ink-form"}) do |f| %>
-
-
-
-            <div class="Info ink-label control">
-              <p class="large fw-bold quarter-bottom-space"><span class="Space">Name:
-                <%= f.text_field :name, class: 'form-field' %></span></p>
-            </div>
-
-            <div class="Info ink-label control fw-bold quarter-bottom-space">
-              <p class="large fw-bold quarter-bottom-space"><span class="Space">Email:
-                <%= f.email_field :email, class: 'form-field' %></span></p>
-            </div>
-
-            <div class="Info ink-label control fw-bold slab quarter-bottom-space">
-              <span class="large fw-bold">Password:
-              <%= f.password_field :password, class: 'form-field', :value => '', :placeholder => "Enter new password"%></span>
-            </div>
-
-            <div class="Info ink-label control fw-bold slab half-bottom-space">
-              <p class="large fw-bold half-bottom-space align-center">
-                <%= f.password_field :password_confirmation, class: 'form-field', :value => '', :placeholder => "Confirm new password"%>
-              </p></div>
-
-
-        </div>
-
-        <div class="Title ink-label control">
-          <p class="large fw-bold extralarge half-bottom-space">Transcripts</p>
-        </div>
-
-        <div class="control all-90 push-center">
-
-          <div class="Info ink-label control fw-bold">
-
-            <div class="ink-grid half-bottom-space">
-              <div class="column-group">
-                <div class="all-50">
-                  <p class="large fw-bold slab">School</p>
-                  <!-- put code to display school name(s) here -->
-                </div>
-                <div class="all-50">
-                  <p class="large fw-bold slab">Upload Date</p>
-                  <!-- put code to display transcript upload dates here -->
-                </div>
-              </div>
-            </div>
-
+          <div class="control all-100 push-center push-middle">
+            <%= f.submit "Edit", class: "ink-button black"%>
           </div>
         </div>
 
-        <div class="ink-grid half-bottom-space">
-          <div class="column-group">
-            <div class="all-50">
-              (Photo will
-              go here)
-            </div>
-            <div class="all-50">
-              <div class="Info ink-label push-center">
-                (Upload Transcript
-                button will go here)
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="Title ink-label control">
-          <p class="large fw-bold extralarge half-bottom-space">Major Information</p>
-        </div>
-
-        <div class="Info ink-label control all-90 fw-bold push-center">
-          <p class="large fw-bold half-bottom-space">Major</p>
-        </div>
-
-              <div class="all-50 align-center bottom-space push-center">
-                <!-- put code here to save updated info -->
-                (a button here to save updated info)
-              </div>
-          <%end%>
-
-
-      </div>
-
-    </div>
-
-
+    <% end %>
     <div class="clearfix_10"></div>
   </div>
 </div>
