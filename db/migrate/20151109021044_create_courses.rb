@@ -6,6 +6,7 @@ class CreateCourses < ActiveRecord::Migration
       t.string :desc
       t.integer :course_num
       t.integer :units
+      t.integer :prereq_id
       t.timestamps null: false
     end
   end
