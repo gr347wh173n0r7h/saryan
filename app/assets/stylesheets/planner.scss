@@ -26,26 +26,40 @@ div.box{
 }
 
 div.Semester{
-  border-top: 1px solid lightgrey;
+  //border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgray;
-
 }
 
 div.Planner{
   border-radius: 5px;
-  background:rgba(255, 255, 255, 0.7)
+  //background:rgba(255, 255, 255, 0.7)
+  //background: grey;
 }
 
-div.Pot{
+div.Pot, div.PotB{
   border-radius: 5px;
-  background:rgba(255, 255, 255, 0.7)
+  //background:rgba(255, 255, 255, 0.7)
+  //background: grey;
+}
+div.PotB {
+  //padding: 1em;
+  //background: #cccccc;
+  //background: -webkit-linear-gradient(#cccccc, grey); /* For Safari 5.1 to 6.0 */
+  //background: -o-linear-gradient(#cccccc, grey); /* For Opera 11.1 to 12.0 */
+  //background: -moz-linear-gradient(#cccccc, grey); /* For Firefox 3.6 to 15 */
+  //background: linear-gradient(#cccccc, grey); /* Standard syntax */
+  //border: 1px solid white;
+  //box-shadow: 0px 0px 5px black;
 }
 .right-drawer{
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0px 0px 5px black;
   background:rgba(255, 255, 255, 0.7);
   //max-height: 60%;
 }
+
+// TABS
+
 .tab-nav{
   border: 1px solid #dad3c6;
   background: rgba(228, 228, 228, .7);
@@ -63,6 +77,8 @@ div.Pot{
   color:black;
   background: rgba(255, 255, 255, .7);
 }
+
+//END TABS
 
 .PlanCourseB{
   font-size: 0.5em;
@@ -100,17 +116,52 @@ div.Pot{
   box-shadow: 0px 0px 5px black;
   border: 1px solid #dad3c6;
 }
+
+//PLAN TOGGLE BUTTONS
+
 .PlanTog{
-  border-radius: 5px;
-  background-color: rgba(150,150,150,.8);
+  border-radius: 3px;
+  //border: 1px solid #282828;
+  //background-color: rgba(150,150,150,.8);
+
   background: #282828 none repeat scroll 0 0;
+  //background: #cccccc;
+  //background: -webkit-linear-gradient(#cccccc, grey); /* For Safari 5.1 to 6.0 */
+  //background: -o-linear-gradient(#cccccc, grey); /* For Opera 11.1 to 12.0 */
+  //background: -moz-linear-gradient(#cccccc, grey); /* For Firefox 3.6 to 15 */
+  //background: linear-gradient(#cccccc, grey); /* Standard syntax */
   box-shadow: 0px 0px 5px black;
   color: #fff;
+  font-weight: 300;
+  line-height: 24px;
+  //color: white;
+}
+.PlanTog:hover{
+  //background: #282828 none repeat scroll 0 0;
+  color: white;
+  background: #1e1e1e;
+  background: -webkit-linear-gradient(#1e1e1e, #4d4d4d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#1e1e1e, #4d4d4d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1e1e1e, #4d4d4d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1e1e1e, #4d4d4d); /* Standard syntax */
+  box-shadow: 0px 0px 5px black;
+  //border: 1px solid #282828;
 }
 .PlanTog:active, .PlanTog:focus{
   //background: grey none repeat scroll 0 0;
-  color: black;
+  color: white;
+  background: #cccccc;
+  background: -webkit-linear-gradient(#cccccc, #4d4d4d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#cccccc, #4d4d4d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#cccccc, #4d4d4d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#cccccc, #4d4d4d); /* Standard syntax */
+  box-shadow: 0px 0px 5px black;
+  //border: 1px solid #282828;
 }
+
+//END PLAN TOGGLE BUTTON
+//ADD SEMESTER BUTTON
+
 #SemAdd{
   border-radius: 5px;
   background-color: rgba(255,255,255, 0);
@@ -124,17 +175,27 @@ div.Pot{
 #SemAdd:hover{
   background-color: rgba(150,150,150,.3);
 }
+
+//END ADD SEMESTER BUTTON
+
 .Category{
   display: none;
   border-radius: 5px;
   background-color: rgba(100,100,100,.75);
-  background: grey none repeat scroll 0 0;
+  //background: grey none repeat scroll 0 0;
+  background: #cccccc;
+  background: -webkit-linear-gradient(#cccccc, grey); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#cccccc, grey); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#cccccc, grey); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#cccccc, grey); /* Standard syntax */
   //background: #282828 none repeat scroll 0 0;
   box-shadow: 0px 0px 5px black;
   border: 1px solid #dad3c6;
   color: #282828;
 }
 .Category h5{color: #282828;}
+
+//CLASS CARDS
 
 .ClassCard{
   display: none;
@@ -158,6 +219,9 @@ div.Pot{
   margin-right: 5px;
   margin-bottom:5px;
 }
+
+// DROPPABLE
+
 .droppable-CC.red {
   border: 2px dashed #c91111;
 }
@@ -218,12 +282,10 @@ div.Pot{
   margin-bottom: 5px;
   //padding: 0.25em .5em;
 }
-
-
 .droppable-2 li {
   float: left;
-  padding: 0.5em;}
-
+  padding: 0.5em;
+}
 .ink-label{
   margin-left: 0.2em;
 }

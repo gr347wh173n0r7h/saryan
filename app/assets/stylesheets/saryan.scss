@@ -14,39 +14,61 @@ body {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background: #1a1a1a;
+  //background: #1a1a1a;
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+
+  //background: rgba(204,204,204,.5);
+  //background: -webkit-linear-gradient(rgba(204,204,204,.5), rgba(166,166,166,.5)); /* For Safari 5.1 to 6.0 */
+  //background: -o-linear-gradient(rgba(204,204,204,.5), rgba(166,166,166,.5)); /* For Opera 11.1 to 12.0 */
+  //background: -moz-linear-gradient(rgba(204,204,204,.5), rgba(166,166,166,.5)); /* For Firefox 3.6 to 15 */
+  //background: linear-gradient(rgba(204,204,204,.5), rgba(166,166,166,.5)); /* Standard syntax */
+
   -webkit-transform: scale3d(1,1,1);
   top: 0;
-  .ink-navigation ul.black li {
+
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow:    0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow:         0px 3px 5px 0px rgba(0,0,0,0.75);
+
+  .ink-navigation ul li {
     font-size: 14px;
+    background: none;
   }
-  .ink-navigation ul.black li a {
+  .ink-navigation ul li a {
+    background: none;
     padding: .7em 1em;
-    color: #bbb;
-    text-transform: uppercase;
+    //color: #bbb;
+    color: white;
+    //text-transform: uppercase;
     font-weight: 300;
     line-height: 24px;
   }
-  .ink-navigation ul.black li a:hover {
+  .ink-navigation ul li a:hover {
     color: #fff;
   }
-  .ink-navigation ul.black li a.logoPlaceholder:hover {
-    background: 0 0;
+  .ink-navigation ul li a.logoPlaceholder:hover {
+    //background: 0 0;
   }
-  .ink-navigation ul.black li a.logoPlaceholder {
+  .ink-navigation ul li a.logoPlaceholder {
+    text-transform: uppercase;
+    background: none;
     margin-right: .5em;
     padding: .4em 0;
     font-weight: 700;
     font-size: 1.4em;
   }
-  .ink-navigation ul.black li button.fa-bars {
-    background: 0 0;
+  .ink-navigation ul li button.fa-bars {
+    background: rgba(0, 0, 0, 0.0) none repeat scroll 0 0;
     font-size: 1.2em;
     color: #bbb;
     border: 0;
     padding: .8em .8em .8em 0;
     float: left;
   }
+  ul.menu {
+    background: none;
+  }
+
 }
 
 #topbar .ink-navigation ul.black li button.fa-bars:active,
@@ -58,6 +80,7 @@ body {
 
 body.ink-drawer .left-drawer, body.ink-drawer .right-drawer {
   background: #1e1e1e;
+  //background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
 }
 
 body.ink-drawer .left-drawer li, body.ink-drawer .right-drawer li {
