@@ -1,8 +1,7 @@
 <% provide(:title, 'Login') %>
 <div class="clearfix_200"></div>
 <div class="column-group push-center push-middle">
-	<div class="all-60 push-center push-middle" style="background:rgba(255, 255, 255, 0.7)">
-        <div class="clearfix_10"></div>
+	<div class="Login all-60 push-center push-middle top-padding horizontal-gutters">
 		<center><h1>Login</h1></center>
 
           <% if flash[:danger] %>
@@ -16,7 +15,7 @@
 
 		<%= form_for(:session, url: login_path, :html => {:class => "ink-form "}) do |f| %>
 
-            <div class="control-group all-80 push-center push-middle gutters ">
+            <div class="control-group all-80 push-center push-middle">
                 <%= f.label :email, :class => "all-20 align-right" %>
                 <div class="control all-100">
                     <%= f.email_field :email%>
@@ -39,12 +38,10 @@
                 <div class="control all-100 push-center push-middle">
                     <%= f.submit "Login", class: "ink-button black"%>
                 </div>
-              <br>
-                <div class="column-group push-center push-middle">
+                <div class="column-group push-center push-middle half-top-space">
                     <h5>New to SARYAN? <%= link_to "Sign up now!", register_path %></h5>
                 </div>
             </div>
-
 		<% end %>
 	</div>
 </div>
