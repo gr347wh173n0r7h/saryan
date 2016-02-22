@@ -20,7 +20,8 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
   #Planner
-  get 'planner' => 'planner#new'
+  get 'planner' => 'planner#index'
+  get 'planner/new' => 'planner#new'
   #Resources
   resources :users
   resources :prereqs
