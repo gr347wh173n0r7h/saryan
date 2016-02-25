@@ -10,22 +10,24 @@
           </figure>
         </div>
       </div>
-      <div class="column-group all-100 push-center push-middle">
-        <% if not logged_in? %>
-            <div class="Register all-80 padding">
-              <center>
-                <h2>New to SARYAN?</h2>
-                <%= button_to "Register", register_path, :method => :get, class: "ink-button black all-40" %>
-              </center>
-            </div>
-        <% end %>
-      </div>
     </div>
   </section>
 
   <!--<section class="module content">-->
     <!--<div class="container">-->
       <div class="ink-grid">
+        <div class="column-group all-100 push-center half-top-space">
+          <% if not logged_in? %>
+              <div class="Register all-90 push-middle left-padding right-padding ">
+                <div class="all-50 push-left half-top-space">
+                  <h1>New to SARYAN?</h1>
+                </div>
+                <div class="all-50 push-right align-right half-top-space">
+                  <%= button_to "Register", register_path, :method => :get, class: "ink-button black all-50" %>
+                </div>
+              </div>
+          <% end %>
+        </div>
           <div class="column-group all-100 align-center horizontal-gutters padding top-space bottom-space">
             <div class="all-33 padding">
               <h1>Test</h1>
@@ -61,6 +63,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
+    <!--<div class="Footer column-group all-100">-->
+      <!--<div class="all-50 push-left half-top-space">-->
+        <!--<h1>SARYAN</h1>-->
+      <!--</div>-->
+      <!--<div class="all-50 push-right align-right">-->
+        <!--<p>copyright © SARYAN</p>-->
+      <!--</div>-->
+    <!--</div>-->
   </div>
 
 </div>
@@ -69,13 +79,18 @@
     (function(){
 
         var parallax = document.querySelectorAll(".parallax"),
-                speed = .75;
+                speed = .5;
 
         window.onscroll = function(){
             [].slice.call(parallax).forEach(function(el,i){
-
-                var windowYOffset = window.pageYOffset,
-                        elBackgrounPos = "50%" + (windowYOffset * speed)+ "px";
+                if(i == 0) {
+                    var windowYOffset = window.pageYOffset,
+                            elBackgrounPos = "50%" + (windowYOffset * speed) + "px";
+                }
+                else{
+                    var windowYOffset = window.pageYOffset,
+                            elBackgrounPos = "50%" + (windowYOffset * speed + 300) + "px";
+                }
 
                 el.style.backgroundPosition = elBackgrounPos;
 
