@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151109021841) do
+ActiveRecord::Schema.define(version: 20160221234328) do
 
   create_table "catalogs", force: :cascade do |t|
     t.string   "dep",        limit: 255
@@ -32,11 +32,32 @@ ActiveRecord::Schema.define(version: 20151109021841) do
     t.datetime "updated_at",             null: false
   end
 
+  create_table "departments", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.integer  "major_id",   limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "majors", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.integer  "catalog_id", limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
   create_table "prerequisites", force: :cascade do |t|
     t.integer  "course_id",  limit: 4
     t.integer  "prereq_id",  limit: 4
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+  end
+
+  create_table "schools", force: :cascade do |t|
+    t.string   "name",          limit: 255
+    t.integer  "department_id", limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "users", force: :cascade do |t|

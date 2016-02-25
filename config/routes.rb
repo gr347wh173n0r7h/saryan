@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   #SARYAN
-  root 'saryan#index'
+  # root 'saryan#index'
+  # get 'home' => 'saryan#home'
+  root 'saryan#home'
   #Users
   get 'register' => 'users#new'
   #Login

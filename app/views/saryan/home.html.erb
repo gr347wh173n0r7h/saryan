@@ -1,0 +1,86 @@
+
+<div class="Home all-100 half-top-space">
+
+  <section class="module parallax parallax-1">
+    <div class="container">
+      <div class="column-group all-100 push-center push-middle">
+        <div class="all-50">
+          <figure class="ink-image bottom-space">
+            <img src="img/landing.png" class="imagequery">
+          </figure>
+        </div>
+      </div>
+      <div class="column-group all-100 push-center push-middle">
+        <% if not logged_in? %>
+            <div class="Register all-80 padding">
+              <center>
+                <h2>New to SARYAN?</h2>
+                <%= button_to "Register", register_path, :method => :get, class: "ink-button black all-40" %>
+              </center>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+
+  <!--<section class="module content">-->
+    <!--<div class="container">-->
+      <div class="ink-grid">
+          <div class="column-group all-100 align-center horizontal-gutters padding top-space bottom-space">
+            <div class="all-33 padding">
+              <h1>Test</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="all-33 padding">
+              <h1>Test</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="all-33 padding">
+              <h1>Test</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+      </div>
+    <!--</div>-->
+  <!--</section>-->
+
+  <section class="module parallax parallax-2">
+    <div class="container">
+      <h3>The future of academic planning</h3>
+    </div>
+  </section>
+
+  <div class="ink-grid">
+    <div class="column-group all-100 align-center horizontal-gutters padding top-space bottom-space">
+      <div class="all-50 padding">
+        <h1>Test</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="all-50 padding">
+        <h1>Test</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+    (function(){
+
+        var parallax = document.querySelectorAll(".parallax"),
+                speed = .75;
+
+        window.onscroll = function(){
+            [].slice.call(parallax).forEach(function(el,i){
+
+                var windowYOffset = window.pageYOffset,
+                        elBackgrounPos = "50%" + (windowYOffset * speed)+ "px";
+
+                el.style.backgroundPosition = elBackgrounPos;
+
+            });
+        };
+
+    })();
+</script>
