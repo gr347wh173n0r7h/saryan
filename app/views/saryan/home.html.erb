@@ -16,31 +16,33 @@
   <!--<section class="module content">-->
     <!--<div class="container">-->
       <div class="ink-grid">
-        <div class="column-group all-100 push-center half-top-space">
-          <% if not logged_in? %>
+          <div class="column-group all-100 push-center half-top-space">
+            <% if not logged_in? %>
               <div class="Register all-90 push-middle left-padding right-padding ">
                 <div class="all-50 push-left half-top-space">
                   <h1>New to SARYAN?</h1>
                 </div>
-                <div class="all-50 push-right align-right half-top-space">
+                <div class="RegButton all-50 push-right align-right">
                   <%= button_to "Register", register_path, :method => :get, class: "ink-button black all-50" %>
                 </div>
               </div>
-          <% end %>
-        </div>
-          <div class="column-group all-100 align-center horizontal-gutters padding top-space bottom-space">
-            <div class="xlarge-33 large-33 medium-33 small-100 tiny-100 padding">
-              <h1>Test</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="xlarge-33 large-33 medium-33 small-100 tiny-100 padding">
-              <h1>Test</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="xlarge-33 large-33 medium-33 small-100 tiny-100 padding">
-              <h1>Test</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+            <% end %>
+          </div>
+          <div class="push-center">
+              <div class="column-group all-100 push-center align-center padding top-space bottom-space">
+                <div class="xlarge-33 large-33 medium-33 small-100 tiny-100 padding">
+                  <h1 class="blue">Schedule</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="xlarge-33 large-33 medium-33 small-100 tiny-100 padding">
+                  <h1 class="red">Evaluate</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="xlarge-33 large-33 medium-33 small-100 tiny-100 padding">
+                  <h1 class="green">Manage</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
           </div>
       </div>
     <!--</div>-->
@@ -53,13 +55,13 @@
   </section>
 
   <div class="ink-grid">
-    <div class="column-group all-100 align-center horizontal-gutters padding top-space bottom-space">
+    <div class="column-group all-100 align-center padding top-space bottom-space">
       <div class="xlarge-50 large-50 medium-50 small-100 tiny-100 padding">
-        <h1>Test</h1>
+        <h1 class="blue">Test</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class="xlarge-50 large-50 medium-50 small-100 tiny-100 padding">
-        <h1>Test</h1>
+        <h1 class="blue">Test</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>

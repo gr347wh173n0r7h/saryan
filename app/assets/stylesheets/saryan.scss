@@ -46,7 +46,7 @@ body {
   .ink-navigation ul li a:hover {
     color: #fff;
     text-decoration: none;
-    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;;
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
     //color: rgba(81, 203, 238, 1);
   }
   .ink-navigation ul li a.logoPlaceholder:hover {
@@ -198,24 +198,47 @@ figure.ink-image > figcaption.dark {
 
   h1 {
     font-weight: 300;
-    color: rgba(81, 203, 238, 1);
+    font-size: 2.5em;
+
+  }
+  h1.blue {
+    //color: rgba(81, 203, 238, 1);
+    color: #0f75da;
+  }
+  h1.red {
+    color: #c91111;
+  }
+  h1.green{
+    color: #ff9c00;
   }
 
   .Register {
-    background:rgba(255, 255, 255, 0.7);
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
-    -moz-box-shadow:    0px 0px 5px 2px rgba(0,0,0,0.5);
-    box-shadow:         0px 0px 5px 2px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    //-webkit-box-shadow: 0px 0px 5px 2px rgba(81, 203, 238, .75);
+    //-moz-box-shadow:    0px 0px 5px 2px rgba(81, 203, 238, .75);
+    //box-shadow:         0px 0px 5px 2px rgba(81, 203, 238, .75);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .75);
+    -moz-box-shadow:    0px 0px 5px 2px rgba(0, 0, 0, .75);
+    box-shadow:         0px 0px 5px 2px rgba(0, 0, 0, .75);
+
+    .RegButton {
+      padding-top: 22px;
+    }
+
   }
   .ink-button.black {
     border-radius: 3px;
   }
   .ink-button.black:hover {
-    background: #1e1e1e;
-    background: -webkit-linear-gradient(#1e1e1e, #4d4d4d); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#1e1e1e, #4d4d4d); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#1e1e1e, #4d4d4d); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#1e1e1e, #4d4d4d); /* Standard syntax */
+    //background: #4d4d4d;
+    //background: -webkit-linear-gradient(#1e1e1e, #4d4d4d); /* For Safari 5.1 to 6.0 */
+    //background: -o-linear-gradient(#1e1e1e, #4d4d4d); /* For Opera 11.1 to 12.0 */
+    //background: -moz-linear-gradient(#1e1e1e, #4d4d4d); /* For Firefox 3.6 to 15 */
+    //background: linear-gradient(#1e1e1e, #4d4d4d); /* Standard syntax */
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(81, 203, 238, 1);
+    -moz-box-shadow:    0px 0px 3px 2px rgba(81, 203, 238, 1);
+    box-shadow:         0px 0px 3px 2px rgba(81, 203, 238, 1);
+
   }
   //PARALLAX
   /* ============================================================
