@@ -47,6 +47,7 @@ body {
     color: #fff;
     text-decoration: none;
     background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;;
+    color: rgba(81, 203, 238, 1);
   }
   .ink-navigation ul li a.logoPlaceholder:hover {
     //background: 0 0;
@@ -72,6 +73,8 @@ body {
   }
 
 }
+
+//DRAWER
 
 #topbar .ink-navigation ul.black li button.fa-bars:active,
 #topbar .ink-navigation ul.black li button.fa-bars:focus,
@@ -158,11 +161,42 @@ figure.ink-image > figcaption.dark {
   background: #222;
 }
 
+//FOOTER
+
+.Footer {
+  color: white;
+  font-weight: 400;
+  background: #1e1e1e;
+  //background: -webkit-linear-gradient(#1e1e1e, #4d4d4d); /* For Safari 5.1 to 6.0 */
+  //background: -o-linear-gradient(#1e1e1e, #4d4d4d); /* For Opera 11.1 to 12.0 */
+  //background: -moz-linear-gradient(#1e1e1e, #4d4d4d); /* For Firefox 3.6 to 15 */
+  //background: linear-gradient(#1e1e1e, #4d4d4d); /* Standard syntax */
+  -webkit-box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0px -3px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:         0px -3px 3px 0px rgba(0, 0, 0, 0.5);
+
+  p {
+    font-weight: 300;
+  }
+
+  ul li a {
+    color: white;
+    font-weight: 300;
+
+  }
+  ul li a:hover {
+    text-decoration: none;
+    color: rgba(81, 203, 238, 1);
+  }
+}
+
 //HOME
+
 .Home {
 
   h1 {
-    font-weight: 400;
+    font-weight: 300;
+    color: rgba(81, 203, 238, 1);
   }
 
   .Register {
@@ -172,15 +206,6 @@ figure.ink-image > figcaption.dark {
     border-radius: 3px;
   }
   .ink-button.black:hover {
-    background: #1e1e1e;
-    background: -webkit-linear-gradient(#1e1e1e, #4d4d4d); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#1e1e1e, #4d4d4d); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#1e1e1e, #4d4d4d); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#1e1e1e, #4d4d4d); /* Standard syntax */
-  }
-  .Footer {
-    color: white;
-    font-weight: 400;
     background: #1e1e1e;
     background: -webkit-linear-gradient(#1e1e1e, #4d4d4d); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#1e1e1e, #4d4d4d); /* For Opera 11.1 to 12.0 */
@@ -289,4 +314,5 @@ figure.ink-image > figcaption.dark {
     }
   }
 }
+//END HOME
 

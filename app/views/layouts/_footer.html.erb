@@ -1,0 +1,22 @@
+<div class="Footer">
+  <div class="ink-grid all-100">
+    <div class="column-group all-100 ">
+      <div class="all-50 push-left push-middle">
+        <!--<h3>SARYAN</h3>-->
+        <ul class="inline">
+          <li><%= link_to("Home", root_path) %></li>
+          <li><%= link_to("Login", login_path) %></li>
+          <li><%= link_to("Register", register_path) %></li>
+          <li>
+            <% if logged_in? %>
+                <%= link_to("Logout", logout_path) %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      <div class="all-50 push-righ push-middle align-right top-padding">
+        <p>copyright © SARYAN 2015</p>
+      </div>
+    </div>
+  </div>
+</div>
