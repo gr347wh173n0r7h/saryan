@@ -11378,7 +11378,7 @@ div.Pot {
 #Course:hover .delete {
   display: block;
 }
-/* line 6, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 6, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar {
   position: fixed;
   z-index: 100;
@@ -11387,11 +11387,11 @@ div.Pot {
   -webkit-transform: scale3d(1, 1, 1);
   top: 0;
 }
-/* line 13, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 13, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul.black li {
   font-size: 14px;
 }
-/* line 16, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 16, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul.black li a {
   padding: .7em 1em;
   color: #bbb;
@@ -11399,22 +11399,22 @@ div.Pot {
   font-weight: 300;
   line-height: 24px;
 }
-/* line 23, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 23, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul.black li a:hover {
   color: #fff;
 }
-/* line 26, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 26, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul.black li a.logoPlaceholder:hover {
   background: 0 0;
 }
-/* line 29, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 29, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul.black li a.logoPlaceholder {
   margin-right: .5em;
   padding: .4em 0;
   font-weight: 700;
   font-size: 1.4em;
 }
-/* line 35, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 35, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul.black li button.fa-bars {
   background: 0 0;
   font-size: 1.2em;
@@ -11424,7 +11424,7 @@ div.Pot {
   float: left;
 }
 
-/* line 45, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 45, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul.black li button.fa-bars:active,
 #topbar .ink-navigation ul.black li button.fa-bars:focus,
 #topbar .ink-navigation ul.black li button.fa-bars:hover {
@@ -11432,32 +11432,32 @@ div.Pot {
   outline: 0;
 }
 
-/* line 52, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 52, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer, body.ink-drawer .right-drawer {
   background: #1e1e1e;
 }
 
-/* line 56, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 56, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer li, body.ink-drawer .right-drawer li {
   display: block;
   margin: 0;
   font-weight: 300;
 }
 
-/* line 62, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 62, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer ul, body.ink-drawer .right-drawer ul {
   margin: 59px 0 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 68, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 68, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer li > a:hover, body.ink-drawer .right-drawer li > a:hover {
   background: #333;
   color: #FFF;
 }
 
-/* line 73, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 73, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer li > a, body.ink-drawer .right-drawer li > a {
   display: block;
   padding: 6px 15px;
@@ -11467,25 +11467,25 @@ body.ink-drawer .left-drawer li > a, body.ink-drawer .right-drawer li > a {
   font-size: .875em;
 }
 
-/* line 82, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 82, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image {
   position: relative;
   border: 1px solid #555;
 }
 
-/* line 86, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 86, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > img {
   width: 100%;
 }
 
-/* line 89, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 89, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption {
   padding: 1em;
   background: #fff;
   line-height: 1.3;
 }
 
-/* line 94, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 94, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.over-top, figure.ink-image > figcaption.over-bottom {
   position: absolute;
   width: 100%;
@@ -11493,25 +11493,25 @@ figure.ink-image > figcaption.over-top, figure.ink-image > figcaption.over-botto
   border: none;
 }
 
-/* line 100, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 100, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.over-top.dark, figure.ink-image > figcaption.over-bottom.dark {
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 104, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 104, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.over-top {
   top: 0;
   background: rgba(255, 255, 255, 0.7);
 }
 
-/* line 108, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 108, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.over-bottom {
   bottom: 0;
   background: rgba(255, 255, 255, 0.7);
 }
 
-/* line 112, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 112, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.dark {
   color: #fff;
   background: #222;

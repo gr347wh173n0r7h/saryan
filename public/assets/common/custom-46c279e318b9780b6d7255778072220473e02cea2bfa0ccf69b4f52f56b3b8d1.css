@@ -1,0 +1,16 @@
+/* line 1, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/common/custom.css.scss */
+#error_explanation {
+  color: red;
+}
+/* line 3, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/common/custom.css.scss */
+#error_explanation p {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 12, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/common/custom.css.scss */
+.field_with_errors .form-control {
+  border: 2px solid red;
+  box-shadow: 0px 0px 5px red;
+  width: 100%;
+}

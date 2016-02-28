@@ -11411,7 +11411,7 @@ div.Pot, div.PotB {
 #Course:hover .delete {
   display: block;
 }
-/* line 13, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 13, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar {
   position: fixed;
   z-index: 100;
@@ -11423,12 +11423,12 @@ div.Pot, div.PotB {
   -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
 }
-/* line 33, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 33, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul li {
   font-size: 14px;
   background: none;
 }
-/* line 37, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 37, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul li a {
   background: none;
   padding: .7em 1em;
@@ -11436,13 +11436,13 @@ div.Pot, div.PotB {
   font-weight: 300;
   line-height: 24px;
 }
-/* line 46, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 46, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul li a:hover {
   color: #fff;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
 }
-/* line 55, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 55, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul li a.logoPlaceholder {
   text-transform: uppercase;
   background: none;
@@ -11451,7 +11451,7 @@ div.Pot, div.PotB {
   font-weight: 500;
   font-size: 1.4em;
 }
-/* line 63, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 63, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul li button.fa-bars {
   background: transparent none repeat scroll 0 0;
   font-size: 1.2em;
@@ -11460,12 +11460,12 @@ div.Pot, div.PotB {
   padding: .8em .8em .8em 0;
   float: left;
 }
-/* line 71, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 71, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar ul.menu {
   background: none;
 }
 
-/* line 79, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 79, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 #topbar .ink-navigation ul.black li button.fa-bars:active,
 #topbar .ink-navigation ul.black li button.fa-bars:focus,
 #topbar .ink-navigation ul.black li button.fa-bars:hover {
@@ -11473,32 +11473,32 @@ div.Pot, div.PotB {
   outline: 0;
 }
 
-/* line 86, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 86, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer, body.ink-drawer .right-drawer {
   background: #1e1e1e;
 }
 
-/* line 91, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 91, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer li, body.ink-drawer .right-drawer li {
   display: block;
   margin: 0;
   font-weight: 300;
 }
 
-/* line 97, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 97, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer ul, body.ink-drawer .right-drawer ul {
   margin: 59px 0 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 103, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 103, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer li > a:hover, body.ink-drawer .right-drawer li > a:hover {
   background: #333;
   color: #FFF;
 }
 
-/* line 108, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 108, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 body.ink-drawer .left-drawer li > a, body.ink-drawer .right-drawer li > a {
   display: block;
   padding: 6px 15px;
@@ -11508,18 +11508,18 @@ body.ink-drawer .left-drawer li > a, body.ink-drawer .right-drawer li > a {
   font-size: .875em;
 }
 
-/* line 119, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 119, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image {
   position: relative;
   border: none;
 }
 
-/* line 124, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 124, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > img {
   width: 100%;
 }
 
-/* line 127, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 127, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption {
   padding: 1em;
   background: #fff;
@@ -11530,13 +11530,13 @@ figure.ink-image > figcaption {
   box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* line 137, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 137, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image h2 {
   font-weight: 300;
   line-height: 24px;
 }
 
-/* line 141, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 141, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.over-top, figure.ink-image > figcaption.over-bottom {
   position: absolute;
   width: 100%;
@@ -11544,31 +11544,31 @@ figure.ink-image > figcaption.over-top, figure.ink-image > figcaption.over-botto
   border: none;
 }
 
-/* line 147, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 147, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.over-top.dark, figure.ink-image > figcaption.over-bottom.dark {
   color: #fff;
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 151, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 151, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.over-top {
   top: 0;
   background: rgba(255, 255, 255, 0.7);
 }
 
-/* line 155, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 155, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.over-bottom {
   bottom: 0;
   background: rgba(255, 255, 255, 0.7);
 }
 
-/* line 159, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 159, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 figure.ink-image > figcaption.dark {
   color: #fff;
   background: #222;
 }
 
-/* line 166, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 166, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Footer {
   color: white;
   font-size: 14px;
@@ -11578,23 +11578,23 @@ figure.ink-image > figcaption.dark {
   -moz-box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 179, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 179, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Footer p {
   font-weight: 300;
   padding-top: 20px;
 }
-/* line 184, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 184, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Footer ul li a {
   color: white;
   font-weight: 300;
 }
-/* line 189, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 189, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Footer ul li a:hover {
   text-decoration: none;
   color: #51cbee;
 }
 
-/* line 197, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 197, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home {
   /* ============================================================
     PRIMARY STRUCTURE
@@ -11603,80 +11603,80 @@ figure.ink-image > figcaption.dark {
     SECTIONS
   ============================================================ */
 }
-/* line 199, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 199, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home h1 {
   font-weight: 300;
   font-size: 2.5em;
 }
-/* line 204, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 204, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home h1.blue {
   color: #0f75da;
 }
-/* line 208, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 208, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home h1.red {
   color: #c91111;
 }
-/* line 211, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 211, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home h1.green {
   color: #ff9c00;
 }
-/* line 215, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 215, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home .Register {
   background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
   -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 }
-/* line 224, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 224, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home .Register .RegButton {
   padding-top: 22px;
 }
-/* line 229, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 229, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home .ink-button.black {
   border-radius: 3px;
 }
-/* line 232, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 232, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home .ink-button.black:hover {
   -webkit-box-shadow: 0px 0px 3px 2px #51cbee;
   -moz-box-shadow: 0px 0px 3px 2px #51cbee;
   box-shadow: 0px 0px 3px 2px #51cbee;
 }
-/* line 247, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 247, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home .container {
   max-width: 960px;
   margin: 0 auto;
 }
-/* line 255, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 255, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module:last-child {
   margin-bottom: 0;
 }
-/* line 258, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 258, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module h2 {
   margin-bottom: 40px;
   font-weight: 300;
   line-height: 24px;
 }
-/* line 265, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 265, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module p {
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
 }
-/* line 271, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 271, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module p:last-child {
   margin-bottom: 0;
 }
-/* line 274, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 274, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module.content {
   padding: 40px 0;
 }
-/* line 277, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 277, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module.parallax {
   padding: 240px 0;
   background-position: 0 0;
 }
-/* line 281, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 281, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module.parallax h1 {
   color: #1e1e1e;
   font-size: 48px;
@@ -11686,7 +11686,7 @@ figure.ink-image > figcaption.dark {
   text-transform: uppercase;
   text-shadow: 0 0 5px white;
 }
-/* line 292, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 292, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module.parallax h3 {
   color: white;
   font-size: 40px;
@@ -11694,7 +11694,7 @@ figure.ink-image > figcaption.dark {
   line-height: 24px;
   text-align: center;
 }
-/* line 302, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 302, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module.parallax-1 {
   background-image: url("home1.jpeg");
   background-size: cover;
@@ -11702,7 +11702,7 @@ figure.ink-image > figcaption.dark {
   -webkit-box-shadow: inset  0  8px 8px -8px #000000, inset  0 -8px 8px -8px #000000;
   box-shadow: inset  0  8px 8px -8px #000000, inset  0 -8px 8px -8px #000000;
 }
-/* line 313, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+/* line 313, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
 .Home section.module.parallax-2 {
   background-image: url("home2.jpeg");
   background-size: cover;
@@ -11711,25 +11711,25 @@ figure.ink-image > figcaption.dark {
   box-shadow: inset  0  8px 8px -8px #000000, inset  0 -8px 8px -8px #000000;
 }
 @media all and (min-width: 600px) {
-  /* line 326, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+  /* line 326, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
   .Home section.module h2 {
     font-size: 42px;
   }
-  /* line 329, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+  /* line 329, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
   .Home section.module p {
     font-size: 20px;
   }
-  /* line 332, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+  /* line 332, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
   .Home section.module.parallax {
     padding: 200px 0;
   }
-  /* line 335, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+  /* line 335, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
   .Home section.module.parallax h1 {
     font-size: 48px;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 340, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/saryan.scss */
+  /* line 340, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/navigation.scss */
   .Home section.module.parallax h1 {
     font-size: 100px;
   }

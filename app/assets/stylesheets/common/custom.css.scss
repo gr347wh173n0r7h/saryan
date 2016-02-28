@@ -1,0 +1,17 @@
+#error_explanation {
+  color: red;
+  p {
+    color: red;
+    padding-left: 10px;
+  }
+}
+
+
+.field_with_errors {
+  //@extend .warn-field;
+  .form-control {
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px red;
+    width: 100%;
+  }
+}

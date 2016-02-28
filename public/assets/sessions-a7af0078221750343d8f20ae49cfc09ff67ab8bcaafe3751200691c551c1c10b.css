@@ -1,0 +1,41 @@
+/* line 1, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/sessions.scss */
+body {
+  background: url(/assets/students1-0efde1c0c8903d0f34bc290ee0430e39fdbf31a719dda4b257018f914e10e525.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/sessions.scss */
+.Login {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* line 20, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/sessions.scss */
+.Login h1, .Login h5 {
+  font-weight: 300;
+  line-height: 24px;
+}
+/* line 25, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/sessions.scss */
+.Login .ink-form .control-group input[type="checkbox"] {
+  margin: 0.25em 0;
+}
+/* line 29, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/sessions.scss */
+.Login .ink-form textarea, .Login .ink-form input[type="email"], .Login .ink-form input[type="password"] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+/* line 37, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/sessions.scss */
+.Login .ink-form textarea:focus, .Login .ink-form input[type="email"]:focus, .Login .ink-form input[type="password"]:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
+}
