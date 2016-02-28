@@ -83,11 +83,12 @@ h1.green, p.yellow{
     font-weight: 300;
   }
   section.module.parallax-1 {
-    background: image-url("home2.jpeg");
+    background: image-url("library.jpeg");
     background-size: cover;
+    padding: 160px 0;
   }
   section.module.parallax h1 {
-    font-size: 6em;
+    font-size: 5em;
     color: white;
     text-shadow: 0 0 15px black;
   }
