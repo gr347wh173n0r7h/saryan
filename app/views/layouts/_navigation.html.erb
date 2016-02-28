@@ -10,6 +10,7 @@
     </ul>
     <ul class="menu horizontal push-right hide-small hide-tiny hide-medium">
       <li class="heading"><%= link_to("Home", root_path) %></li>
+      <li class="heading"><%= link_to("About", about_path) %></li>
 
       <% if logged_in? %>
           <li class="heading"><%= link_to("Planner", planner_path) %></li>
@@ -27,6 +28,7 @@
 <div class="left-drawer">
   <ul>
     <li class="heading"><%= link_to("Home", root_path) %></li>
+    <li class="heading"><%= link_to("About", about_path) %></li>
 
     <% if logged_in? %>
         <li class="heading"><%= link_to("Planner", planner_path) %></li>

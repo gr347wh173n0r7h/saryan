@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   # root 'saryan#index'
   # get 'home' => 'saryan#home'
   root 'saryan#home'
+  #Saryan
+  get 'about' => 'saryan#about'
   #Users
   get 'register' => 'users#new'
   #Login
