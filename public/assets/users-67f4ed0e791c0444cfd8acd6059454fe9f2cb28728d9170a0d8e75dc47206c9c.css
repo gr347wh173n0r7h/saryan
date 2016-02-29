@@ -1,0 +1,71 @@
+/* line 5, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+body {
+  background: url(/images/students2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 13, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+div.Title {
+  background-color: black;
+}
+
+/* line 18, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+div.Info {
+  background-color: #9D9D9D;
+}
+
+/* line 23, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+span.Space {
+  word-spacing: 32px;
+}
+
+/* line 27, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+.form-field {
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}
+
+/* line 38, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+#wrapper {
+  border: 2px solid #9d9d9d;
+  display: inline-block;
+}
+
+/* line 43, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+.Register {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  font-weight: 300;
+}
+/* line 54, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+.Register h1, .Register h5, .Register legend {
+  font-weight: 300;
+}
+/* line 59, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+.Register .ink-form .control-group input[type="radio"] {
+  margin: 0.25em 0;
+}
+/* line 63, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+.Register .ink-form fieldset legend + * {
+  margin: 0 0;
+}
+/* line 67, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+.Register .ink-form textarea, .Register .ink-form input[type="text"], .Register .ink-form input[type="email"], .Register .ink-form input[type="password"] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+/* line 75, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/users.scss */
+.Register .ink-form textarea:focus, .Register .ink-form input[type="text"]:focus, .Register .ink-form input[type="email"]:focus, .Register .ink-form input[type="password"]:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee;
+}

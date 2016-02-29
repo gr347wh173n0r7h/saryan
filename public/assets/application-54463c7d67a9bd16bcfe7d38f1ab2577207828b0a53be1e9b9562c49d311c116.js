@@ -35478,10 +35478,10 @@ Ink.createModule('Ink.UI.TreeView', '1', ['Ink.UI.Common_1','Ink.Dom.Event_1','I
      * @param {String}              [options.node]              Selector for the nodes. Defaults to 'li'.
      * @param {String}              [options.children]          Selector for the children. Defaults to 'ul'.
      * @param {String}              [options.parentClass]       CSS classes to be added to parent nodes. Defaults to 'parent'.
-     * @param {String}              [options.openClass]         CSS classes to be added to the icon when a parent is open. Defaults to 'fa fa-minus-circle'.
-     * @param {String}              [options.closedClass]       CSS classes to be added to the icon when a parent is closed. Defaults to 'fa fa-plus-circle'.
+     * @param {String}              [options.openClass]         CSS classes to be added to the icons when a parent is open. Defaults to 'fa fa-minus-circle'.
+     * @param {String}              [options.closedClass]       CSS classes to be added to the icons when a parent is closed. Defaults to 'fa fa-plus-circle'.
      * @param {String}              [options.hideClass]         CSS Class to toggle visibility of the children. Defaults to 'hide-all'.
-     * @param {String}              [options.iconTag]           The name of icon tag. The component tries to find a tag with that name as a direct child of the node. If it doesn't find it, it creates it. Defaults to 'i'.
+     * @param {String}              [options.iconTag]           The name of icons tag. The component tries to find a tag with that name as a direct child of the node. If it doesn't find it, it creates it. Defaults to 'i'.
      * @param {Boolean}             [options.stopDefault]       Flag to stops the default behavior of the click handler. Defaults to true.
      * @example
      *      <ul class="ink-tree-view">

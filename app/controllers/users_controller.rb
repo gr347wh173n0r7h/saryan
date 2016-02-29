@@ -1,10 +1,15 @@
 class UsersController < ApplicationController
 	def show
+		# WRITE PROTECT AFTER DEV!!!
 		@user = User.find(params[:id])
 	end
 
   	def new
-  		@user = User.new
+			if  logged_in?
+				redirect_to root_path
+			elsif
+  			@user = User.new
+			end
   	end
 
   	def create

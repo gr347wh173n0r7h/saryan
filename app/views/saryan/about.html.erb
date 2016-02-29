@@ -1,0 +1,109 @@
+<div class="About all-100 half-top-space">
+
+  <section class="module parallax parallax-1">
+    <div class="container">
+      <div class="column-group all-100 push-center push-middle">
+        <h1>About Us</h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="ink-grid">
+    <div class="column-group all-100 push-center padding">
+      <div class="padding">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <h1 class="blue">The Team</h1>
+
+      <div class="all-100 padding">
+        <div>
+          <div class="all-100">
+            <div class="all-30 push-left align-center top-padding">
+              <%= image_tag('icons/black/user.png') %>
+            </div>
+            <div class="all-70 push-right push-middle right-padding">
+              <h3>Sargon Jacobs - CEO</h3>
+              <p class="blue">Product Design and Sales</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="all-100 padding">
+        <div>
+          <div class="all-100">
+              <div class="all-30 push-left align-center top-padding">
+                <%= image_tag('icons/black/user.png') %>
+              </div>
+              <div class="all-70 push-right push-middle right-padding">
+                <h3>Jordan Petersen - CTO</h3>
+                <p class="blue">Full Stack and Architecture</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="all-100 padding">
+        <div>
+          <div class="all-100">
+            <div class="all-30 push-left align-center top-padding">
+              <%= image_tag('icons/black/user.png') %>
+            </div>
+            <div class="all-70 push-right push-middle right-padding">
+              <h3>Lisa Efrid - Project Manager</h3>
+              <p class="blue">Accounts and Project Managment</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="all-100 padding">
+        <div>
+          <div class="all-100">
+            <div class="all-30 push-left align-center top-padding">
+              <%= image_tag('icons/black/user.png') %>
+            </div>
+            <div class="all-70 push-right push-middle right-padding">
+              <h3>Sarmad Syed - VP of Engineering</h3>
+              <p class="blue">Full Stack and Databases</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <%= render 'layouts/footer' %>
+
+</div>
+
+<script type="text/javascript">
+    (function(){
+
+        var parallax = document.querySelectorAll(".parallax"),
+                speed = .5;
+
+        window.onscroll = function(){
+            [].slice.call(parallax).forEach(function(el,i){
+                if(i == 0) {
+                    var windowYOffset = window.pageYOffset,
+                            elBackgrounPos = "50%" + (windowYOffset * speed ) + "px";
+                }
+                else{
+                    var windowYOffset = window.pageYOffset,
+                            elBackgrounPos = "50%" + (windowYOffset * speed + 200) + "px";
+                }
+
+                el.style.backgroundPosition = elBackgrounPos;
+
+            });
+        };
+
+    })();
+</script>
