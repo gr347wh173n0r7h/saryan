@@ -14,36 +14,37 @@
 ActiveRecord::Schema.define(version: 20160221234328) do
 
   create_table "catalogs", force: :cascade do |t|
-    t.string   "dep",        limit: 255
-    t.integer  "course_id",  limit: 4
-    t.string   "cat",        limit: 255
-    t.string   "sub_cat",    limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.integer  "cat_year",   limit: 4
+    t.integer  "major_id",   limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "courses", force: :cascade do |t|
+    t.integer  "catalog_id", limit: 4
     t.string   "dep",        limit: 255
     t.string   "name",       limit: 255
-    t.string   "desc",       limit: 255
+    t.text     "desc",       limit: 65535
     t.integer  "course_num", limit: 4
     t.integer  "units",      limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.integer  "prereq_id",  limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "departments", force: :cascade do |t|
     t.string   "name",       limit: 255
-    t.integer  "major_id",   limit: 4
+    t.integer  "school_id",  limit: 4
+    t.string   "major_name", limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
 
   create_table "majors", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.integer  "catalog_id", limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "name",          limit: 255
+    t.integer  "department_id", limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "prerequisites", force: :cascade do |t|
@@ -54,10 +55,10 @@ ActiveRecord::Schema.define(version: 20160221234328) do
   end
 
   create_table "schools", force: :cascade do |t|
-    t.string   "name",          limit: 255
-    t.integer  "department_id", limit: 4
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "name",            limit: 255
+    t.string   "department_name", limit: 255
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
   create_table "users", force: :cascade do |t|

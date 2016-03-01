@@ -1,9 +1,10 @@
 class CreateCourses < ActiveRecord::Migration
   def change
     create_table :courses do |t|
+      t.integer :catalog_id
       t.string :dep
       t.string :name
-      t.string :desc
+      t.text :desc
       t.integer :course_num
       t.integer :units
       t.integer :prereq_id
