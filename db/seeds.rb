@@ -100,6 +100,6 @@ mis_catalog = [
 
 ]
 
-mis_catalog.each do |catalog_id,dep,course_num, name, units, descr|
-  Course.create(catalog_id:catalog_id, dep: dep, course_num: course_num, name: name, units: units, descr:descr)
+mis_catalog.each do |catalog_id,dep,course_num, name, units, desc|
+  Course.create(catalog_id:catalog_id, dep: dep, course_num: course_num, name: name, units: units, desc:desc)
 end
