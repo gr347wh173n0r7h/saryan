@@ -9,7 +9,6 @@ h1.green, p.yellow{
   color: #ff9c00;
 }
 
-
 //HOME
 
 .Home {
@@ -91,6 +90,13 @@ h1.green, p.yellow{
     font-size: 5em;
     color: white;
     text-shadow: 0 0 15px black;
+  }
+  .TeamImg {
+    max-width: 10em;
+    border-radius: 5em;
+    //-webkit-box-shadow: 0px 0px 3px 3px rgba(81, 203, 238, .75);
+    //-moz-box-shadow:    0px 0px 3px 3px rgba(81, 203, 238, .75);
+    //box-shadow:         0px 0px 3px 3px rgba(81, 203, 238, .75);
   }
 }
 //END ABOUT

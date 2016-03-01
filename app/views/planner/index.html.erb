@@ -8,7 +8,7 @@
 <div xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html"></div>
 <div class="ink-grid">
-<div class="column-group top-padding horizontal-gutters">
+<div class="column-group top-padding half-horizontal-gutters">
 
     <!-- PLANS-->
     <div class="column-group xlarge-25 large-25 medium-100 small-100 tiny-100">
@@ -65,7 +65,7 @@
 
     <!--SEMESTER-->
     <div class="column-group xlarge-45 large-45 medium-100 small-100 tiny-100">
-      <div class="Planner all-100 push-center">
+      <div class="Planner all-100 align-center half-left-padding">
         <!--<div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>-->
 
         <!-- SEMESTER DROP-->
@@ -92,7 +92,7 @@
 
     <!-- COURSES-->
     <div class="column-group xlarge-30 large-30 medium-100 small-100 tiny-100 half-top-space">
-        <div class="PotB all-100 push-center">
+        <div class="PotB all-100 push-left">
           <!-- SEARCH-->
           <div class="column all-100">
             <form class="search ink-form">
@@ -356,6 +356,8 @@
 
         Droppable.add('#Fall2015', {onDrop: 'move'});
 
+//        SEMESTER
+
         var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
         var date = new Date();
         var i = 1;
@@ -364,7 +366,7 @@
             var year = date.getFullYear();
             var newID = semester[i]+year;
             var newDiv =
-                    '<div class="Semester column-group all-95 push-middle order-r4">' +
+                    '<div class="Semester column-group all-95">' +
                     '<div class="all-100 push-right" style="padding-top: 7px">' +
                     '<p class="tip">'+ semester[i] + ' ' + year +'</p>' +
                     '<ul id="'+newID+'" class="droppable-2 all-100">' +
