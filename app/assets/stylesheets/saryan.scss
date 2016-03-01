@@ -69,7 +69,8 @@ h1.green, p.yellow{
 .About{
   h1 {
     font-weight: 300;
-    font-size: 3em;
+    font-size: 3.5em;
+    //text-decoration: underline;
   }
   h2 {
     font-weight: 300;
@@ -88,6 +89,7 @@ h1.green, p.yellow{
   }
   section.module.parallax h1 {
     font-size: 5em;
+    text-decoration: none;
     color: white;
     text-shadow: 0 0 15px black;
   }
