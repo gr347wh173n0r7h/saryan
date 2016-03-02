@@ -1,19 +1,17 @@
 class UsersController < ApplicationController
+	before_action :logged_in_user, only: [:show]
+	before_action :not_logged_in_user, only: [:new]
+
 	def show
-		# WRITE PROTECT AFTER DEV!!!
-		if session[:user_id].to_s == params[:id].to_s
-			@user = User.find(params[:id])
-		else
-			redirect_to current_user
-		end
+			if session[:user_id].to_s == params[:id].to_s
+				@user = User.find(params[:id])
+			else
+				redirect_to current_user
+			end
 	end
 
 	def new
-		if  logged_in?
-			redirect_to root_path
-		elsif
 			@user = User.new
-		end
 	end
 
 	def create
@@ -33,6 +31,18 @@ class UsersController < ApplicationController
 		def user_params
       		params.require(:user).permit(:name, :email, :status, :password,
                                    :password_confirmation)
-    	end
+		end
+
+		def logged_in_user
+			unless logged_in?
+				redirect_to login_path
+			end
+		end
+
+		def not_logged_in_user
+			unless !logged_in?
+				redirect_to root_path
+			end
+		end
 
 end
