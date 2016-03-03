@@ -11,54 +11,102 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221234328) do
+ActiveRecord::Schema.define(version: 20160302232414) do
 
   create_table "catalogs", force: :cascade do |t|
+<<<<<<< HEAD
     t.integer  "cat_year",   limit: 4
     t.integer  "major_id",   limit: 4
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+=======
+    t.string   "degree",     limit: 255
+    t.integer  "cat_yr",     limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+>>>>>>> newDB2
   end
+
+  add_index "catalogs", ["cat_yr"], name: "index_catalogs_on_cat_yr", using: :btree
 
   create_table "courses", force: :cascade do |t|
     t.integer  "catalog_id", limit: 4
     t.string   "dep",        limit: 255
     t.string   "name",       limit: 255
+<<<<<<< HEAD
     t.text     "desc",       limit: 65535
     t.integer  "course_num", limit: 4
     t.integer  "units",      limit: 4
     t.integer  "prereq_id",  limit: 4
+=======
+    t.string   "abbrev",     limit: 255
+    t.integer  "units",      limit: 4
+    t.text     "desc",       limit: 65535
+>>>>>>> newDB2
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
 
   create_table "departments", force: :cascade do |t|
     t.string   "name",       limit: 255
+<<<<<<< HEAD
     t.integer  "school_id",  limit: 4
     t.string   "major_name", limit: 255
+=======
+    t.string   "abbrev",     limit: 255
+    t.integer  "school_id",  limit: 4
+>>>>>>> newDB2
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
 
+  add_index "departments", ["school_id"], name: "index_departments_on_school_id", using: :btree
+
   create_table "majors", force: :cascade do |t|
     t.string   "name",          limit: 255
+<<<<<<< HEAD
+    t.integer  "department_id", limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+=======
+    t.string   "maj_abbrev",    limit: 255
     t.integer  "department_id", limit: 4
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
 
-  create_table "prerequisites", force: :cascade do |t|
+  add_index "majors", ["department_id"], name: "index_majors_on_department_id", using: :btree
+
+  create_table "plans", force: :cascade do |t|
+    t.integer  "catalog_id", limit: 4
     t.integer  "course_id",  limit: 4
-    t.integer  "prereq_id",  limit: 4
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.string   "type",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+>>>>>>> newDB2
+  end
+
+  add_index "plans", ["catalog_id"], name: "index_plans_on_catalog_id", using: :btree
+  add_index "plans", ["course_id"], name: "index_plans_on_course_id", using: :btree
+
+  create_table "prerequistes", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "schools", force: :cascade do |t|
+<<<<<<< HEAD
     t.string   "name",            limit: 255
     t.string   "department_name", limit: 255
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+=======
+    t.string   "name",       limit: 255
+    t.string   "city",       limit: 255
+    t.string   "state",      limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+>>>>>>> newDB2
   end
 
   create_table "users", force: :cascade do |t|
@@ -73,4 +121,6 @@ ActiveRecord::Schema.define(version: 20160221234328) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
+  add_foreign_key "departments", "schools"
+  add_foreign_key "majors", "departments"
 end
