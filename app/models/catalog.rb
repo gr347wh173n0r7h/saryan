@@ -1,5 +1,4 @@
 class Catalog < ActiveRecord::Base
-  belongs_to :major
-  has_many :courses
-
+  has_many :plans
+  has_many :courses, through: :plans
 end
