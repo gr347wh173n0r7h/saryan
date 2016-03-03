@@ -93,12 +93,8 @@ mis_catalog = [
 "],
 
 ]
-<<<<<<< HEAD
-mis_catalog.each do |catalog_id,dep,course_num, name, units, desc|
-  Course.create(catalog_id:catalog_id, dep: dep, course_num: course_num, name: name, units: units, desc:desc)
-=======
+
 mis_catalog.each do |dep,abbrev, name, units, desc|
   co = Course.create(dep: dep, abbrev:abbrev, name: name, units: units, desc:desc)
   Plan.create(catalog_id:c.id, course_id:co.id)
->>>>>>> newDB2
 end
