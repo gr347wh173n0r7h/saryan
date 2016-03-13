@@ -97,17 +97,20 @@ div.PotB {
   //padding-top: 5em;
   //padding-bottom: .5em;
 }
+.PlanCourseB:active, .PlanCourseB:focus{
+  color: black;
+}
 
 #GE button{
-  border: 2px dashed #c91111;
+  border: 2px solid #c91111;
   //background: #c91111 none repeat scroll 0 0;
 }
 #Maj button{
-  border: 2px dashed #ff9c00;
+  border: 2px solid #ff9c00;
   //background: #ff9c00 none repeat scroll 0 0;
 }
 #Cons button{
-  border: 2px dashed #0f75da;
+  border: 2px solid #0f75da;
   //background: #0f75da none repeat scroll 0 0;
 }
 .ink-toggle{
@@ -228,12 +231,15 @@ div.PotB {
 
 .droppable-CC.red {
   border: 2px dashed #c91111;
+  background: rgba(255,255,255,.1);
 }
 .droppable-CC.blue {
   border: 2px dashed #0f75da;
+  background: rgba(255,255,255,.1);
 }
 .droppable-CC.orange {
   border: 2px dashed #ff9c00;
+  background: rgba(255,255,255,.1);
 }
 .droppable-CC{
   background: #282828 none repeat scroll 0 0;
