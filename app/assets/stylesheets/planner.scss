@@ -2,6 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+h1 {
+  font-weight: 300;
+  font-size: 3em;
+}
+p, h1, label {
+  font-weight: 300;
+}
+label {
+  padding-top: .25em;
+}
+
 div.box{
   border-color: black;
   border-style: solid;
