@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 	def show
 			if session[:user_id].to_s == params[:id].to_s
 				@user = User.find(params[:id])
+				# @academic = Academic.where(user_id: params[:id])
 			else
 				redirect_to current_user
 			end
@@ -19,7 +20,7 @@ class UsersController < ApplicationController
 		if @user.save
 			log_in @user
 			flash[:success] = "Welcome to the SARYAN"
-			redirect_to @user
+			redirect_to academics_new_path
 		else
 			flash[:failure] = "Error occured"
 			render 'new'

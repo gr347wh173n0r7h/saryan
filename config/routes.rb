@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'planner/new'
-
-  get 'sessions/new'
+  # get 'planner/new'
+  #
+  # get 'sessions/new'
 
   #get 'users/new'
 
@@ -26,6 +26,10 @@ Rails.application.routes.draw do
   #Planner
   get 'planner' => 'planner#index'
   get 'planner/new' => 'planner#new'
+  #Academics
+  get 'academics' => 'academics#index'
+  get 'academics/new' => 'academics#new'
+  post 'academics/create'
   #Resources
   resources :users
   resources :prereqs

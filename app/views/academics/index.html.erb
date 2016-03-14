@@ -1,0 +1,20 @@
+<h1>Schools:</h1>
+<% @school.each do |s| %>
+    <h5><%=s.name %></h5>
+    <p><%=s.city %>, <%=s.state %></p>
+<%end%>
+
+<h1>Deps:</h1>
+<% @dep.each do |d| %>
+    <p><%=d.name %>, <%=d.abbrev %></p>
+<%end%>
+
+<h1>Major:</h1>
+<% @major.each do |m| %>
+    <p><%=m.name %>, <%=m.maj_abbrev %></p>
+<%end%>
+
+<h1>Cat:</h1>
+<% @catalog.each do |c| %>
+    <p><%=c.degree %>, <%=c.cat_yr %></p>
+<%end%>

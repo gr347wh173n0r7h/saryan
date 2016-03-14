@@ -1,0 +1,34 @@
+<div class="clearfix_200"></div>
+<% if flash[:failure] %>
+    <div class="column-group all-100 push-center push-middle">
+      <div class="ink-alert basic error all-80">
+        <button class="ink-dismiss">&times;</button>
+        <p><%= flash[:failure] %></p>
+      </div>
+    </div>
+<% end %>
+
+<div class="ink-grid">
+  <div class="column-group push-center push-middle">
+    <div class="Academic all-50 push-center push-middle align-center padding horizontal-gutters">
+      <h1>Set Academic Preferences</h1>
+
+      <%= form_for(:academic, url: academics_create_path, :html => {:class => "ink-form "}) do |f| %>
+
+        <ul class="AcademicDD all-100">
+          <li><%= f.select :school_id, options_for_select(@school.collect{ |s| [s.name, s.id] }) %></li>
+          <li><%= f.select :department_id, options_for_select(@dep.collect{ |d| [d.name, d.id] }) %></li>
+          <li><%= f.select :major_id, options_for_select(@major.collect{ |m| [m.name, m.id] }) %></li>
+          <li><%= f.select :catalog_id, options_for_select(@catalog.collect{ |c| [c.degree, c.id] }) %></li>
+        </ul>
+
+          <div class="control all-100 push-center push-middle half-top-space">
+            <%= f.submit "Save Preferences", class: "ink-button black"%>
+          </div>
+
+      <% end %>
+
+    </div>
+  </div>
+</div>
+

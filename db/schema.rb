@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160302232414) do
+ActiveRecord::Schema.define(version: 20160313210345) do
+
+  create_table "academics", force: :cascade do |t|
+    t.integer  "user_id",       limit: 4
+    t.string   "school_id",     limit: 255
+    t.string   "department_id", limit: 255
+    t.string   "major_id",      limit: 255
+    t.string   "catalog_id",    limit: 255
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  add_index "academics", ["user_id"], name: "index_academics_on_user_id", using: :btree
 
   create_table "catalogs", force: :cascade do |t|
     t.string   "degree",     limit: 255

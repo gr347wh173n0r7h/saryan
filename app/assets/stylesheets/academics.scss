@@ -1,0 +1,45 @@
+body {
+  background: image-url('students1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+}
+
+.Academic {
+  background:rgba(255, 255, 255, .95);
+
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.5);
+  box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.5);
+  border-radius: 2px;
+
+  font-weight: 300;
+  line-height: 24px;
+
+  h1, h5 {
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .AcademicDD {
+    list-style: none;
+    display:inline;
+  }
+
+  //.ink-form .control-group input[type="checkbox"]{
+  //  margin: 0.25em 0;
+  //}
+  //
+  //.ink-form textarea, .ink-form input[type="email"], .ink-form input[type="password"] {
+  //  -webkit-transition: all 0.30s ease-in-out;
+  //  -moz-transition: all 0.30s ease-in-out;
+  //  -ms-transition: all 0.30s ease-in-out;
+  //  -o-transition: all 0.30s ease-in-out;
+  //  outline: none;
+  //
+  //}
+  //.ink-form textarea:focus , .ink-form input[type="email"]:focus, .ink-form input[type="password"]:focus {
+  //  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  //  border: 1px solid rgba(81, 203, 238, 1);
+  //}
+}

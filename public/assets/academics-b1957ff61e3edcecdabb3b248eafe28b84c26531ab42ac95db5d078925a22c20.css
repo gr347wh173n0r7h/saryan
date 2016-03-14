@@ -1,0 +1,29 @@
+/* line 1, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/academics.scss */
+body {
+  background: url(/assets/students1-2709d546e3dc76ba10058b8ef92175cf2694f5b3d28d543627e8dc091d96a694.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/academics.scss */
+.Academic {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  font-weight: 300;
+  line-height: 24px;
+}
+/* line 20, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/academics.scss */
+.Academic h1, .Academic h5 {
+  font-weight: 300;
+  line-height: 24px;
+}
+/* line 24, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/academics.scss */
+.Academic .AcademicDD {
+  list-style: none;
+  display: inline;
+}

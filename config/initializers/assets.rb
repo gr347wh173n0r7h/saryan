@@ -8,6 +8,7 @@ Rails.application.config.assets.precompile += %w( sessions.css )
 Rails.application.config.assets.precompile += %w( users.css )
 Rails.application.config.assets.precompile += %w( saryan.css )
 Rails.application.config.assets.precompile += %w( planner.css )
+Rails.application.config.assets.precompile += %w( academics.css )
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
