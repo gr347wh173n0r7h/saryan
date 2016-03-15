@@ -1,7 +1,7 @@
 class CreateAcademics < ActiveRecord::Migration
   def change
     create_table :academics do |t|
-      t.belongs_to :user, index: true
+      t.references :user, index: true, foreign_key:true
       t.string :school_id
       t.string :department_id
       t.string :major_id

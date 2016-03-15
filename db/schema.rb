@@ -100,6 +100,7 @@ ActiveRecord::Schema.define(version: 20160313210345) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
+  add_foreign_key "academics", "users"
   add_foreign_key "departments", "schools"
   add_foreign_key "majors", "departments"
 end
