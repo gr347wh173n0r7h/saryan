@@ -62,8 +62,7 @@
                          <%else
                            i = i + 1
                          end
-                      %>
-                  <% end %>
+                       end %>
 
                   <!--<button id="Bus4_110A-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('Bus4_110A-CC')">Bus4<br>110A</button>-->
                   <!--<button id="Bus4_110B-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('Bus4_110B-CC')">Bus4<br>110B</button>-->
@@ -274,7 +273,7 @@
                     </div>
                     <div class="all-30 push-left order-r1">
                       <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space blue">
-                        <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center blue">
+                        <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center blue" onclick="showCard('<%=c.id%>-CC')">
                           <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
                         </li>
                       </ul>
