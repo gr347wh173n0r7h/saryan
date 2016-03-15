@@ -6,7 +6,7 @@ class CreateCourses < ActiveRecord::Migration
       t.string :abbrev
       t.integer :units
       t.text :desc
-
+      t.references :category, index:true, foriegn_key:true
       t.timestamps null: false
     end
   end

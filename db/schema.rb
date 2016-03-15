@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160313210345) do
+ActiveRecord::Schema.define(version: 20160315234923) do
 
   create_table "academics", force: :cascade do |t|
     t.integer  "user_id",       limit: 4
@@ -38,15 +38,28 @@ ActiveRecord::Schema.define(version: 20160313210345) do
 
   add_index "catalogs", ["cat_yr"], name: "index_catalogs_on_cat_yr", using: :btree
 
-  create_table "courses", force: :cascade do |t|
-    t.string   "dep",        limit: 255
+  create_table "categories", force: :cascade do |t|
     t.string   "name",       limit: 255
-    t.string   "abbrev",     limit: 255
-    t.integer  "units",      limit: 4
-    t.text     "desc",       limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "category",   limit: 255
+    t.integer  "catalog_id", limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
+
+  add_index "categories", ["catalog_id"], name: "index_categories_on_catalog_id", using: :btree
+
+  create_table "courses", force: :cascade do |t|
+    t.string   "dep",         limit: 255
+    t.string   "name",        limit: 255
+    t.string   "abbrev",      limit: 255
+    t.integer  "units",       limit: 4
+    t.text     "desc",        limit: 65535
+    t.integer  "category_id", limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  add_index "courses", ["category_id"], name: "index_courses_on_category_id", using: :btree
 
   create_table "departments", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -109,6 +122,7 @@ ActiveRecord::Schema.define(version: 20160313210345) do
   add_foreign_key "academics", "majors"
   add_foreign_key "academics", "schools"
   add_foreign_key "academics", "users"
+  add_foreign_key "categories", "catalogs"
   add_foreign_key "departments", "schools"
   add_foreign_key "majors", "departments"
 end
