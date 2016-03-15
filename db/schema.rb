@@ -15,14 +15,16 @@ ActiveRecord::Schema.define(version: 20160313210345) do
 
   create_table "academics", force: :cascade do |t|
     t.integer  "user_id",       limit: 4
-    t.string   "school_id",     limit: 255
-    t.string   "department_id", limit: 255
-    t.string   "major_id",      limit: 255
-    t.string   "catalog_id",    limit: 255
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.integer  "school_id",     limit: 4
+    t.integer  "department_id", limit: 4
+    t.integer  "catalog_id",    limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
+  add_index "academics", ["catalog_id"], name: "index_academics_on_catalog_id", using: :btree
+  add_index "academics", ["department_id"], name: "index_academics_on_department_id", using: :btree
+  add_index "academics", ["school_id"], name: "index_academics_on_school_id", using: :btree
   add_index "academics", ["user_id"], name: "index_academics_on_user_id", using: :btree
 
   create_table "catalogs", force: :cascade do |t|
@@ -100,6 +102,9 @@ ActiveRecord::Schema.define(version: 20160313210345) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
+  add_foreign_key "academics", "catalogs"
+  add_foreign_key "academics", "departments"
+  add_foreign_key "academics", "schools"
   add_foreign_key "academics", "users"
   add_foreign_key "departments", "schools"
   add_foreign_key "majors", "departments"
