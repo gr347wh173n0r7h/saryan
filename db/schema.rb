@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20160313210345) do
     t.integer  "user_id",       limit: 4
     t.integer  "school_id",     limit: 4
     t.integer  "department_id", limit: 4
+    t.integer  "major_id",      limit: 4
     t.integer  "catalog_id",    limit: 4
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(version: 20160313210345) do
 
   add_index "academics", ["catalog_id"], name: "index_academics_on_catalog_id", using: :btree
   add_index "academics", ["department_id"], name: "index_academics_on_department_id", using: :btree
+  add_index "academics", ["major_id"], name: "index_academics_on_major_id", using: :btree
   add_index "academics", ["school_id"], name: "index_academics_on_school_id", using: :btree
   add_index "academics", ["user_id"], name: "index_academics_on_user_id", using: :btree
 
@@ -104,6 +106,7 @@ ActiveRecord::Schema.define(version: 20160313210345) do
 
   add_foreign_key "academics", "catalogs"
   add_foreign_key "academics", "departments"
+  add_foreign_key "academics", "majors"
   add_foreign_key "academics", "schools"
   add_foreign_key "academics", "users"
   add_foreign_key "departments", "schools"
