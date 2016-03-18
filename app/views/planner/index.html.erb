@@ -46,30 +46,39 @@
             </div>
           </div>
 
-          <div class="column all-95 order-r3  half-top-space condensed">
-            <button id="ConsTog" class="PlanTog ink-button all-100" onclick="showCat('Cons')">Concentration</button>
-            <div id="Cons" class="Category ink-flex half-top-space">
-              <div class="column-group all-95  push-center push-middle half-top-space">
-                <div class="all-100"><h5>Management Information Systems Core</h5></div>
-                <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                  <% i = 0 %>
-                  <% @courses.each do |c| %>
-                      <button id="<%=c.id%>-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('<%=c.id%>-CC')"><%=c.abbrev.gsub(/ /, '<br/>').html_safe%></button>
-                      <%
-                         if i > 1
-                           i = 0 %>
-                           <br>
-                         <%else
-                           i = i + 1
-                         end
-                       end %>
 
-                  <!--<button id="Bus4_110A-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('Bus4_110A-CC')">Bus4<br>110A</button>-->
-                  <!--<button id="Bus4_110B-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('Bus4_110B-CC')">Bus4<br>110B</button>-->
-                </div>
+
+
+        <% @cat.each do |g|%>
+
+            <div class="column all-95 order-r3  half-top-space condensed">
+              <button id="<%=g.id%>-Tog" class="PlanTog ink-button all-100" onclick="showCat('<%=g.id%>-Cat')"><%=g.name %></button>
+              <div id="<%=g.id%>-Cat" class="Category ink-flex half-top-space">
+                <div class="column-group all-95  push-center push-middle half-top-space">
+                  <% pull_cat = @sub_cat.where(:category_id => g.id)%>
+                  <% pull_cat.each do |j|%>
+                      <div class="all-100"><h5><%=j.name %></h5></div>
+                      <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
+
+                        <% i = 0 %>
+                        <% j.courses.each do |c|%>
+                            <button id="<%=c.id%>-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('<%=c.id%>-CC')"><%=c.abbrev.gsub(/ /, '<br/>').html_safe%></button>
+                            <%if i > 1
+                                 i = 0 %>
+                                <br>
+                            <%else
+                                i = i + 1
+                              end %>
+                        <% end %>
+
+                      </div>
+                  <% end %>
+                  </div>
               </div>
             </div>
-          </div>
+
+        <% end %>
+
 
       </div>
     </div>
@@ -399,8 +408,14 @@
             document.getElementById('GE').style.display = 'none';
         if(id.localeCompare('Maj') != 0)
             document.getElementById('Maj').style.display = 'none';
-        if(id.localeCompare('Cons') != 0)
-            document.getElementById('Cons').style.display = 'none';
+//        if(id.localeCompare('Cons') != 0)
+//            document.getElementById('Cons').style.display = 'none';
+
+        <% @cat.each do |g|%>
+        if(id.localeCompare('<%=g.id%>-Cat') != 0)
+            document.getElementById('<%=g.id%>-Cat').style.display = 'none';
+        <%end%>
+
         var e = document.getElementById(id);
         if(e.style.display == 'block')
             e.style.display = 'none';

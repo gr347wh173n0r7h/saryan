@@ -9,7 +9,10 @@ class PlannerController < ApplicationController
       redirect_to academics_new_path
     else
       @academic = @academic.take
-      @courses = Catalog.find(@academic.catalog_id).courses
+      @catalog = Catalog.find(@academic.catalog_id)
+      @courses = @catalog.courses
+      @cat = @catalog.categories.all
+      @sub_cat = SubCategory.all
     end
 
   end

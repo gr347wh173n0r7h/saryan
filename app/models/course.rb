@@ -1,7 +1,7 @@
 class Course < ActiveRecord::Base
   has_many :plans
   has_many :catalogs, through: :plans
-  belongs_to :category
+  belongs_to :sub_category
 
   has_many :prereqs, through: :prereq_prereqs, source:  :prerequister
   has_many :prereq_prereqs, foreign_key:  :prerequisitee_id, class_name: "Prerequiste"
