@@ -106,12 +106,7 @@ mis_catalog = [
     [SubCategory.find_by_name("Additional Courses").id, "BUS","BUS4 118B","Topics in MIS: Business Expert Systems", 3, "Investigation of ESS/ES theory and application. Design, development and evaluation of real-world ESS/ES prototype systems in Excel/Visual Basic/etc. Prerequisite: COMM 100W or ENGL 100W or LLD 100W, a grade of C or better in BUS 111 and BUS 112, BUS4 110A and BUS4 110B, Lower Division Business Pool., senior status."],
     [SubCategory.find_by_name("Additional Courses").id, "BUS","BUS4 118C","Topics in MIS: Security Systems & Operating Systems", 3, "Introduces the spectrum of threats and associated best practices for managing information security and assurance in organizations. Covers use of education/training, policy/procedure and technology to balance information confidentiality, integrity and accessibility requirements against associated costs to support organizations' strategic goals. Prerequisite: Lower Division Business Pool. Corequisite: BUS4 111. Note: Offered only occasionally."],
     [SubCategory.find_by_name("Additional Courses").id, "BUS","BUS4 118W","Topics in MIS: Web Based Computing", 3, "Explores Web applications for personal, E-Commerce and corporate computing. Covers essentials of WWW protocols. Students will learn to design and program both client and server-side applications using HTML and extensions, JavaScript, Perl, VBScript, Active Server Pages, database connections, XML, Java. Prerequisite: Grade of C or better in BUS4 110A and BUS4 112. Lower division business pool."],
-
-
-
 ]
-
-
 
 
 mis_catalog.each do |sub_category_id, dep,abbrev, name, units, desc|
