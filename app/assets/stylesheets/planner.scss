@@ -77,7 +77,7 @@ div.PotB {
 //INFO PANEL
 
 .InfoPanel{
-  background: #282828 none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
   border: 1px solid #dad3c6;
   border-radius: 5px;
   //box-shadow: 0 0 5px black;
@@ -96,7 +96,7 @@ div.PotB {
 //SEARCH
 
 .search{
-  background: #282828 none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
   border: 1px solid #dad3c6;
   border-radius: 5px;
   //box-shadow: 0 0 5px black;
@@ -133,7 +133,7 @@ div.PotB {
   width: 60px;
   float: inherit;
   position: relative;
-  background: #282828 none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
   box-shadow: 0px 0px 2.5px #fff;
   border: 1px solid #dad3c6;
   padding: 1em;
@@ -175,7 +175,7 @@ div.PotB {
   //border: 1px solid #282828;
   //background-color: rgba(150,150,150,.8);
 
-  background: #282828 none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
   //background: #cccccc;
   //background: -webkit-linear-gradient(#cccccc, grey); /* For Safari 5.1 to 6.0 */
   //background: -o-linear-gradient(#cccccc, grey); /* For Opera 11.1 to 12.0 */
@@ -194,10 +194,10 @@ div.PotB {
   //background: #282828 none repeat scroll 0 0;
   color: white;
   background: #1e1e1e;
-  background: -webkit-linear-gradient(#1e1e1e, #4d4d4d); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#1e1e1e, #4d4d4d); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#1e1e1e, #4d4d4d); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1e1e1e, #4d4d4d); /* Standard syntax */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75), #4d4d4d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.75), #4d4d4d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.75), #4d4d4d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0, 0, 0, 0.75), #4d4d4d); /* Standard syntax */
   box-shadow: 0px 0px 5px black;
   //border: 1px solid #282828;
 }
@@ -262,7 +262,7 @@ div.PotB {
 }
 .ClassCard{
   display: none;
-  background: #282828 none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
   //box-shadow: 0px 0px 5px black;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);

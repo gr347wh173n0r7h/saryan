@@ -14,16 +14,16 @@
     <div class="InfoPanelHoler all-100">
         <div class="InfoPanel column-group all-100 push-center align-center half-left-padding">
           <div class="xlarge-30 large-30 medium-30 small-50 tiny-100 half-top-padding">
-            <h5>School: </h5>
-            <p><%=@school.name%></p>
+            <!--<h5></h5>-->
+            <p><b>School: </b><%=@school.name%></p>
           </div>
           <div class="xlarge-30 large-30 medium-30 small-50 tiny-100 half-top-padding">
-            <h5>Major: </h5>
-            <p><%=@major.name%></p>
+            <!--<h5>Major: </h5>-->
+            <p><b>Major: </b><%=@major.name%></p>
           </div>
           <div class="xlarge-30 large-30 medium-100 small-50 tiny-100 half-top-padding">
-            <h5>Catalog: </h5>
-            <p><%=@catalog.degree%></p>
+            <!--<h5>Catalog: </h5>-->
+            <p><b>Catalog: </b><%=@catalog.degree%></p>
           </div>
         </div>
     </div>
@@ -34,9 +34,9 @@
 
           <!--COURSE FROM PLAN ADD-->
           <div class="column all-95 order-r1 half-top-space condensed">
-            <button id="GETog" class="PlanTog ink-button all-100 "
-                    onclick="showCat('GE')">General Education</button>
-            <div id="GE" class="Category ink-flex half-top-space red">
+            <button id="GE-Tog" class="PlanTog ink-button all-100 "
+                    onclick="showCat('GE-Cat')">General Education</button>
+            <div id="GE-Cat" class="Category ink-flex half-top-space red">
               <div class="column-group all-95  push-center push-middle half-top-space">
                 <div class="all-100 half-left-padding"><h5>Area A</h5></div>
                 <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
@@ -361,16 +361,20 @@
     //        })
     function showCat(id) {
 
-        if (id.localeCompare('GE') != 0) {
-        $('#GE').slideUp('fast');
-        }
+//        if (id.localeCompare('GE-Cat') != 0) {
+//            $('#GE-Cat').slideUp('fast');
+//        }
+        if (id.localeCompare('GE-Cat') != 0) {
+        $('#GE-Cat').slideUp('fast');}
         <% @cat.each do |g|%>
-        if(id.localeCompare('<%=g.id%>-Cat') != 0) {
-            $('#<%=g.id%>-Cat').slideUp('fast').promise().done(function () {
-                $("#" + id).slideDown('fast');
-            });
-        }
+        if (id.localeCompare('<%=g.id%>-Cat') != 0) {
+        $('#<%=g.id%>-Cat').slideUp('fast');}
         <% end %>
+        $('#' + id).slideToggle('fast');
+//        if(e.style.display == 'block')
+//            $("#" + id).slideUp('fast');
+//        else
+//            $("#" + id).slideDown('fast');
     }
 
     function removeClass(){
