@@ -186,10 +186,11 @@
               <!--END CC -->
 
               <!-- CLASSCARDS-->
+              <% i = 0 %>
               <% @cat.each do |g|%>
 
                     <% pull_cat = @sub_cat.where(:category_id => g.id)%>
-                    <% i = 0 %>
+
                     <% pull_cat.each do |j|%>
 
                         <% j.courses.each do |c|%>
@@ -216,13 +217,13 @@
                           </div>
 
                         <% end %>
-                      <% if i < 3
-                           i += 1
-                         else
-                           i = 0
-                         end%>
-                    <% end %>
 
+                    <% end %>
+                   <% if i < 3
+                        i += 1
+                      else
+                        i = 0
+                      end%>
               <% end %>
               <!-- END CLASSCARDS-->
 
