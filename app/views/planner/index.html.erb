@@ -226,7 +226,7 @@
                             </div>
                             <div class="all-30 push-left order-r1">
                               <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> orange <% elsif i == 1 %> blue <% else %> red<% end %>">
-                                <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> orange <% elsif i == 1 %> blue <% else %> red<% end %>" onclick="showCard('<%=c.id%>-CC')">
+                                <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> orange <% elsif i == 1 %> blue <% else %> red<% end %>" onmouseover="showCard('<%=c.id%>-CC')">
                                   <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
                                 </li>
                               </ul>
@@ -256,7 +256,7 @@
 </div>
 </div>
 
-<script>
+<script type="text/javascript">
     Ink.requireModules([
         'Ink.UI.Draggable_1',
         'Ink.UI.Droppable_1',
@@ -361,20 +361,13 @@
     //        })
     function showCat(id) {
 
-//        if (id.localeCompare('GE-Cat') != 0) {
-//            $('#GE-Cat').slideUp('fast');
-//        }
-        if (id.localeCompare('GE-Cat') != 0) {
-        $('#GE-Cat').slideUp('fast');}
+
+        if (id.localeCompare('GE-Cat') != 0) {$('#GE-Cat').slideUp('fast');}
         <% @cat.each do |g|%>
-        if (id.localeCompare('<%=g.id%>-Cat') != 0) {
-        $('#<%=g.id%>-Cat').slideUp('fast');}
+        if (id.localeCompare('<%=g.id%>-Cat') != 0) {$('#<%=g.id%>-Cat').slideUp('fast');}
         <% end %>
         $('#' + id).slideToggle('fast');
-//        if(e.style.display == 'block')
-//            $("#" + id).slideUp('fast');
-//        else
-//            $("#" + id).slideDown('fast');
+
     }
 
     function removeClass(){
