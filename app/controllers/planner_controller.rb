@@ -9,6 +9,9 @@ class PlannerController < ApplicationController
       redirect_to academics_new_path
     else
       @academic = @academic.take
+      @school = School.find(@academic.school_id)
+      @major = Major.find(@academic.major_id)
+      # @dep = School.find(@academic.department_id)
       @catalog = Catalog.find(@academic.catalog_id)
       @courses = @catalog.courses
       @cat = @catalog.categories.all

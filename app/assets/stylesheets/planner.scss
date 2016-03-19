@@ -6,8 +6,11 @@ h1 {
   font-weight: 300;
   font-size: 3em;
 }
-p, h1, label {
+p, h1, h5, label {
   font-weight: 300;
+}
+h5 {
+  font-size: 16px;
 }
 label {
   padding-top: .25em;
@@ -46,6 +49,9 @@ div.Planner{
   //background:rgba(255, 255, 255, 0.7)
   //background: grey;
 }
+.PlannerHolder {
+  padding-right: 16px;
+}
 
 div.Pot, div.PotB{
   border-radius: 5px;
@@ -68,7 +74,37 @@ div.PotB {
   background:rgba(255, 255, 255, 0.7);
   //max-height: 60%;
 }
+//INFO PANEL
 
+.InfoPanel{
+  background: #282828 none repeat scroll 0 0;
+  border: 1px solid #dad3c6;
+  border-radius: 5px;
+  //box-shadow: 0 0 5px black;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  color: #fff;
+  h5 {
+    color: #fff;
+    font-weight: 400;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+//SEARCH
+
+.search{
+  background: #282828 none repeat scroll 0 0;
+  border: 1px solid #dad3c6;
+  border-radius: 5px;
+  //box-shadow: 0 0 5px black;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  color: #fff;
+}
 // TABS
 
 .tab-nav{
@@ -145,7 +181,10 @@ div.PotB {
   //background: -o-linear-gradient(#cccccc, grey); /* For Opera 11.1 to 12.0 */
   //background: -moz-linear-gradient(#cccccc, grey); /* For Firefox 3.6 to 15 */
   //background: linear-gradient(#cccccc, grey); /* Standard syntax */
-  box-shadow: 0px 0px 5px black;
+  //box-shadow: 0px 0px 5px black;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   color: #fff;
   font-weight: 300;
   line-height: 24px;
@@ -204,7 +243,10 @@ div.PotB {
   background: -moz-linear-gradient(#cccccc, grey); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#cccccc, grey); /* Standard syntax */
   //background: #282828 none repeat scroll 0 0;
-  box-shadow: 0px 0px 5px black;
+  //box-shadow: 0px 0px 5px black;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   border: 1px solid #dad3c6;
   color: #282828;
 }
@@ -215,11 +257,16 @@ div.PotB {
 }
 
 //CLASS CARDS
-
+.ClassCardHolder {
+  padding-left: 0em;
+}
 .ClassCard{
   display: none;
   background: #282828 none repeat scroll 0 0;
-  box-shadow: 0px 0px 5px black;
+  //box-shadow: 0px 0px 5px black;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   border: 1px solid #dad3c6;
   border-radius: 5px;
   color: #fff;
@@ -347,10 +394,6 @@ div.PotB {
   border-radius: 3px;
 }
 
-.search{
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgray;
-}
 // Show/Hide delete button.
 .delete {display: none;  }
 

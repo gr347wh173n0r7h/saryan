@@ -8,11 +8,28 @@
 <div xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html"></div>
 <div class="ink-grid">
-<div class="column-group top-padding half-horizontal-gutters">
+<div class="column-group half-top-padding half-horizontal-gutters">
 
-
+    <!-- INFO PANEL-->
+    <div class="InfoPanelHoler all-100">
+        <div class="InfoPanel column-group all-100 push-center align-center half-left-padding">
+          <div class="xlarge-30 large-30 medium-30 small-50 tiny-100 half-top-padding">
+            <h5>School: </h5>
+            <p><%=@school.name%></p>
+          </div>
+          <div class="xlarge-30 large-30 medium-30 small-50 tiny-100 half-top-padding">
+            <h5>Major: </h5>
+            <p><%=@major.name%></p>
+          </div>
+          <div class="xlarge-30 large-30 medium-100 small-50 tiny-100 half-top-padding">
+            <h5>Catalog: </h5>
+            <p><%=@catalog.degree%></p>
+          </div>
+        </div>
+    </div>
+    <!-- END INFO PANEL -->
     <!-- PLANS-->
-    <div class="column-group xlarge-25 large-25 medium-100 small-100 tiny-100">
+    <div class="column-group xlarge-25 large-25 medium-100 small-100 tiny-100 half-top-padding">
       <div class="Pot all-100 push-center">
 
           <!--COURSE FROM PLAN ADD-->
@@ -21,7 +38,7 @@
                     onclick="showCat('GE')">General Education</button>
             <div id="GE" class="Category ink-flex half-top-space red">
               <div class="column-group all-95  push-center push-middle half-top-space">
-                <div class="all-100"><h5>Area A</h5></div>
+                <div class="all-100 half-left-padding"><h5>Area A</h5></div>
                 <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
                   <button id="A1-B" class="PlanCourseB ink-button align-center order-1"  onclick="showCard('A1-CC')">A1</button>
                   <button id="A2-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('A2-CC')">A2</button>
@@ -41,7 +58,7 @@
                 <div class="column-group all-95  push-center push-middle half-top-space">
                   <% pull_cat = @sub_cat.where(:category_id => g.id)%>
                   <% pull_cat.each do |j|%>
-                      <div class="all-100"><h5><%=j.name %></h5></div>
+                      <div class="all-100 half-left-padding"><h5><%=j.name %></h5></div>
                       <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
 
                         <% i = 0 %>
@@ -73,14 +90,14 @@
     <!-- END PLANS-->
 
     <!--SEMESTER-->
-    <div class="column-group xlarge-45 large-45 medium-100 small-100 tiny-100">
-      <div class="Planner all-100 align-center half-left-padding">
+    <div class="PlannerHolder column-group xlarge-45 large-45 medium-100 small-100 tiny-100 half-top-padding">
+      <div class="Planner all-100 align-center">
         <!--<div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>-->
 
         <!-- SEMESTER DROP-->
         <div id="Semesters">
-          <div  class="Semester column-group all-95">
-            <div class="all-100 push-right">
+          <div  class="Semester column-group all-100">
+            <div class="all-100">
               <p class="tip">Fall 2015</p>
               <ul id="Fall2015" class="droppable-2 all-100">
               </ul>
@@ -90,7 +107,7 @@
         <!--END SEMESTER DROP-->
 
         <!-- ADD SEMESTER BUTTON-->
-        <div class="column all-95 align-right half-top-space half-bottom-space condensed">
+        <div class="column all-100 align-right half-top-space half-bottom-space condensed">
           <button id="SemAdd" class="ink-button align-center order-3">+</button>
         </div>
         <!-- END ADD SEMESTER BUTTON-->
@@ -100,14 +117,14 @@
     <!--END SEMESTER -->
 
     <!-- COURSES-->
-    <div class="column-group xlarge-30 large-30 medium-100 small-100 tiny-100 half-top-space">
+    <div class="ClassCardHolder column-group xlarge-30 large-30 medium-100 small-100 tiny-100 half-top-space half-top-padding">
         <div class="PotB all-100 push-left">
           <!-- SEARCH-->
           <div class="column all-100">
             <form class="search ink-form">
-              <div class="control-group column-group half-top-space">
-                <label for="seach" class="all-20 push-left">Search:</label>
-                <div class="control xlarge-70 large-70 medium-100 small-100 tiny-100 ">
+              <div class="control-group column-group half-top-space half-left-padding half-top-padding half-right-padding half-bottom-padding">
+                <label for="seach" class="all-20 push-left ">Search</label>
+                <div class="control xlarge-75 large-75 medium-100 small-100 tiny-100 half-left-padding">
                   <input type="text" name="search" id="search">
                 </div>
               </div>
@@ -203,7 +220,7 @@
                               <div class="all-30 push-left align-right large order-r3">
                                 <p><%=c.units%></p>
                               </div>
-                              <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
+                              <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4 half-bottom-padding">
                                 <p><%=c.desc%></p>
                               </div>
                             </div>
@@ -275,19 +292,25 @@
         var date = new Date();
         var i = 1;
 
+
         function addSemester(){
             var year = date.getFullYear();
             var newID = semester[i]+year;
             var newDiv =
-                    '<div class="Semester column-group all-95">' +
-                    '<div class="all-100 push-right" style="padding-top: 7px">' +
+                    '<div id="Semesters">' +
+                    '<div class="Semester column-group all-100">' +
+                    '<div class="all-100" style="padding-top: 7px">' +
                     '<p class="tip">'+ semester[i] + ' ' + year +'</p>' +
                     '<ul id="'+newID+'" class="droppable-2 all-100">' +
                     '</ul>' +
                     '</div>' +
+                    '</div>'+
                     '</div>';
             newID = '#' + newID;
+
             $("#Semesters").append(newDiv);
+            $(newID).hide();
+            $(newID).fadeIn('fast');
             Droppable.add(newID, {onDrop: 'move'});
             i++;
             if(i == 4){
@@ -324,8 +347,11 @@
     });
     //
     function showCard(id){
-        $("#"+id).siblings().hide();
-        document.getElementById(id).style.display = 'block';
+//        $("#"+id).siblings().hide();
+//        document.getElementById(id).style.display = 'block';
+        $("#"+id).siblings().fadeOut('fast').promise().done(function(){
+            $("#"+id).fadeIn('fast');
+        });
     }
 
     //        Ink.requireModules([], function (Toggle) {
@@ -333,22 +359,18 @@
     //            new Toggle('#MajTog');
     //            new Toggle('#ConsTog');
     //        })
-    function showCat(id){
-        if(id.localeCompare('GE') != 0)
-            document.getElementById('GE').style.display = 'none';
-//        if(id.localeCompare('Cons') != 0)
-//            document.getElementById('Cons').style.display = 'none';
+    function showCat(id) {
 
+        if (id.localeCompare('GE') != 0) {
+        $('#GE').slideUp('fast');
+        }
         <% @cat.each do |g|%>
-        if(id.localeCompare('<%=g.id%>-Cat') != 0)
-            document.getElementById('<%=g.id%>-Cat').style.display = 'none';
-        <%end%>
-
-        var e = document.getElementById(id);
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-        else
-            e.style.display = 'block';
+        if(id.localeCompare('<%=g.id%>-Cat') != 0) {
+            $('#<%=g.id%>-Cat').slideUp('fast').promise().done(function () {
+                $("#" + id).slideDown('fast');
+            });
+        }
+        <% end %>
     }
 
     function removeClass(){
