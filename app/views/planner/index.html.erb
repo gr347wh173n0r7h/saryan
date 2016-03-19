@@ -40,9 +40,9 @@
               <div class="column-group all-95  push-center push-middle half-top-space">
                 <div class="all-100 half-left-padding"><h5>Area A</h5></div>
                 <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                  <button id="A1-B" class="PlanCourseB ink-button align-center order-1"  onclick="showCard('A1-CC')">A1</button>
-                  <button id="A2-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('A2-CC')">A2</button>
-                  <button id="A3-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('A3-CC')">A3</button>
+                  <button id="A1-B" class="PlanCourseB ink-button align-center order-1"  onclick="showClassCard('A1-CC')">A1</button>
+                  <button id="A2-B" class="PlanCourseB ink-button align-center order-2" onclick="showClassCard('A2-CC')">A2</button>
+                  <button id="A3-B" class="PlanCourseB ink-button align-center order-3" onclick="showClassCard('A3-CC')">A3</button>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@
 
                         <% i = 0 %>
                         <% j.courses.each do |c|%>
-                            <button id="<%=c.id%>-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('<%=c.id%>-CC')"><%=c.abbrev.gsub(/ /, '<br/>').html_safe%></button>
+                            <button id="<%=c.id%>-B" class="PlanCourseB ink-button align-center order-1" onclick="showClassCard('<%=c.id%>-CC')"><%=c.abbrev.gsub(/ /, '<br/>').html_safe%></button>
                             <%if i > 1
                                  i = 0 %>
                                 <br>
@@ -226,7 +226,7 @@
                             </div>
                             <div class="all-30 push-left order-r1">
                               <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> orange <% elsif i == 1 %> blue <% else %> red<% end %>">
-                                <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> orange <% elsif i == 1 %> blue <% else %> red<% end %>" onmouseover="showCard('<%=c.id%>-CC')">
+                                <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> orange <% elsif i == 1 %> blue <% else %> red<% end %>" >
                                   <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
                                 </li>
                               </ul>
@@ -334,6 +334,11 @@
 //            InkEvent.on(Ink.s('#Bus4_92-B') ,'click',changeTab);
 //            InkEvent.on(Ink.s('#Bus4_110A-B') ,'click',changeTab);
 //            InkEvent.on(Ink.s('#Bus4_110B-B') ,'click',changeTab);
+            <% @courses.each do |c| %>
+                InkEvent.on(Ink.i('<%=c.id%>-D') ,'mousedown', function(){
+                    $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});
+                });
+            <% end %>
 
             InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
         }
@@ -345,22 +350,15 @@
         });
 
     });
+
     //
-    function showCard(id){
-//        $("#"+id).siblings().hide();
-//        document.getElementById(id).style.display = 'block';
-        $("#"+id).siblings().fadeOut('fast').promise().done(function(){
-            $("#"+id).fadeIn('fast');
-        });
+    function showClassCard(id){
+        $("#"+id).siblings().fadeOut('fast').promise().done(function(){$("#"+id).fadeIn('fast');});
+//        var fade = $("#"+id).siblings().fadeOut('fast').promise();
+//        fade.then(function(){$("#"+id).fadeIn('fast');});
     }
 
-    //        Ink.requireModules([], function (Toggle) {
-    //            new Toggle('#GETog');
-    //            new Toggle('#MajTog');
-    //            new Toggle('#ConsTog');
-    //        })
     function showCat(id) {
-
 
         if (id.localeCompare('GE-Cat') != 0) {$('#GE-Cat').slideUp('fast');}
         <% @cat.each do |g|%>
