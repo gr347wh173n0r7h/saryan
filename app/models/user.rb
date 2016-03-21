@@ -9,6 +9,22 @@ class User < ActiveRecord::Base
 	has_secure_password
 	validates :password, presence: true, length: { minimum: 6 }
 
+
+  has_attached_file :profilephoto,
+                    :styles => {
+                        :large => "300x300>",
+                        :medium => "200x200>",
+                        :thumb => "100x100>" },
+                    :url => "/:class/:attachment/:id/:style_:basename.:extension"
+              #      :path =>
+             #       :default_url => /public/profile/default_avatar.png
+  validates_attachment :profilephoto,
+                       content_type: { content_type: ["image/jpg", "image/jpeg", "image/png"]},
+                       :size => { :in => 0..20.kilobytes }
+
+
+
+
     def User.digest(string)
     	cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost

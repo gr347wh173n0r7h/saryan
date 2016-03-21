@@ -116,13 +116,17 @@ ActiveRecord::Schema.define(version: 20160317233424) do
   add_index "sub_categories", ["category_id"], name: "index_sub_categories_on_category_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "name",            limit: 255
-    t.string   "email",           limit: 255
-    t.string   "status",          limit: 255
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
-    t.string   "password_digest", limit: 255
-    t.string   "remember_digest", limit: 255
+    t.string   "name",                      limit: 255
+    t.string   "email",                     limit: 255
+    t.string   "status",                    limit: 255
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
+    t.string   "password_digest",           limit: 255
+    t.string   "remember_digest",           limit: 255
+    t.string   "profilephoto_file_name",    limit: 255
+    t.string   "profilephoto_content_type", limit: 255
+    t.integer  "profilephoto_file_size",    limit: 4
+    t.datetime "profilephoto_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
