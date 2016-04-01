@@ -178,3 +178,6 @@ mis_catalog.each do |sub_category_id, dep,abbrev, name, units, desc|
   Plan.create(catalog_id:c.id, course_id:co.id)
 end
 
+plan_list = [
+    [1, ]
+]
