@@ -14,8 +14,9 @@ class PlannerController < ApplicationController
         # @dep = School.find(@academic.department_id)
         @catalog = Catalog.find(@academic.catalog_id)
         @courses = @catalog.courses
-        @cat = @catalog.categories.all
-        @sub_cat = SubCategory.all
+        # @sup_cat = @catalog.super_cats
+        # @cat = @sup_cat.categories
+        # @sub_cat = @cat.sub_categories
       end
     end
   end

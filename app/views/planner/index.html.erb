@@ -1,8 +1,12 @@
 <style>
     body {
-    background: none;
+        background: none;
     }
 </style>
+
+<div class="test">
+
+</div>
 
 <% provide(:title, 'PLanner') %>
 <div xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
@@ -32,56 +36,45 @@
     <div class="column-group xlarge-25 large-25 medium-100 small-100 tiny-100 half-top-padding">
       <div class="Pot all-100 push-center">
 
-          <!--COURSE FROM PLAN ADD-->
-          <div class="column all-95 order-r1 half-top-space condensed">
-            <button id="GE-Tog" class="PlanTog ink-button all-100 "
-                    onclick="showCat('GE-Cat')">General Education</button>
-            <div id="GE-Cat" class="Category ink-flex half-top-space red">
-              <div class="column-group all-95  push-center push-middle half-top-space">
-                <div class="all-100 half-left-padding"><h5>Area A</h5></div>
-                <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                  <button id="A1-B" class="PlanCourseB ink-button align-center order-1"  onclick="showClassCard('A1-CC')">A1</button>
-                  <button id="A2-B" class="PlanCourseB ink-button align-center order-2" onclick="showClassCard('A2-CC')">A2</button>
-                  <button id="A3-B" class="PlanCourseB ink-button align-center order-3" onclick="showClassCard('A3-CC')">A3</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
         <% k = 0 %>
 
-        <% @cat.each do |g|%>
+        <% @catalog.super_cats.each do |z|%>
 
-            <div class="column all-95 order-r3  half-top-space condensed">
-              <button id="<%=g.id%>-Tog" class="PlanTog ink-button all-100" onclick="showCat('<%=g.id%>-Cat')"><%=g.name %></button>
-              <div id="<%=g.id%>-Cat" class="Category ink-flex half-top-space  <% if k == 0 %> orange <% elsif k == 1 %> blue <% else %> red<% end %>">
-                <div class="column-group all-95  push-center push-middle half-top-space">
-                  <% pull_cat = @sub_cat.where(:category_id => g.id)%>
-                  <% pull_cat.each do |j|%>
-                      <div class="all-100 half-left-padding"><h5><%=j.name %></h5></div>
-                      <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
+            <% z.categories.each do |g|%>
 
-                        <% i = 0 %>
-                        <% j.courses.each do |c|%>
-                            <button id="<%=c.id%>-B" class="PlanCourseB ink-button align-center order-1" onclick="showClassCard('<%=c.id%>-CC')"><%=c.abbrev.gsub(/ /, '<br/>').html_safe%></button>
-                            <%if i > 1
-                                 i = 0 %>
-                                <br>
-                            <%else
-                                i = i + 1
-                              end %>
-                        <% end %>
+                <div class="column all-95 order-r3  half-top-space condensed">
+                  <button id="<%=g.id%>-Tog" class="PlanTog ink-button all-100" onclick="showCat('<%=g.id%>-Cat')"><%=g.name %></button>
+                  <div id="<%=g.id%>-Cat" class="Category ink-flex half-top-space  <% if k == 0 %> red <% elsif k == 1 %> green <% elsif k == 2 %> orange <% else %> blue <% end %>">
+                    <div class="column-group all-95  push-center push-middle half-top-space">
+                      <% g.sub_categories.each do |j|%>
+                          <div class="all-100 half-left-padding"><h5><%=j.name %></h5></div>
+                          <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
 
+                            <% i = 0 %>
+                            <% j.courses.each do |c|%>
+                                <button id="<%=c.id%>-B" class="PlanCourseB ink-button align-center order-1" onclick="showClassCard('<%=c.id%>-CC')"><%=c.abbrev.gsub(/ /, '<br/>').html_safe%></button>
+
+                                <%if i > 1
+                                     i = 0 %>
+                                    <br>
+                                <%else
+                                    i = i + 1
+                                  end %>
+
+                            <% end %>
+
+                          </div>
+                      <% end %>
                       </div>
-                  <% end %>
                   </div>
-              </div>
-            </div>
-            <%if k < 3
-                k += 1
-            else
-                k = 0
-              end %>
+                </div>
+                <%if k < 4
+                    k += 1
+                else
+                    k = 0
+                  end %>
+
+            <% end %>
         <% end %>
 
 
@@ -134,113 +127,46 @@
           <div class="ClassCards ink-flex all-100">
             <div class="column-group all-100">
 
-              <!--COURSE FROM PLAN ADD RED-->
-              <!-- CC-->
-              <div id="A1-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                <div class="all-70 push-right half-top-space">
-                  <div class="all-60 push-left align-left large order-r2">
-                    <p>A1</p>
-                  </div>
-                  <div class="all-30 push-left align-right large order-r3">
-                    <p>Units: 3</p>
-                  </div>
-                  <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="all-30 push-left order-r1">
-                  <ul id="A1-CCD" class="droppable-CC all-100 half-left-space red">
-                    <li id="A1-D" class="Course ink-label push-middle align-center red">
-                      A1
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!--END CC -->
-              <!-- CC-->
-              <div id="A2-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                <div class="all-70 push-right half-top-space">
-                  <div class="all-60 push-left align-left large order-r2">
-                    <p>A2</p>
-                  </div>
-                  <div class="all-30 push-left align-right large order-r3">
-                    <p>Units: 3</p>
-                  </div>
-                  <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="all-30 push-left order-r1">
-                  <ul id="A2-CCD" class="droppable-CC all-100 half-left-space red">
-                    <li id="A2-D" class="Course ink-label push-middle align-center red">
-                      A2
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!--END CC -->
-              <!-- CC-->
-              <div id="A3-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                <div class="all-70 push-right half-top-space">
-                  <div class="all-60 push-left align-left large order-r2">
-                    <p>A3</p>
-                  </div>
-                  <div class="all-30 push-left align-right large order-r3">
-                    <p>Units: 3</p>
-                  </div>
-                  <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="all-30 push-left order-r1">
-                  <ul id="A3-CCD" class="droppable-CC all-100 half-left-space red">
-                    <li id="A3-D" class="Course ink-label push-middle align-center red">
-                      A3
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!--END CC -->
 
               <!-- CLASSCARDS-->
               <% i = 0 %>
-              <% @cat.each do |g|%>
+              <% @catalog.super_cats.each do |z|%>
+                  <% z.categories.each do |g|%>
 
-                    <% pull_cat = @sub_cat.where(:category_id => g.id)%>
+                        <% g.sub_categories.each do |j|%>
 
-                    <% pull_cat.each do |j|%>
+                            <% j.courses.each do |c|%>
 
-                        <% j.courses.each do |c|%>
-
-                          <div id="<%=c.id%>-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                            <div class="all-70 push-right half-top-space">
-                              <div class="all-60 push-left align-left large order-r2">
-                                <p><%=c.name%></p>
+                              <div id="<%=c.id%>-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
+                                <div class="all-70 push-right half-top-space">
+                                  <div class="CCTitle all-60 push-left align-left large order-r2">
+                                    <p><%=c.name%></p>
+                                  </div>
+                                  <div class="all-30 push-left align-right large order-r3">
+                                    <p><%=c.units%></p>
+                                  </div>
+                                  <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4 half-bottom-padding half-right-padding">
+                                    <p><%=c.desc%></p>
+                                  </div>
+                                </div>
+                                <div class="all-30 push-left order-r1">
+                                  <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>">
+                                    <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
+                                      <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                              <div class="all-30 push-left align-right large order-r3">
-                                <p><%=c.units%></p>
-                              </div>
-                              <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4 half-bottom-padding">
-                                <p><%=c.desc%></p>
-                              </div>
-                            </div>
-                            <div class="all-30 push-left order-r1">
-                              <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> orange <% elsif i == 1 %> blue <% else %> red<% end %>">
-                                <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> orange <% elsif i == 1 %> blue <% else %> red<% end %>" >
-                                  <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+
+                            <% end %>
 
                         <% end %>
-
-                    <% end %>
-                   <% if i < 3
-                        i += 1
-                      else
-                        i = 0
-                      end%>
+                       <% if i < 4
+                            i += 1
+                          else
+                            i = 0
+                          end%>
+                  <% end %>
               <% end %>
               <!-- END CLASSCARDS-->
 
@@ -265,24 +191,11 @@
         'Ink.Dom.Event_1',
         'Ink.Dom.Selector_1'], function (Draggable, Droppable, Toggle, Loaded, InkEvent, Selector) {
 //          COURSE FROM PLAN ADD
-        new Draggable('#A1-CCD li', {});
-        Droppable.add('#A1-CCD', {onDrop: 'move', onDropOut: 'revert'});
-        new Draggable('#A2-CCD li', {});
-        Droppable.add('#A2-CCD', {onDrop: 'move', onDropOut: 'revert'});
-        new Draggable('#A3-CCD li', {});
-        Droppable.add('#A3-CCD', {onDrop: 'move', onDropOut: 'revert'});
 
         <% @courses.each do |c| %>
             new Draggable('#<%=c.id%>-CCD li', {});
             Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: 'revert'});
         <%end%>
-
-//        new Draggable('#Bus4_92-CCD li', {});
-//        Droppable.add('#Bus4_92-CCD', {onDrop: 'move', onDropOut: 'revert'});
-//        new Draggable('#Bus4_110A-CCD li', {});
-//        Droppable.add('#Bus4_110A-CCD', {onDrop: 'move', onDropOut: 'revert'});
-//        new Draggable('#Bus4_110B-CCD li', {});
-//        Droppable.add('#Bus4_110B-CCD', {onDrop: 'move', onDropOut: 'revert'});
 
         Droppable.add('#Fall2015', {onDrop: 'move'});
 
@@ -322,18 +235,6 @@
 
         function addEvents() {
 
-//              COURSE FROM PLAN ADD
-//            InkEvent.on(Ink.s('#A1-B') ,'click',changeTab);
-//            InkEvent.on(Ink.s('#A2-B') ,'click',changeTab);
-//            InkEvent.on(Ink.s('#A3-B') ,'click',changeTab);
-//
-//            InkEvent.on(Ink.s('#Math71-B') ,'click',changeTab);
-//            InkEvent.on(Ink.s('#Engl2-B') ,'click',changeTab);
-//            InkEvent.on(Ink.s('#Bus1_20-B') ,'click',changeTab);
-//
-//            InkEvent.on(Ink.s('#Bus4_92-B') ,'click',changeTab);
-//            InkEvent.on(Ink.s('#Bus4_110A-B') ,'click',changeTab);
-//            InkEvent.on(Ink.s('#Bus4_110B-B') ,'click',changeTab);
             <% @courses.each do |c| %>
                 InkEvent.on(Ink.i('<%=c.id%>-D') ,'mousedown', function(){
                     $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});
@@ -351,7 +252,7 @@
 
     });
 
-    //
+
     function showClassCard(id){
         $("#"+id).siblings().fadeOut('fast').promise().done(function(){$("#"+id).fadeIn('fast');});
 //        var fade = $("#"+id).siblings().fadeOut('fast').promise();
@@ -361,8 +262,10 @@
     function showCat(id) {
 
         if (id.localeCompare('GE-Cat') != 0) {$('#GE-Cat').slideUp('fast');}
-        <% @cat.each do |g|%>
-        if (id.localeCompare('<%=g.id%>-Cat') != 0) {$('#<%=g.id%>-Cat').slideUp('fast');}
+        <% @catalog.super_cats.each do |z|%>
+            <% z.categories.each do |g|%>
+                if (id.localeCompare('<%=g.id%>-Cat') != 0) {$('#<%=g.id%>-Cat').slideUp('fast');}
+            <% end %>
         <% end %>
         $('#' + id).slideToggle('fast');
 
@@ -375,3 +278,5 @@
     }
 
 </script>
+
+

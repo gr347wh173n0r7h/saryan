@@ -167,7 +167,7 @@ mis_catalog = [
     [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 001L", "Geography of Natural Enviroments", 3, "Supplement to general lecture courses in Earth science or geology. Pre/Corequisite: GEOL 2, GEOL 1, GEOL 6 or GEOL 111. Misc/Lab: Lab 3 hours."],
     [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 003", "Planet Earth", 3, "Origins and processes of Earth's interconnected physical and chemical systems, including aspects of astronomy, geology, meteorology, and oceanography. Impacts of these systems on humans, and of humans on the systems. GE Area: B1"],
     [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 006", "Geology Of California", 3, "California's geology, illustrating physical processes, landscapes, geologic history and resources. California's seismic, volcanic, landslide and flooding hazards, and their impact on society. GE Area: B1 Misc/Lab: Lecture 3 hours/field trips."],
-    [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 007", "Earth's geosphere: processes that act on it and materials that comprise it; how rocks and fossils are used to interpret the history of Earth's geosphere, atmosphere, oceans, and life forms. Misc/Lab: Lecture 3 hours/lab 3 hours."],
+    [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 007", "Earth's geosphere",3, "Processes that act on it and materials that comprise it; how rocks and fossils are used to interpret the history of Earth's geosphere, atmosphere, oceans, and life forms. Misc/Lab: Lecture 3 hours/lab 3 hours."],
 
 
 ]

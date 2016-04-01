@@ -1,0 +1,462 @@
+/* line 6, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.test h2 {
+  color: red;
+}
+/* line 7, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.test h3 {
+  color: blue;
+}
+/* line 8, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.test h5 {
+  color: green;
+}
+
+/* line 12, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+h1 {
+  font-weight: 300;
+  font-size: 3em;
+}
+
+/* line 16, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+p, h1, h5, label {
+  font-weight: 300;
+}
+
+/* line 19, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+h5 {
+  font-size: 16px;
+}
+
+/* line 22, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+label {
+  padding-top: .25em;
+}
+
+/* line 26, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+div.box {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: lightgray;
+  padding: 1px;
+}
+
+/* line 34, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+#Course {
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: small;
+}
+
+/* line 49, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+div.Semester {
+  border-bottom: 1px solid lightgray;
+}
+
+/* line 54, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+div.Planner {
+  border-radius: 5px;
+}
+
+/* line 59, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.PlannerHolder {
+  padding-right: 16px;
+}
+
+/* line 63, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+div.Pot, div.PotB {
+  border-radius: 5px;
+}
+
+/* line 78, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.right-drawer {
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px black;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* line 86, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.InfoPanel {
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+  border: 1px solid #dad3c6;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #fff;
+}
+/* line 95, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.InfoPanel h5 {
+  color: #fff;
+  font-weight: 400;
+}
+/* line 99, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.InfoPanel p {
+  font-size: 15px;
+}
+
+/* line 105, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.search {
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+  border: 1px solid #dad3c6;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #fff;
+}
+
+/* line 117, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.tab-nav {
+  border: 1px solid #dad3c6;
+  background: rgba(228, 228, 228, 0.7);
+}
+
+/* line 121, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.tabs-tab {
+  border: 1px solid #dad3c6;
+  background: rgba(228, 228, 228, 0.6);
+  color: #555555;
+}
+
+/* line 126, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.tabs-tab:hover {
+  text-decoration: none;
+  color: dimgrey;
+}
+
+/* line 130, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ink-tabs .tabs-nav li.active a {
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* line 137, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.PlanCourseB {
+  font-size: 0.5em;
+  height: 60px;
+  width: 60px;
+  float: inherit;
+  position: relative;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+  box-shadow: 0px 0px 2.5px #fff;
+  border: 1px solid #dad3c6;
+  padding: 1em;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.938em;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+/* line 155, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.PlanCourseB:active, .PlanCourseB:focus {
+  color: black;
+}
+
+/* line 159, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.Category.red button {
+  border: 2px solid #c91111;
+}
+
+/* line 163, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.Category.orange button {
+  border: 2px solid #ff9c00;
+}
+
+/* line 167, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.Category.blue button {
+  border: 2px solid #0f75da;
+}
+
+/* line 171, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.Category.green button {
+  border: 2px solid #33cc33;
+}
+
+/* line 175, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ink-toggle {
+  border-radius: 5px;
+  background-color: rgba(150, 150, 150, 0.8);
+  box-shadow: 0px 0px 5px black;
+  border: 1px solid #dad3c6;
+}
+
+/* line 184, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.PlanTog {
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 204, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.PlanTog:hover {
+  color: white;
+  background: #1e1e1e;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75), #4d4d4d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.75), #4d4d4d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.75), #4d4d4d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0, 0, 0, 0.75), #4d4d4d);
+  /* Standard syntax */
+  box-shadow: 0px 0px 5px black;
+}
+
+/* line 215, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.PlanTog:active, .PlanTog:focus {
+  color: white;
+  background: #cccccc;
+  background: -webkit-linear-gradient(#cccccc, #4d4d4d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#cccccc, #4d4d4d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#cccccc, #4d4d4d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#cccccc, #4d4d4d);
+  /* Standard syntax */
+  box-shadow: 0px 0px 5px black;
+}
+
+/* line 230, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+#SemAdd {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 1px black;
+  color: dimgrey;
+  border: 1px solid #dad3c6;
+  padding: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* line 240, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+#SemAdd:hover {
+  background-color: rgba(150, 150, 150, 0.3);
+}
+
+/* line 246, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.Category {
+  display: none;
+  border-radius: 5px;
+  background-color: rgba(100, 100, 100, 0.75);
+  background: #cccccc;
+  background: -webkit-linear-gradient(#cccccc, grey);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#cccccc, grey);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#cccccc, grey);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#cccccc, grey);
+  /* Standard syntax */
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid #dad3c6;
+  color: #282828;
+}
+
+/* line 264, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.Category h5 {
+  color: #1e1e1e;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 271, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ClassCardHolder {
+  padding-left: 0em;
+}
+
+/* line 274, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ClassCard {
+  display: none;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid #dad3c6;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 289, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ClassCard .ClassCard p {
+  padding-top: .1em;
+  padding-bottom: .3em;
+  margin-bottom: 0em;
+  color: white;
+}
+/* line 295, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ClassCard .CCDescription {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-size: .8em;
+}
+/* line 301, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ClassCard .CCTitle {
+  font-size: 1em;
+}
+
+/* line 311, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-CC.red {
+  border: 2px dashed #c91111;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* line 315, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-CC.blue {
+  border: 2px dashed #0f75da;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* line 319, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-CC.orange {
+  border: 2px dashed #ff9c00;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* line 323, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-CC.green {
+  border: 2px dashed #33cc33;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* line 327, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-CC {
+  background: #282828 none repeat scroll 0 0;
+  list-style-type: none;
+  padding: 0em 0.0em;
+  /*padding: 0.5em 1em*/
+  border-radius: 5px;
+  height: 74px;
+  width: 74px;
+}
+
+/* line 336, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-CC ::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 341, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-CC li {
+  height: 70px;
+  width: 70px;
+  /*padding-top: .5em;*/
+  /*padding-bottom: .5em;*/
+  margin: 0em;
+  padding: 0em;
+  float: left;
+}
+
+/* line 352, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.Semester p {
+  padding-bottom: 0em;
+  padding-top: 5px;
+  margin: 0em;
+}
+
+/* line 357, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.Course {
+  height: 70px;
+  width: 70px;
+}
+
+/* line 366, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-2::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 371, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-2 {
+  background: #e4dfd6 none repeat scroll 0 0;
+  border: 1px solid #dad3c6;
+  border-radius: 2px;
+  list-style-type: none;
+  min-height: 85px;
+  margin-top: 0em;
+  margin-bottom: 5px;
+}
+
+/* line 382, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.droppable-2 li {
+  float: left;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+/* line 388, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ink-label {
+  margin-left: 0.2em;
+}
+
+/* line 392, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ink-label.blue, .ink-label.orange, .ink-label.red, .ink-label.green {
+  position: relative;
+  box-shadow: 0px 0px 5px black;
+  border: 1px solid #dad3c6;
+  padding: 1em;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+/* line 405, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.ink-tooltip.black {
+  background: #282828 none repeat scroll 0 0;
+  position: relative;
+  box-shadow: 0px 0px 7px black;
+  border: 1px solid #dad3c6;
+  padding: 1em;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.938em;
+  font-weight: 300;
+  min-width: 20em;
+}
+
+/* line 419, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.delete {
+  background: 0,0,0,0;
+  padding: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* line 429, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.delete {
+  display: none;
+}
+
+/* line 431, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+.delete:hover {
+  background: 0,0,0,0;
+  color: red;
+  border-color: red;
+}
+
+/* line 436, /home/n0r7h/Workspace/saryan/app/assets/stylesheets/planner.scss */
+#Course:hover .delete {
+  display: block;
+}

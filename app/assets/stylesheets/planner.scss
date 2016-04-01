@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.test {
+  h2 {color: red;}
+  h3 {color: blue;}
+  h5 {color: green;}
+  p {}
+}
+
 h1 {
   font-weight: 300;
   font-size: 3em;
@@ -161,6 +168,10 @@ div.PotB {
   border: 2px solid #0f75da;
   //background: #0f75da none repeat scroll 0 0;
 }
+.Category.green button{
+  border: 2px solid #33cc33;
+  //background: #0f75da none repeat scroll 0 0;
+}
 .ink-toggle{
   border-radius: 5px;
   background-color: rgba(150,150,150,.8);
@@ -272,21 +283,30 @@ div.PotB {
   color: #fff;
   //font-size: 0.938em;
   //font-weight: 300;
-  font-size: 0.9em;
+  //font-size: 0.9em;
   font-weight: 300;
 
-}
-.ClassCard p{
-  padding-top: .1em;
-  padding-bottom: .3em;
-  margin-bottom: 0em;
-}
-.CCDescription p{
-  margin-right: 5px;
-  margin-bottom:5px;
+  .ClassCard p{
+    padding-top: .1em;
+    padding-bottom: .3em;
+    margin-bottom: 0em;
+    color: white;
+  }
+  .CCDescription{
+    margin-right: 5px;
+    margin-bottom:5px;
+    color: white;
+    font-size: .8em;
+  }
+  .CCTitle{
+    font-size: 1em;
+  }
+
 }
 
+
 // DROPPABLE
+
 
 .droppable-CC.red {
   border: 2px dashed #c91111;
@@ -300,9 +320,12 @@ div.PotB {
   border: 2px dashed #ff9c00;
   background: rgba(255,255,255,.1);
 }
+.droppable-CC.green {
+  border: 2px dashed #33cc33;
+  background: rgba(255,255,255,.1);
+}
 .droppable-CC{
   background: #282828 none repeat scroll 0 0;
-
   list-style-type: none;
   padding: 0em 0.0em;
   /*padding: 0.5em 1em*/
@@ -325,6 +348,7 @@ div.PotB {
   padding: 0em;
   float: left;
 }
+
 .Semester p{
   padding-bottom: 0em;
   padding-top: 5px;
@@ -333,7 +357,10 @@ div.PotB {
 .Course{
   height: 70px;
   width: 70px;
-  //font-size: 1.2em;
+  //label {
+  //  font-size: 0.938em;
+  //  font-weight: 300;
+  //}
 }
 
 .droppable-2::after {
@@ -346,7 +373,8 @@ div.PotB {
   border: 1px solid #dad3c6;
   border-radius: 2px;
   list-style-type: none;
-  min-height: 4em;
+  //min-height: 4.5em;
+  min-height: 85px;
   margin-top: 0em;
   margin-bottom: 5px;
   //padding: 0.25em .5em;
@@ -354,12 +382,14 @@ div.PotB {
 .droppable-2 li {
   float: left;
   padding: 0.5em;
+  display: inline-block;
+
 }
 .ink-label{
   margin-left: 0.2em;
 }
 
-.ink-label.blue, .ink-label.orange, .ink-label.red {
+.ink-label.blue, .ink-label.orange, .ink-label.red, .ink-label.green {
   //background: #0f75da none repeat scroll 0 0;
   //display: inline-block;
   position: relative;
@@ -368,7 +398,8 @@ div.PotB {
   padding: 1em;
   border-radius: 5px;
   color: #fff;
-  font-size: 0.938em;
+  //font-size: 0.938em;
+  font-size: 0.8em;
   font-weight: 300;}
 
 .ink-tooltip.black {
