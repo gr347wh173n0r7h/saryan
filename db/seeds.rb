@@ -51,20 +51,20 @@ super_category_list = [
 ]
 
 super_category_list.each do |name, units|
-  SuperCat.create(name:name, units:units)
+  SuperCat.create(catalog_id:c.id, name:name, units:units)
 end
 
 category_list = [
 
-    [SuperCat.find_by_name("BA:MIS").id, "Core Courses", 40],
-    [SuperCat.find_by_name("BA:MIS").id, "Concentration Requirements",27],
-    [SuperCat.find_by_name("General Education").id, "Lower Divison GE", 35],
-    [SuperCat.find_by_name("General Eductaion").id, "Upper Division GE"]
+    [SuperCat.find_by_name("BA: MIS").id, "Core Courses", 40],
+    [SuperCat.find_by_name("BA: MIS").id, "Concentration Requirements",27],
+    [SuperCat.find_by_name("General Education").id, "Lower Division GE", 35],
+    [SuperCat.find_by_name("General Education").id, "Upper Division GE"]
 
 
 ]
-category_list.each do |name, units|
-  Category.create(name:name, units:units)
+category_list.each do |id, name, units|
+  Category.create(super_cat_id:id, name:name, units:units)
 end
 
 sub_category_list = [
@@ -74,26 +74,26 @@ sub_category_list = [
     [Category.find_by_name("Core Courses").id,"Upper Division Business Integration and Perspectives Courses", 12],
     [Category.find_by_name("Concentration Requirements").id, "Required Courses", 21],
     [Category.find_by_name("Concentration Requirements").id, "Additional Courses", 6],
-    [Category.find_by_name("Lower Divion GE").id, "A1", 3],
-    [Category.find_by_name("Lower Divion GE").id, "A2", 3],
-    [Category.find_by_name("Lower Divion GE").id, "A3", 3],
-    [Category.find_by_name("Lower Divion GE").id, "B1", 3],
-    [Category.find_by_name("Lower Divion GE").id, "B2", 3],
-    [Category.find_by_name("Lower Divion GE").id, "B3", 3],
-    [Category.find_by_name("Lower Divion GE").id, "B4", 3],
-    [Category.find_by_name("Lower Divion GE").id, "C1", 3],
-    [Category.find_by_name("Lower Divion GE").id, "C2", 6],
-    [Category.find_by_name("Lower Divion GE").id, "D1", 3],
-    [Category.find_by_name("Lower Divion GE").id, "D2", 3],
-    [Category.find_by_name("Lower Divion GE").id, "D3", 3],
-    [Category.find_by_name("Lower Divion GE").id, "E", 3],
-    [Category.find_by_name("Lower Divion GE").id, "American Studies", 6],
-    [Category.find_by_name("Lower Divion GE").id, "Physical Education", 2],
-    [Category.find_by_name("Lower Divion GE").id, "Prepartion for the major", 17],
-    [Category.find_by_name("Upper Divion GE").id, "R", 3],
-    [Category.find_by_name("Upper Divion GE").id, "S", 3],
-    [Category.find_by_name("Upper Divion GE").id, "V", 3],
-    [Category.find_by_name("Upper Divion GE").id, "Z", 3],
+    [Category.find_by_name("Lower Division GE").id, "A1", 3],
+    [Category.find_by_name("Lower Division GE").id, "A2", 3],
+    [Category.find_by_name("Lower Division GE").id, "A3", 3],
+    [Category.find_by_name("Lower Division GE").id, "B1", 3],
+    [Category.find_by_name("Lower Division GE").id, "B2", 3],
+    [Category.find_by_name("Lower Division GE").id, "B3", 3],
+    [Category.find_by_name("Lower Division GE").id, "B4", 3],
+    [Category.find_by_name("Lower Division GE").id, "C1", 3],
+    [Category.find_by_name("Lower Division GE").id, "C2", 6],
+    [Category.find_by_name("Lower Division GE").id, "D1", 3],
+    [Category.find_by_name("Lower Division GE").id, "D2", 3],
+    [Category.find_by_name("Lower Division GE").id, "D3", 3],
+    [Category.find_by_name("Lower Division GE").id, "E", 3],
+    [Category.find_by_name("Lower Division GE").id, "American Studies", 6],
+    [Category.find_by_name("Lower Division GE").id, "Physical Education", 2],
+    [Category.find_by_name("Lower Division GE").id, "Prepartion for the major", 17],
+    [Category.find_by_name("Upper Division GE").id, "R", 3],
+    [Category.find_by_name("Upper Division GE").id, "S", 3],
+    [Category.find_by_name("Upper Division GE").id, "V", 3],
+    [Category.find_by_name("Upper Division GE").id, "Z", 3],
 
 
 ]
@@ -156,7 +156,7 @@ mis_catalog = [
     [SubCategory.find_by_name("A3").id, "LING", "LING 021", "Language and Thinking", 3, "Exploring systems of language and logic in oral and written discourse, with a focus on the role of shared cultural assumptions, language style and the media of presentation in shaping the form and content of argumentation. GE Area: A3"],
     [SubCategory.find_by_name("A3").id, "LING", "LING 024", "Language Variation in Space, Time, & Culture", 3, "Exploring the diverse structural patterns and social functions found in English; analyzing the social, cultural, political, historical, and technological factors underlying language change; developing critical thinking and effective argumentation in writing. GE Area: A3 Or D1"],
     [SubCategory.find_by_name("A3").id, "PHIL", "PHIL 057", "Logic and Critical Reasoning", 3, "Basic concepts of logic; goals and standards of both deductive and inductive reasoning; techniques of argument analysis and assessment; evaluation of evidence; language and definition; fallacies. GE Area: A3"],
-    [SubCategory.find_by_name("A3").id, "POLS", "POLS 020", "Basic concepts in critical thinking as demonstrated in legal reasoning and analysis of contemporary legal issues possibly including abortion, drug testing, offensive speech, affirmative action, gender and sexual preference discrimination, school prayer and pornography. GE Area: A3 Prerequisite: English Remediation completed or a post baccalaureate."],
+    [SubCategory.find_by_name("A3").id, "POLS", "POLS 020", "Controversial Legal Issues", 3,"Basic concepts in critical thinking as demonstrated in legal reasoning and analysis of contemporary legal issues possibly including abortion, drug testing, offensive speech, affirmative action, gender and sexual preference discrimination, school prayer and pornography. GE Area: A3 Prerequisite: English Remediation completed or a post baccalaureate."],
 
     [SubCategory.find_by_name("B1").id, "ASTR", "ASTR 010", "Descriptive Astronomy", 3, "A generally non-mathematical examination of principles, facts and logic of astronomy, emphasizing arrangement, origin and evolution of the solar system. GE Area: B1"],
     [SubCategory.find_by_name("B1").id, "CHEM", "CHEM 001A", "General Chemistry", 5, "Topics including stoichiometry, reactions, atomic structure, periodicity, bonding, states of matter, energy changes, solutions using organic and inorganic examples. Lab program complements lecture. Prerequisite: Proficiency in high school chemistry or CHEM 010 (with a grade of C or better; C- not accepted) or instructor consent; proficiency in high school algebra and eligibility for MATH 019; eligibility for ENGL 001A. Misc/Lab: Lecture 3 hours/lecture 1 hour/lab 3 hours."],
@@ -178,6 +178,3 @@ mis_catalog.each do |sub_category_id, dep,abbrev, name, units, desc|
   Plan.create(catalog_id:c.id, course_id:co.id)
 end
 
-plan_list = [
-    [1, ]
-]

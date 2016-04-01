@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160401020700) do
+ActiveRecord::Schema.define(version: 20160401050413) do
 
   create_table "academics", force: :cascade do |t|
     t.integer  "user_id",       limit: 4
@@ -81,6 +81,15 @@ ActiveRecord::Schema.define(version: 20160401020700) do
 
   add_index "majors", ["department_id"], name: "index_majors_on_department_id", using: :btree
 
+  create_table "planners", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.integer  "user_id",    limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "planners", ["user_id"], name: "index_planners_on_user_id", using: :btree
+
   create_table "plans", force: :cascade do |t|
     t.integer  "catalog_id", limit: 4
     t.integer  "course_id",  limit: 4
@@ -92,9 +101,10 @@ ActiveRecord::Schema.define(version: 20160401020700) do
   add_index "plans", ["catalog_id"], name: "index_plans_on_catalog_id", using: :btree
   add_index "plans", ["course_id"], name: "index_plans_on_course_id", using: :btree
 
-  create_table "prerequistes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "saved_plans", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "schools", force: :cascade do |t|
@@ -104,6 +114,28 @@ ActiveRecord::Schema.define(version: 20160401020700) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
+
+  create_table "semester_refs", force: :cascade do |t|
+    t.integer  "semester_id", limit: 4
+    t.integer  "course_id",   limit: 4
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  add_index "semester_refs", ["course_id"], name: "index_semester_refs_on_course_id", using: :btree
+  add_index "semester_refs", ["semester_id"], name: "index_semester_refs_on_semester_id", using: :btree
+
+  create_table "semesters", force: :cascade do |t|
+    t.string   "name",          limit: 255
+    t.integer  "year",          limit: 4
+    t.integer  "planner_id",    limit: 4
+    t.integer  "saved_plan_id", limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  add_index "semesters", ["planner_id"], name: "index_semesters_on_planner_id", using: :btree
+  add_index "semesters", ["saved_plan_id"], name: "index_semesters_on_saved_plan_id", using: :btree
 
   create_table "sub_categories", force: :cascade do |t|
     t.string   "name",        limit: 255
@@ -150,6 +182,10 @@ ActiveRecord::Schema.define(version: 20160401020700) do
   add_foreign_key "courses", "sub_categories"
   add_foreign_key "departments", "schools"
   add_foreign_key "majors", "departments"
+  add_foreign_key "planners", "users"
+  add_foreign_key "semester_refs", "semesters"
+  add_foreign_key "semesters", "planners"
+  add_foreign_key "semesters", "saved_plans"
   add_foreign_key "sub_categories", "categories"
   add_foreign_key "super_cats", "catalogs"
 end
