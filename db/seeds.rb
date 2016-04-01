@@ -46,14 +46,25 @@ end
 c = Catalog.create(cat_yr:15, degree: "MIS" )
 
 super_category_list = [
-
-    ["Core Courses", 40],
-    ["Concentration Requirements",27],
-
+    ["General Education", 60],
+    ["BA: MIS", 120]
 ]
 
 super_category_list.each do |name, units|
-  Category.create(catalog_id:c.id, name:name, units:units)
+  SuperCat.create(name:name, units:units)
+end
+
+category_list = [
+
+    [SuperCat.find_by_name("BA:MIS").id, "Core Courses", 40],
+    [SuperCat.find_by_name("BA:MIS").id, "Concentration Requirements",27],
+    [SuperCat.find_by_name("General Education").id, "Lower Divison GE", 35],
+    [SuperCat.find_by_name("General Eductaion").id, "Upper Division GE"]
+
+
+]
+category_list.each do |name, units|
+  Category.create(name:name, units:units)
 end
 
 sub_category_list = [
@@ -62,7 +73,28 @@ sub_category_list = [
     [Category.find_by_name("Core Courses").id,"Upper Division Fundamental Courses", 15],
     [Category.find_by_name("Core Courses").id,"Upper Division Business Integration and Perspectives Courses", 12],
     [Category.find_by_name("Concentration Requirements").id, "Required Courses", 21],
-    [Category.find_by_name("Concentration Requirements").id, "Additional Courses", 6]
+    [Category.find_by_name("Concentration Requirements").id, "Additional Courses", 6],
+    [Category.find_by_name("Lower Divion GE").id, "A1", 3],
+    [Category.find_by_name("Lower Divion GE").id, "A2", 3],
+    [Category.find_by_name("Lower Divion GE").id, "A3", 3],
+    [Category.find_by_name("Lower Divion GE").id, "B1", 3],
+    [Category.find_by_name("Lower Divion GE").id, "B2", 3],
+    [Category.find_by_name("Lower Divion GE").id, "B3", 3],
+    [Category.find_by_name("Lower Divion GE").id, "B4", 3],
+    [Category.find_by_name("Lower Divion GE").id, "C1", 3],
+    [Category.find_by_name("Lower Divion GE").id, "C2", 6],
+    [Category.find_by_name("Lower Divion GE").id, "D1", 3],
+    [Category.find_by_name("Lower Divion GE").id, "D2", 3],
+    [Category.find_by_name("Lower Divion GE").id, "D3", 3],
+    [Category.find_by_name("Lower Divion GE").id, "E", 3],
+    [Category.find_by_name("Lower Divion GE").id, "American Studies", 6],
+    [Category.find_by_name("Lower Divion GE").id, "Physical Education", 2],
+    [Category.find_by_name("Lower Divion GE").id, "Prepartion for the major", 17],
+    [Category.find_by_name("Upper Divion GE").id, "R", 3],
+    [Category.find_by_name("Upper Divion GE").id, "S", 3],
+    [Category.find_by_name("Upper Divion GE").id, "V", 3],
+    [Category.find_by_name("Upper Divion GE").id, "Z", 3],
+
 
 ]
 
@@ -106,6 +138,47 @@ mis_catalog = [
     [SubCategory.find_by_name("Additional Courses").id, "BUS","BUS4 118B","Topics in MIS: Business Expert Systems", 3, "Investigation of ESS/ES theory and application. Design, development and evaluation of real-world ESS/ES prototype systems in Excel/Visual Basic/etc. Prerequisite: COMM 100W or ENGL 100W or LLD 100W, a grade of C or better in BUS 111 and BUS 112, BUS4 110A and BUS4 110B, Lower Division Business Pool., senior status."],
     [SubCategory.find_by_name("Additional Courses").id, "BUS","BUS4 118C","Topics in MIS: Security Systems & Operating Systems", 3, "Introduces the spectrum of threats and associated best practices for managing information security and assurance in organizations. Covers use of education/training, policy/procedure and technology to balance information confidentiality, integrity and accessibility requirements against associated costs to support organizations' strategic goals. Prerequisite: Lower Division Business Pool. Corequisite: BUS4 111. Note: Offered only occasionally."],
     [SubCategory.find_by_name("Additional Courses").id, "BUS","BUS4 118W","Topics in MIS: Web Based Computing", 3, "Explores Web applications for personal, E-Commerce and corporate computing. Covers essentials of WWW protocols. Students will learn to design and program both client and server-side applications using HTML and extensions, JavaScript, Perl, VBScript, Active Server Pages, database connections, XML, Java. Prerequisite: Grade of C or better in BUS4 110A and BUS4 112. Lower division business pool."],
+
+    [SubCategory.find_by_name("A1").id, "COMM", "COMM 020", "Public Speaking", 3, "Principles of rhetoric applied to oral communication; selecting, analyzing, adapting, organizing and delivering ideas effectively. GE Area: A1"],
+    [SubCategory.find_by_name("A1").id, "COMM", "COMM 020N", "Public Speaking for Nonnvative Speakers", 3, "Public speaking for the nonnative speaker. Course content identical to COMM 20 with intercultural emphasis. GE Area: A1"],
+    [SubCategory.find_by_name("A1").id, "COMM", "COMM 040", "Argumentation and Advocacy", 3, "Principles of inquiry and advocacy in public discussion and necessary basic skills for intelligent participation in discussion and debate. GE Area: A1"],
+    [SubCategory.find_by_name("A1").id, "COMM", "COMM 096PS", "Public Speaking", 3, "Principles of rhetoric applied to oral communication; selecting, analyzing, adapting, organizing and delivering ideas effectively. GE Area: A1"],
+    [SubCategory.find_by_name("A1").id, "MAS", "MAS 074", "Public Address", 3, "Techniques of effective oral communication. Principles of rhetoric through analysis and critique of contemporary issues concerning Mexican Americans. GE Area: A1"],
+
+    [SubCategory.find_by_name("A2").id, "ENGL", "ENGL 001A", "First Year Writing", 3, "English 1A is an introductory course that prepares students to join scholarly conversations across the university. Students develop reading skills, rhetorical sophistication, and writing styles that give form and coherence to complex ideas for various audiences, using a variety of genres. GE Area: A2 Prerequisite: English Placement Test."],
+    [SubCategory.find_by_name("A2").id, "HA", "HA 096S", "First Year Composition, Stretch II", 3, ""],
+
+    [SubCategory.find_by_name("A3").id, "COMM", "COMM 041", "Critical Decision Making",3, "Critical reasoning and problem solving in group discussion. Examination of the relationship between critical decision-making and group communication. Practice in group problem solving as a means for developing critical thinking skills. GE Area: A3 Prerequisite: English Remediation completed or a post baccalaureate." ],
+    [SubCategory.find_by_name("A3").id, "COMM", "COMM 045", "Media and Culture", 3, "Application of critical thinking, writing, and oral communication skills in the analysis of media representations of culture. Practice in reasoning, advocating ideas, researching and evaluating arguments, developing well supported factual conclusions, and engaging in meaningful dialogue on diverse issues. GE Area: A3 Prerequisite: GE Areas A1 (Oral Communication) and A2 (Written Communication I, English 1A) with grades of C or better (C�not accepted)." ],
+    [SubCategory.find_by_name("A3").id, "ENGL", "ENGL 002", "Critical Thinking and Writing", 3, "English 2 is a course that focuses on the relationship between language and logic in composing arguments. Students learn various methods of effective reasoning and appropriate rhetorical strategies to help them invent, demonstrate, and express arguments clearly, logically, and persuasively. GE Area: A3 Prerequisite: Completion of GE Areas A1 and A2 with a C or better"],
+    [SubCategory.find_by_name("A3").id, "ENGL", "ENGL 007", "Nature and meaning of critical thought, Western and non-Western. Relationship between logic and language. Examination of contrasting arguments on related subjects as a means for developing skill in analysis of prose. GE Area: A3 Prerequisite: ENGL 1A."],
+    [SubCategory.find_by_name("A3").id, "HIST", "HIST 050", "Historical Process: Understanding Historic Reasoning", 3, "Modes and skills of practical logic and reasoning through study of historical method. Historical problems examined to that end. GE Area: A3"],
+    [SubCategory.find_by_name("A3").id, "LING", "LING 021", "Language and Thinking", 3, "Exploring systems of language and logic in oral and written discourse, with a focus on the role of shared cultural assumptions, language style and the media of presentation in shaping the form and content of argumentation. GE Area: A3"],
+    [SubCategory.find_by_name("A3").id, "LING", "LING 024", "Language Variation in Space, Time, & Culture", 3, "Exploring the diverse structural patterns and social functions found in English; analyzing the social, cultural, political, historical, and technological factors underlying language change; developing critical thinking and effective argumentation in writing. GE Area: A3 Or D1"],
+    [SubCategory.find_by_name("A3").id, "PHIL", "PHIL 057", "Logic and Critical Reasoning", 3, "Basic concepts of logic; goals and standards of both deductive and inductive reasoning; techniques of argument analysis and assessment; evaluation of evidence; language and definition; fallacies. GE Area: A3"],
+    [SubCategory.find_by_name("A3").id, "POLS", "POLS 020", "Basic concepts in critical thinking as demonstrated in legal reasoning and analysis of contemporary legal issues possibly including abortion, drug testing, offensive speech, affirmative action, gender and sexual preference discrimination, school prayer and pornography. GE Area: A3 Prerequisite: English Remediation completed or a post baccalaureate."],
+
+    [SubCategory.find_by_name("B1").id, "ASTR", "ASTR 010", "Descriptive Astronomy", 3, "A generally non-mathematical examination of principles, facts and logic of astronomy, emphasizing arrangement, origin and evolution of the solar system. GE Area: B1"],
+    [SubCategory.find_by_name("B1").id, "CHEM", "CHEM 001A", "General Chemistry", 5, "Topics including stoichiometry, reactions, atomic structure, periodicity, bonding, states of matter, energy changes, solutions using organic and inorganic examples. Lab program complements lecture. Prerequisite: Proficiency in high school chemistry or CHEM 010 (with a grade of C or better; C- not accepted) or instructor consent; proficiency in high school algebra and eligibility for MATH 019; eligibility for ENGL 001A. Misc/Lab: Lecture 3 hours/lecture 1 hour/lab 3 hours."],
+    [SubCategory.find_by_name("B1").id, "CHEM", "CHEM 001B", "General Chemistry", 5, "Topics including stoichiometry, colligative properties, kinetics, equilibria, thermodynamics and electrochemistry. Lab program complements lecture. Prerequisite: CHEM 001A (with a grade of C or better; C- not accepted). Misc/Lab: Lecture 3 hours/lab"],
+    [SubCategory.find_by_name("B1").id, "CHEM", "CHEM 030A", "Introductory Chemistry", 3, "The physical world as seen by a chemist; the ways this world affects humans, other animals and plants used as illustrations of fundamental general chemistry. GE Area: B1 and B3 Misc/Lab: Lecture 2 hours/lab 3 hours. Notes: No credit toward Chemistry major or minor."],
+    [SubCategory.find_by_name("B1").id, "ENGR", "ENGR 005", "Science of High Technology", 3, "Scientific principles underlying commonly used high technology devices and systems such as the computer, cell phone, IPODS, cameras, and the Internet. Emphasizes practical applications of scientific principles to contemporary engineering products and services. GE Area: B1"],
+    [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 001", "Geography of Natural Enviroments", 3, "Atmospheric, biologic and geologic processes that create the natural environments of the world. Discovery of local, regional and global patterns in the location and distribution of environmental phenomena, and the human modifications of natural environments. GE Area: B1"],
+    [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 001L", "Geography of Natural Enviroments", 3, "Supplement to general lecture courses in Earth science or geology. Pre/Corequisite: GEOL 2, GEOL 1, GEOL 6 or GEOL 111. Misc/Lab: Lab 3 hours."],
+    [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 003", "Planet Earth", 3, "Origins and processes of Earth's interconnected physical and chemical systems, including aspects of astronomy, geology, meteorology, and oceanography. Impacts of these systems on humans, and of humans on the systems. GE Area: B1"],
+    [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 006", "Geology Of California", 3, "California's geology, illustrating physical processes, landscapes, geologic history and resources. California's seismic, volcanic, landslide and flooding hazards, and their impact on society. GE Area: B1 Misc/Lab: Lecture 3 hours/field trips."],
+    [SubCategory.find_by_name("B1").id, "GEOG", "GEOG 007", "Earth's geosphere: processes that act on it and materials that comprise it; how rocks and fossils are used to interpret the history of Earth's geosphere, atmosphere, oceans, and life forms. Misc/Lab: Lecture 3 hours/lab 3 hours."],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+    [SubCategory.find_by_name("B1").id,],
+
 ]
 
 
@@ -113,3 +186,4 @@ mis_catalog.each do |sub_category_id, dep,abbrev, name, units, desc|
   co = Course.create(sub_category_id:sub_category_id, dep: dep, abbrev:abbrev, name: name, units: units, desc:desc)
   Plan.create(catalog_id:c.id, course_id:co.id)
 end
+

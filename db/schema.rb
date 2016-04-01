@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160317233424) do
+ActiveRecord::Schema.define(version: 20160401020700) do
 
   create_table "academics", force: :cascade do |t|
     t.integer  "user_id",       limit: 4
@@ -39,14 +39,14 @@ ActiveRecord::Schema.define(version: 20160317233424) do
   add_index "catalogs", ["cat_yr"], name: "index_catalogs_on_cat_yr", using: :btree
 
   create_table "categories", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.integer  "units",      limit: 4
-    t.integer  "catalog_id", limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "name",         limit: 255
+    t.integer  "units",        limit: 4
+    t.integer  "super_cat_id", limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
-  add_index "categories", ["catalog_id"], name: "index_categories_on_catalog_id", using: :btree
+  add_index "categories", ["super_cat_id"], name: "index_categories_on_super_cat_id", using: :btree
 
   create_table "courses", force: :cascade do |t|
     t.string   "dep",             limit: 255
@@ -115,6 +115,16 @@ ActiveRecord::Schema.define(version: 20160317233424) do
 
   add_index "sub_categories", ["category_id"], name: "index_sub_categories_on_category_id", using: :btree
 
+  create_table "super_cats", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.integer  "units",      limit: 4
+    t.integer  "catalog_id", limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "super_cats", ["catalog_id"], name: "index_super_cats_on_catalog_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.string   "name",                      limit: 255
     t.string   "email",                     limit: 255
@@ -136,9 +146,10 @@ ActiveRecord::Schema.define(version: 20160317233424) do
   add_foreign_key "academics", "majors"
   add_foreign_key "academics", "schools"
   add_foreign_key "academics", "users"
-  add_foreign_key "categories", "catalogs"
+  add_foreign_key "categories", "super_cats"
   add_foreign_key "courses", "sub_categories"
   add_foreign_key "departments", "schools"
   add_foreign_key "majors", "departments"
   add_foreign_key "sub_categories", "categories"
+  add_foreign_key "super_cats", "catalogs"
 end
