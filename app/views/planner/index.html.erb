@@ -5,6 +5,7 @@
 </style>
 
 
+
 <% provide(:title, 'PLanner') %>
 <div xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html"></div>
@@ -115,12 +116,12 @@
     <!-- END PLANS-->
 
     <!--SEMESTER-->
-    <div class="PlannerHolder column-group xlarge-45 large-45 medium-100 small-100 tiny-100 half-top-padding">
+    <div class="PlannerHolder column-group xlarge-45 large-45 medium-100 small-100 tiny-100 top-padding">
       <div class="Planner all-100 align-center">
         <!--<div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>-->
 
-        <!-- SEMESTER DROP-->
-        <div id="Semesters" class=" half-right-padding"  style="overflow: auto; max-height: 735px;">
+        <!-- SEMESTER DROP -->
+        <div id="Semesters" class="half-right-padding"  style="overflow: auto; max-height: 735px;">
           <div  class="Semester column-group all-100" >
             <div class="all-100" style="padding-top: 0px;">
               <p class="tip" style="padding-top: 0px;">Fall 2015</p>
@@ -155,10 +156,12 @@
               </div>
             </form>
           </div>
-          <!-- CLASS CARDs-->
+          <!-- CLASS CARDs -->
           <div class="ClassCards ink-flex all-100">
             <div id="CCD" class="column-group all-100 half-top-space half-left-padding half-right-padding" style="overflow: auto; max-height: 650px;">
 
+              <!--<div class="frame">-->
+                <!--<ul class="slidee">-->
 
               <!-- CLASSCARDS-->
               <% i = 0 %>
@@ -169,26 +172,30 @@
 
                             <% j.courses.each do |c|%>
 
-                              <div id="<%=c.id%>-CC" class="ClassCard column all-100 horizontal-gutters">
-                                <div class="all-70 push-right half-top-space">
-                                  <div class="CCTitle all-60 push-left align-left large order-r2">
-                                    <p><%=c.name%></p>
-                                  </div>
-                                  <div class="all-30 push-left align-right large order-r3">
-                                    <p><%=c.units%></p>
-                                  </div>
-                                  <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4  half-right-padding">
-                                    <p><%=c.desc%></p>
-                                  </div>
-                                </div>
-                                <div class="all-30 push-left order-r1">
-                                  <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>">
-                                    <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
-                                      <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
+
+                                    <!--<li>-->
+                                      <div id="<%=c.id%>-CC" class="ClassCard column all-100 horizontal-gutters">
+                                        <div class="all-70 push-right half-top-space">
+                                          <div class="CCTitle all-60 push-left align-left large order-r2">
+                                            <p><%=c.name%></p>
+                                          </div>
+                                          <div class="all-30 push-left align-right large order-r3">
+                                            <p><%=c.units%></p>
+                                          </div>
+                                          <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4  half-right-padding">
+                                            <p><%=c.desc%></p>
+                                          </div>
+                                        </div>
+                                        <div class="all-30 push-left order-r1">
+                                          <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>">
+                                            <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
+                                              <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                  <!--</li>-->
+
 
                             <% end %>
 
@@ -200,6 +207,9 @@
                           end%>
                   <% end %>
               <% end %>
+
+                <!--</ul>-->
+              <!--</div>-->
               <!-- END CLASSCARDS-->
 
 
@@ -232,6 +242,7 @@
         Droppable.add('#Fall2015', {onDrop: 'move'});
 
 //        SEMESTER
+//        var sly = new Sly(document.getElementById('frame'));
 
         var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
         var date = new Date();
@@ -283,6 +294,7 @@
         });
 
     });
+
 
     function clearClassCards(){
         $("#CCD").children().fadeOut('fast').promise()

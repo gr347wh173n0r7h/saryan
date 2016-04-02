@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require ink-all
+//= require jquery.mCustomScrollbar
 //= require autoload
 //= require html5shiv
 //= require_tree .
