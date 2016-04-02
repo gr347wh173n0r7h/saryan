@@ -135,7 +135,7 @@ div.PotB {
 //END TABS
 
 .PlanCourseB{
-  font-size: 0.5em;
+  font-size: 1em;
   height: 60px;
   width: 60px;
   float: inherit;
@@ -146,7 +146,7 @@ div.PotB {
   padding: 1em;
   border-radius: 5px;
   color: #fff;
-  font-size: 0.938em;
+  //font-size: 0.938em;
   font-weight: 300;
   margin-top: 5px;
   //padding-top: 5em;
@@ -260,11 +260,13 @@ div.PotB {
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   border: 1px solid #dad3c6;
   color: #282828;
-}
-.Category h5{
-  color: #1e1e1e;
-  font-weight: 400;
-  line-height: 24px;
+
+  h5 {
+    color: #1e1e1e;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
 }
 
 //CLASS CARDS
@@ -285,6 +287,9 @@ div.PotB {
   //font-weight: 300;
   //font-size: 0.9em;
   font-weight: 300;
+  margin-bottom: 7px;
+  margin-top: 3px;
+  //p{font-weight: 400;}
 
   .ClassCard p{
     padding-top: .1em;
@@ -296,10 +301,10 @@ div.PotB {
     margin-right: 5px;
     margin-bottom:5px;
     color: white;
-    font-size: .8em;
+    font-size: .7em;
   }
   .CCTitle{
-    font-size: 1em;
+    font-size: .9em;
   }
 
 }
@@ -383,7 +388,6 @@ div.PotB {
   float: left;
   padding: 0.5em;
   display: inline-block;
-
 }
 .ink-label{
   margin-left: 0.2em;
@@ -395,11 +399,13 @@ div.PotB {
   position: relative;
   box-shadow: 0px 0px 5px black;
   border: 1px solid #dad3c6;
-  padding: 1em;
+  padding: .8em;
+  padding-top: 1.2em;
   border-radius: 5px;
   color: #fff;
   //font-size: 0.938em;
-  font-size: 0.8em;
+  //font-size: 0.8em;
+  font-size: .8em;
   font-weight: 300;}
 
 .ink-tooltip.black {
