@@ -103,6 +103,7 @@ ActiveRecord::Schema.define(version: 20160401050413) do
 
   create_table "saved_plans", force: :cascade do |t|
     t.string   "name",       limit: 255
+    t.string   "major",      limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
@@ -128,6 +129,7 @@ ActiveRecord::Schema.define(version: 20160401050413) do
   create_table "semesters", force: :cascade do |t|
     t.string   "name",          limit: 255
     t.integer  "year",          limit: 4
+    t.integer  "units",         limit: 4
     t.integer  "planner_id",    limit: 4
     t.integer  "saved_plan_id", limit: 4
     t.datetime "created_at",                null: false
