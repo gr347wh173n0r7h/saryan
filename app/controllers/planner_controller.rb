@@ -42,8 +42,13 @@ class PlannerController < ApplicationController
         redirect_to academics_new_path
       else
         @plan = SavedPlan.find(params[:id])
-        # @semester = @plan.semesters
-        # @sem_courses = SavedPlan.courses
+        @semester = @plan.semesters
+        @sem_courses = []
+        @semester.each do |sem|
+          sem.courses.each do |c|
+            @sem_courses.push c
+          end
+        end
 
         @academic = @academic.take
         @school = School.find(@academic.school_id)
