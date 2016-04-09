@@ -1,396 +1,270 @@
 <style>
-  /*body {*/
-      /*background: none;*/
-  /*}*/
+    body {
+        background: none;
+    }
 </style>
 
 <% provide(:title, 'PLanner') %>
-<div class="clearfix_10 all-100" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+<div xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html"></div>
+<div class="ink-grid">
+  <div class="column-group half-top-padding half-horizontal-gutters">
 
-<!--SEMESTER-->
-<div class="column-group xlarge-60 large-60 medium-50 small-100 tiny-100 horizontal-gutters push-left">
-    <div class="Planner all-100 push-right horizontal-gutters left-space half-top-space" >
-
-        <div class="clearfix_10"></div>
-        <!--<div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>-->
-
-          <!-- SEMESTER-->
-          <div id="Semesters">
-              <div  class="Semester column-group all-95 push-middle order-r2">
-                  <div class="all-100 push-right">
-                    <p class="tip">Fall 2015</p>
-                    <ul id="Fall2015" class="droppable-2 all-100">
-                    </ul>
-                  </div>
-              </div>
-          </div>
-
-        <!--END SEMESTER-->
-        <div class="column all-95 align-right half-top-space half-bottom-space condensed">
-          <button id="SemAdd" class="ink-button align-center order-3 ">+</button>
+    <!-- INFO PANEL-->
+    <div class="InfoPanelHoler all-100">
+      <div class="InfoPanel column-group all-100 push-center align-center half-left-padding">
+        <div class="xlarge-30 large-30 medium-30 small-50 tiny-100 half-top-padding">
+          <!--<h5></h5>-->
+          <p><b>School: </b><%=@school.name%></p>
         </div>
+        <div class="xlarge-30 large-30 medium-30 small-50 tiny-100 half-top-padding">
+          <!--<h5>Major: </h5>-->
+          <p><b>Major: </b><%=@major.name%></p>
+        </div>
+        <div class="xlarge-30 large-30 medium-100 small-50 tiny-100 half-top-padding">
+          <!--<h5>Catalog: </h5>-->
+          <p><b>Catalog: </b><%=@catalog.degree%></p>
+        </div>
+      </div>
     </div>
-</div>
-<!--END SEMESTER -->
+    <!-- END INFO PANEL -->
+    <!-- PLANS-->
+    <div class="column-group xlarge-25 large-25 medium-100 small-100 tiny-100 half-top-padding">
+      <div class="Pot all-100 push-center">
 
-<div class="column-group xlarge-40 large-40 medium-50 small-100 tiny-100 horizontal-gutters push-right">
+        <% k = 0 %>
 
-  <!-- Pot -->
-    <div class="Pot all-100 push-center horizontal-gutters half-top-space">
-      <!-- TABS-->
-      <div id="Tabs" class="ink-tabs top all-95" data-prevent-url-change="true" data-active="#P">
-          <ul class="tabs-nav" style="background-color: inherit;">
-            <li id="PT"><a class="tabs-tab" href="#P">Plans</a></li>
-            <li id="CT"><a class="tabs-tab" href="#C">Courses</a></li>
-          </ul>
-
-      <!-- PLANS-->
-          <div id="P" class="tabs-content">
-            <div class="column-group all-100 push-center">
-
-                <!--COURSE FROM PLAN ADD-->
-                <div class="column all-95 order-r1 half-top-space condensed">
-                  <button id="GETog" class="PlanTog ink-button all-100 "
-                          onclick="showCat('GE')">General Education</button>
-                  <div id="GE" class="Category ink-flex half-top-space">
-                    <div class="column-group all-95  push-center push-middle half-top-space">
-                        <div class="all-100"><h5>Area A:</h5></div>
-                        <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                          <button id="A1-B" class="PlanCourseB ink-button align-center order-1"  onclick="showCard('A1-CC')">A1</button>
-                          <button id="A2-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('A2-CC')">A2</button>
-                          <button id="A3-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('A3-CC')">A3</button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column all-95 order-r2 half-top-space condensed">
-                  <button id="MajTog" class="PlanTog ink-button all-100"
-                          onclick="showCat('Maj')">Major Business</button>
-                  <div id="Maj" class="Category ink-flex half-top-space">
-                    <div class="column-group all-95 push-center push-middle half-top-space">
-                      <div class="all-100 "><h5>Business Pool</h5></div>
-                      <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                        <button id="Math71-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('Math71-CC')">Math<br>71</button>
-                        <button id="Engl2-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('Engl2-CC')">Engl<br>2</button>
-                        <button id="Bus1_20-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('Bus1_20-CC')">Bus1<br>20</button>
-                       </div>
-                    </div>
-                  </div>
-                </div>
+        <% @catalog.super_cats.each do |z|%>
+            <% z.categories.each do |g|%>
 
                 <div class="column all-95 order-r3  half-top-space condensed">
-                  <button id="ConsTog" class="PlanTog ink-button all-100" onclick="showCat('Cons')">Concentration</button>
-                  <div id="Cons" class="Category ink-flex half-top-space">
+                  <button id="<%=g.id%>-Tog" class="PlanTog ink-button all-100" onclick="showCat('<%=g.id%>-Cat')"><%=g.name %></button>
+                  <div id="<%=g.id%>-Cat" class="Category ink-flex half-top-space  <% if k == 0 %> red <% elsif k == 1 %> green <% elsif k == 2 %> orange <% else %> blue <% end %>">
                     <div class="column-group all-95  push-center push-middle half-top-space">
-                      <div class="all-100"><h5>Management Information Systems Core</h5></div>
-                      <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
-                        <button id="Bus4_92-B" class="PlanCourseB ink-button align-center order-1" onclick="showCard('Bus4_92-CC')">Bus4<br>92</button>
-                        <button id="Bus4_110A-B" class="PlanCourseB ink-button align-center order-2" onclick="showCard('Bus4_110A-CC')">Bus4<br>110A</button>
-                        <button id="Bus4_110B-B" class="PlanCourseB ink-button align-center order-3" onclick="showCard('Bus4_110B-CC')">Bus4<br>110B</button>
-                      </div>
+
+                      <%# g.sub_categories.each do |j|%>
+                      <%# if j.courses.count > 0 %>
+                      <% if z.name == 'General Education' %>
+
+                          <!-- GE-->
+                          <div class="all-100 half-left-padding"><h5><%=g.name %></h5></div>
+                          <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
+                            <% i = 0 %>
+                            <% g.sub_categories.each do |j|%>
+
+                                <button id="<%=j.name%>-B" class="PlanCourseB ink-button align-center order-1" onclick="
+                                clearClassCards();
+                                        <% j.courses.each do |c|%>
+                                        fadeInClassCard('<%=c.id%>-CC');
+                                        <% end %>
+                                "><%=j.name.gsub(/ /, '<br/>').html_safe%></button>
+                                <%if i > 1
+                                    i = 0 %>
+                                    <br>
+                                <%else
+                                    i = i + 1
+                                  end %>
+                            <% end %>
+                          </div>
+                          <!-- GE END-->
+
+                      <% else %>
+
+                          <!-- NON-GE-->
+                          <% g.sub_categories.each do |j|%>
+                              <div class="all-100 half-left-padding"><h5><%=j.name %></h5></div>
+                              <div class="PlanButtonDiv gutters all-100 align-center condensed-200 small half-bottom-space">
+
+                                <% i = 0 %>
+                                <% j.courses.each do |c|%>
+                                    <button id="<%=c.id%>-B" class="PlanCourseB ink-button align-center order-1" onclick="showClassCard('<%=c.id%>-CC')"><%=c.abbrev.gsub(/ /, '<br/>').html_safe%></button>
+
+                                    <%if i > 1
+                                        i = 0 %>
+                                        <br>
+                                    <%else
+                                        i = i + 1
+                                      end %>
+
+                                <% end %>
+                              </div>
+                          <% end %>
+                          <!-- NON-GE END-->
+
+                      <% end %>
+
+                      <% #end %>
+                      <% #end %>
+
                     </div>
                   </div>
                 </div>
+                <%if k < 4
+                    k += 1
+                  else
+                    k = 0
+                  end %>
 
-            </div>
-            <div class="clearfix_25"></div>
-          </div>
-      <!-- END PLANS-->
+            <% end %>
+        <% end %>
 
-      <!-- COURSES-->
-          <div id="C" class="tabs-content">
-            <div class="column-group all-95 push-center">
-              <!-- SEARCH-->
-              <div class="column all-100 push-middle">
-                  <form class="search ink-form">
-                        <div class="control-group column-group horizontal-gutters half-left-space half-top-space">
-                          <label for="seach" class="all-20 align-left">Search:</label>
-                          <div class="control xlarge-70 large-100 medium-100 small-100 tiny-100 ">
-                            <input type="text" name="search" id="search">
-                          </div>
-                        </div>
-                  </form>
-              </div>
-              <!-- CLASS CARDs-->
-              <div class="ClassCards ink-flex all-100">
-                  <div class="column-group all-100">
-
-                    <!--COURSE FROM PLAN ADD RED-->
-                    <!-- CC-->
-                    <div id="A1-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                          <p>A1</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                          <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                        <ul id="A1-CCD" class="droppable-CC all-100 half-left-space red">
-                          <li id="Course" class="ink-label push-middle align-center red">
-                            A1
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!--END CC -->
-                    <!-- CC-->
-                    <div id="A2-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                          <p>A2</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                          <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                        <ul id="A2-CCD" class="droppable-CC all-100 half-left-space red">
-                          <li id="Course" class="ink-label push-middle align-center red">
-                            A2
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!--END CC -->
-                    <!-- CC-->
-                    <div id="A3-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                          <p>A3</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                          <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                        <ul id="A3-CCD" class="droppable-CC all-100 half-left-space red">
-                          <li id="Course" class="ink-label push-middle align-center red">
-                            A3
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!--END CC -->
-
-                    <!--COURSE FROM PLAN ADD ORANGE-->
-                    <!-- CC-->
-                    <div id="Math71-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                            <p>Calculus for Business and Aviation</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                            <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>Functions and graphs, limits, continuity, differentiation, integration, partial differentiation. Emphasis on business and economics applications.</p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                          <ul id="Math71-CCD" class="droppable-CC all-100 half-left-space orange">
-                            <li id="Course" class="ink-label push-middle align-center orange">
-                              Math<br>71
-                            </li>
-                          </ul>
-                      </div>
-                    </div>
-                    <!-- END CC -->
-                    <!-- CC-->
-                    <div id="Engl2-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                          <p>Critical Thinking and Writing</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                          <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>English 2 is a course that focuses on the relationship between language and logic in composing arguments. Students learn various methods of effective reasoning and appropriate rhetorical strategies to help them invent, demonstrate, and express arguments clearly, logically, and persuasively.</p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                        <ul id="Engl2-CCD" class="droppable-CC all-100 half-left-space orange">
-                          <li id="Course" class="ink-label push-middle align-center orange">
-                            Engl<br>2
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- END CC -->
-                    <!-- CC-->
-                    <div id="Bus1_20-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                          <p>Financial Accounting</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                          <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>Accounting postulates and principles; application of accounting theory to accumulate and summarize financial data; critical analysis and interpretation of financial statements.</p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                        <ul id="Bus1_20-CCD" class="droppable-CC all-100 half-left-space orange">
-                          <li id="Course" class="ink-label push-middle align-center orange">
-                            Bus1<br>20
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- END CC -->
-
-                    <!--COURSE FROM PLAN ADD BLUE-->
-                    <!-- CC-->
-                    <div id="Bus4_92-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                          <p>Introduction to Business Programming</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                          <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>Analysis of business problems to design and implement the software component of an information system. Emphasis on structured design and programming. Introduction to visual programming languages.</p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                        <ul id="Bus4_92-CCD" class="droppable-CC all-100 half-left-space blue">
-                          <li id="Course" class="ink-label push-middle align-center blue">
-                            Bus4<br>92
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- END CC -->
-                    <!-- CC-->
-                    <div id="Bus4_110A-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                          <p>Fundamentals of Management Information Systems</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                          <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>Prepares students for upper division MIS courses by providing an overview of the strategic and managerial issues involved in the design, implementation, and maintenance of information systems. Includes an introduction to business application programming.</p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                        <ul id="Bus4_110A-CCD" class="droppable-CC all-100 half-left-space blue">
-                          <li id="Course" class="ink-label push-middle align-center blue">
-                            Bus4<br>110A
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- END CC -->
-                    <!-- CC-->
-                    <div id="Bus4_110B-CC" class="ClassCard column all-100 horizontal-gutters half-top-space">
-                      <div class="all-70 push-right half-top-space">
-                        <div class="all-60 push-left align-left large order-r2">
-                          <p>Systems Analysis and Design</p>
-                        </div>
-                        <div class="all-30 push-left align-right large order-r3">
-                          <p>Units: 3</p>
-                        </div>
-                        <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4">
-                          <p>Introduction to systems development methodologies, techniques and tools. Emphasis on enterprise, process, data and object modeling techniques. Students use UML and prototyping tools to analyze and design an information system. </p>
-                        </div>
-                      </div>
-                      <div class="all-30 push-left order-r1">
-                        <ul id="Bus4_110B-CCD" class="droppable-CC all-100 half-left-space blue">
-                          <li id="Course" class="ink-label push-middle align-center blue">
-                            Bus4<br>110B
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- END CC -->
-
-                  </div>
-              </div>
-              <!-- END CLASS CARD-->
-            </div>
-            <div class="clearfix_25"></div>
-          </div>
-      <!-- END COURSES-->
 
       </div>
-      <!-- END TABS-->
     </div>
-    <!-- END POTS-->
-<!-- <button id="delete" class="delete ink-button small" onclick="removeClass()">X</button>-->
+    <!-- END PLANS-->
+
+    <!--SEMESTER-->
+    <div class="PlannerHolder column-group xlarge-45 large-45 medium-100 small-100 tiny-100 top-padding">
+      <div class="Planner all-100 align-center">
+        <!--<div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>-->
+
+        <!-- SEMESTER DROP -->
+        <div id="Semesters" class="half-right-padding"  style="overflow: auto; max-height: 735px;">
+          <div  class="Semester column-group all-100" >
+            <div class="all-100" style="padding-top: 0px;">
+              <p class="tip" style="padding-top: 0px;">Fall 2015</p>
+              <ul id="Fall2015" class="droppable-2 all-100">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--END SEMESTER DROP-->
+
+        <!-- ADD SEMESTER BUTTON-->
+        <div class="column all-100 align-right half-top-space half-bottom-space condensed">
+          <button id="SemAdd" class="ink-button align-center order-3">+</button>
+        </div>
+        <!-- END ADD SEMESTER BUTTON-->
+
+      </div>
+    </div>
+    <!--END SEMESTER -->
+
+    <!-- COURSES-->
+    <div class="ClassCardHolder column-group xlarge-30 large-30 medium-100 small-100 tiny-100 half-top-space half-top-padding">
+      <div class="PotB all-100 push-left">
+        <!-- SEARCH-->
+        <div class="column all-100">
+          <form class="search ink-form">
+            <div class="control-group column-group half-top-space half-left-padding half-top-padding half-right-padding half-bottom-padding">
+              <label for="seach" class="all-20 push-left ">Search</label>
+              <div class="control xlarge-75 large-75 medium-100 small-100 tiny-100 half-left-padding">
+                <input type="text" name="search" id="search">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- CLASS CARDs -->
+        <div class="ClassCards ink-flex all-100">
+          <div id="CCD" class="column-group all-100 half-top-space half-left-padding half-right-padding" style="overflow: auto; max-height: 650px;">
+
+            <!--<div class="frame">-->
+            <!--<ul class="slidee">-->
+
+            <!-- CLASSCARDS-->
+            <% i = 0 %>
+            <% @catalog.super_cats.each do |z|%>
+                <% z.categories.each do |g|%>
+
+                    <% g.sub_categories.each do |j|%>
+
+                        <% j.courses.each do |c|%>
+
+
+                            <!--<li>-->
+                            <div id="<%=c.id%>-CC" class="ClassCard column all-100 horizontal-gutters">
+                              <div class="all-70 push-right half-top-space">
+                                <div class="CCTitle all-60 push-left align-left large order-r2">
+                                  <p><%=c.name%></p>
+                                </div>
+                                <div class="all-30 push-left align-right large order-r3">
+                                  <p><%=c.units%></p>
+                                </div>
+                                <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4  half-right-padding">
+                                  <p><%=c.desc%></p>
+                                </div>
+                              </div>
+                              <div class="all-30 push-left order-r1">
+                                <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>">
+                                  <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
+                                    <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <!--</li>-->
+
+
+                        <% end %>
+
+                    <% end %>
+                    <% if i < 4
+                         i += 1
+                       else
+                         i = 0
+                       end%>
+                <% end %>
+            <% end %>
+
+            <!--</ul>-->
+            <!--</div>-->
+            <!-- END CLASSCARDS-->
+
+
+          </div>
+        </div>
+        <!-- END CLASS CARD-->
+      </div>
+      <!-- END COURSES-->
+      <!-- <button id="delete" class="delete ink-button small" onclick="removeClass()">X</button>-->
+    </div>
+
+  </div>
 </div>
 
-<script>
+<script type="text/javascript">
     Ink.requireModules([
         'Ink.UI.Draggable_1',
         'Ink.UI.Droppable_1',
         'Ink.UI.Toggle_1',
         'Ink.Dom.Loaded_1',
         'Ink.Dom.Event_1',
-        'Ink.Dom.Selector_1',
-        'Ink.UI.Tabs_1'], function (Draggable, Droppable, Toggle, Loaded, InkEvent, Selector, Tabs ) {
-
+        'Ink.Dom.Selector_1'], function (Draggable, Droppable, Toggle, Loaded, InkEvent, Selector) {
 //          COURSE FROM PLAN ADD
-        new Draggable('#A1-CCD li', {});
-        Droppable.add('#A1-CCD', {onDrop: 'move', onDropOut: 'revert'});
-        new Draggable('#A2-CCD li', {});
-        Droppable.add('#A2-CCD', {onDrop: 'move', onDropOut: 'revert'});
-        new Draggable('#A3-CCD li', {});
-        Droppable.add('#A3-CCD', {onDrop: 'move', onDropOut: 'revert'});
 
-        new Draggable('#Math71-CCD li', {});
-        Droppable.add('#Math71-CCD', {onDrop: 'move', onDropOut: 'revert'});
-        new Draggable('#Engl2-CCD li', {});
-        Droppable.add('#Engl2-CCD', {onDrop: 'move', onDropOut: 'revert'});
-        new Draggable('#Bus1_20-CCD li', {});
-        Droppable.add('#Bus1_20-CCD', {onDrop: 'move', onDropOut: 'revert'});
-
-        new Draggable('#Bus4_92-CCD li', {});
-        Droppable.add('#Bus4_92-CCD', {onDrop: 'move', onDropOut: 'revert'});
-        new Draggable('#Bus4_110A-CCD li', {});
-        Droppable.add('#Bus4_110A-CCD', {onDrop: 'move', onDropOut: 'revert'});
-        new Draggable('#Bus4_110B-CCD li', {});
-        Droppable.add('#Bus4_110B-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        <% @courses.each do |c| %>
+        new Draggable('#<%=c.id%>-CCD li', {});
+        Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: 'revert'});
+        <%end%>
 
         Droppable.add('#Fall2015', {onDrop: 'move'});
 
-
-        var tabsObj = new Tabs('#Tabs');
-
+//        SEMESTER
+//        var sly = new Sly(document.getElementById('frame'));
 
         var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
         var date = new Date();
         var i = 1;
 
+
         function addSemester(){
             var year = date.getFullYear();
             var newID = semester[i]+year;
             var newDiv =
-                    '<div class="Semester column-group all-95 push-middle order-r4">' +
-                    '<div class="all-100 push-right" style="padding-top: 7px">' +
-                    '<p class="tip">'+ semester[i] + ' ' + year +'</p>' +
+                    '<div id="Semesters">' +
+                    '<div class="Semester column-group all-100">' +
+                    '<div class="all-100" style="padding-top: 0px">' +
+                    '<p class="tip" style="padding-top: 0px;">'+ semester[i] + ' ' + year +'</p>' +
                     '<ul id="'+newID+'" class="droppable-2 all-100">' +
                     '</ul>' +
                     '</div>' +
+                    '</div>'+
                     '</div>';
             newID = '#' + newID;
+
             $("#Semesters").append(newDiv);
+            $(newID).hide();
+            $(newID).fadeIn('fast');
             Droppable.add(newID, {onDrop: 'move'});
             i++;
             if(i == 4){
@@ -400,23 +274,13 @@
 
         }
 
-        function changeTab(id){
-            tabsObj.changeTab('#C');
-        }
         function addEvents() {
 
-//              COURSE FROM PLAN ADD
-            InkEvent.on(Ink.s('#A1-B') ,'click',changeTab);
-            InkEvent.on(Ink.s('#A2-B') ,'click',changeTab);
-            InkEvent.on(Ink.s('#A3-B') ,'click',changeTab);
-
-            InkEvent.on(Ink.s('#Math71-B') ,'click',changeTab);
-            InkEvent.on(Ink.s('#Engl2-B') ,'click',changeTab);
-            InkEvent.on(Ink.s('#Bus1_20-B') ,'click',changeTab);
-
-            InkEvent.on(Ink.s('#Bus4_92-B') ,'click',changeTab);
-            InkEvent.on(Ink.s('#Bus4_110A-B') ,'click',changeTab);
-            InkEvent.on(Ink.s('#Bus4_110B-B') ,'click',changeTab);
+            <% @courses.each do |c| %>
+            InkEvent.on(Ink.i('<%=c.id%>-D') ,'mousedown', function(){
+                $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});
+            });
+            <% end %>
 
             InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
         }
@@ -428,29 +292,31 @@
         });
 
     });
-    //
-    function showCard(id){
-        $("#"+id).siblings().hide();
-        document.getElementById(id).style.display = 'block';
+
+
+    function clearClassCards(){
+        $("#CCD").children().fadeOut('fast').promise()
+    }
+    function fadeInClassCard(id){
+        $("#"+id).fadeIn('slow');
     }
 
-    //        Ink.requireModules([], function (Toggle) {
-    //            new Toggle('#GETog');
-    //            new Toggle('#MajTog');
-    //            new Toggle('#ConsTog');
-    //        })
-    function showCat(id){
-        if(id.localeCompare('GE') != 0)
-            document.getElementById('GE').style.display = 'none';
-        if(id.localeCompare('Maj') != 0)
-            document.getElementById('Maj').style.display = 'none';
-        if(id.localeCompare('Cons') != 0)
-            document.getElementById('Cons').style.display = 'none';
-        var e = document.getElementById(id);
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-        else
-            e.style.display = 'block';
+    function showClassCard(id){
+        $("#"+id).siblings().fadeOut('fast').promise().done(function(){$("#"+id).fadeIn('fast');});
+//        var fade = $("#"+id).siblings().fadeOut('fast').promise();
+//        fade.then(function(){$("#"+id).fadeIn('fast');});
+    }
+
+    function showCat(id) {
+
+        if (id.localeCompare('GE-Cat') != 0) {$('#GE-Cat').slideUp('fast');}
+        <% @catalog.super_cats.each do |z|%>
+        <% z.categories.each do |g|%>
+        if (id.localeCompare('<%=g.id%>-Cat') != 0) {$('#<%=g.id%>-Cat').slideUp('fast');}
+        <% end %>
+        <% end %>
+        $('#' + id).slideToggle('fast');
+
     }
 
     function removeClass(){
@@ -460,3 +326,5 @@
     }
 
 </script>
+
+

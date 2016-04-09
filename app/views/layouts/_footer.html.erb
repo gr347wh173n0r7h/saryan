@@ -6,13 +6,14 @@
         <ul class="inline">
           <li><%= link_to("Home", root_path) %></li>
           <li><%= link_to("About", about_path) %></li>
-          <li><%= link_to("Login", login_path) %></li>
-          <li><%= link_to("Register", register_path) %></li>
-          <li>
             <% if logged_in? %>
-                <%= link_to("Logout", logout_path) %>
+              <li><%= link_to("Planner", planner_new_path) %></li>
+              <li><%= link_to("Account", current_user) %></li>
+              <li><%= link_to("Logout", logout_path, method: "delete") %></li>
+            <% else %>
+              <li><%= link_to("Login", login_path) %></li>
+              <li><%= link_to("Register", register_path) %></li>
             <% end %>
-          </li>
         </ul>
       </div>
       <div class="all-50 push-right align-right push-middle right-padding">
