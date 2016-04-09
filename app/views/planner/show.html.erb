@@ -138,7 +138,7 @@
                            i = 3
                         end
                         %>
-                            <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
+                            <li id="<%=c.id%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
                               <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
                             </li>
                         <% end %>
@@ -320,6 +320,13 @@
                 $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});
             });
             <% end %>
+            <% @plan.semesters.each do |s| %>
+                <% s.courses.each do |c| %>
+            InkEvent.on(Ink.i('<%=c.id%>-PD') ,'mousedown', function(){
+                $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});
+            });
+                <%end%>
+            <%end%>
 
             InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
         }
