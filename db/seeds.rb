@@ -466,7 +466,6 @@ saved_plan.each do |name, major|
 end
 
 semester_list = [
-
     [SavedPlan.find_by_major("BA: MIS").id, "Fall 2016", 2016, 16],
     [SavedPlan.find_by_major("BA: MIS").id, "Spring 2017", 2017, 16],
     [SavedPlan.find_by_major("BA: MIS").id, "Fall 2017", 2017, 17],
@@ -477,10 +476,9 @@ semester_list = [
     [SavedPlan.find_by_major("BA: MIS").id, "Spring 2020", 2020, 15]
 ]
 
-semester_list.each do |saved_id, name, units|
-  Semester.create(saved_plan_id:saved_id, name:name, units:units)
+semester_list.each do |saved_id, name, year, units|
+  Semester.create(saved_plan_id:saved_id, name:name, year:year, units:units)
 end
-
 
 
 mis_4year_plan = [
