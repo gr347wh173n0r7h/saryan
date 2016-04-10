@@ -243,6 +243,11 @@
                 $('#<%=c.id%>-B').css("color", "black");
                 $('#<%=c.id%>-B').css("border-style", "dashed");
                 $('#<%=c.id%>-B').css("box-shadow", "none");
+            } else {
+                $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
+                $('#<%=c.sub_category.name%>-B').css("color", "black");
+                $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
+                $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
             }
         }});
         Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: 'revert'});
