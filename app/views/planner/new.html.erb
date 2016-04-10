@@ -7,7 +7,7 @@
 <% provide(:title, 'PLanner') %>
 <div xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html"></div>
-<div class="ink-grid">
+<div id="PlanPage" class="ink-grid" style="display: none">
   <div class="column-group half-top-padding half-horizontal-gutters">
 
     <!-- INFO PANEL-->
@@ -289,6 +289,7 @@
         }
         Loaded.run(function() {
             initProject();
+            $("#PlanPage").fadeIn(1000);
         });
 
     });

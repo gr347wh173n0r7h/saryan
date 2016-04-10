@@ -7,7 +7,7 @@
 <% provide(:title, 'PLanner') %>
 <div xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html"></div>
-<div class="ink-grid">
+<div id= "PlanPage" class="ink-grid" style="display: none">
   <div class="column-group half-top-padding half-horizontal-gutters">
 
     <!-- INFO PANEL-->
@@ -256,32 +256,34 @@
 
         <% @courses.each do |c| %>
         new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
-            hidePD('#<%=c.id%>-PD');
-        }});
-        Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: 'revert'});
+                if(document.getElementById('<%=c.id%>-PD')) {
+                    hidePD('#<%=c.id%>-PD');
+                }
+//                var index = $("#<%=c.id%>-PD").parent().index(Ink.i("<%=c.id%>-PD"))
+            }, onStart: function(){
+                if(document.getElementById('<%=c.id%>-PD')) {
+                    Ink.i("<%=c.id%>-PD").style["box-shadow"] = "0px 0px 7px black";
+                }
+            }
+        });
+        Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: revert1(<%=c.id%>)});
         <%end%>
 
+        function revert1(id){
+            id = id+'-PD';
+            if(document.getElementById(id)) {
+                console.log('here');
+                showPD('#' + id);
+            }
+            return 'revert'
+        }
+;
 //        Droppable.add('#Fall 2015-S', {onDrop: 'move'});
 
         <% @plan.semesters.all.each do |s| %>
 //         Droppable.add('#<%=s.name.gsub(" ", "-")%>-S', {onDrop: 'move'});
-            Droppable.add('#<%=s.name.gsub(" ", "-")%>-S', {onDrop: dropCheck()});
+            Droppable.add('#<%=s.name.gsub(" ", "-")%>-S', {onDrop: 'move'});
         <% end %>
-
-        function dropCheck(id){
-//            var dId = draggableElement.id;
-//            dId.replace("-D", "-PD");
-//            hidePD(dId);
-            return 'move'
-        }
-
-//        SEMESTER
-//        var sly = new Sly(document.getElementById('frame'));
-
-
-//        var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
-//        var date = new Date();
-//        var i = 1;
 
         var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
         var date = new Date();
@@ -326,15 +328,11 @@
         function addEvents() {
 
             <% @courses.each do |c| %>
-            InkEvent.on(Ink.i('<%=c.id%>-D') ,'mousedown', function(){
-                $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});
-            });
+                InkEvent.on(Ink.i('<%=c.id%>-D') ,'mousedown', function(){$("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});});
             <% end %>
             <% @plan.semesters.each do |s| %>
                 <% s.courses.each do |c| %>
-                    InkEvent.on(Ink.i('<%=c.id%>-PD') ,'mousedown', function(){
-                        $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});
-                    });
+                    InkEvent.on(Ink.i('<%=c.id%>-PD') ,'mousedown', function(){$("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});});
                 <%end%>
             <%end%>
 
@@ -345,6 +343,7 @@
         }
         Loaded.run(function() {
             initProject();
+            $("#PlanPage").fadeIn(1000);
         });
 
     });
