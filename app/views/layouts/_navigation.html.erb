@@ -13,7 +13,7 @@
       <li class="heading"><%= link_to("About", about_path) %></li>
 
       <% if logged_in? %>
-          <li class="heading"><%= link_to("Planner", planner_new_path) %></li>
+          <li class="heading"><%= link_to("Planner", planner_path) %></li>
           <li class="heading"><%= link_to("Account", current_user) %></li>
           <li class="heading"><%= link_to("Logout", logout_path, method: "delete") %></li>
       <% else %>
@@ -31,7 +31,7 @@
     <li class="heading"><%= link_to("About", about_path) %></li>
 
     <% if logged_in? %>
-        <li class="heading"><%= link_to("Planner", planner_new_path) %></li>
+        <li class="heading"><%= link_to("Planner", planner_path) %></li>
         <li class="heading"><%= link_to("Profile", current_user) %></li>
         <li class="heading"><%= link_to("Logout", logout_path, method: "delete") %></li>
     <% else %>

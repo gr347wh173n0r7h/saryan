@@ -97,6 +97,17 @@ div.PotB {
     font-weight: 400;
   }
   p {
+    padding-top: 10px;
+  }
+  .PlanSelect{
+    padding-top: 14px;
+  }
+  select{
+    //border-radius: 5px;
+
+    text-align: center;
+    color: black;
+    font-weight: 300;
     font-size: 15px;
   }
 }

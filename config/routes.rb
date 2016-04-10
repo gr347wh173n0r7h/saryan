@@ -24,8 +24,8 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
   #Planner
-  get 'planner' => 'planner#index'
-  get 'planner/new' => 'planner#new'
+  # get 'planner' => 'planner#index'
+  get 'planner' => 'planner#new'
   get 'planner/:id' => 'planner#show', as: 'planner/plan'
   #Academics
   get 'academics' => 'academics#index'

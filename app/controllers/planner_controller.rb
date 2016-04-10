@@ -24,6 +24,7 @@ class PlannerController < ApplicationController
       if @academic.empty?
         redirect_to academics_new_path
       else
+        @plans = SavedPlan.all
         @academic = @academic.take
         @school = School.find(@academic.school_id)
         @major = Major.find(@academic.major_id)
@@ -41,6 +42,7 @@ class PlannerController < ApplicationController
       if @academic.empty?
         redirect_to academics_new_path
       else
+        @plans = SavedPlan.all
         @plan = SavedPlan.find(params[:id])
         @semester = @plan.semesters
         @sem_courses = []
