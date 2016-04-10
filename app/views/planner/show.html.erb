@@ -119,7 +119,7 @@
         <!--<div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>-->
 
             <!-- SEMESTER DROP -->
-            <div id="Semesters" class="half-right-padding"  style="overflow: auto; max-height: 735px;">
+            <div id="Semesters" class="half-right-padding"  style="overflow: auto; max-height: 725px;">
             <% i = 0 %>
               <% @plan.semesters.each do |z|%>
                   <div  class="Semester column-group all-100" >
@@ -255,29 +255,35 @@
 //          COURSE FROM PLAN ADD
 
         <% @courses.each do |c| %>
-        new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
-                if(document.getElementById('<%=c.id%>-PD')) {
-                    hidePD('#<%=c.id%>-PD');
-                }
-//                var index = $("#<%=c.id%>-PD").parent().index(Ink.i("<%=c.id%>-PD"))
+            new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
+                    if(document.getElementById('<%=c.id%>-PD')) {
+                        hidePD('#<%=c.id%>-PD');
+                    }
+                    if(document.getElementById('<%=c.id%>-B')) {
+                        $('#<%=c.id%>-B').css("background", "rgba(0, 0, 0, 0.25) none repeat scroll 0 0");
+                        $('#<%=c.id%>-B').css("border-style", "dashed");
+                    }
+                    if(document.getElementById('<%=c.id%>-PD')) {
+
+                    }
             }, onStart: function(){
-                if(document.getElementById('<%=c.id%>-PD')) {
-                    Ink.i("<%=c.id%>-PD").style["box-shadow"] = "0px 0px 7px black";
+                    if(document.getElementById('<%=c.id%>-PD')) {
+                        $("#<%=c.id%>-PD").addClass('active');
+                    }
                 }
-            }
-        });
-        Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: revert1(<%=c.id%>)});
+            });
+            Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: revert(<%=c.id%>)});
         <%end%>
 
-        function revert1(id){
-            id = id+'-PD';
-            if(document.getElementById(id)) {
-                console.log('here');
-                showPD('#' + id);
+        function revert(id){
+            if(document.getElementById(id+'-PD')) {
+//                showPD('#' + id);
+                $("#" + id +'-PD').removeClass('active');
+                $("#" + id +'-PD').show();
             }
             return 'revert'
         }
-;
+
 //        Droppable.add('#Fall 2015-S', {onDrop: 'move'});
 
         <% @plan.semesters.all.each do |s| %>
