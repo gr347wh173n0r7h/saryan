@@ -256,19 +256,23 @@
 
         <% @courses.each do |c| %>
             new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
-                    if(document.getElementById('<%=c.id%>-PD')) {
-                        hidePD('#<%=c.id%>-PD');
-                    }
-                    if(document.getElementById('<%=c.id%>-B')) {
-                        $('#<%=c.id%>-B').css("background", "rgba(0, 0, 0, 0.25) none repeat scroll 0 0");
-                        $('#<%=c.id%>-B').css("border-style", "dashed");
-                    } else {
-                        $('#<%=c.sub_category.name%>-B').css("background", "rgba(0, 0, 0, 0.25) none repeat scroll 0 0");
-                        $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
-                    }
-                    if(document.getElementById('<%=c.id%>-PD')) {
+                if(document.getElementById('<%=c.id%>-PD')) {
+                    hidePD('#<%=c.id%>-PD');
+                }
+                if(document.getElementById('<%=c.id%>-B')) {
+                    $('#<%=c.id%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
+                    $('#<%=c.id%>-B').css("color", "black");
+                    $('#<%=c.id%>-B').css("box-shadow", "none");
+                    $('#<%=c.id%>-B').css("border-style", "dashed");
+                } else {
+                    $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
+                    $('#<%=c.sub_category.name%>-B').css("color", "black");
+                    $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
+                    $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
+                }
+                if(document.getElementById('<%=c.id%>-PD')) {
 
-                    }
+                }
             }, onStart: function(){
                     if(document.getElementById('<%=c.id%>-PD')) {
                         $("#<%=c.id%>-PD").addClass('active');

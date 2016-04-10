@@ -141,7 +141,7 @@ div.PotB {
   float: inherit;
   position: relative;
   background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
-  box-shadow: 0px 0px 2.5px #fff;
+  box-shadow: 0px 0px 5px #fff;
   border: 1px solid #dad3c6;
   padding: 1em;
   border-radius: 5px;
@@ -151,6 +151,9 @@ div.PotB {
   margin-top: 5px;
   //padding-top: 5em;
   //padding-bottom: .5em;
+}
+.PlanCourseB:hover{
+  box-shadow: 0px 0px 5px #000000;
 }
 .PlanCourseB:active, .PlanCourseB:focus{
   color: black;
