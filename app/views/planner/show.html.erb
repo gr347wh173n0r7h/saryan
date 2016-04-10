@@ -272,10 +272,11 @@
         <% @courses.each do |c| %>
             <%if c.sub_category.category.super_cat.name == "General Education"%>
                 new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
-                    if(document.getElementById('<%=c.sub_category.name%>-PD')) {
+
+                    if(document.getElementById('<%=c.sub_category.name%>-PD') && !$('#<%=c.sub_category.name%>-PD').hasClass('hidden')){
                         hidePD('#<%=c.sub_category.name%>-PD');
                     }
-                    if(document.getElementById('<%=c.sub_category.name%>-B')) {
+                    if(document.getElementById('<%=c.sub_category.name%>-B') && !$('#<%=c.sub_category.name%>-PD').hasClass('hidden')) {
                         $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
                         $('#<%=c.sub_category.name%>-B').css("color", "black");
                         $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
@@ -443,7 +444,9 @@
     }
 
     function hidePD(id){
+        $(id).addClass("hidden");
         $(id).hide();
+        $(id).attr('id', id+'H');
     }
     function showPD(id){
         $(id).show();
