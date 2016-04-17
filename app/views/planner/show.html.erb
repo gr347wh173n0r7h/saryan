@@ -128,41 +128,47 @@
             <% i = 0 %>
             <% s = 0 %>
               <% @plan.semesters.each do |z|%>
-                  <div  class="Semester column-group all-100" >
-                    <div class="all-100" style="padding-top: 0px;">
-                      <p class="tip" style="padding-top: 0px;<%if s ==0 %>font-weight: 600;<%end%>"><%=z.name %></p>
-                      <ul id="<%=z.name.gsub(" ", "-") %>-S" class="droppable-2 all-100">
+                  <%if s % 2 == 0 %>
+                  <div id="<%=z.name.gsub(" ", "-") %>S">
+                  <% end %>
+                      <div id="<%=z.name.gsub(" ", "-") %>SD"  class="Semester column-group all-100" >
+                        <div class="all-100" style="padding-top: 0px;">
+                          <p class="tip" style="padding-top: 0px;<%if s ==0 %>font-weight: 600;<%end%>"><%=z.name %></p>
+                          <ul id="<%=z.name.gsub(" ", "-") %>-S" class="droppable-2 all-100">
 
-                        <% z.courses.each do |c|
-                            if(c.sub_category.category.name == 'Lower Division GE')
-                               i = 0
-                            elsif(c.sub_category.category.name == 'Upper Division GE')
-                               i = 1
-                            elsif(c.sub_category.category.name == 'Core Courses')
-                               i = 2
-                            else
-                               i = 3
-                            end
-                            %>
-                            <% if i <= 1 %>
-                                <li id="<%=c.sub_category.name%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" onclick="
-                                    clearClassCards();
-                                    <% c.sub_category.courses.each do |cc| %>
-                                        fadeInClassCard('<%=cc.id%>-CC');
-                                    <% end %>
-                                ">
-                                  <%=  c.sub_category.name %>
-                                </li>
-                            <% else %>
-                                <li id="<%=c.id%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
-                                  <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
-                                </li>
-                            <% end %>
-                      <% end %>
+                            <% z.courses.each do |c|
+                                if(c.sub_category.category.name == 'Lower Division GE')
+                                   i = 0
+                                elsif(c.sub_category.category.name == 'Upper Division GE')
+                                   i = 1
+                                elsif(c.sub_category.category.name == 'Core Courses')
+                                   i = 2
+                                else
+                                   i = 3
+                                end
+                                %>
+                                <% if i <= 1 %>
+                                    <li id="<%=c.sub_category.name%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" onclick="
+                                        clearClassCards();
+                                        <% c.sub_category.courses.each do |cc| %>
+                                            fadeInClassCard('<%=cc.id%>-CC');
+                                        <% end %>
+                                    ">
+                                      <%=  c.sub_category.name %>
+                                    </li>
+                                <% else %>
+                                    <li id="<%=c.id%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
+                                      <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
+                                    </li>
+                                <% end %>
+                          <% end %>
 
-                      </ul>
-                    </div>
+                          </ul>
+                        </div>
+                      </div>
+                  <%if s % 2 == 1 %>
                   </div>
+                  <% end %>
                   <% s = s + 1 %>
               <%end%>
 
@@ -171,8 +177,12 @@
         <!--END SEMESTER DROP-->
 
         <!-- ADD SEMESTER BUTTON-->
-        <div class="column all-100 align-right half-top-space half-bottom-space condensed">
-          <button id="SemAdd" class="ink-button align-center order-3">+</button>
+        <div id="AddSem" class="column all-100 align-right half-top-space half-bottom-space condensed">
+          <div id="SemP" class="ProgressB align-center">
+            <div id="SemPB" class="ProgressBar align-center"></div>
+            <p>Add Semester</p>
+          </div>
+          <!--<button id="SemAdd" class="ink-button align-center order-3">+</button>-->
         </div>
         <!-- END ADD SEMESTER BUTTON-->
 
@@ -344,45 +354,111 @@
             Droppable.add('#<%=s.name.gsub(" ", "-")%>-S', {onDrop: 'move'});
         <% end %>
 
+        $("#SemP").hover(function(){
+            window.mytimeout = setTimeout(function(){
+                moveBar("#SemPB","#SemP");
+                addSemester();
+            }, 500);
+        }, function(){clearTimeout(
+                window.mytimeout);
+        });
+
         var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
         var date = new Date();
         var i = 0;
         date.setYear(<%= @plan.semesters.last.year %>);
         if("<%= @plan.semesters.last.name[0] %>" == "F" ){
-            var i = 1;
-        } else {
             var i = 3;
+            date.setYear(date.getFullYear() + 1);
+        } else {
+            var i = 0;
         }
 
         function addSemester(){
             var year = date.getFullYear();
-            var newID = semester[i]+"-"+year+"-S";
+            var newID = semester[i]+(year);
+            var newID2 = semester[i+1]+(year);
             var newDiv =
-//                    '<div id="Semesters">' +
-                    '<div class="Semester column-group all-100">' +
-                    '<div class="all-100" style="padding-top: 0px">' +
-                    '<p class="tip" style="padding-top: 0px;">'+ semester[i] + ' ' + year +'</p>' +
+                    '<div id="'+newID+'S"style="display: none;">' +
+                    '<div id="'+newID+'SD" class="Semester column-group all-100">' +
+                    '<div class="all-100" style="padding-top: 0px;">' +
+                    '<p class="tip condensed" style="padding-top: 0px;">'+ semester[i] + ' ' + year +'</p>' +
                     '<ul id="'+newID+'" class="droppable-2 all-100">' +
                     '</ul>' +
                     '</div>' +
+                    '</div>' +
+                    '<div id="'+newID2+'S" class="Semester column-group all-100" style="min-height: 15px;">' +
+                    '<div id="'+newID2+'SD" class="all-100" style="padding-top: 0px; display: none;">' +
+                    '<p class="tip condensed" style="padding-top: 0px;">'+ semester[i + 1] + ' ' + year +'</p>' +
+                    '<ul id="'+newID2+'" class="droppable-2 all-100">' +
+                    '</ul>' +
+                    '</div>'+
+                    '<div id="'+newID2+'P" class="Progress">' +
+                    '<div id="'+newID2+'PB" class="ProgressBar"></div>' +
+                    '</div>' +
+                    '</div>'+
                     '</div>';
-//                    '</div>';
             newID = '#' + newID;
-
+            newID2 = '#' + newID2;
+            var newIDS = newID + 'S';
             $("#Semesters").append(newDiv);
-            $(newID).hide();
-            $(newID).fadeIn('fast');
+            $(newIDS).slideDown(1000);
+
             Droppable.add(newID, {onDrop: 'move'});
-            i++;
-            if(i == 4){
+            Droppable.add(newID2, {onDrop: 'move'});
+
+            var newID2S =  newID2 + 'S';
+            var newID2SD = newID2 + 'SD';
+            var newID2P =  newID2 + 'P';
+            var newID2PB = newID2 + 'PB';
+//            $(newID2S).hover(function(){
+//                $(newID2SD).slideDown("slow");
+//            });
+
+            $(newID2S).hover(function(){
+                window.mytimeout = setTimeout(function(){
+                    moveBar(newID2PB,newID2P);
+                    $(newID2SD).slideDown(1000);
+                }, 500);
+            }, function(){clearTimeout(window.mytimeout);});
+
+            i = i + 2;
+            if(i >= 4){
                 i = 0;}
             else if(i == 2){
                 date.setYear(year + 1);}
 
-            var d = $('#Semesters');
-            d.scrollTop(d.prop("scrollHeight"));
-
         }
+
+//        function addSemester(){
+//            var year = date.getFullYear();
+//            var newID = semester[i]+"-"+year+"-S";
+//            var newDiv =
+////                    '<div id="Semesters">' +
+//                    '<div class="Semester column-group all-100">' +
+//                    '<div class="all-100" style="padding-top: 0px">' +
+//                    '<p class="tip" style="padding-top: 0px;">'+ semester[i] + ' ' + year +'</p>' +
+//                    '<ul id="'+newID+'" class="droppable-2 all-100">' +
+//                    '</ul>' +
+//                    '</div>' +
+//                    '</div>';
+////                    '</div>';
+//            newID = '#' + newID;
+//
+//            $("#Semesters").append(newDiv);
+//            $(newID).hide();
+//            $(newID).fadeIn('fast');
+//            Droppable.add(newID, {onDrop: 'move'});
+//            i++;
+//            if(i == 4){
+//                i = 0;}
+//            else if(i == 2){
+//                date.setYear(year + 1);}
+//
+//            var d = $('#Semesters');
+//            d.scrollTop(d.prop("scrollHeight"));
+
+//        }
 
         function addEvents() {
 
@@ -402,7 +478,7 @@
             <%end%>
             <%end%>
 
-            InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
+//            InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
         }
         function initProject(){
             addEvents();
@@ -453,6 +529,28 @@
     }
     function showPD(id){
         $(id).show();
+    }
+
+    function moveBar(barId, progId) {
+        var elem = document.getElementById(barId.substring(1,barId.length));
+        var elem2 = document.getElementById(progId.substring(1,progId.length));
+        var width = 1;
+        var id = setInterval(frame,.5);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                if(progId.localeCompare("#SemP") == 0){
+                    elem.style.width = 0 + '%';
+                } else {
+                    $(progId).slideUp();
+                }
+//                elem.style.display = 'none';
+//                elem2.style.display = 'none';
+            } else {
+                width++;
+                elem.style.width = width + '%';
+            }
+        }
     }
 
 </script>
