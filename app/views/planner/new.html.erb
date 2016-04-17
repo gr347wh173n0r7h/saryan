@@ -124,19 +124,35 @@
 
         <!-- SEMESTER DROP -->
         <div id="Semesters" class="half-right-padding"  style="overflow: auto; max-height: 725px;">
-          <div  class="Semester column-group all-100" >
-            <div class="all-100" style="padding-top: 0px;">
-              <p class="tip" style="padding-top: 0px; font-weight: 600">Fall 2016</p>
-              <ul id="Fall2016" class="droppable-2 all-100">
-              </ul>
-            </div>
+          <div id="Fall2016S">
+              <div id="Fall2016SD" class="Semester column-group all-100" >
+                <div class="all-100" style="padding-top: 0px;">
+                  <p class="tip condensed" style="padding-top: 0px; font-weight: 600">Fall 2016</p>
+                  <ul id="Fall2016" class="droppable-2 all-100">
+                  </ul>
+                </div>
+              </div>
+              <div id="Winter2016S" class="Semester column-group all-100" style="min-height: 15px;">
+                <div id="Winter2016SD" class="all-100" style="padding-top: 0px; display: none;">
+                  <p class="tip condensed" style="padding-top: 0px;">Winter 2016</p>
+                  <ul id="Winter2016" class="droppable-2 all-100">
+                  </ul>
+                </div>
+                <div id="Winter2016P" class="Progress">
+                  <div id="Winter2016PB" class="ProgressBar"></div>
+                </div>
+              </div>
           </div>
         </div>
         <!--END SEMESTER DROP-->
 
         <!-- ADD SEMESTER BUTTON-->
-        <div class="column all-100 align-right half-top-space half-bottom-space condensed">
-          <button id="SemAdd" class="ink-button align-center order-3">+</button>
+        <div id="AddSem" class="column all-100 push-left half-top-space half-bottom-space condensed" style="padding-right: 1em;">
+          <div id="SemP" class="ProgressB align-center">
+            <div id="SemPB" class="ProgressBar align-center"></div>
+            <p>Add Semester</p>
+          </div><br>
+          <!--<button id="SemAdd" class="ink-button all-100 align-center order-3">+</button>-->
         </div>
         <!-- END ADD SEMESTER BUTTON-->
 
@@ -145,7 +161,7 @@
     <!--END SEMESTER -->
 
     <!-- COURSES-->
-    <div class="ClassCardHolder column-group xlarge-30 large-30 medium-100 small-100 tiny-100 half-top-space half-top-padding">
+    <div class="ClassCardHolder column-group xlarge-30 large-30 medium-100 small-100 tiny-100 half-top-space half-top-padding ">
       <div class="PotB all-100 push-left">
         <!-- SEARCH-->
         <div class="column all-100">
@@ -254,36 +270,86 @@
         <%end%>
 
         Droppable.add('#Fall2016', {onDrop: 'move'});
+        Droppable.add('#Winter2016', {onDrop: 'move'});
 
 //        SEMESTER
 //        var sly = new Sly(document.getElementById('frame'));
 
+//        $("#Winter2016S").hover(function(){
+//            $("#Winter2016SD").slideDown("slow");
+//        });
+        $("#SemP").hover(function(){
+            window.mytimeout = setTimeout(function(){
+                moveBar("#SemPB","#SemP");
+                addSemester();
+            }, 500);
+        }, function(){clearTimeout(
+            window.mytimeout);
+//            addSemester();
+        });
+
+        $("#Winter2016S").hover(function(){
+            window.mytimeout = setTimeout(function(){
+                moveBar("#Winter2016PB","#Winter2016P");
+                $("#Winter2016SD").slideDown(1000);
+            }, 500);}, function(){clearTimeout(window.mytimeout);});
+
         var semester = ['Fall', 'Winter', 'Spring', 'Summer'];
         var date = new Date();
-        var i = 1;
+        var i = 2;
+        date.setYear(date.getFullYear() + 1);
 
 
         function addSemester(){
             var year = date.getFullYear();
-            var newID = semester[i]+year;
+            var newID = semester[i]+(year);
+            var newID2 = semester[i+1]+(year);
             var newDiv =
-                    '<div id="Semesters">' +
-                    '<div class="Semester column-group all-100">' +
-                    '<div class="all-100" style="padding-top: 0px">' +
-                    '<p class="tip" style="padding-top: 0px;">'+ semester[i] + ' ' + year +'</p>' +
-                    '<ul id="'+newID+'" class="droppable-2 all-100">' +
-                    '</ul>' +
-                    '</div>' +
-                    '</div>'+
+                    '<div id="'+newID+'S"style="display: none;">' +
+                        '<div id="'+newID+'SD" class="Semester column-group all-100">' +
+                            '<div class="all-100" style="padding-top: 0px;">' +
+                                '<p class="tip condensed" style="padding-top: 0px;">'+ semester[i] + ' ' + year +'</p>' +
+                                '<ul id="'+newID+'" class="droppable-2 all-100">' +
+                                '</ul>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div id="'+newID2+'S" class="Semester column-group all-100" style="min-height: 15px;">' +
+                            '<div id="'+newID2+'SD" class="all-100" style="padding-top: 0px; display: none;">' +
+                                '<p class="tip condensed" style="padding-top: 0px;">'+ semester[i + 1] + ' ' + year +'</p>' +
+                                '<ul id="'+newID2+'" class="droppable-2 all-100">' +
+                            '</ul>' +
+                            '</div>'+
+                            '<div id="'+newID2+'P" class="Progress">' +
+                                '<div id="'+newID2+'PB" class="ProgressBar"></div>' +
+                            '</div>' +
+                        '</div>'+
                     '</div>';
             newID = '#' + newID;
-
+            newID2 = '#' + newID2;
+            var newIDS = newID + 'S';
             $("#Semesters").append(newDiv);
-            $(newID).hide();
-            $(newID).fadeIn('fast');
+            $(newIDS).slideDown(1000);
+
             Droppable.add(newID, {onDrop: 'move'});
-            i++;
-            if(i == 4){
+            Droppable.add(newID2, {onDrop: 'move'});
+
+            var newID2S =  newID2 + 'S';
+            var newID2SD = newID2 + 'SD';
+            var newID2P =  newID2 + 'P';
+            var newID2PB = newID2 + 'PB';
+//            $(newID2S).hover(function(){
+//                $(newID2SD).slideDown("slow");
+//            });
+
+            $(newID2S).hover(function(){
+                window.mytimeout = setTimeout(function(){
+                    moveBar(newID2PB,newID2P);
+                    $(newID2SD).slideDown(1000);
+                }, 500);
+            }, function(){clearTimeout(window.mytimeout);});
+
+            i = i + 2;
+            if(i >= 4){
                 i = 0;}
             else if(i == 2){
                 date.setYear(year + 1);}
@@ -298,7 +364,7 @@
             });
             <% end %>
 
-            InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
+//            InkEvent.on(Ink.s('#SemAdd') ,'click',addSemester);
         }
         function initProject(){
             addEvents();
@@ -340,6 +406,28 @@
         var elem = document.getElementById('Course');
         elem.parentNode.removeChild(elem);
         return false;
+    }
+
+    function moveBar(barId, progId) {
+        var elem = document.getElementById(barId.substring(1,barId.length));
+        var elem2 = document.getElementById(progId.substring(1,progId.length));
+        var width = 1;
+        var id = setInterval(frame,.5);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                if(progId.localeCompare("#SemP") == 0){
+                    elem.style.width = 0 + '%';
+                } else {
+                    $(progId).slideUp();
+                }
+//                elem.style.display = 'none';
+//                elem2.style.display = 'none';
+            } else {
+                width++;
+                elem.style.width = width + '%';
+            }
+        }
     }
 
 </script>
