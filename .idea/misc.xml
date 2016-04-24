@@ -10,10 +10,5 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/db/migrate/20160424054555_create_minor_lists.rb" />
-    <file url="file://$PROJECT_DIR$/db/migrate/20160424054637_create_minors.rb" />
-    <file url="file://$PROJECT_DIR$/db/migrate/20160424054905_create_major_lists.rb" />
-  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="rbenv: 2.2.3" project-jdk-type="RUBY_SDK" />
 </project>
