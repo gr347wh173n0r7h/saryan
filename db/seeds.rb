@@ -538,7 +538,7 @@ end
 
 saved_plan = [
 
-    ["BA: MIS 4 Year Plan", "BA: MIS"]
+    ["BA: MIS 4 Year Plan", "Management Information Systems"]
 ]
 
 saved_plan.each do |name, major|
@@ -546,14 +546,14 @@ saved_plan.each do |name, major|
 end
 
 semester_list = [
-    [SavedPlan.find_by_major("BA: MIS").id, "Fall 2016", 2016, 16],
-    [SavedPlan.find_by_major("BA: MIS").id, "Spring 2017", 2017, 16],
-    [SavedPlan.find_by_major("BA: MIS").id, "Fall 2017", 2017, 17],
-    [SavedPlan.find_by_major("BA: MIS").id, "Spring 2018", 2018, 16],
-    [SavedPlan.find_by_major("BA: MIS").id, "Fall 2018", 2018, 15],
-    [SavedPlan.find_by_major("BA: MIS").id, "Spring 2019", 2019, 15],
-    [SavedPlan.find_by_major("BA: MIS").id, "Fall 2019", 2019, 15],
-    [SavedPlan.find_by_major("BA: MIS").id, "Spring 2020", 2020, 15]
+    [SavedPlan.find_by_major("Management Information Systems").id, "Fall 2016", 2016, 16],
+    [SavedPlan.find_by_major("Management Information Systems").id, "Spring 2017", 2017, 16],
+    [SavedPlan.find_by_major("Management Information Systems").id, "Fall 2017", 2017, 17],
+    [SavedPlan.find_by_major("Management Information Systems").id, "Spring 2018", 2018, 16],
+    [SavedPlan.find_by_major("Management Information Systems").id, "Fall 2018", 2018, 15],
+    [SavedPlan.find_by_major("Management Information Systems").id, "Spring 2019", 2019, 15],
+    [SavedPlan.find_by_major("Management Information Systems").id, "Fall 2019", 2019, 15],
+    [SavedPlan.find_by_major("Management Information Systems").id, "Spring 2020", 2020, 15]
 ]
 
 semester_list.each do |saved_id, name, year, units|
