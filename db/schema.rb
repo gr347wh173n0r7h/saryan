@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160401050413) do
+ActiveRecord::Schema.define(version: 20160410032827) do
 
   create_table "academics", force: :cascade do |t|
     t.integer  "user_id",       limit: 4
@@ -100,6 +100,18 @@ ActiveRecord::Schema.define(version: 20160401050413) do
 
   add_index "plans", ["catalog_id"], name: "index_plans_on_catalog_id", using: :btree
   add_index "plans", ["course_id"], name: "index_plans_on_course_id", using: :btree
+
+  create_table "prereqs", id: false, force: :cascade do |t|
+    t.integer  "course_id",        limit: 4
+    t.integer  "prereq_course_id", limit: 4
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "prereqs", ["course_id", "prereq_course_id"], name: "index_prereqs_on_course_id_and_prereq_course_id", unique: true, using: :btree
+  add_index "prereqs", ["course_id"], name: "index_prereqs_on_course_id", using: :btree
+  add_index "prereqs", ["prereq_course_id", "course_id"], name: "index_prereqs_on_prereq_course_id_and_course_id", unique: true, using: :btree
+  add_index "prereqs", ["prereq_course_id"], name: "index_prereqs_on_prereq_course_id", using: :btree
 
   create_table "saved_plans", force: :cascade do |t|
     t.string   "name",       limit: 255

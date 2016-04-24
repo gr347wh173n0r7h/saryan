@@ -24,596 +24,641 @@
       <table id="15" parent="1" name="saved_plans"/>
       <table id="16" parent="1" name="semester_refs"/>
       <table id="17" parent="1" name="semesters"/>
-      <column id="18" parent="2" name="id">
+      <table id="18" parent="1" name="prereqs"/>
+      <column id="19" parent="2" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="19" parent="2" name="degree">
+      <column id="20" parent="2" name="degree">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="20" parent="2" name="cat_yr">
+      <column id="21" parent="2" name="cat_yr">
         <data-type>int(11)</data-type>
       </column>
-      <column id="21" parent="2" name="created_at">
+      <column id="22" parent="2" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="22" parent="2" name="updated_at">
+      <column id="23" parent="2" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="23" parent="2" name="index_catalogs_on_cat_yr">
+      <index id="24" parent="2" name="index_catalogs_on_cat_yr">
         <columns>cat_yr</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="24" parent="2" name="PRIMARY">
+      <key id="25" parent="2" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="25" parent="3" name="version">
+      <column id="26" parent="3" name="version">
         <mandatory>1</mandatory>
         <data-type>varchar(255)</data-type>
       </column>
-      <index id="26" parent="3" name="unique_schema_migrations">
+      <index id="27" parent="3" name="unique_schema_migrations">
         <columns>version</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="27" parent="3" name="unique_schema_migrations">
+      <key id="28" parent="3" name="unique_schema_migrations">
         <columns>version</columns>
         <underlying-index>unique_schema_migrations</underlying-index>
       </key>
-      <column id="28" parent="4" name="id">
+      <column id="29" parent="4" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="29" parent="4" name="name">
+      <column id="30" parent="4" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="30" parent="4" name="email">
+      <column id="31" parent="4" name="email">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="31" parent="4" name="status">
+      <column id="32" parent="4" name="status">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="32" parent="4" name="created_at">
+      <column id="33" parent="4" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="33" parent="4" name="updated_at">
+      <column id="34" parent="4" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="34" parent="4" name="password_digest">
+      <column id="35" parent="4" name="password_digest">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="35" parent="4" name="remember_digest">
+      <column id="36" parent="4" name="remember_digest">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="36" parent="4" name="profilephoto_file_name">
+      <column id="37" parent="4" name="profilephoto_file_name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="37" parent="4" name="profilephoto_content_type">
+      <column id="38" parent="4" name="profilephoto_content_type">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="38" parent="4" name="profilephoto_file_size">
+      <column id="39" parent="4" name="profilephoto_file_size">
         <data-type>int(11)</data-type>
       </column>
-      <column id="39" parent="4" name="profilephoto_updated_at">
+      <column id="40" parent="4" name="profilephoto_updated_at">
         <data-type>datetime</data-type>
       </column>
-      <index id="40" parent="4" name="index_users_on_email">
+      <index id="41" parent="4" name="index_users_on_email">
         <columns>email</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="41" parent="4" name="index_users_on_email">
+      <key id="42" parent="4" name="index_users_on_email">
         <columns>email</columns>
         <underlying-index>index_users_on_email</underlying-index>
       </key>
-      <key id="42" parent="4" name="PRIMARY">
+      <key id="43" parent="4" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="43" parent="5" name="id">
+      <column id="44" parent="5" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="44" parent="5" name="dep">
+      <column id="45" parent="5" name="dep">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="45" parent="5" name="name">
+      <column id="46" parent="5" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="46" parent="5" name="abbrev">
+      <column id="47" parent="5" name="abbrev">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="47" parent="5" name="units">
+      <column id="48" parent="5" name="units">
         <data-type>int(11)</data-type>
       </column>
-      <column id="48" parent="5" name="desc">
+      <column id="49" parent="5" name="desc">
         <data-type>text</data-type>
       </column>
-      <column id="49" parent="5" name="sub_category_id">
+      <column id="50" parent="5" name="sub_category_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="50" parent="5" name="created_at">
+      <column id="51" parent="5" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="51" parent="5" name="updated_at">
+      <column id="52" parent="5" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="52" parent="5" name="index_courses_on_sub_category_id">
+      <index id="53" parent="5" name="index_courses_on_sub_category_id">
         <columns>sub_category_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="53" parent="5" name="PRIMARY">
+      <key id="54" parent="5" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="54" parent="5" name="fk_rails_bedfc09192">
+      <foreign-key id="55" parent="5" name="fk_rails_bedfc09192">
         <columns>sub_category_id</columns>
         <ref-key>~.sub_categories.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="55" parent="6" name="id">
+      <column id="56" parent="6" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="56" parent="6" name="name">
+      <column id="57" parent="6" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="57" parent="6" name="abbrev">
+      <column id="58" parent="6" name="abbrev">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="58" parent="6" name="school_id">
+      <column id="59" parent="6" name="school_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="59" parent="6" name="created_at">
+      <column id="60" parent="6" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="60" parent="6" name="updated_at">
+      <column id="61" parent="6" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="61" parent="6" name="index_departments_on_school_id">
+      <index id="62" parent="6" name="index_departments_on_school_id">
         <columns>school_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="62" parent="6" name="PRIMARY">
+      <key id="63" parent="6" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="63" parent="6" name="fk_rails_4ce931b154">
+      <foreign-key id="64" parent="6" name="fk_rails_4ce931b154">
         <columns>school_id</columns>
         <ref-key>~.schools.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="64" parent="7" name="id">
+      <column id="65" parent="7" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="65" parent="7" name="name">
+      <column id="66" parent="7" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="66" parent="7" name="maj_abbrev">
+      <column id="67" parent="7" name="maj_abbrev">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="67" parent="7" name="department_id">
+      <column id="68" parent="7" name="department_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="68" parent="7" name="created_at">
+      <column id="69" parent="7" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="69" parent="7" name="updated_at">
+      <column id="70" parent="7" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="70" parent="7" name="index_majors_on_department_id">
+      <index id="71" parent="7" name="index_majors_on_department_id">
         <columns>department_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="71" parent="7" name="PRIMARY">
+      <key id="72" parent="7" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="72" parent="7" name="fk_rails_4061703021">
+      <foreign-key id="73" parent="7" name="fk_rails_4061703021">
         <columns>department_id</columns>
         <ref-key>~.departments.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="73" parent="8" name="id">
+      <column id="74" parent="8" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="74" parent="8" name="catalog_id">
+      <column id="75" parent="8" name="catalog_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="75" parent="8" name="course_id">
+      <column id="76" parent="8" name="course_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="76" parent="8" name="type">
+      <column id="77" parent="8" name="type">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="77" parent="8" name="created_at">
+      <column id="78" parent="8" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="78" parent="8" name="updated_at">
+      <column id="79" parent="8" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="79" parent="8" name="index_plans_on_catalog_id">
+      <index id="80" parent="8" name="index_plans_on_catalog_id">
         <columns>catalog_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="80" parent="8" name="index_plans_on_course_id">
+      <index id="81" parent="8" name="index_plans_on_course_id">
         <columns>course_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="81" parent="8" name="PRIMARY">
+      <key id="82" parent="8" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="82" parent="9" name="id">
+      <column id="83" parent="9" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="83" parent="9" name="name">
+      <column id="84" parent="9" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="84" parent="9" name="city">
+      <column id="85" parent="9" name="city">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="85" parent="9" name="state">
+      <column id="86" parent="9" name="state">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="86" parent="9" name="created_at">
+      <column id="87" parent="9" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="87" parent="9" name="updated_at">
+      <column id="88" parent="9" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <key id="88" parent="9" name="PRIMARY">
+      <key id="89" parent="9" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="89" parent="10" name="id">
+      <column id="90" parent="10" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="90" parent="10" name="user_id">
+      <column id="91" parent="10" name="user_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="91" parent="10" name="school_id">
+      <column id="92" parent="10" name="school_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="92" parent="10" name="department_id">
+      <column id="93" parent="10" name="department_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="93" parent="10" name="major_id">
+      <column id="94" parent="10" name="major_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="94" parent="10" name="catalog_id">
+      <column id="95" parent="10" name="catalog_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="95" parent="10" name="created_at">
-        <mandatory>1</mandatory>
-        <data-type>datetime</data-type>
-      </column>
-      <column id="96" parent="10" name="updated_at">
+      <column id="96" parent="10" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="97" parent="10" name="index_academics_on_catalog_id">
+      <column id="97" parent="10" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="98" parent="10" name="index_academics_on_catalog_id">
         <columns>catalog_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="98" parent="10" name="index_academics_on_department_id">
+      <index id="99" parent="10" name="index_academics_on_department_id">
         <columns>department_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="99" parent="10" name="index_academics_on_major_id">
+      <index id="100" parent="10" name="index_academics_on_major_id">
         <columns>major_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="100" parent="10" name="index_academics_on_school_id">
+      <index id="101" parent="10" name="index_academics_on_school_id">
         <columns>school_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="101" parent="10" name="index_academics_on_user_id">
+      <index id="102" parent="10" name="index_academics_on_user_id">
         <columns>user_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="102" parent="10" name="PRIMARY">
+      <key id="103" parent="10" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="103" parent="10" name="fk_rails_0b399fef1c">
+      <foreign-key id="104" parent="10" name="fk_rails_0b399fef1c">
         <columns>major_id</columns>
         <ref-key>~.majors.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="104" parent="10" name="fk_rails_51b3d4c90a">
+      <foreign-key id="105" parent="10" name="fk_rails_51b3d4c90a">
         <columns>catalog_id</columns>
         <ref-key>~.catalogs.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="105" parent="10" name="fk_rails_6ee2b6a9e6">
+      <foreign-key id="106" parent="10" name="fk_rails_6ee2b6a9e6">
         <columns>user_id</columns>
         <ref-key>~.users.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="106" parent="10" name="fk_rails_7b6cb8af3b">
+      <foreign-key id="107" parent="10" name="fk_rails_7b6cb8af3b">
         <columns>school_id</columns>
         <ref-key>~.schools.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="107" parent="10" name="fk_rails_c7f8b8ba20">
+      <foreign-key id="108" parent="10" name="fk_rails_c7f8b8ba20">
         <columns>department_id</columns>
         <ref-key>~.departments.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="108" parent="11" name="id">
+      <column id="109" parent="11" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="109" parent="11" name="name">
+      <column id="110" parent="11" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="110" parent="11" name="units">
+      <column id="111" parent="11" name="units">
         <data-type>int(11)</data-type>
       </column>
-      <column id="111" parent="11" name="super_cat_id">
+      <column id="112" parent="11" name="super_cat_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="112" parent="11" name="created_at">
+      <column id="113" parent="11" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="113" parent="11" name="updated_at">
+      <column id="114" parent="11" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="114" parent="11" name="index_categories_on_super_cat_id">
+      <index id="115" parent="11" name="index_categories_on_super_cat_id">
         <columns>super_cat_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="115" parent="11" name="PRIMARY">
+      <key id="116" parent="11" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="116" parent="11" name="fk_rails_cc3e588ca0">
+      <foreign-key id="117" parent="11" name="fk_rails_cc3e588ca0">
         <columns>super_cat_id</columns>
         <ref-key>~.super_cats.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="117" parent="12" name="id">
+      <column id="118" parent="12" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="118" parent="12" name="name">
+      <column id="119" parent="12" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="119" parent="12" name="units">
+      <column id="120" parent="12" name="units">
         <data-type>int(11)</data-type>
       </column>
-      <column id="120" parent="12" name="category_id">
+      <column id="121" parent="12" name="category_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="121" parent="12" name="created_at">
+      <column id="122" parent="12" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="122" parent="12" name="updated_at">
+      <column id="123" parent="12" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="123" parent="12" name="index_sub_categories_on_category_id">
+      <index id="124" parent="12" name="index_sub_categories_on_category_id">
         <columns>category_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="124" parent="12" name="PRIMARY">
+      <key id="125" parent="12" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="125" parent="12" name="fk_rails_8e75c2ee78">
+      <foreign-key id="126" parent="12" name="fk_rails_8e75c2ee78">
         <columns>category_id</columns>
         <ref-key>~.categories.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="126" parent="13" name="id">
+      <column id="127" parent="13" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="127" parent="13" name="name">
+      <column id="128" parent="13" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="128" parent="13" name="units">
+      <column id="129" parent="13" name="units">
         <data-type>int(11)</data-type>
       </column>
-      <column id="129" parent="13" name="catalog_id">
+      <column id="130" parent="13" name="catalog_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="130" parent="13" name="created_at">
+      <column id="131" parent="13" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="131" parent="13" name="updated_at">
+      <column id="132" parent="13" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="132" parent="13" name="index_super_cats_on_catalog_id">
+      <index id="133" parent="13" name="index_super_cats_on_catalog_id">
         <columns>catalog_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="133" parent="13" name="PRIMARY">
+      <key id="134" parent="13" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="134" parent="13" name="fk_rails_a2718716f7">
+      <foreign-key id="135" parent="13" name="fk_rails_a2718716f7">
         <columns>catalog_id</columns>
         <ref-key>~.catalogs.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="135" parent="14" name="id">
+      <column id="136" parent="14" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="136" parent="14" name="name">
+      <column id="137" parent="14" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="137" parent="14" name="user_id">
+      <column id="138" parent="14" name="user_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="138" parent="14" name="created_at">
+      <column id="139" parent="14" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="139" parent="14" name="updated_at">
+      <column id="140" parent="14" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="140" parent="14" name="index_planners_on_user_id">
+      <index id="141" parent="14" name="index_planners_on_user_id">
         <columns>user_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="141" parent="14" name="PRIMARY">
+      <key id="142" parent="14" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="142" parent="14" name="fk_rails_1a1b604a9a">
+      <foreign-key id="143" parent="14" name="fk_rails_1a1b604a9a">
         <columns>user_id</columns>
         <ref-key>~.users.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="143" parent="15" name="id">
+      <column id="144" parent="15" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="144" parent="15" name="name">
+      <column id="145" parent="15" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="145" parent="15" name="major">
+      <column id="146" parent="15" name="major">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="146" parent="15" name="created_at">
+      <column id="147" parent="15" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="147" parent="15" name="updated_at">
+      <column id="148" parent="15" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <key id="148" parent="15" name="PRIMARY">
+      <key id="149" parent="15" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="149" parent="16" name="id">
+      <column id="150" parent="16" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="150" parent="16" name="semester_id">
+      <column id="151" parent="16" name="semester_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="151" parent="16" name="course_id">
+      <column id="152" parent="16" name="course_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="152" parent="16" name="created_at">
-        <mandatory>1</mandatory>
-        <data-type>datetime</data-type>
-      </column>
-      <column id="153" parent="16" name="updated_at">
+      <column id="153" parent="16" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="154" parent="16" name="index_semester_refs_on_course_id">
+      <column id="154" parent="16" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="155" parent="16" name="index_semester_refs_on_course_id">
         <columns>course_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="155" parent="16" name="index_semester_refs_on_semester_id">
+      <index id="156" parent="16" name="index_semester_refs_on_semester_id">
         <columns>semester_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="156" parent="16" name="PRIMARY">
+      <key id="157" parent="16" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="157" parent="16" name="fk_rails_808f7775f0">
+      <foreign-key id="158" parent="16" name="fk_rails_808f7775f0">
         <columns>semester_id</columns>
         <ref-key>~.semesters.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="158" parent="17" name="id">
+      <column id="159" parent="17" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="159" parent="17" name="name">
+      <column id="160" parent="17" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="160" parent="17" name="year">
+      <column id="161" parent="17" name="year">
         <data-type>int(11)</data-type>
       </column>
-      <column id="161" parent="17" name="units">
+      <column id="162" parent="17" name="units">
         <data-type>int(11)</data-type>
       </column>
-      <column id="162" parent="17" name="planner_id">
+      <column id="163" parent="17" name="planner_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="163" parent="17" name="saved_plan_id">
+      <column id="164" parent="17" name="saved_plan_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="164" parent="17" name="created_at">
+      <column id="165" parent="17" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="165" parent="17" name="updated_at">
+      <column id="166" parent="17" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="166" parent="17" name="index_semesters_on_planner_id">
+      <index id="167" parent="17" name="index_semesters_on_planner_id">
         <columns>planner_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="167" parent="17" name="index_semesters_on_saved_plan_id">
+      <index id="168" parent="17" name="index_semesters_on_saved_plan_id">
         <columns>saved_plan_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="168" parent="17" name="PRIMARY">
+      <key id="169" parent="17" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="169" parent="17" name="fk_rails_6936b1372c">
+      <foreign-key id="170" parent="17" name="fk_rails_6936b1372c">
         <columns>saved_plan_id</columns>
         <ref-key>~.saved_plans.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="170" parent="17" name="fk_rails_7f15c63fb4">
+      <foreign-key id="171" parent="17" name="fk_rails_7f15c63fb4">
         <columns>planner_id</columns>
         <ref-key>~.planners.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
+      <column id="172" parent="18" name="course_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="173" parent="18" name="prereq_course_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="174" parent="18" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="175" parent="18" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="176" parent="18" name="index_prereqs_on_course_id">
+        <columns>course_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="177" parent="18" name="index_prereqs_on_course_id_and_prereq_course_id">
+        <columns>course_id
+prereq_course_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="178" parent="18" name="index_prereqs_on_prereq_course_id">
+        <columns>prereq_course_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="179" parent="18" name="index_prereqs_on_prereq_course_id_and_course_id">
+        <columns>prereq_course_id
+course_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="180" parent="18" name="index_prereqs_on_course_id_and_prereq_course_id">
+        <columns>course_id
+prereq_course_id</columns>
+        <underlying-index>index_prereqs_on_course_id_and_prereq_course_id</underlying-index>
+      </key>
+      <key id="181" parent="18" name="index_prereqs_on_prereq_course_id_and_course_id">
+        <columns>prereq_course_id
+course_id</columns>
+        <underlying-index>index_prereqs_on_prereq_course_id_and_course_id</underlying-index>
+      </key>
     </database-model>
   </data-source>
 </component>
