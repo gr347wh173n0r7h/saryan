@@ -24,12 +24,12 @@ class PlannerController < ApplicationController
       if @academic.empty?
         redirect_to academics_new_path
       else
-        @plans = SavedPlan.all
         @academic = @academic.take
         @school = School.find(@academic.school_id)
         @major = Major.find(@academic.major_id)
         @catalog = Catalog.find(@academic.catalog_id)
         @courses = @catalog.courses
+        @plans = SavedPlan.where(:major => @major.name).all
       end
     end
   end
@@ -42,7 +42,14 @@ class PlannerController < ApplicationController
       if @academic.empty?
         redirect_to academics_new_path
       else
-        @plans = SavedPlan.all
+        @academic = @academic.take
+        @school = School.find(@academic.school_id)
+        @major = Major.find(@academic.major_id)
+        @catalog = Catalog.find(@academic.catalog_id)
+        @courses = @catalog.courses
+
+        @plans = SavedPlan.where(:major => @major.name).all
+
         @plan = SavedPlan.find(params[:id])
         @semester = @plan.semesters
         @sem_courses = []
@@ -51,12 +58,6 @@ class PlannerController < ApplicationController
             @sem_courses.push c
           end
         end
-
-        @academic = @academic.take
-        @school = School.find(@academic.school_id)
-        @major = Major.find(@academic.major_id)
-        @catalog = Catalog.find(@academic.catalog_id)
-        @courses = @catalog.courses
       end
     end
   end
