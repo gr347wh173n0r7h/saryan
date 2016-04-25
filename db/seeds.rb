@@ -91,10 +91,6 @@ sub_category_list = [
     [Category.find_by_name("Lower Division GE").id, "AI", 6],
     [Category.find_by_name("Lower Division GE").id, "PE", 2],
     [Category.find_by_name("Lower Division GE").id, "MP", 17],
-
-    # [Category.find_by_name("Lower Division GE").id, "American Institutions", 6],
-    # [Category.find_by_name("Lower Division GE").id, "Physical Education", 2],
-    # [Category.find_by_name("Lower Division GE").id, "Prepartion for the major", 17],
     [Category.find_by_name("Upper Division GE").id, "R", 3],
     [Category.find_by_name("Upper Division GE").id, "S", 3],
     [Category.find_by_name("Upper Division GE").id, "V", 3],
@@ -669,5 +665,5 @@ pre_req_list = [
 ]
 
 pre_req_list.each do |course_id, prereq_id|
-  Prereq.create(course_id:course_id, prereq_course_id:prereq_id)
+  Prerequsite.create(course_id:course_id, prereq_id:prereq_id)
 end

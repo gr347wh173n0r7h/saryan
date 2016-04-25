@@ -24,7 +24,7 @@
       <table id="15" parent="1" name="saved_plans"/>
       <table id="16" parent="1" name="semester_refs"/>
       <table id="17" parent="1" name="semesters"/>
-      <table id="18" parent="1" name="prereqs"/>
+      <table id="18" parent="1" name="prerequsites"/>
       <column id="19" parent="2" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
@@ -615,50 +615,42 @@
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="172" parent="18" name="course_id">
+      <column id="172" parent="18" name="id">
+        <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="173" parent="18" name="prereq_course_id">
+      <column id="173" parent="18" name="course_id">
         <data-type>int(11)</data-type>
       </column>
-      <column id="174" parent="18" name="created_at">
+      <column id="174" parent="18" name="prereq_id">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="175" parent="18" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="175" parent="18" name="updated_at">
+      <column id="176" parent="18" name="updated_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <index id="176" parent="18" name="index_prereqs_on_course_id">
+      <index id="177" parent="18" name="index_prerequsites_on_course_id">
         <columns>course_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="177" parent="18" name="index_prereqs_on_course_id_and_prereq_course_id">
-        <columns>course_id
-prereq_course_id</columns>
-        <desc-columns></desc-columns>
-        <unique>1</unique>
-      </index>
-      <index id="178" parent="18" name="index_prereqs_on_prereq_course_id">
-        <columns>prereq_course_id</columns>
+      <index id="178" parent="18" name="index_prerequsites_on_prereq_id">
+        <columns>prereq_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="179" parent="18" name="index_prereqs_on_prereq_course_id_and_course_id">
-        <columns>prereq_course_id
-course_id</columns>
-        <desc-columns></desc-columns>
-        <unique>1</unique>
-      </index>
-      <key id="180" parent="18" name="index_prereqs_on_course_id_and_prereq_course_id">
-        <columns>course_id
-prereq_course_id</columns>
-        <underlying-index>index_prereqs_on_course_id_and_prereq_course_id</underlying-index>
+      <key id="179" parent="18" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
       </key>
-      <key id="181" parent="18" name="index_prereqs_on_prereq_course_id_and_course_id">
-        <columns>prereq_course_id
-course_id</columns>
-        <underlying-index>index_prereqs_on_prereq_course_id_and_course_id</underlying-index>
-      </key>
+      <foreign-key id="180" parent="18" name="fk_rails_bf86c56e2d">
+        <columns>course_id</columns>
+        <ref-key>~.courses.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
     </database-model>
   </data-source>
 </component>

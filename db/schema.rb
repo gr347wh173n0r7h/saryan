@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160410032827) do
+ActiveRecord::Schema.define(version: 20160425002624) do
 
   create_table "academics", force: :cascade do |t|
     t.integer  "user_id",       limit: 4
@@ -101,17 +101,15 @@ ActiveRecord::Schema.define(version: 20160410032827) do
   add_index "plans", ["catalog_id"], name: "index_plans_on_catalog_id", using: :btree
   add_index "plans", ["course_id"], name: "index_plans_on_course_id", using: :btree
 
-  create_table "prereqs", id: false, force: :cascade do |t|
-    t.integer  "course_id",        limit: 4
-    t.integer  "prereq_course_id", limit: 4
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+  create_table "prerequsites", force: :cascade do |t|
+    t.integer  "course_id",  limit: 4
+    t.integer  "prereq_id",  limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
-  add_index "prereqs", ["course_id", "prereq_course_id"], name: "index_prereqs_on_course_id_and_prereq_course_id", unique: true, using: :btree
-  add_index "prereqs", ["course_id"], name: "index_prereqs_on_course_id", using: :btree
-  add_index "prereqs", ["prereq_course_id", "course_id"], name: "index_prereqs_on_prereq_course_id_and_course_id", unique: true, using: :btree
-  add_index "prereqs", ["prereq_course_id"], name: "index_prereqs_on_prereq_course_id", using: :btree
+  add_index "prerequsites", ["course_id"], name: "index_prerequsites_on_course_id", using: :btree
+  add_index "prerequsites", ["prereq_id"], name: "index_prerequsites_on_prereq_id", using: :btree
 
   create_table "saved_plans", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -197,6 +195,7 @@ ActiveRecord::Schema.define(version: 20160410032827) do
   add_foreign_key "departments", "schools"
   add_foreign_key "majors", "departments"
   add_foreign_key "planners", "users"
+  add_foreign_key "prerequsites", "courses"
   add_foreign_key "semester_refs", "semesters"
   add_foreign_key "semesters", "planners"
   add_foreign_key "semesters", "saved_plans"
