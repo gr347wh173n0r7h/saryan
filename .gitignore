@@ -2,3 +2,4 @@ public/uploads
 tmp
 logs
 log/*.*
+log/development.log
