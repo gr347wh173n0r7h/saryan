@@ -230,9 +230,6 @@
                                 <div class="all-30 push-left align-right large order-r3">
                                   <p><%=c.units%></p>
                                 </div>
-                                <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4  half-right-padding">
-                                  <p><%=c.desc%></p>
-                                </div>
                               </div>
                               <div class="all-30 push-left order-r1">
                                 <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>">
@@ -241,6 +238,26 @@
                                       </li>
                                 </ul>
                               </div>
+                              <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4  left-padding right-padding">
+                                <p><%=c.desc%></p>
+                              </div>
+                              <%if !c.prereqs.empty? %>
+                                  <div class="all-100 push-left align-left small condensed-100 order-r5 left-padding right-padding">
+                                    <p>Pre-Requsites:</p>
+                                  </div>
+                                  <div class="CCDescription all-100 push-left align-left small condensed-100 order-r6 left-padding half-bottom-padding right-padding">
+                                    <% c.prereqs.each do |p|%>
+                                        <button id="<%=p.id%>-PrB" class="PreRecButton
+                                        <% if p.sub_category.category.name == "Lower Division GE"%> red
+                                        <% elsif p.sub_category.category.name == "Upper Division GE" %> green
+                                        <% elsif p.sub_category.category.name == "Core Courses" %> orange
+                                        <% else %> blue
+                                        <% end %>
+                                         align-center order-1" onclick="fadeInClassCard('<%=p.id%>-CC')"><%=p.abbrev%></button>
+
+                                    <%end%>
+                                  </div>
+                              <%end%>
                             </div>
                             <!--</li>-->
 
