@@ -91,10 +91,6 @@ sub_category_list = [
     [Category.find_by_name("Lower Division GE").id, "AI", 6],
     [Category.find_by_name("Lower Division GE").id, "PE", 2],
     [Category.find_by_name("Lower Division GE").id, "MP", 17],
-
-    # [Category.find_by_name("Lower Division GE").id, "American Institutions", 6],
-    # [Category.find_by_name("Lower Division GE").id, "Physical Education", 2],
-    # [Category.find_by_name("Lower Division GE").id, "Prepartion for the major", 17],
     [Category.find_by_name("Upper Division GE").id, "R", 3],
     [Category.find_by_name("Upper Division GE").id, "S", 3],
     [Category.find_by_name("Upper Division GE").id, "V", 3],
@@ -577,7 +573,7 @@ mis_4year_plan = [
     [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("MATH 071").id],
     [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("AMS 001A").id],
     [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("BIOL 010").id],
-    [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("BUS 012").id],
+    [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("BUS3 12").id],
 
 
     [Semester.find_by_name("Fall 2017").id, Course.find_by_abbrev("BUS1 20").id],
@@ -588,7 +584,7 @@ mis_4year_plan = [
     [Semester.find_by_name("Fall 2017").id, Course.find_by_abbrev("PHIL 057").id],
 
     [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("BUS2 90").id],
-    [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("BUS4 092").id],
+    [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("BUS4 92").id],
     [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("ECON 001B").id],
     [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("CHIN 001A").id],
     [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("BUS1 21").id],
@@ -669,5 +665,6 @@ pre_req_list = [
 ]
 
 pre_req_list.each do |course_id, prereq_id|
-  Prereq.create(course_id:course_id, prereq_course_id:prereq_id)
+  Prerequsite.create(course_id:course_id, prereq_id:prereq_id)
 end
+
