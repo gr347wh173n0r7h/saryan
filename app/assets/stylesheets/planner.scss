@@ -40,7 +40,7 @@ div.box{
 .ProgressB{
   box-shadow: 0px 0px 5px #fff;
   border: 1px solid #dad3c6;
-  border-radius: 3px;
+  border-radius: 2px;
   height: 25px;
 }
 .ProgressBar {
@@ -111,23 +111,30 @@ div.PotB {
   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   color: #fff;
+  min-height: 3em;
   h5 {
     color: #fff;
     font-weight: 400;
   }
   p {
-    padding-top: 10px;
+    //padding-top: 14px;
+    //padding-bottom: 13px;
+    margin: 0;
+  height: 100%;
   }
   .PlanSelect{
-    padding-top: 14px;
+    //padding-top: 0px;
+    //padding-bottom: 0px;
+
   }
   select{
     //border-radius: 5px;
-
+    margin: 0;
     text-align: center;
     color: black;
     font-weight: 300;
     font-size: 15px;
+    //padding-top: 0px;
   }
 }
 //SEARCH
@@ -141,7 +148,16 @@ div.PotB {
   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
   color: #fff;
+
+  .ink-form .control-group {
+    margin-bottom: 0;
+  }
+  .SearchArea{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
+
 // TABS
 
 .tab-nav{

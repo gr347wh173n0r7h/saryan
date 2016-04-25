@@ -14,19 +14,19 @@
     <!-- INFO PANEL-->
     <div class="InfoPanelHoler all-100">
       <div class="InfoPanel column-group all-100 push-center align-center">
-        <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 half-top-padding">
+        <div class="xlarge-25 large-25 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5></h5>-->
           <p><b>School: </b><%=@school.name%></p>
         </div>
-        <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 half-top-padding">
+        <div class="xlarge-25 large-25 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5>Major: </h5>-->
           <p><b>Major: </b><%=@major.name%></p>
         </div>
-        <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 half-top-padding">
+        <div class="xlarge-25 large-25 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5>Catalog: </h5>-->
           <p><b>Catalog: </b><%=@catalog.degree%></p>
         </div>
-        <div class="PlanSelect xlarge-25 large-25 medium-50 small-50 tiny-100 half-top-padding">
+        <div class="PlanSelect xlarge-25 large-25 push-middle medium-50 small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5>Catalog: </h5>-->
           <p><b>Plan: </b><%= select_tag 'Plans', options_from_collection_for_select(@plans, 'id', 'name', params[:id]), :prompt => "None",:onchange => "window.location.replace('/planner/'+this.value);" %></p>
         </div>
@@ -196,7 +196,7 @@
         <!-- SEARCH-->
         <div class="column all-100">
           <form class="search ink-form">
-            <div class="control-group column-group half-top-space half-left-padding half-top-padding half-right-padding half-bottom-padding">
+            <div class="SearchArea control-group column-group half-top-space half-left-padding half-top-padding half-right-padding half-bottom-padding">
               <label for="seach" class="all-20 push-left ">Search</label>
               <div class="control xlarge-75 large-75 medium-100 small-100 tiny-100 half-left-padding">
                 <input type="text" name="search" id="search">
