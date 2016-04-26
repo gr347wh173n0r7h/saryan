@@ -1,3 +1,4 @@
+#encoding: utf-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -34,6 +35,14 @@ end
 major_list = [
 
     ["Management Information Systems","MIS", Department.find_by_abbrev("BUS").id],
+    ["Accounting","ACCOUNTING", Department.find_by_abbrev("BUS").id],
+    ["Accounting Information Systems","AIS", Department.find_by_abbrev("BUS").id],
+    ["Business Analytics","BUSINESSANALYTICS", Department.find_by_abbrev("BUS").id],
+    ["Corporate Accounting and Finance","CAF", Department.find_by_abbrev("BUS").id],
+    ["Entrepreneurship","ENTREPRENEURSHIP", Department.find_by_abbrev("BUS").id],
+    ["Finance","FINANCE", Department.find_by_abbrev("BUS").id],
+    ["General Business","GENERALBUSINESS", Department.find_by_abbrev("BUS").id],
+    ["Global Operations Management","GOM", Department.find_by_abbrev("BUS").id],
     ["Software Engineering","BSSE", Department.find_by_abbrev("SE").id],
     ["Computer Engineering","BSCMPE",Department.find_by_abbrev("CMPE").id ],
     ["Mathematics","MATH", Department.find_by_abbrev("MATH").id],
@@ -45,20 +54,25 @@ major_list.each do |name, maj_abbrev, department_id|
 end
 
 c = Catalog.create(cat_yr:15, degree: "BA: MIS" )
+d = Catalog.create(cat_yr:15, degree: "BA: ACCOUNTING")
 
 super_category_list = [
     ["General Education", 60],
-    ["BA: MIS", 120]
+    ["BA: MIS", 120],
+    ["BA: ACCOUNTING", 120]
 ]
 
 super_category_list.each do |name, units|
   SuperCat.create(catalog_id:c.id, name:name, units:units)
+  SuperCat.create(catalog_id:d.id, name:name, units:units)
 end
 
 category_list = [
 
     [SuperCat.find_by_name("BA: MIS").id, "Core Courses", 40],
-    [SuperCat.find_by_name("BA: MIS").id, "Concentration Requirements",27],
+    [SuperCat.find_by_name("BA: MIS").id, "Concentration Requirements", 27],
+    [SuperCat.find_by_name("BA: ACCOUNTING").id, "Core Courses", 40],
+    [SuperCat.find_by_name("BA: ACCOUNTING").id, "Concentration Requirements", 24],
     [SuperCat.find_by_name("General Education").id, "Lower Division GE", 35],
     [SuperCat.find_by_name("General Education").id, "Upper Division GE"]
 
@@ -70,11 +84,16 @@ end
 
 sub_category_list = [
 
-    [Category.find_by_name("Core Courses").id,"Lower Division Courses", 13],
+    [Category.find_by_name("Core Courses").id,"Lower Division Courses", 10],
     [Category.find_by_name("Core Courses").id,"Upper Division Fundamental Courses", 15],
     [Category.find_by_name("Core Courses").id,"Upper Division Business Integration and Perspectives Courses", 12],
     [Category.find_by_name("Concentration Requirements").id, "Required Courses", 21],
     [Category.find_by_name("Concentration Requirements").id, "Additional Courses", 6],
+
+    # accounting
+    [Category.find_by_name("Concentration Requirements").id, "Accounting Foundation Courses", 15],
+    [Category.find_by_name("Concentration Requirements").id, "Required Electives", 9],
+
     [Category.find_by_name("Lower Division GE").id, "A1", 3],
     [Category.find_by_name("Lower Division GE").id, "A2", 3],
     [Category.find_by_name("Lower Division GE").id, "A3", 3],
@@ -105,7 +124,7 @@ end
 
 mis_catalog = [
 
-    [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS3 10","Discovering Business ", 3, "Simulates setting up a small business to explore the many facets of an enterprise (marketing, accounting, finance, management, information systems, etc.). Through self-assessment and readings, directs students toward career paths that best reflect their personal aptitudes and interests. Prerequisite: Highly recommended for SJSU freshman business majors, optional for others."],
+    [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS3 10","Discovering Business ", 0, "Simulates setting up a small business to explore the many facets of an enterprise (marketing, accounting, finance, management, information systems, etc.). Through self-assessment and readings, directs students toward career paths that best reflect their personal aptitudes and interests. Prerequisite: Highly recommended for SJSU freshman business majors, optional for others."],
     [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS1 20","Financial Accounting", 3, "Accounting postulates and principles; application of accounting theory to accumulate and summarize financial data; critical analysis and interpretation of financial statements. Prerequisite: MATH 071"],
     [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS1 21","Managerial Accounting", 3, "Uses of accounting data for managerial decision-making. Topics include: cost accumulation for product costing; cost structure for control and motivation; cost-volume-profit relationships; profit planning; standard costing; flexible budgets; and relevant costs for non-routine decisions. Prerequisite: BUS 20 or BUS 20N."],
     [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS3 80","Legal Environment of Business", 3, "Understand the judicial system and dispute resolution with emphasis on the role of law in purchasing, contracting and administering a business as it impacts the firm's constituencies and society as a whole. Prerequisite: Sophomore status"],
@@ -523,14 +542,52 @@ mis_catalog = [
 
 ]
 
-
-mis_catalog.each do |sub_category_id, dep,abbrev, name, units, desc|
+ mis_catalog.each do |sub_category_id, dep,abbrev, name, units, desc|
   co = Course.create(sub_category_id:sub_category_id, dep: dep, abbrev:abbrev, name: name, units: units, desc:desc)
   Plan.create(catalog_id:c.id, course_id:co.id)
+ end
+
+
+accounting_catalog = [
+    [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS3 10","Discovering Business ", 0, "Simulates setting up a small business to explore the many facets of an enterprise (marketing, accounting, finance, management, information systems, etc.). Through self-assessment and readings, directs students toward career paths that best reflect their personal aptitudes and interests. Prerequisite: Highly recommended for SJSU freshman business majors, optional for others."],
+    [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS1 20","Financial Accounting", 3, "Accounting postulates and principles; application of accounting theory to accumulate and summarize financial data; critical analysis and interpretation of financial statements. Prerequisite: MATH 071"],
+    [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS3 80","Legal Environment of Business", 3, "Understand the judicial system and dispute resolution with emphasis on the role of law in purchasing, contracting and administering a business as it impacts the firm's constituencies and society as a whole. Prerequisite: Sophomore status"],
+    [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS2 90","Business Statistics", 3, "n terms of theory and application: collection and presentation of data; measures of central values and spread; probability as a measure of uncertainty; sampling and sampling distribution of the sample mean; confidence intervals; hypothesis testing; regression and correlation. Prerequisite: MATH 071. Math Remediation completed or a post baccalaureate."],
+    [SubCategory.find_by_name("Lower Division Courses").id, "BUS","BUS4 91L","Business Computer Productivity Tools", 1, "An overview of computer hardware and software concepts and common operating system functions. Instruction in the use of microcomputer-based word processing, presentation graphics and spreadsheet productivity tools. Lab meets for 5 weeks."],
+
+    [SubCategory.find_by_name("Upper Division Fundamental Courses").id, "BUS","BUS2 130","Fundamentals of Marketing", 3, "Analysis of marketing opportunities; planning of marketing programs with emphasis on product, price, promotion and distribution; control of the marketing effort; social and ethical responsibilities of marketing. Prerequisite: Upper division standing. Lower Division Business Pool or Business Minor. Recommended: COMM 100W or ENGL 100WB or LLD 100WB"],
+    [SubCategory.find_by_name("Upper Division Fundamental Courses").id, "BUS","BUS5 140","Fundamentals of Operations Management", 3, "Familiarizes students with processes that transform inputs into finished goods and services; helps students understand the importance of operations management and how it interacts with other parts of the organization; develops skills in applying appropriate analytical tools to business operations challenges. Prerequisites: Upper division standing. Lower Division Business Pool or Business Minor."],
+    [SubCategory.find_by_name("Upper Division Fundamental Courses").id, "BUS","BUS3 160","Fundamentals of Management and Organization Behavior", 3, "Provides a foundation for major topics in management and organizational behavior by surveying theories and practices relating to managerial roles, organizational cultures, fundamental strategic issues, planning, team building, communication, motivation, leadership, decision-making, control, structure and change. Prerequisites: Upper division standing. Lower Division Business Pool or Business Minor."],
+    [SubCategory.find_by_name("Upper Division Fundamental Courses").id, "BUS","BUS1 170","Fundamentals of Finance", 3, "The finance function and its relationship to other decision-making areas in the firm; the study of theory and techniques in acquisition and allocation of financial resources from an internal management perspective. Prerequisite: BUS 21 or BUS 122A, ECON 1A, ECON 1B and BUS 90. Upper division standing. Lower Division Business Pool or Business Minor."],
+    [SubCategory.find_by_name("Upper Division Fundamental Courses").id, "BUS","BUS2 190","Quantitative Business Analysis", 3, "Quantitative models and computer software used in business decision-making. Studies of network and transportation models, linear programming, CPM/PERT project analysis, decision analysis, simulation and other techniques used in management science applications. Prerequisite: BUS2 090 and MATH 071. Lower Division Business Pool or Business Minor. Not available to Open University Students."],
+
+    [SubCategory.find_by_name("Upper Division Business Integration and Perspectives Courses").id, "BUS","BUS5 187","Global Dimensions of Business", 3, "An integrative interdisciplinary foundation for more specialized courses and self-directed learning. Provides an overview of economic, social, cultural and political/legal forces and factors influencing crossborder business and an introduction to international dimensions of business functions and operations. Prerequisites: Upper division standing. Lower Division Business Pool or Business Minor."],
+    [SubCategory.find_by_name("Upper Division Business Integration and Perspectives Courses").id, "BUS","BUS3 188", "Business Systems and Policy", 3, "Provides system perspective on organizations, using information as an integrating vehicle. Examines how information systems can serve business functions and integrate value chain activities. Prerequisite: COMM 100W or ENGL 100WB or LLD 100WB. Upper division standing. Lower Division Business Pool. Pre/Corequisite: Fundamental courses." ],
+    [SubCategory.find_by_name("Upper Division Business Integration and Perspectives Courses").id, "BUS","BUS3 189","Strategic Management", 3, "Integrative capstone seminar analyzing interrelationships of managerial decisions/actions within and between the firm and its environment. Applies multi-disciplinary techniques to diagnose and recommend actions appropriate to specific company situations, using case method. Prerequisite: Any 100W. Restricted to graduating seniors only. Allowed Declared Majors: All Business Majors. Lower Division Business Pool. Graduating Senior Status."],
+    [SubCategory.find_by_name("Upper Division Business Integration and Perspectives Courses").id, "PHIL","PHIL 186","Prof. Business Ethics", 3, "Interdisciplinary study of types of ethical problems which arise within the contexts of business occupations and professions. Major ethical theories, critique of economic and criminal justice. Focus is on issues of justice and equality in the U.S. Case studies. GE Area: S Prerequisite: Passage of the Writing Skills Test (WST) or ENGL/LLD 100A with a C or better (C- not accepted), completion of Core General Education and upper division standing are prerequisites to all SJSU studies courses. Completion of, or co-registration in, 100W is strongly recommended."],
+
+    # concentration requirements
+    [SubCategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 120A", "Accounting Information Systems", 3, "Documentation, flow and processing of accounting information in business organizations; related principles of internal control; system design principles. Computerized and non-computerized procedures are used for processing. Prerequisite: BUS 20 with a minimum grade of C. Declared Major in Accounting, Accounting Information Systems or Corporate Accounting and Finance. Upper division standing. Lower Division Business Pool, declared Accounting, AIS or CAF major. Normal Grade Rules 3 units"],
+  #  [Subcategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 121A", "Intermediate Accounting I Principles", 3, "Control and theory of accounting for assets; correction of prior year's earnings; measurement and determination of income. Projects involving spreadsheet software required. Prerequisite: BUS 20 with a minimum grade of C and Upper division standing. Student must be a declared Accounting, Accounting Information Systems, Finance, or Corporate Financial Management major to enroll. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 121B", "Intermediate Accounting II Principles", 3, "Controls, and theory of accounting for liabilities and equities; preparation, utilization, and analysis of cash flow and fund statements; financial ratios and statistical analysis of financial statements accounting data. Projects involving spreadsheet software required. Prerequisite: BUS 121A (with minimum grade of C. Upper division standing. Lower Division Business Pool or Business Minor. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 122A", "Management Accounting and Control Systems", 3, "Examination of the nature, objectives and procedures of cost management as applied to product and service costing, decision-making and cost planning and control systems. Prerequisite: BUS 20 with a minimum grade of C and upper division standing. Declared Major in Accounting, Accounting information systems or Corporate Accounting and finance. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 123A", "Tax Factors of Business and Investment Decision", 3, "Introductory course in taxation with emphasis on certain themes that pervade the federal income tax system and its impact on business. Property transactions, deferral techniques, accounting periods, accounting methods and research techniques with emphasis on corporations. Prerequisite: BUS 20 with a minimum grade of C, and declared Accounting, Accounting Information Systems or Corporate Accounting Finance Major. Upper division standing. Lower Division Business Pool, declared Accounting, AIS or CAF Major. Normal Grade Rules 3 units "],
+
+  #  [Subcategory.find_by_name("Required Electives").id, "BUS", "BUS1 120B", "Advanced AIS and IS Risk Assessment", 3, "Hands-on project-oriented computer lab to develop working knowledge and skills in using Microsoft Excel and Access as application development tools. Students design a prototype accounting system and generalized audit module prototype assessing integrity of previously designed databases. Upper division standing. Lower Division Business Pool or Business Minor. Prerequisite: BUS 120A and COMM 100W or ENGL 100WB or LLD 100WB with a minimum grade of ���C��� or better in both. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Required Electives").id, "BUS", "BUS1 120G", "Programming and Systems Development in AIS", 3, "This course covers the process, technical elements and current techniques used in accounting systems development. Programming topics include business reporting languages. Systems development topics include requirements analysis, functional specification, system design, implementation, testing, and maintenance. Prerequisite: BUS1 020 with a minimum grade of C. Lower division business pool or Business Minor. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Required Electives").id, "BUS", "BUS1 122B", "Advanced Management Accounting and Control Systems", 3, "Examination of contemporary issues and emerging practices in cost management. Topics include strategic cost management, activity-based cost management, life- cycle cost management, target costing, quality costing management and value chain-analysis. Prerequisite: BUS 122A and BUS 100W, COMM 100W or ENGL 100WB or LLD 100WB with a minimum grade of C in both. Lower division business pool or Business Minor. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Required Electives").id, "BUS", "BUS1 123C", "Taxation of Individuals and Pass Through Entities", 3, "Emphasis on the unique factors involved in taxation of individuals and pass-through entities (partnerships, S corporations, estates and trusts). Taxation of the transfer of wealth through gifts and inheritance. Prerequisite: BUS 123A with a grade of C or better. Accounting and Corporate Accounting Finance Majors only. Upper division standing. Lower Division Business Pool, Business Minor or Accounting or CorporateAccounting Finance major Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Required Electives").id, "BUS", "BUS1 124", "Forensic Accounting", 3, "This course will examine the various frauds that are perpetrated on companies and discuss ways the accountant can uncover the frauds. The criminal justice system will be reviewed and the various litigation-support functions provided to attorneys by accountants will be discussed. Prerequisite: BUS 20; COMM 100W or ENGL 100WB or LLD 100WB; BUS 121A and BUS 121B with a minimum grade of C in each. Accounting and Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Required Electives").id, "BUS", "BUS1 125", "Special Financial Reporting Topics", 3, "Analysis of specialized and emerging accounting topics (such as interim reporting, deferred taxes, post- employment benefits and new FAS pronouncements) with emphasis on research, application and analytical skills. Prerequisite: COMM 100W or ENGL 100WB or LLD 100WB, BUS 121A and BUS 121B (with minimum grade of C in each). Lower division business pool or Business Minor. Accounting and Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Required Electives").id, "BUS", "BUS1 126", "Advanced Accounting", 3, "Accounting for multi-unit operations: consolidated reporting issues, transfer pricing issues, globalization issues (foreign tax structures, organizational forms, and international accounting) translating foreign currency transactions and operations, hedging foreign currency exposures, goodwill, and business combinations. Extensive use of spreadsheets (Excel) Prerequisite: COMM 100W or ENGL 100WB or LLD 100WB, BUS 121A and BUS 121B (with minimum grade of C in each). Lower Division Business Pool, Business Minor, Accounting or Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
+  #  [Subcategory.find_by_name("Required Electives").id, "BUS", "BUS1 127A", "Honors Practicum in Corporate Financial Management", 3, "Corporate sponsored projects in accounting and finance. Students are assigned to a host company and are required to work with the host company and faculty advisor on a topic in financial management. A report will be presented. Students are admitted based on an average 3.0 GPA in four prerequisite courses. Prerequisite: COMM 100W (or ENGL 100W or LLD 100W), BUS 121A, BUS 121B, BUS 122A, and BUS 170 with a minimum grade of C in each and instructor approval. Upper division standing. Lower Division Business Pool or Business Minor. Repeatable for credit Normal Grade Rules 3 units "]
+]
+
+
+accounting_catalog.each do |sub_category_id, dep,abbrev, name, units, desc|
+  co = Course.create(sub_category_id:sub_category_id, dep: dep, abbrev:abbrev, name: name, units: units, desc:desc)
+  Plan.create(catalog_id:d.id, course_id:co.id)
 end
-
-
-
 
 
 saved_plan = [
