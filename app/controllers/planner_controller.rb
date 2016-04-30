@@ -115,7 +115,7 @@ class PlannerController < ApplicationController
     planner_params[:plan_string].split(',').each do |p|
       ident = p.split('-')
       if ident[0] == 'S'
-        @sem = @planner.semesters.build(name: ident[1], year: ident[1][-4..-1].to_)
+        @sem = @planner.semesters.build(name: ident[1], year: ident[1][-4..-1].to_f)
         @sem.save
       else
         @course = Course.find(ident[1])
