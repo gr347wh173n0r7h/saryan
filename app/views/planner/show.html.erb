@@ -27,24 +27,25 @@
     <!-- END SAVE PLAN FORM-->
     <!-- INFO PANEL-->
     <div class="InfoPanelHoler all-100">
-      <div class="InfoPanel column-group all-100 push-center align-center">
-        <div class="xlarge-20 large-20 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
+      <div class="InfoPanel column-group all-100 push-center push-middle align-center">
+        <div class="xlarge-20 large-20 medium-20 push-middle  push-center small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5></h5>-->
-          <p><b>School: </b><%=@school.name%></p>
+          <p><b>School: </b><br><%=@school.name%></p>
         </div>
-        <div class="xlarge-20 large-20 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
+        <div class="xlarge-20 large-20 medium-20 push-middle push-centersmall-50 tiny-100  half-top-padding half-bottom-padding">
           <!--<h5>Major: </h5>-->
-          <p><b>Major: </b><%=@major.name%></p>
+          <p><b>Major: </b><br><%=@major.name%></p>
         </div>
-        <div class="xlarge-20 large-20 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
+
+        <div class="PlanSelect xlarge-20 large-20 push-middle medium-20 small-50 tiny-100  half-top-padding half-bottom-padding">
           <!--<h5>Catalog: </h5>-->
-          <p><b>Catalog: </b><%=@catalog.degree%></p>
+          <p><b>Premade Plan: </b><br><%= select_tag 'Plans', options_from_collection_for_select(@plans, 'id', 'name', params[:id]), :prompt => "None",:onchange => "window.location.replace('/planner/'+this.value);" %></p>
         </div>
-        <div class="PlanSelect xlarge-20 large-20 push-middle medium-50 small-50 tiny-100 half-top-padding half-bottom-padding">
+        <div class="PlanSelect xlarge-20 large-20 push-middle medium-20 small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5>Catalog: </h5>-->
-          <p><b>Plan: </b><%= select_tag 'Plans', options_from_collection_for_select(@plans, 'id', 'name', params[:id]), :prompt => "None",:onchange => "window.location.replace('/planner/'+this.value);" %></p>
+          <p><b>Saved Plans: </b><br><%= select_tag 'Plans', options_from_collection_for_select(@saved_plans, 'id', 'name', params[:id]),:onchange => "window.location.replace('/planner/edit/'+this.value);" %></p>
         </div>
-        <div class="xlarge-20 large-20 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
+        <div class="xlarge-20 large-20 push-middle medium-20 tiny-100 half-top-padding half-bottom-padding">
           <button id="SavePlan" class="ink-button blue align-center order-1" onclick="SavePlan();">Save Plan</button>
         </div>
       </div>

@@ -30,6 +30,8 @@ class PlannerController < ApplicationController
         @catalog = Catalog.find(@academic.catalog_id)
         @courses = @catalog.courses
         @plans = SavedPlan.where(:major => @major.name).all
+        @user = current_user
+        @saved_plans = @user.planners.all
         # --------------------------
         @planner = Planner.new
       end
@@ -51,6 +53,8 @@ class PlannerController < ApplicationController
         @courses = @catalog.courses
 
         @plans = SavedPlan.where(:major => @major.name).all
+        @user = current_user
+        @saved_plans = @user.planners.all
 
         @plan = SavedPlan.find(params[:id])
         @semester = @plan.semesters
@@ -59,6 +63,41 @@ class PlannerController < ApplicationController
           sem.courses.each do |c|
             @sem_courses.push c
           end
+        end
+      end
+    end
+  end
+
+  def edit
+    if  !logged_in?
+      redirect_to login_path
+    else
+      @academic = Academic.where(:user_id => current_user.id)
+      if @academic.empty?
+        redirect_to academics_new_path
+      else
+        @academic = @academic.take
+        @school = School.find(@academic.school_id)
+        @major = Major.find(@academic.major_id)
+        @catalog = Catalog.find(@academic.catalog_id)
+        @courses = @catalog.courses
+
+        # @plans = Planner.where(:user_id => current_user.id).all
+        @user = current_user
+        @plans = @user.planners.all
+        @saved_plans = SavedPlan.where(:major => @major.name).all
+
+        @plan = Planner.find(params[:id])
+        if @plan[:user_id] == @user[:id]
+          @semester = @plan.semesters
+          @sem_courses = []
+          @semester.each do |sem|
+            sem.courses.each do |c|
+              @sem_courses.push c
+            end
+          end
+        else
+          redirect_to planner_path
         end
       end
     end
@@ -86,36 +125,6 @@ class PlannerController < ApplicationController
     else
       flash[:failure] = "Error Cccured"
       render @user
-    end
-  end
-
-  def edit
-    if  !logged_in?
-      redirect_to login_path
-    else
-      @academic = Academic.where(:user_id => current_user.id)
-      if @academic.empty?
-        redirect_to academics_new_path
-      else
-        @academic = @academic.take
-        @school = School.find(@academic.school_id)
-        @major = Major.find(@academic.major_id)
-        @catalog = Catalog.find(@academic.catalog_id)
-        @courses = @catalog.courses
-
-        # @plans = Planner.where(:user_id => current_user.id).all
-        @user = current_user
-        @plans = @user.planners.all
-
-        @plan = Planner.find(params[:id])
-        @semester = @plan.semesters
-        @sem_courses = []
-        @semester.each do |sem|
-          sem.courses.each do |c|
-            @sem_courses.push c
-          end
-        end
-      end
     end
   end
 
