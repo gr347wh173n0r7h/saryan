@@ -30,6 +30,8 @@ class PlannerController < ApplicationController
         @catalog = Catalog.find(@academic.catalog_id)
         @courses = @catalog.courses
         @plans = SavedPlan.where(:major => @major.name).all
+        # --------------------------
+        @planner = Planner.new
       end
     end
   end
@@ -60,6 +62,37 @@ class PlannerController < ApplicationController
         end
       end
     end
+  end
+
+  def create
+    @user = current_user
+    @planner = Planner.new()
+    @planner[:user_id] = @user[:id]
+    @planner[:name] = planner_params[:name]
+    planner_params[:plan_string].split(',').each do |p|
+      ident = p.split('-')
+      if ident[0] == 'S'
+        @sem = @planner.semesters.build(name: ident[1])
+        @sem.save
+      else
+        @course = Course.find(ident[1])
+        @sem.courses << @course
+        @sem.save
+      end
+    end
+    if @planner.save
+      flash[:success] = "Preferences Set"
+      redirect_to @user
+    else
+      flash[:failure] = "Error Cccured"
+      render @user
+    end
+  end
+
+  private
+
+  def planner_params
+    params.require(:planner).permit( :name, :plan_string)
   end
 
 end
