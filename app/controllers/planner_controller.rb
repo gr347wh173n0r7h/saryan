@@ -89,6 +89,36 @@ class PlannerController < ApplicationController
     end
   end
 
+  def edit
+    if  !logged_in?
+      redirect_to login_path
+    else
+      @academic = Academic.where(:user_id => current_user.id)
+      if @academic.empty?
+        redirect_to academics_new_path
+      else
+        @academic = @academic.take
+        @school = School.find(@academic.school_id)
+        @major = Major.find(@academic.major_id)
+        @catalog = Catalog.find(@academic.catalog_id)
+        @courses = @catalog.courses
+
+        # @plans = Planner.where(:user_id => current_user.id).all
+        @user = current_user
+        @plans = @user.planners.all
+
+        @plan = Planner.find(params[:id])
+        @semester = @plan.semesters
+        @sem_courses = []
+        @semester.each do |sem|
+          sem.courses.each do |c|
+            @sem_courses.push c
+          end
+        end
+      end
+    end
+  end
+
   private
 
   def planner_params

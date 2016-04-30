@@ -42,7 +42,7 @@
         </div>
         <div class="PlanSelect xlarge-20 large-20 push-middle medium-50 small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5>Catalog: </h5>-->
-          <p><b>Plan: </b><%= select_tag 'Plans', options_from_collection_for_select(@plans, 'id', 'name', params[:id]), :prompt => "None",:onchange => "window.location.replace('/planner/'+this.value);" %></p>
+          <p><b>Saved Plan: </b><%= select_tag 'Plans', options_from_collection_for_select(@plans, 'id', 'name', params[:id]),:onchange => "window.location.replace('/planner/edit/'+this.value);" %></p>
         </div>
         <div class="xlarge-20 large-20 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
           <button id="SavePlan" class="ink-button blue align-center order-1" onclick="SavePlan();">Save Plan</button>
@@ -140,56 +140,56 @@
       <div class="Planner all-100 align-center">
         <!--<div class="column-group all-100 push-left order-r1"><h3>Plan</h3></div>-->
 
-            <!-- SEMESTER DROP -->
-            <div id="Semesters" class="half-right-padding"  style="overflow: auto; max-height: 725px;">
-            <% i = 0 %>
-            <% s = 0 %>
-              <% @plan.semesters.each do |z|%>
-                  <%if s % 2 == 0 %>
+        <!-- SEMESTER DROP -->
+        <div id="Semesters" class="half-right-padding"  style="overflow: auto; max-height: 725px;">
+          <% i = 0 %>
+          <% s = 0 %>
+          <% @plan.semesters.each do |z|%>
+              <%if s % 2 == 0 %>
                   <div id="<%=z.name.gsub(" ", "-") %>S">
-                  <% end %>
-                      <div id="<%=z.name.gsub(" ", "-") %>SD"  class="Semester column-group all-100" >
-                        <div class="all-100" style="padding-top: 0px;">
-                          <p class="tip condensed" style="padding-top: 0px;<%if s ==0 %>font-weight: 600;<%end%>"><%=z.name %></p>
-                          <ul id="<%=z.name.gsub(" ", "-") %>-S" class="droppable-2 all-100">
+              <% end %>
+              <div id="<%=z.name.gsub(" ", "-") %>SD"  class="Semester column-group all-100" >
+                <div class="all-100" style="padding-top: 0px;">
+                  <p class="tip condensed" style="padding-top: 0px;<%if s ==0 %>font-weight: 600;<%end%>"><%=z.name %></p>
+                  <ul id="<%=z.name.gsub(" ", "-") %>-S" class="droppable-2 all-100">
 
-                            <% z.courses.each do |c|
-                                if(c.sub_category.category.name == 'Lower Division GE')
-                                   i = 0
-                                elsif(c.sub_category.category.name == 'Upper Division GE')
-                                   i = 1
-                                elsif(c.sub_category.category.name == 'Core Courses')
-                                   i = 2
-                                else
-                                   i = 3
-                                end
-                                %>
-                                <% if i <= 1 %>
-                                    <li id="<%=c.sub_category.name%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" onclick="
-                                        clearClassCards();
-                                        <% c.sub_category.courses.each do |cc| %>
-                                            fadeInClassCard('<%=cc.id%>-CC');
-                                        <% end %>
-                                    ">
-                                      <%=  c.sub_category.name %>
-                                    </li>
-                                <% else %>
-                                    <li id="<%=c.id%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
-                                      <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
-                                    </li>
-                                <% end %>
-                          <% end %>
+                    <% z.courses.each do |c|
+                      if(c.sub_category.category.name == 'Lower Division GE')
+                        i = 0
+                      elsif(c.sub_category.category.name == 'Upper Division GE')
+                        i = 1
+                      elsif(c.sub_category.category.name == 'Core Courses')
+                        i = 2
+                      else
+                        i = 3
+                      end
+                    %>
+                        <% if i <= 1 %>
+                            <li id="<%=c.sub_category.name%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" onclick="
+                            clearClassCards();
+                                    <% c.sub_category.courses.each do |cc| %>
+                                    fadeInClassCard('<%=cc.id%>-CC');
+                                    <% end %>
+                            ">
+                              <%=  c.sub_category.name %>
+                            </li>
+                        <% else %>
+                            <li id="<%=c.id%>-PD" class="CourseFill push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
+                              <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
+                            </li>
+                        <% end %>
+                    <% end %>
 
-                          </ul>
-                        </div>
-                      </div>
-                  <%if s % 2 == 1 %>
+                  </ul>
+                </div>
+              </div>
+              <%if s % 2 == 1 %>
                   </div>
-                  <% end %>
-                  <% s = s + 1 %>
-              <%end%>
+              <% end %>
+              <% s = s + 1 %>
+          <%end%>
 
-            </div>
+        </div>
 
         <!--END SEMESTER DROP-->
 
@@ -250,9 +250,9 @@
                               </div>
                               <div class="all-30 push-left order-r1">
                                 <ul id="<%=c.id%>-CCD" class="droppable-CC all-100 half-left-space <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>">
-                                      <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
-                                        <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
-                                      </li>
+                                  <li id="<%=c.id%>-D" class="Course ink-label push-middle align-center <% if i == 0 %> red <% elsif i == 1 %> green <% elsif i == 2 %> orange <% else %> blue <% end %>" >
+                                    <%=  c.abbrev.gsub(/ /, '<br/>').html_safe %>
+                                  </li>
                                 </ul>
                               </div>
                               <div class="CCDescription all-100 push-left align-left small condensed-100 order-r4  left-padding right-padding">
@@ -317,59 +317,59 @@
 //          COURSE FROM PLAN ADD
 
         <% @courses.each do |c| %>
-            <%if c.sub_category.category.super_cat.name == "General Education"%>
-                new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
+        <%if c.sub_category.category.super_cat.name == "General Education"%>
+        new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
 
-                    if(document.getElementById('<%=c.sub_category.name%>-PD') && !$('#<%=c.sub_category.name%>-PD').hasClass('hidden')){
-                        hidePD('#<%=c.sub_category.name%>-PD');
-                    }
-                    if(document.getElementById('<%=c.sub_category.name%>-B') && !$('#<%=c.sub_category.name%>-PD').hasClass('hidden')) {
-                        $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
-                        $('#<%=c.sub_category.name%>-B').css("color", "black");
-                        $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
-                        $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
-                    } else {
-                        $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
-                        $('#<%=c.sub_category.name%>-B').css("color", "black");
-                        $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
-                        $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
-                    }
-                    if(document.getElementById('<%=c.id%>-PD')) {
+            if(document.getElementById('<%=c.sub_category.name%>-PD') && !$('#<%=c.sub_category.name%>-PD').hasClass('hidden')){
+                hidePD('#<%=c.sub_category.name%>-PD');
+            }
+            if(document.getElementById('<%=c.sub_category.name%>-B') && !$('#<%=c.sub_category.name%>-PD').hasClass('hidden')) {
+                $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
+                $('#<%=c.sub_category.name%>-B').css("color", "black");
+                $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
+                $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
+            } else {
+                $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
+                $('#<%=c.sub_category.name%>-B').css("color", "black");
+                $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
+                $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
+            }
+            if(document.getElementById('<%=c.id%>-PD')) {
 
-                    }
-                }, onStart: function(){
-                    if(document.getElementById('<%=c.sub_category.name%>-PD')) {
-                        $("#<%=c.sub_category.name%>-PD").addClass('active');
-                    }
-                }
-                });
-            <% else %>
-                new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
-                    if(document.getElementById('<%=c.id%>-PD')) {
-                        hidePD('#<%=c.id%>-PD');
-                    }
-                    if(document.getElementById('<%=c.id%>-B')) {
-                        $('#<%=c.id%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
-                        $('#<%=c.id%>-B').css("color", "black");
-                        $('#<%=c.id%>-B').css("box-shadow", "none");
-                        $('#<%=c.id%>-B').css("border-style", "dashed");
-                    } else {
-                        $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
-                        $('#<%=c.sub_category.name%>-B').css("color", "black");
-                        $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
-                        $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
-                    }
-                    if(document.getElementById('<%=c.id%>-PD')) {
+            }
+        }, onStart: function(){
+            if(document.getElementById('<%=c.sub_category.name%>-PD')) {
+                $("#<%=c.sub_category.name%>-PD").addClass('active');
+            }
+        }
+        });
+        <% else %>
+        new Draggable('#<%=c.id%>-CCD li', {onEnd: function(){
+            if(document.getElementById('<%=c.id%>-PD')) {
+                hidePD('#<%=c.id%>-PD');
+            }
+            if(document.getElementById('<%=c.id%>-B')) {
+                $('#<%=c.id%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
+                $('#<%=c.id%>-B').css("color", "black");
+                $('#<%=c.id%>-B').css("box-shadow", "none");
+                $('#<%=c.id%>-B').css("border-style", "dashed");
+            } else {
+                $('#<%=c.sub_category.name%>-B').css("background", "rgba(255, 255, 255, 0.5) none repeat scroll 0 0");
+                $('#<%=c.sub_category.name%>-B').css("color", "black");
+                $('#<%=c.sub_category.name%>-B').css("box-shadow", "none");
+                $('#<%=c.sub_category.name%>-B').css("border-style", "dashed");
+            }
+            if(document.getElementById('<%=c.id%>-PD')) {
 
-                    }
-                }, onStart: function(){
-                        if(document.getElementById('<%=c.id%>-PD')) {
-                            $("#<%=c.id%>-PD").addClass('active');
-                        }
-                    }
-                });
-            <% end %>
-            Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: revert(<%=c.id%>)});
+            }
+        }, onStart: function(){
+            if(document.getElementById('<%=c.id%>-PD')) {
+                $("#<%=c.id%>-PD").addClass('active');
+            }
+        }
+        });
+        <% end %>
+        Droppable.add('#<%=c.id%>-CCD', {onDrop: 'move', onDropOut: revert(<%=c.id%>)});
         <%end%>
 
         function revert(id){
@@ -385,7 +385,7 @@
 
         <% @plan.semesters.all.each do |s| %>
 //         Droppable.add('#<%=s.name.gsub(" ", "-")%>-S', {onDrop: 'move'});
-            Droppable.add('#<%=s.name.gsub(" ", "-")%>-S', {onDrop: 'move'});
+        Droppable.add('#<%=s.name.gsub(" ", "-")%>-S', {onDrop: 'move'});
         <% end %>
 
         $("#SemP").hover(function(){
@@ -497,18 +497,18 @@
         function addEvents() {
 
             <% @courses.each do |c| %>
-                InkEvent.on(Ink.i('<%=c.id%>-D') ,'mousedown', function(){$("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});});
+            InkEvent.on(Ink.i('<%=c.id%>-D') ,'mousedown', function(){$("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){$("#<%=c.id%>-CC").fadeIn('fast');});});
             <% end %>
 
             <% @plan.semesters.each do |s| %>
-                <% s.courses.each do |c| %>
-                    <% if(c.sub_category.category.super_cat.name != "General Education")%>
-                        InkEvent.on(Ink.i('<%=c.id%>-PD') ,'mousedown', function(){
-                            $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){
-                                $("#<%=c.id%>-CC").fadeIn('fast');
-                            });
-                        });
-                    <% end %>
+            <% s.courses.each do |c| %>
+            <% if(c.sub_category.category.super_cat.name != "General Education")%>
+            InkEvent.on(Ink.i('<%=c.id%>-PD') ,'mousedown', function(){
+                $("#<%=c.id%>-CC").siblings().fadeOut('fast').promise().done(function(){
+                    $("#<%=c.id%>-CC").fadeIn('fast');
+                });
+            });
+            <% end %>
             <%end%>
             <%end%>
 
@@ -529,15 +529,11 @@
         var cour = [];
 
         $('#Semesters').find('ul').each(function(){
-//            var temp = $(this).attr('id');
-//            temp = temp.replace("-", "");
-//            sems.push(temp.substr(0,temp.length-2));
             sems.push($(this).attr('id'));
         });
 
         for(i = 0; i < sems.length;i++){
-            var str = sems[i].replace("-", "");
-            cour.push('S-' + str.substr(0,str.length-2));
+            cour.push('S-' + sems[i]);
             $('#' + sems[i]).find('.Course').each(function(){
                 var temp = $(this).attr('id');
                 cour.push('C-'+temp.substr(0,temp.length-2));
