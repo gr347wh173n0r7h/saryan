@@ -59,13 +59,19 @@ d = Catalog.create(cat_yr:15, degree: "BA: ACCOUNTING")
 super_category_list = [
     ["General Education", 60],
     ["BA: MIS", 120],
-    ["BA: ACCOUNTING", 120]
+  #  ["BA: ACCOUNTING", 120]
 ]
+
+#super_category_list_acc = [
+#    ["BA: ACCOUNTING", 120]
+#]
 
 super_category_list.each do |name, units|
   SuperCat.create(catalog_id:c.id, name:name, units:units)
-  SuperCat.create(catalog_id:d.id, name:name, units:units)
+ # SuperCat.create(catalog_id:d.id, name:name, units:units)
 end
+
+s = SuperCat.create(catalog_id:d.id, name:"BA: ACCOUNTING", units:120)
 
 category_list = [
 
@@ -74,10 +80,15 @@ category_list = [
     [SuperCat.find_by_name("BA: ACCOUNTING").id, "Core Courses", 40],
     [SuperCat.find_by_name("BA: ACCOUNTING").id, "Concentration Requirements", 24],
     [SuperCat.find_by_name("General Education").id, "Lower Division GE", 35],
-    [SuperCat.find_by_name("General Education").id, "Upper Division GE"]
-
+    [SuperCat.find_by_name("General Education").id, "Upper Division GE", 12]
 
 ]
+
+#category_list_acc = [
+#    [SuperCat.find_by_name("BA: ACCOUNTING").id, "Core Courses", 40],
+#    [SuperCat.find_by_name("BA: ACCOUNTING").id, "Concentration Requirements", 24]
+#]
+
 category_list.each do |id, name, units|
   Category.create(super_cat_id:id, name:name, units:units)
 end
@@ -91,8 +102,8 @@ sub_category_list = [
     [Category.find_by_name("Concentration Requirements").id, "Additional Courses", 6],
 
     # accounting
-    [Category.find_by_name("Concentration Requirements").id, "Accounting Foundation Courses", 15],
-    [Category.find_by_name("Concentration Requirements").id, "Required Electives", 9],
+#    [Category.find_by_name("Concentration Requirements").id, "Accounting Foundation Courses", 15],
+#    [Category.find_by_name("Concentration Requirements").id, "Required Electives", 9],
 
     [Category.find_by_name("Lower Division GE").id, "A1", 3],
     [Category.find_by_name("Lower Division GE").id, "A2", 3],
@@ -118,7 +129,7 @@ sub_category_list = [
 
 ]
 
-sub_category_list. each do |category_id, name, units|
+sub_category_list.each do |category_id, name, units|
   SubCategory.create(category_id:category_id, name:name, units:units)
 end
 
@@ -567,20 +578,25 @@ accounting_catalog = [
     [SubCategory.find_by_name("Upper Division Business Integration and Perspectives Courses").id, "PHIL","PHIL 186","Prof. Business Ethics", 3, "Interdisciplinary study of types of ethical problems which arise within the contexts of business occupations and professions. Major ethical theories, critique of economic and criminal justice. Focus is on issues of justice and equality in the U.S. Case studies. GE Area: S Prerequisite: Passage of the Writing Skills Test (WST) or ENGL/LLD 100A with a C or better (C- not accepted), completion of Core General Education and upper division standing are prerequisites to all SJSU studies courses. Completion of, or co-registration in, 100W is strongly recommended."],
 
     # concentration requirements
-    [SubCategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 120A", "Accounting Information Systems", 3, "Documentation, flow and processing of accounting information in business organizations; related principles of internal control; system design principles. Computerized and non-computerized procedures are used for processing. Prerequisite: BUS 20 with a minimum grade of C. Declared Major in Accounting, Accounting Information Systems or Corporate Accounting and Finance. Upper division standing. Lower Division Business Pool, declared Accounting, AIS or CAF major. Normal Grade Rules 3 units"],
-    [SubCategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 121A", "Intermediate Accounting I Principles", 3, "Control and theory of accounting for assets; correction of prior year's earnings; measurement and determination of income. Projects involving spreadsheet software required. Prerequisite: BUS 20 with a minimum grade of C and Upper division standing. Student must be a declared Accounting, Accounting Information Systems, Finance, or Corporate Financial Management major to enroll. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 121B", "Intermediate Accounting II Principles", 3, "Controls, and theory of accounting for liabilities and equities; preparation, utilization, and analysis of cash flow and fund statements; financial ratios and statistical analysis of financial statements accounting data. Projects involving spreadsheet software required. Prerequisite: BUS 121A (with minimum grade of C. Upper division standing. Lower Division Business Pool or Business Minor. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 122A", "Management Accounting and Control Systems", 3, "Examination of the nature, objectives and procedures of cost management as applied to product and service costing, decision-making and cost planning and control systems. Prerequisite: BUS 20 with a minimum grade of C and upper division standing. Declared Major in Accounting, Accounting information systems or Corporate Accounting and finance. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Accounting Foundation Courses").id, "BUS", "BUS1 123A", "Tax Factors of Business and Investment Decision", 3, "Introductory course in taxation with emphasis on certain themes that pervade the federal income tax system and its impact on business. Property transactions, deferral techniques, accounting periods, accounting methods and research techniques with emphasis on corporations. Prerequisite: BUS 20 with a minimum grade of C, and declared Accounting, Accounting Information Systems or Corporate Accounting Finance Major. Upper division standing. Lower Division Business Pool, declared Accounting, AIS or CAF Major. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Required Courses").id, "BUS", "BUS1 120A", "Accounting Information Systems", 3, "Documentation, flow and processing of accounting information in business organizations; related principles of internal control; system design principles. Computerized and non-computerized procedures are used for processing. Prerequisite: BUS 20 with a minimum grade of C. Declared Major in Accounting, Accounting Information Systems or Corporate Accounting and Finance. Upper division standing. Lower Division Business Pool, declared Accounting, AIS or CAF major. Normal Grade Rules 3 units"],
+    [SubCategory.find_by_name("Required Courses").id, "BUS", "BUS1 121A", "Intermediate Accounting I", 3, "Principles, control and theory of accounting for assets; correction of prior year's earnings; measurement and determination of income. Projects involving spreadsheet software required. Prerequisite: BUS 20 with a minimum grade of C and Upper division standing. Student must be a declared Accounting, Accounting Information Systems, Finance, or Corporate Financial Management major to enroll. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Required Courses").id, "BUS", "BUS1 121B", "Intermediate Accounting II", 3, "Principles, controls, and theory of accounting for liabilities and equities; preparation, utilization, and analysis of cash flow and fund statements; financial ratios and statistical analysis of financial statements accounting data. Projects involving spreadsheet software required. Prerequisite: BUS 121A (with minimum grade of C. Upper division standing. Lower Division Business Pool or Business Minor. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Required Courses").id, "BUS", "BUS1 122A", "Management Accounting and Control Systems", 3, "Examination of the nature, objectives and procedures of cost management as applied to product and service costing, decision-making and cost planning and control systems. Prerequisite: BUS 20 with a minimum grade of C and upper division standing. Declared Major in Accounting, Accounting information systems or Corporate Accounting and finance. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Required Courses").id, "BUS", "BUS1 123A", "Tax Factors of Business and Investment Decision", 3, "Introductory course in taxation with emphasis on certain themes that pervade the federal income tax system and its impact on business. Property transactions, deferral techniques, accounting periods, accounting methods and research techniques with emphasis on corporations. Prerequisite: BUS 20 with a minimum grade of C, and declared Accounting, Accounting Information Systems or Corporate Accounting Finance Major. Upper division standing. Lower Division Business Pool, declared Accounting, AIS or CAF Major. Normal Grade Rules 3 units "],
 
-    [SubCategory.find_by_name("Required Electives").id, "BUS", "BUS1 120B", "Advanced AIS and IS Risk Assessment", 3, "Hands-on project-oriented computer lab to develop working knowledge and skills in using Microsoft Excel and Access as application development tools. Students design a prototype accounting system and generalized audit module prototype assessing integrity of previously designed databases. Upper division standing. Lower Division Business Pool or Business Minor. Prerequisite: BUS 120A and COMM 100W or ENGL 100WB or LLD 100WB with a minimum grade of ���C��� or better in both. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Required Electives").id, "BUS", "BUS1 120G", "Programming and Systems Development in AIS", 3, "This course covers the process, technical elements and current techniques used in accounting systems development. Programming topics include business reporting languages. Systems development topics include requirements analysis, functional specification, system design, implementation, testing, and maintenance. Prerequisite: BUS1 020 with a minimum grade of C. Lower division business pool or Business Minor. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Required Electives").id, "BUS", "BUS1 122B", "Advanced Management Accounting and Control Systems", 3, "Examination of contemporary issues and emerging practices in cost management. Topics include strategic cost management, activity-based cost management, life- cycle cost management, target costing, quality costing management and value chain-analysis. Prerequisite: BUS 122A and BUS 100W, COMM 100W or ENGL 100WB or LLD 100WB with a minimum grade of C in both. Lower division business pool or Business Minor. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Required Electives").id, "BUS", "BUS1 123C", "Taxation of Individuals and Pass Through Entities", 3, "Emphasis on the unique factors involved in taxation of individuals and pass-through entities (partnerships, S corporations, estates and trusts). Taxation of the transfer of wealth through gifts and inheritance. Prerequisite: BUS 123A with a grade of C or better. Accounting and Corporate Accounting Finance Majors only. Upper division standing. Lower Division Business Pool, Business Minor or Accounting or CorporateAccounting Finance major Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Required Electives").id, "BUS", "BUS1 124", "Forensic Accounting", 3, "This course will examine the various frauds that are perpetrated on companies and discuss ways the accountant can uncover the frauds. The criminal justice system will be reviewed and the various litigation-support functions provided to attorneys by accountants will be discussed. Prerequisite: BUS 20; COMM 100W or ENGL 100WB or LLD 100WB; BUS 121A and BUS 121B with a minimum grade of C in each. Accounting and Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Required Electives").id, "BUS", "BUS1 125", "Special Financial Reporting Topics", 3, "Analysis of specialized and emerging accounting topics (such as interim reporting, deferred taxes, post- employment benefits and new FAS pronouncements) with emphasis on research, application and analytical skills. Prerequisite: COMM 100W or ENGL 100WB or LLD 100WB, BUS 121A and BUS 121B (with minimum grade of C in each). Lower division business pool or Business Minor. Accounting and Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Required Electives").id, "BUS", "BUS1 126", "Advanced Accounting", 3, "Accounting for multi-unit operations: consolidated reporting issues, transfer pricing issues, globalization issues (foreign tax structures, organizational forms, and international accounting) translating foreign currency transactions and operations, hedging foreign currency exposures, goodwill, and business combinations. Extensive use of spreadsheets (Excel) Prerequisite: COMM 100W or ENGL 100WB or LLD 100WB, BUS 121A and BUS 121B (with minimum grade of C in each). Lower Division Business Pool, Business Minor, Accounting or Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
-    [SubCategory.find_by_name("Required Electives").id, "BUS", "BUS1 127A", "Honors Practicum in Corporate Financial Management", 3, "Corporate sponsored projects in accounting and finance. Students are assigned to a host company and are required to work with the host company and faculty advisor on a topic in financial management. A report will be presented. Students are admitted based on an average 3.0 GPA in four prerequisite courses. Prerequisite: COMM 100W (or ENGL 100W or LLD 100W), BUS 121A, BUS 121B, BUS 122A, and BUS 170 with a minimum grade of C in each and instructor approval. Upper division standing. Lower Division Business Pool or Business Minor. Repeatable for credit Normal Grade Rules 3 units "]
+    [SubCategory.find_by_name("Additional Courses").id, "BUS", "BUS1 120B", "Advanced AIS and IS Risk Assessment", 3, "Hands-on project-oriented computer lab to develop working knowledge and skills in using Microsoft Excel and Access as application development tools. Students design a prototype accounting system and generalized audit module prototype assessing integrity of previously designed databases. Upper division standing. Lower Division Business Pool or Business Minor. Prerequisite: BUS 120A and COMM 100W or ENGL 100WB or LLD 100WB with a minimum grade of C or better in both. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Additional Courses").id, "BUS", "BUS1 120G", "Programming and Systems Development in AIS", 3, "This course covers the process, technical elements and current techniques used in accounting systems development. Programming topics include business reporting languages. Systems development topics include requirements analysis, functional specification, system design, implementation, testing, and maintenance. Prerequisite: BUS1 020 with a minimum grade of C. Lower division business pool or Business Minor. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Additional Courses").id, "BUS", "BUS1 122B", "Advanced Management Accounting and Control Systems", 3, "Examination of contemporary issues and emerging practices in cost management. Topics include strategic cost management, activity-based cost management, life- cycle cost management, target costing, quality costing management and value chain-analysis. Prerequisite: BUS 122A and BUS 100W, COMM 100W or ENGL 100WB or LLD 100WB with a minimum grade of C in both. Lower division business pool or Business Minor. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Additional Courses").id, "BUS", "BUS1 123C", "Taxation of Individuals and Pass Through Entities", 3, "Emphasis on the unique factors involved in taxation of individuals and pass-through entities (partnerships, S corporations, estates and trusts). Taxation of the transfer of wealth through gifts and inheritance. Prerequisite: BUS 123A with a grade of C or better. Accounting and Corporate Accounting Finance Majors only. Upper division standing. Lower Division Business Pool, Business Minor or Accounting or CorporateAccounting Finance major Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Additional Courses").id, "BUS", "BUS1 124", "Forensic Accounting", 3, "This course will examine the various frauds that are perpetrated on companies and discuss ways the accountant can uncover the frauds. The criminal justice system will be reviewed and the various litigation-support functions provided to attorneys by accountants will be discussed. Prerequisite: BUS 20; COMM 100W or ENGL 100WB or LLD 100WB; BUS 121A and BUS 121B with a minimum grade of C in each. Accounting and Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Additional Courses").id, "BUS", "BUS1 125", "Special Financial Reporting Topics", 3, "Analysis of specialized and emerging accounting topics (such as interim reporting, deferred taxes, post- employment benefits and new FAS pronouncements) with emphasis on research, application and analytical skills. Prerequisite: COMM 100W or ENGL 100WB or LLD 100WB, BUS 121A and BUS 121B (with minimum grade of C in each). Lower division business pool or Business Minor. Accounting and Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Additional Courses").id, "BUS", "BUS1 126", "Advanced Accounting", 3, "Accounting for multi-unit operations: consolidated reporting issues, transfer pricing issues, globalization issues (foreign tax structures, organizational forms, and international accounting) translating foreign currency transactions and operations, hedging foreign currency exposures, goodwill, and business combinations. Extensive use of spreadsheets (Excel) Prerequisite: COMM 100W or ENGL 100WB or LLD 100WB, BUS 121A and BUS 121B (with minimum grade of C in each). Lower Division Business Pool, Business Minor, Accounting or Corporate Accounting Finance Majors only. Normal Grade Rules 3 units "],
+    [SubCategory.find_by_name("Additional Courses").id, "BUS", "BUS1 127A", "Honors Practicum in Corporate Financial Management", 3, "Corporate sponsored projects in accounting and finance. Students are assigned to a host company and are required to work with the host company and faculty advisor on a topic in financial management. A report will be presented. Students are admitted based on an average 3.0 GPA in four prerequisite courses. Prerequisite: COMM 100W (or ENGL 100W or LLD 100W), BUS 121A, BUS 121B, BUS 122A, and BUS 170 with a minimum grade of C in each and instructor approval. Upper division standing. Lower Division Business Pool or Business Minor. Repeatable for credit Normal Grade Rules 3 units "]
+
+
+
+
+
 ]
 
 
@@ -608,7 +624,16 @@ semester_list = [
     [SavedPlan.find_by_major("Management Information Systems").id, "Fall 2018", 2018, 15],
     [SavedPlan.find_by_major("Management Information Systems").id, "Spring 2019", 2019, 15],
     [SavedPlan.find_by_major("Management Information Systems").id, "Fall 2019", 2019, 15],
-    [SavedPlan.find_by_major("Management Information Systems").id, "Spring 2020", 2020, 15]
+    [SavedPlan.find_by_major("Management Information Systems").id, "Spring 2020", 2020, 15],
+
+    [SavedPlan.find_by_major("Accounting").id, "Fall 2016", 2016, 13],
+    [SavedPlan.find_by_major("Accounting").id, "Spring 2017", 2017, 13],
+    [SavedPlan.find_by_major("Accounting").id, "Fall 2017", 2017, 15],
+    [SavedPlan.find_by_major("Accounting").id, "Spring 2018", 2018, 15],
+    [SavedPlan.find_by_major("Accounting").id, "Fall 2018", 2018, 15],
+    [SavedPlan.find_by_major("Accounting").id, "Spring 2019", 2019, 15],
+    [SavedPlan.find_by_major("Accounting").id, "Fall 2019", 2019, 15],
+    [SavedPlan.find_by_major("Accounting").id, "Spring 2020", 2020, 15]
 ]
 
 semester_list.each do |saved_id, name, year, units|
@@ -672,6 +697,66 @@ mis_4year_plan = [
 
 ]
 mis_4year_plan.each do |semester_id, course_id|
+  SemesterRef.create(semester_id:semester_id, course_id:course_id)
+end
+
+accounting_4year_plan = [
+
+                          [Semester.find_by_name("Fall 2016").id, Course.find_by_abbrev("ENGL 001A").id],
+                          [Semester.find_by_name("Fall 2016").id, Course.find_by_abbrev("COMM 020").id],
+                          [Semester.find_by_name("Fall 2016").id, Course.find_by_abbrev("ARTH 070A").id],
+                          [Semester.find_by_name("Fall 2016").id, Course.find_by_abbrev("AMS 001A").id],
+                          [Semester.find_by_name("Fall 2016").id, Course.find_by_abbrev("KIN 002A").id],
+
+
+                          [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("ENGL 001B").id],
+                          [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("MATH 071").id],
+                          [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("AMS 001B").id],
+                          [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("ASTR 010").id],
+                          [Semester.find_by_name("Spring 2017").id, Course.find_by_abbrev("KIN 002B").id],
+
+
+                          [Semester.find_by_name("Fall 2017").id, Course.find_by_abbrev("BUS1 20").id],
+                          [Semester.find_by_name("Fall 2017").id, Course.find_by_abbrev("BUS3 80").id],
+                          [Semester.find_by_name("Fall 2017").id, Course.find_by_abbrev("ECON 001A").id],
+                          [Semester.find_by_name("Fall 2017").id, Course.find_by_abbrev("BUS4 91L").id],
+                          [Semester.find_by_name("Fall 2017").id, Course.find_by_abbrev("ANTH 012").id],
+
+                          [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("BUS2 90").id],
+                          [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("SPAN 001A").id],
+                          [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("ECON 001B").id],
+                          [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("COMM 041").id],
+                          [Semester.find_by_name("Spring 2018").id, Course.find_by_abbrev("BIOL 054").id],
+
+                          [Semester.find_by_name("Fall 2018").id, Course.find_by_abbrev("COMM 100W").id],
+                          [Semester.find_by_name("Fall 2018").id, Course.find_by_abbrev("POLS 170V").id],
+                          [Semester.find_by_name("Fall 2018").id, Course.find_by_abbrev("BUS1 120A").id],
+                          [Semester.find_by_name("Fall 2018").id, Course.find_by_abbrev("BUS1 121A").id],
+                          [Semester.find_by_name("Fall 2018").id, Course.find_by_abbrev("BUS2 190").id],
+
+
+                          [Semester.find_by_name("Spring 2019").id, Course.find_by_abbrev("BUS1 121B").id],
+                          [Semester.find_by_name("Spring 2019").id, Course.find_by_abbrev("BUS1 122A").id],
+                          [Semester.find_by_name("Spring 2019").id, Course.find_by_abbrev("BUS1 123A").id],
+                          [Semester.find_by_name("Spring 2019").id, Course.find_by_abbrev("BUS2 130").id],
+                          [Semester.find_by_name("Spring 2019").id, Course.find_by_abbrev("PHIL 186").id],
+
+                          [Semester.find_by_name("Fall 2019").id, Course.find_by_abbrev("BUS1 120B").id],
+                          [Semester.find_by_name("Fall 2019").id, Course.find_by_abbrev("BUS1 124").id],
+                          [Semester.find_by_name("Fall 2019").id, Course.find_by_abbrev("BUS1 170").id],
+                          [Semester.find_by_name("Fall 2019").id, Course.find_by_abbrev("BUS3 188").id],
+                          [Semester.find_by_name("Fall 2019").id, Course.find_by_abbrev("BUS2 190").id],
+
+                          [Semester.find_by_name("Spring 2020").id, Course.find_by_abbrev("BUS1 120G").id],
+                          [Semester.find_by_name("Spring 2020").id, Course.find_by_abbrev("BUS1 125").id],
+                          [Semester.find_by_name("Spring 2020").id, Course.find_by_abbrev("BUS5 140").id],
+                          [Semester.find_by_name("Spring 2020").id, Course.find_by_abbrev("BUS3 189").id],
+                          [Semester.find_by_name("Spring 2020").id, Course.find_by_abbrev("BUS5 187").id],
+
+
+]
+
+accounting_4year_plan.each do |semester_id, course_id|
   SemesterRef.create(semester_id:semester_id, course_id:course_id)
 end
 
