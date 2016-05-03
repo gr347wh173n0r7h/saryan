@@ -4,29 +4,48 @@
     }
 </style>
 <% provide(:title, 'Planner') %>
+
 <div xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
      xmlns="http://www.w3.org/1999/html"></div>
 <div id="PlanPage" class="ink-grid" style="display: none">
   <div class="column-group half-top-padding half-horizontal-gutters">
+    <!-- SAVE PLAN FORM-->
+    <div class="InfoPanelHoler all-100 r">
+      <!--<div id="SavePlanForm" class="InfoPanel all-100 half-bottom-space" style=" display: none;">-->
+      <%= form_for(:planner, url: planner_create_path, :html => {:id => 'SavePlanForm',
+                                                                 :class => "InfoPanel ink-form all-100 push-center half-top-padding half-left-padding half-right-padding half-bottom-padding half-bottom-space",
+                                                                 :style => "display: none;"}) do |f| %>
+          <%= f.label :name %>
+          <%= f.text_field :name, :class => 'form-control', :placeholder => 'Please enter a Plan Name'%>
+          <%= f.submit "Save", class: "ink-button blue"%>
+          <input id="planner_plan_string" class="PlanString form-control" type="hidden" name="planner[plan_string]" value="">
 
+      <%end%>
+      <!--</div>-->
+    </div>
+    <!-- END SAVE PLAN FORM-->
     <!-- INFO PANEL-->
     <div class="InfoPanelHoler all-100">
-      <div class="InfoPanel column-group all-100 push-center align-center">
-        <div class="xlarge-25 large-25 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
+      <div class="InfoPanel column-group all-100 push-center push-middle align-center">
+        <div class="xlarge-20 large-20 medium-20 push-middle  push-center small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5></h5>-->
-          <p><b>School: </b><%=@school.name%></p>
+          <p><b>School: </b><br><%=@school.name%></p>
         </div>
-        <div class="xlarge-25 large-25 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
+        <div class="xlarge-20 large-20 medium-20 push-middle push-centersmall-50 tiny-100  half-top-padding half-bottom-padding">
           <!--<h5>Major: </h5>-->
-          <p><b>Major: </b><%=@major.name%></p>
+          <p><b>Major: </b><br><%=@major.name%></p>
         </div>
-        <div class="xlarge-25 large-25 medium-50 push-middle small-50 tiny-100 half-top-padding half-bottom-padding">
+
+        <div class="PlanSelect xlarge-20 large-20 push-middle medium-20 small-50 tiny-100  half-top-padding half-bottom-padding">
           <!--<h5>Catalog: </h5>-->
-          <p><b>Catalog: </b><%=@catalog.degree%></p>
+          <p><b>Premade Plan: </b><br><%= select_tag 'Plans', options_from_collection_for_select(@plans, 'id', 'name', params[:id]), :prompt => "None",:onchange => "window.location.replace('/planner/'+this.value);" %></p>
         </div>
-        <div class="PlanSelect xlarge-25 large-25 push-middle medium-50 small-50 tiny-100 half-top-padding half-bottom-padding">
+        <div class="PlanSelect xlarge-20 large-20 push-middle medium-20 small-50 tiny-100 half-top-padding half-bottom-padding">
           <!--<h5>Catalog: </h5>-->
-          <p><b>Plan: </b><%= select_tag 'Plans', options_from_collection_for_select(@plans, 'id', 'name', params[:id]), :prompt => "None",:onchange => "window.location.replace('/planner/'+this.value);" %></p>
+          <p><b>Saved Plans: </b><br><%= select_tag 'Plans', options_from_collection_for_select(@saved_plans, 'id', 'name'),:prompt => "None",:onchange => "window.location.replace('/planner/edit/'+this.value);" %></p>
+        </div>
+        <div class="xlarge-20 large-20 push-middle medium-20 tiny-100 half-top-padding half-bottom-padding">
+          <button id="SavePlan" class="ink-button blue align-center order-1" onclick="SavePlan();">Save Plan</button>
         </div>
       </div>
     </div>
@@ -124,23 +143,23 @@
         <!-- SEMESTER DROP -->
         <div id="Semesters" class="half-right-padding"  style="overflow: auto; max-height: 725px;">
           <div id="Fall2016S">
-              <div id="Fall2016SD" class="Semester column-group all-100" >
-                <div class="all-100" style="padding-top: 0px;">
-                  <p class="tip condensed" style="padding-top: 0px; font-weight: 600">Fall 2016</p>
-                  <ul id="Fall2016" class="droppable-2 all-100">
-                  </ul>
-                </div>
+            <div id="Fall2016SD" class="Semester column-group all-100" >
+              <div class="all-100" style="padding-top: 0px;">
+                <p class="tip condensed" style="padding-top: 0px; font-weight: 600">Fall 2016</p>
+                <ul id="Fall2016" class="droppable-2 all-100">
+                </ul>
               </div>
-              <div id="Winter2016S" class="Semester column-group all-100" style="min-height: 15px;">
-                <div id="Winter2016SD" class="all-100" style="padding-top: 0px; display: none;">
-                  <p class="tip condensed" style="padding-top: 0px;">Winter 2016</p>
-                  <ul id="Winter2016" class="droppable-2 all-100">
-                  </ul>
-                </div>
-                <div id="Winter2016P" class="Progress">
-                  <div id="Winter2016PB" class="ProgressBar"></div>
-                </div>
+            </div>
+            <div id="Winter2016S" class="Semester column-group all-100" style="min-height: 15px;">
+              <div id="Winter2016SD" class="all-100" style="padding-top: 0px; display: none;">
+                <p class="tip condensed" style="padding-top: 0px;">Winter 2016</p>
+                <ul id="Winter2016" class="droppable-2 all-100">
+                </ul>
               </div>
+              <div id="Winter2016P" class="Progress">
+                <div id="Winter2016PB" class="ProgressBar"></div>
+              </div>
+            </div>
           </div>
         </div>
         <!--END SEMESTER DROP-->
@@ -298,7 +317,7 @@
                 addSemester();
             }, 500);
         }, function(){clearTimeout(
-            window.mytimeout);
+                window.mytimeout);
 //            addSemester();
         });
 
@@ -320,23 +339,23 @@
             var newID2 = semester[i+1]+(year);
             var newDiv =
                     '<div id="'+newID+'S"style="display: none;">' +
-                        '<div id="'+newID+'SD" class="Semester column-group all-100">' +
-                            '<div class="all-100" style="padding-top: 0px;">' +
-                                '<p class="tip condensed" style="padding-top: 0px;">'+ semester[i] + ' ' + year +'</p>' +
-                                '<ul id="'+newID+'" class="droppable-2 all-100">' +
-                                '</ul>' +
-                            '</div>' +
-                        '</div>' +
-                        '<div id="'+newID2+'S" class="Semester column-group all-100" style="min-height: 15px;">' +
-                            '<div id="'+newID2+'SD" class="all-100" style="padding-top: 0px; display: none;">' +
-                                '<p class="tip condensed" style="padding-top: 0px;">'+ semester[i + 1] + ' ' + year +'</p>' +
-                                '<ul id="'+newID2+'" class="droppable-2 all-100">' +
-                            '</ul>' +
-                            '</div>'+
-                            '<div id="'+newID2+'P" class="Progress">' +
-                                '<div id="'+newID2+'PB" class="ProgressBar"></div>' +
-                            '</div>' +
-                        '</div>'+
+                    '<div id="'+newID+'SD" class="Semester column-group all-100">' +
+                    '<div class="all-100" style="padding-top: 0px;">' +
+                    '<p class="tip condensed" style="padding-top: 0px;">'+ semester[i] + ' ' + year +'</p>' +
+                    '<ul id="'+newID+'" class="droppable-2 all-100">' +
+                    '</ul>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div id="'+newID2+'S" class="Semester column-group all-100" style="min-height: 15px;">' +
+                    '<div id="'+newID2+'SD" class="all-100" style="padding-top: 0px; display: none;">' +
+                    '<p class="tip condensed" style="padding-top: 0px;">'+ semester[i + 1] + ' ' + year +'</p>' +
+                    '<ul id="'+newID2+'" class="droppable-2 all-100">' +
+                    '</ul>' +
+                    '</div>'+
+                    '<div id="'+newID2+'P" class="Progress">' +
+                    '<div id="'+newID2+'PB" class="ProgressBar"></div>' +
+                    '</div>' +
+                    '</div>'+
                     '</div>';
             newID = '#' + newID;
             newID2 = '#' + newID2;
@@ -389,8 +408,30 @@
         });
 
     });
+    //*************************************************************************
+    function SavePlan(){
+        var sems = [];
+        var cour = [];
 
+        $('#Semesters').find('ul').each(function(){
+            sems.push($(this).attr('id'));
+        });
 
+        for(i = 0; i < sems.length;i++){
+            cour.push('S-' + sems[i]);
+            $('#' + sems[i]).find('.Course').each(function(){
+                var temp = $(this).attr('id');
+                cour.push('C-'+temp.substr(0,temp.length-2));
+            });
+        }
+
+//        $("#SavePlanForm").html('');
+//        var newDiv = "<p>"+ cour.toString()+"</p>";
+        $(".PlanString").val(cour.toString());
+//        $("#SavePlanForm").append(newDiv);
+        $("#SavePlanForm").slideDown("slow");
+    }
+    //*************************************************************************
     function clearClassCards(){
         $("#CCD").children().fadeOut('fast').promise()
     }
@@ -444,6 +485,6 @@
         }
     }
 
-</script>
 
+</script>
 

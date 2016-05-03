@@ -27,6 +27,8 @@ Rails.application.routes.draw do
   # get 'planner' => 'planner#index'
   get 'planner' => 'planner#new'
   get 'planner/:id' => 'planner#show', as: 'planner/plan'
+  get 'planner/edit/:id' => 'planner#edit'
+  post 'planner/create' => 'planner#create'
   #Academics
   get 'academics' => 'academics#index'
   get 'academics/new' => 'academics#new'
@@ -34,6 +36,7 @@ Rails.application.routes.draw do
   #Resources
   resources :users
   resources :prereqs
+  resources :planners
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
