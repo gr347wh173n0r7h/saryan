@@ -17,11 +17,12 @@ class User < ActiveRecord::Base
                         :large => "300x300>",
                         :medium => "200x200>",
                         :thumb => "100x100>" },
-                    :url => "/:class/:attachment/:id/:style_:basename.:extension"
+										:default_url => "/images/:style/missing.jpg"
+                #    :url => "/:class/:attachment/:id/:style_:basename.:extension"
               #      :path =>
              #       :default_url => /public/profile/default_avatar.png
-  validates_attachment :profilephoto,
-                       content_type: { content_type: ["image/jpg", "image/jpeg", "image/png"]},
+  validates_attachment_content_type :profilephoto,
+                       :content_type => /\Aimage\/.*\Z/,
                        :size => { :in => 0..20.kilobytes }
 
 

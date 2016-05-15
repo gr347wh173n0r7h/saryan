@@ -5,9 +5,14 @@ class AddAttachmentProfilephotoToUsers < ActiveRecord::Migration
     end
   end
 
+  #def self.down
+  #  remove_attachment :users, :profilephoto
+  #end
+
   def self.down
-    remove_attachment :users, :profilephoto
+    drop_attached_file :users, :profilephoto
   end
+
 
   #add_attachment :users, :profilephoto
 
