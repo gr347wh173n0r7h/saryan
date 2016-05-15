@@ -1,6 +1,6 @@
 # SARYAN
 ## SE 195 Project 
-### Jordan Petersen, Lisa Efrid, Sarmad Syed
+### Jordan Petersen, Lisa Efird, Sarmad Syed
 ----
 
 ### Deployment
@@ -25,7 +25,7 @@ $ cd <dir>
 ```sh
 $ bundle install
 ```
-#### 4- Create Databe
+#### 4- Create Database
 ```sh
 $ bundle exec rake db:migrate
 ```
@@ -60,7 +60,7 @@ gem install rails
 ```sh
 $ bundle install
 ```
-#### 8- Create Databe
+#### 8- Create Database
 ```sh
 $ bundle exec rake db:migrate
 ```
