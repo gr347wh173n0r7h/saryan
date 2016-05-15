@@ -46,7 +46,7 @@ $ rails s
 
 #### 3- In Create Workspace set repository to:
 ```sh
-git@github.com/gr347wh173n0r7h:saryan
+git@github.com/gr347wh173n0r7h:engr_projects
 ```
 #### 4- In Choose the Templace choose Custom option
 

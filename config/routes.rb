@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   #Planner
   # get 'planner' => 'planner#index'
   get 'planner' => 'planner#new'
-  get 'planner/:id' => 'planner#show', as: 'planner/plan'
+  get 'planner/:id' => 'planner#show'
   get 'planner/edit/:id' => 'planner#edit'
   post 'planner/create' => 'planner#create'
   #Academics
