@@ -1,6 +1,6 @@
 <style>
   body {
-      background: none;
+    background: none;
   }
 </style>
 <% provide(:title, 'Account Settings') %>
@@ -72,9 +72,8 @@
               <div class="ink-grid half-bottom-space">
                 <div class="column-group">
                   <div class="all-50">
-                    (Photo will
-                    go here)
                     <p class ="round-image-50"><%= image_tag(current_user.profilephoto.url(:medium))%></p>
+                    <%= f.file_field :profilephoto %>
                   </div>
                   <div class="all-50">
                     <div class="Info ink-label push-center">
@@ -95,8 +94,9 @@
 
               <div class="all-50 align-center bottom-space push-center">
                 <!-- put code here to save updated info -->
-                (a button here to save updated info)
+
               </div>
+
           <%end%>
 
 
@@ -108,5 +108,3 @@
     <div class="clearfix_10"></div>
   </div>
 </div>
-
-
