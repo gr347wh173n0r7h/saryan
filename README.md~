@@ -1,6 +1,6 @@
 # SARYAN
 ## SE 195 Project 
-### Jordan Petersen, Lisa Efird, Sarmad Syed
+### Jordan Petersen, Lisa Efrid, Sarmad Syed
 ----
 
 ### Deployment
@@ -25,7 +25,7 @@ $ cd <dir>
 ```sh
 $ bundle install
 ```
-#### 4- Create Database
+#### 4- Create Databe
 ```sh
 $ bundle exec rake db:migrate
 ```
@@ -46,7 +46,7 @@ $ rails s
 
 #### 3- In Create Workspace set repository to:
 ```sh
-git@github.com/gr347wh173n0r7h:saryan
+git@github.com/gr347wh173n0r7h:engr_projects
 ```
 #### 4- In Choose the Templace choose Custom option
 
@@ -60,7 +60,7 @@ gem install rails
 ```sh
 $ bundle install
 ```
-#### 8- Create Database
+#### 8- Create Databe
 ```sh
 $ bundle exec rake db:migrate
 ```
