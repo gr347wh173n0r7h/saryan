@@ -125,7 +125,8 @@ class PlannerController < ApplicationController
     end
     if @planner.save
       flash[:success] = "Preferences Set"
-      redirect_to @user
+     # redirect_to @user
+      redirect_to :back
     else
       flash[:failure] = "Error Cccured"
       render @user
